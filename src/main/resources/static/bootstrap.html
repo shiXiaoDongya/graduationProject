@@ -10,41 +10,26 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        window.onload = function (ev) {
-            $.ajax({
-                type: "GET",
-                url: "/testAjax",
-                data: {},
-                dataType: "json",
-                contentType: "application/json;charset=UTF-8",
-                success: function(data){
-                    for(var i = 0; i < data.length;i++){
-                        var job = JSON.parse(data[i].subClasses);
-                        for(var j = 0; j< job.length; j++){
-                            for(key in job[j]){
-                                alert(key);
-                                alert(job[j][key]);
-                                var menu = document.getElementById("menu");
-                                var html = "<div class=\"aui-content-menu\">\n" +
-                                    "                        <div class=\"aui-content-menu-head\">\n" +
-                                    "                            <div class=\"aui-content-menu-head-list\">\n" +
-                                    "                                <h2>"+ data[i].title+"</h2>\n" +
-                                    "                                <a href=\"#\">产品总监</a>\n" +
-                                    "                                <a href=\"#\">产品经理</a>\n" +
-                                    "                                <a href=\"#\">数据产品</a>\n" +
-                                    "                                <i class=\"aui-content-menu-head-list-arrow\"></i>\n" +
-                                    "                            </div>\n" +
-                                    "                        </div>\n" +
-                                    "                        <div class=\"aui-content-menu-dow aui-ds\">\n" +
-                                    "                        </div>\n" +
-                                    "                    </div>";
-                                menu.innerHTML = html;
-                            }
-                        }
-                    }
-                }
-            });
-        }
+        // window.onload = function (ev) {
+        //     $.ajax({
+        //         type: "GET",
+        //         url: "/testAjax",
+        //         data: {},
+        //         dataType: "json",
+        //         contentType: "application/json;charset=UTF-8",
+        //         success: function(data){
+        //             for(var i = 0; i < data.length;i++){
+        //                 var job = JSON.parse(data[i].subClasses);
+        //                 for(var j = 0; j< job.length; j++){
+        //                     for(key in job[j]){
+        //                         alert(key);
+        //                         alert(job[j][key]);
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     });
+        // }
     </script>
     <script type="text/javascript">
         $(function(){
@@ -86,8 +71,8 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="#">注册</a></li>
-                    <li><a class="ticker-btn" href="#">登录</a></li>
+                    <li><a class="ticker-btn" href="regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="login.html">登录</a></li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
