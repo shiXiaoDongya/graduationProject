@@ -4,14 +4,71 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
-<div class="panel panel-default" style="margin-top: 60px;">
+<header id="header" class="header-scrolled">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">首页</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <li><a href="blog-home.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="menu-has-children"><a href="">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">elements</a></li>
+                            <li><a href="search.html">search</a></li>
+                            <li><a href="single.html">single</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+<div class="panel panel-default" style="margin:0px auto;margin-top: 60px;width: 800px;">
      <div class="panel-heading">
-        1234
+        注册
      </div>
     <div class="panel-body">
-        56789
+        <form class="form-horizontal" >
+            <div class="form-group" id="usernameDiv">
+                <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
+                    用户名
+                </label>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <input class="form-control" name="username" type="text" id="username" >
+                </div>
+            </div>
+            <div class="form-group" id="passwordDiv">
+                <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
+                    密码
+                </label>
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                    <input class="form-control" name="password" type="password" id="password" >
+                </div>
+            </div>
+            <div class="form-group" id="buttonDiv">
+                <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
+                </label>
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                    <input class="btn btn-primary form-control" type="submit" value="注册">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                    <input class="btn btn-primary form-control" type="submit" value="清空">
+                </div>
+            </div>
+    </form>
     </div>
 </div>
 
