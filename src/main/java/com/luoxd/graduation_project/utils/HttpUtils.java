@@ -1,14 +1,21 @@
 package com.luoxd.graduation_project.utils;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.List;
-import java.util.Map;
 
+/**
+ * HttpUtils
+ *
+ * @author luoxd
+ * @date 2010/03/02
+ */
+@Slf4j
 public class HttpUtils {
     public static String sendPost(String url, String param) {
         PrintWriter out = null;
@@ -39,7 +46,7 @@ public class HttpUtils {
                 result += line;
             }
         } catch (Exception e) {
-            System.out.println("发送 POST 请求出现异常！" + e);
+            log.error("发送 POST 请求出现异常！" + e);
             e.printStackTrace();
         }
         //使用finally块来关闭输出流、输入流
