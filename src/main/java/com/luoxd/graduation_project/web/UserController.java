@@ -82,7 +82,6 @@ public class UserController {
         } catch (UnsupportedEncodingException e) {
             log.error("获取用户Ip信息失败");
         }
-        System.out.println(city);
         return city;
     }
 
