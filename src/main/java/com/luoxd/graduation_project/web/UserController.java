@@ -2,8 +2,10 @@ package com.luoxd.graduation_project.web;
 
 import com.luoxd.graduation_project.domain.JobClasses;
 import com.luoxd.graduation_project.service.UserService;
+import com.luoxd.graduation_project.utils.AddressUtils;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +63,27 @@ public class UserController {
         testList.add(test2);
         JSONArray jsonArray = JSONArray.fromObject(testList);
         return jsonArray;
+    }
+
+
+    /**
+     * 登录网页是根据IP获取所在城市
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "getLocation",method = RequestMethod.GET)
+    @ResponseBody
+    public String getLocation(HttpServletRequest request) {
+        String city = null;
+        String ipaddre = AddressUtils.getIp(request);
+        try {
+            city = AddressUtils.getAddresses(ipaddre);
+            log.info("IP所在城市："+city);
+        } catch (UnsupportedEncodingException e) {
+            log.error("获取用户Ip信息失败");
+        }
+        System.out.println(city);
+        return city;
     }
 
 }
