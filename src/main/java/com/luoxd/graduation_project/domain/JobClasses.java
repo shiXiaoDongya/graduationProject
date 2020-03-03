@@ -2,14 +2,18 @@ package com.luoxd.graduation_project.domain;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class JobClasses {
-    //职位分类总标题
-    private String title;
+   private Integer jobClassesId;
 
-    //该职位分类的推荐分类,多个分类用","隔开
-    private String recommend;
+   private String jobClassesName;
 
-    //该职位分类的子分类，格式:[{"后端开发":"后端开发,Java,C++,PHP..."},{"移动开发":"移动开发,HTML5,Android..."}]
-    private String subClasses;
+   /**
+    *是否是推荐的职位分类，0否，1是
+    */
+   private Integer isRecommend;
+
+   private String jobClassesUrl;
 }

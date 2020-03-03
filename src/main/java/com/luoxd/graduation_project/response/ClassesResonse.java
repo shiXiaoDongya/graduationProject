@@ -6,15 +6,11 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * @author luoxd
- * 首页职业分类组件的数据
- */
 @Data
-public class TestAjaxResponse {
+public class ClassesResonse {
     private String classesName;
 
-    private List<JobClasses> recommendJobClasses;
+    private List<JobClasses> recommendJobClassesList;
 
-    private List<ChildClasses> childClassesList;
+    private List<ChildClassesResponse> childClassesList;
 }

@@ -1,11 +1,9 @@
 package com.luoxd.graduation_project.web;
 
-import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
 import lombok.extern.slf4j.Slf4j;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -25,6 +22,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
 
     @RequestMapping(value = "getUsers")
     public String getUsers(HttpServletRequest request) {
@@ -49,20 +47,9 @@ public class UserController {
 
     @RequestMapping(value = "testAjax",method = RequestMethod.GET)
     @ResponseBody
-    public JSONArray testAjax(){
-        List<JobClasses> testList = new ArrayList<>();
-        JobClasses test = new JobClasses();
-        test.setTitle("技术");
-        test.setRecommend("Java,PHP,web前端,算法工程师");
-        test.setSubClasses("[{\"后端开发\":\"后端开发,Java,C++,PHP\"},{\"移动开发\":\"移动开发,HTML5,Android\"}]");
-        testList.add(test);
-        JobClasses test2 = new JobClasses();
-        test2.setTitle("技术2");
-        test2.setRecommend("Java,PHP,web前端,算法工程师");
-        test2.setSubClasses("[{\"后端开发\":\"后端开发,Java,C++,PHP\"},{\"移动开发\":\"移动开发,HTML5,Android\"}]");
-        testList.add(test2);
-        JSONArray jsonArray = JSONArray.fromObject(testList);
-        return jsonArray;
+    public String testAjax(){
+        List<ClassesResonse> tempList = userService.queryClassesList();
+        return "";
     }
 
 
