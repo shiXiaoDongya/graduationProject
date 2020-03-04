@@ -68,7 +68,7 @@
 
 .aui-content-sidebar {
     position: relative;
-    width: 321px;
+    width: 400px;
     margin-left: -15px;
 }
 
@@ -144,7 +144,7 @@
 
 .aui-content-menu-dow {
     position: absolute;
-    left: 321px;
+    left: 400px;
     top: 0;
     width: 600px;
     padding: 20px 10px 0 12px;
@@ -163,7 +163,7 @@
 
 .aui-content-menu-dow dl dt {
     position: relative;
-    width: 70px;
+    width: 120px;
     margin: 0;
     padding-left: 10px;
     font-size: 14px;

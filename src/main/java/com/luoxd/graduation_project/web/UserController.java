@@ -1,6 +1,5 @@
 package com.luoxd.graduation_project.web;
 
-import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
-import java.util.List;
 
 @Slf4j
 @Controller
@@ -43,13 +41,6 @@ public class UserController {
             log.info("跳转到websocket的页面上发生异常，异常信息是："+e.getMessage());
             return "error";
         }
-    }
-
-    @RequestMapping(value = "testAjax",method = RequestMethod.GET)
-    @ResponseBody
-    public String testAjax(){
-        List<ClassesResonse> tempList = userService.queryClassesList();
-        return "";
     }
 
 

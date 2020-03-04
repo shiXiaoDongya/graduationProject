@@ -16,4 +16,6 @@ public class JobClasses {
    private Integer isRecommend;
 
    private String jobClassesUrl;
+
+   private Integer isHot;
 }
