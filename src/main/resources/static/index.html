@@ -18,12 +18,13 @@
                 dataType: "json",
                 contentType: "application/json;charset=UTF-8",
                 success: function(data){
-                    var html = "<div class=\"aui-content-menu\">\n" +
-                        "                        <div class=\"aui-content-menu-head\">\n" +
-                        "                            <div class=\"aui-content-menu-head-list\">";
+                    var html = "";
                     for(var i = 0; i < data.length;i++){
                         var classes = data[i];
-                        html += "<h2>"+classes['classesName']+"</h2>";
+                        html +="<div class=\"aui-content-menu\">\n"+
+                            "                        <div class=\"aui-content-menu-head\">\n"+
+                            "                            <div class=\"aui-content-menu-head-list\">"
+                        + "<h2>"+classes['classesName']+"</h2>";
                         // alert(classes['recommendJobClassesList']);
                         for(var j = 0; j < classes['recommendJobClassesList'].length;j++){
                             var recommendClasses = data[i]['recommendJobClassesList'][j];
@@ -108,7 +109,7 @@
         </div>
     </div>
 </header><!-- #header -->
-<div class="panel panel-default" style="height: 2000px;margin-top: 60px;">
+<div class="panel panel-default" style="height: 2000px;margin-top: 80px;">
     <div class="panel-heading">
         <span>测试panel</span>
     </div>
@@ -151,10 +152,13 @@
             </div>
         </div>
 
-        <div class="aui-container-bxo clearfix">
-            <div class="aui-content-sidebar clearfix">
+        <div class="aui-container-bxo">
+            <div class="aui-content-sidebar">
                 <div class="aui-content-main" id="menu">
                 </div>
+            </div>
+            <div style="float: left;width: 750px;height: 600px;border: 1px solid black;" class="clearfix">
+                广告位置
             </div>
         </div>
     </div>

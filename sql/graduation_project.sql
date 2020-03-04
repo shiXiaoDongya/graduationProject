@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2020-03-04 14:30:36
+Date: 2020-03-04 16:40:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,7 +24,7 @@ CREATE TABLE `child_classes` (
   `child_classes_name` varchar(20) DEFAULT NULL,
   `classes_id` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`child_classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of child_classes
@@ -37,6 +37,9 @@ INSERT INTO `child_classes` VALUES ('5', '数据', '1');
 INSERT INTO `child_classes` VALUES ('6', '项目管理', '1');
 INSERT INTO `child_classes` VALUES ('7', '硬件开发', '1');
 INSERT INTO `child_classes` VALUES ('8', '前端开发', '1');
+INSERT INTO `child_classes` VALUES ('9', '产品经理', '2');
+INSERT INTO `child_classes` VALUES ('10', '高端产品职位', '2');
+INSERT INTO `child_classes` VALUES ('11', '其他产品职位', '2');
 
 -- ----------------------------
 -- Table structure for classes
@@ -46,12 +49,13 @@ CREATE TABLE `classes` (
   `classes_id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `classes_name` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of classes
 -- ----------------------------
 INSERT INTO `classes` VALUES ('1', '技术');
+INSERT INTO `classes` VALUES ('2', '产品');
 
 -- ----------------------------
 -- Table structure for job_classes
@@ -65,7 +69,7 @@ CREATE TABLE `job_classes` (
   `isRecommend` tinyint(4) DEFAULT '0' COMMENT '0为非推荐职位分类，1为推荐职位分类',
   `isHot` tinyint(4) DEFAULT '0' COMMENT '0为非热门职位分类，1为热门职位分类',
   PRIMARY KEY (`job_classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=98 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of job_classes
@@ -153,3 +157,17 @@ INSERT INTO `job_classes` VALUES ('80', 'web前端', 'tempurl', '8', '1', '0');
 INSERT INTO `job_classes` VALUES ('81', 'JavaScript', 'tempurl', '8', '0', '0');
 INSERT INTO `job_classes` VALUES ('82', 'Flash开发', 'tempurl', '8', '0', '0');
 INSERT INTO `job_classes` VALUES ('83', 'HTML5', 'tempurl', '8', '0', '0');
+INSERT INTO `job_classes` VALUES ('84', '硬件产品经理', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('85', '产品经理', 'tempurl', '9', '1', '0');
+INSERT INTO `job_classes` VALUES ('86', '网页产品经理', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('87', '移动产品经理', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('88', '产品助理', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('89', '数据产品经理', 'tempurl', '9', '1', '0');
+INSERT INTO `job_classes` VALUES ('90', '电商产品经理', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('91', '游戏策划', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('92', '产品专员', 'tempurl', '9', '0', '0');
+INSERT INTO `job_classes` VALUES ('93', '高端产品职位', 'tempurl', '10', '0', '0');
+INSERT INTO `job_classes` VALUES ('94', '产品总监', 'tempurl', '10', '1', '0');
+INSERT INTO `job_classes` VALUES ('95', '游戏制作人', 'tempurl', '10', '0', '0');
+INSERT INTO `job_classes` VALUES ('96', '产品VP', 'tempurl', '10', '0', '0');
+INSERT INTO `job_classes` VALUES ('97', '其他产品职位', 'tempurl', '11', '0', '0');

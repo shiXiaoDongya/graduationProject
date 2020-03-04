@@ -70,6 +70,7 @@
     position: relative;
     width: 400px;
     margin-left: -15px;
+    float: left;
 }
 
 .aui-content-menu {
