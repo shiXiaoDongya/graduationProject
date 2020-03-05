@@ -8,4 +8,5 @@ public class ChildClasses {
 
     private String childClassesName;
 
+    private Integer classesId;
 }

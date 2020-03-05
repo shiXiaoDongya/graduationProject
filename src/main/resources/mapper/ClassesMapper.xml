@@ -18,4 +18,19 @@
         from job_classes
         where child_classes_id = #{childClassesId}
     </select>
+
+    <insert id="insertToClasses" parameterType="com.luoxd.graduation_project.domain.Classes">
+        insert into classes(`classes_id`,`classes_name`)
+        values (#{classesId},#{classesName})
+    </insert>
+
+    <insert id="insertToChildClasses" parameterType="com.luoxd.graduation_project.domain.ChildClasses">
+        insert into child_classes(`child_classes_id`,`child_classes_name`,`classes_id`)
+        values (#{childClassesId},#{childClassesName},#{classesId})
+    </insert>
+
+    <insert id="insertToJobClasses" parameterType="com.luoxd.graduation_project.domain.JobClasses">
+        insert into job_classes(`job_classes_id`,`job_classes_name`,`child_classes_id`)
+        values (#{jobClassesId},#{jobClassesName},#{childClassesId})
+    </insert>
 </mapper>

@@ -18,4 +18,6 @@ public class JobClasses {
    private String jobClassesUrl;
 
    private Integer isHot;
+
+   private Integer childClassesId;
 }
