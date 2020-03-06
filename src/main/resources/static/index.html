@@ -21,7 +21,12 @@
                     var html = "";
                     for(var i = 0; i < data.length;i++){
                         var classes = data[i];
-                        html +="<div class=\"aui-content-menu\">\n"+
+                        if(i >= 9){
+                            html += "<div class=\"aui-content-menu2\">\n";
+                        }else{
+                            html += "<div class=\"aui-content-menu\">\n";
+                        }
+                        html +=
                             "                        <div class=\"aui-content-menu-head\">\n"+
                             "                            <div class=\"aui-content-menu-head-list\">"
                         + "<h2>"+classes['classesName']+"</h2>";
@@ -61,6 +66,8 @@
                             "                        </div>\n" +
                             "                    </div>";
                     }
+                    html += "<div onclick='showAll()' id='showDiv'>显示全部</div>"+
+                        "<div onclick='hideDiv()' style='display: none;' id='hideDiv'>隐藏</div>";
                     document.getElementById("menu").innerHTML = html;
                     $('.aui-content-main .aui-content-menu').hover(function(){
 
@@ -77,6 +84,37 @@
                     });
                 }
             });
+        }
+    </script>
+    <script type="text/javascript">
+        function showAll() {
+            var list = $('.aui-content-menu2');
+            for(var i = 0; i < list.length; i++){
+                list[i].className = "aui-content-menu";
+            }
+            $('.aui-content-main .aui-content-menu').hover(function(){
+
+                $(this).addClass('active').find('s').hide();
+
+                $(this).find('.aui-content-menu-dow').show();
+
+            },function(){
+
+                $(this).removeClass('active').find('s').show();
+
+                $(this).find('.aui-content-menu-dow').hide();
+
+            });
+            document.getElementById('showDiv').style.display = "none";
+            document.getElementById('hideDiv').style.display = "block";
+        }
+        function hideDiv() {
+            var list = $('.aui-content-menu');
+            for(var i = 9; i < list.length; i++){
+                list[i].className = "aui-content-menu2";
+            }
+            document.getElementById('showDiv').style.display = "block";
+            document.getElementById('hideDiv').style.display = "none";
         }
     </script>
 </head>
@@ -160,6 +198,9 @@
             <div style="float: left;width: 750px;height: 600px;border: 1px solid black;" class="clearfix">
                 广告位置
             </div>
+        </div>
+        <div style="margin-top:700px;height: 500px;width: 500px;border: 1px solid black;background-color: #00b38a">
+            其他信息
         </div>
     </div>
 </div>
