@@ -110,4 +110,57 @@ public class PaChongTest{
             HttpClientUtils.closeQuietly(httpClient);
         }
     }
+
+    @Test
+    public void testPaChongRecommend(){
+        //1.生成httpclient，相当于该打开一个浏览器
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        CloseableHttpResponse response = null;
+        //2.创建get请求，相当于在浏览器地址栏输入 网址
+        HttpGet request = new HttpGet("https://www.zhipin.com/guangzhou/");
+        //设置请求头，将爬虫伪装成浏览器
+        request.setHeader("User-Agent","Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36");
+//        HttpHost proxy = new HttpHost("60.13.42.232", 9999);
+//        RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
+//        request.setConfig(config);
+        try {
+            //3.执行get请求，相当于在输入地址栏后敲回车键
+            response = httpClient.execute(request);
+
+            //4.判断响应状态为200，进行处理
+            if(response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+                //5.获取响应内容
+                HttpEntity httpEntity = response.getEntity();
+                String html = EntityUtils.toString(httpEntity, "utf-8");
+                //System.out.println(html);
+
+                //6.Jsoup解析html
+                Document document = Jsoup.parse(html);
+                //像js一样，通过标签获取title
+                Element div = document.getElementsByClass("job-menu").first();
+                Elements ddList = div.getElementsByTag("dd");
+                for (Element dd:ddList) {
+                    Elements aList = dd.getElementsByTag("a");
+                    for(Element a:aList){
+                        System.out.println(a.text());
+                        classesMapper.updateRecommendByName(a.text());
+                    }
+                }
+
+
+            } else {
+                //如果返回状态不是200，比如404（页面不存在）等，根据情况做处理，这里略
+                System.out.println("返回状态不是200");
+                System.out.println(EntityUtils.toString(response.getEntity(), "utf-8"));
+            }
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //6.关闭
+            HttpClientUtils.closeQuietly(response);
+            HttpClientUtils.closeQuietly(httpClient);
+        }
+    }
 }

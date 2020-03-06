@@ -22,4 +22,6 @@ public interface ClassesMapper {
     int insertToChildClasses(ChildClasses classes);
 
     int insertToJobClasses(JobClasses jobClasses);
+
+    int updateRecommendByName(String jobClassesName);
 }

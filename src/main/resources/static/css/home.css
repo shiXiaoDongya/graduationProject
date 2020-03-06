@@ -84,6 +84,7 @@
 .aui-content-menu-head {
     position: relative;
     padding: 18px 0 17px;
+    background-color: #fff;
 }
 
 .aui-content-menu-head-list {
@@ -144,7 +145,7 @@
 }
 
 .aui-content-main{
-    width: 400px;
+    width: 800px;
     float: left;
 }
 
@@ -233,6 +234,14 @@
 .active {
 }
 
+.jobDiv{
+    width: 375px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
 
 
 

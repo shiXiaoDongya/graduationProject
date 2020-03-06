@@ -33,4 +33,10 @@
         insert into job_classes(`job_classes_id`,`job_classes_name`,`child_classes_id`)
         values (#{jobClassesId},#{jobClassesName},#{childClassesId})
     </insert>
+
+    <update id="updateRecommendByName">
+        update job_classes
+        set isRecommend = 1
+        where job_classes_name = #{jobClassesName}
+    </update>
 </mapper>

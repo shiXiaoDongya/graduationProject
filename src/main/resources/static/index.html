@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
             $.ajax({
@@ -21,7 +20,7 @@
                     var html = "";
                     for(var i = 0; i < data.length;i++){
                         var classes = data[i];
-                        if(i >= 9){
+                        if(i >= 10){
                             html += "<div class=\"aui-content-menu2\">\n";
                         }else{
                             html += "<div class=\"aui-content-menu\">\n";
@@ -55,9 +54,9 @@
                                 var jobClasses = childClasses['jobClassesList'][l];
                                 // alert(jobClasses['jobClassesName']);
                                 if(jobClasses['isHot'] == 1){
-                                    html += "<a href=\""+jobClasses['jobClassesUrl']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"search.html?jobClasses="+jobClasses['jobClassesUrl']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
                                 }else{
-                                    html += "<a href=\""+jobClasses['jobClassesUrl']+"\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"search.html?jobClasses="+jobClasses['jobClassesUrl']+"\">"+jobClasses['jobClassesName']+"</a>";
                                 }
                             }
                             html += "</dd></dl>";
@@ -66,8 +65,8 @@
                             "                        </div>\n" +
                             "                    </div>";
                     }
-                    html += "<div onclick='showAll()' id='showDiv'>显示全部</div>"+
-                        "<div onclick='hideDiv()' style='display: none;' id='hideDiv'>隐藏</div>";
+                    html += "<div onclick='showAll()' style='background-color: #fff;cursor: pointer' id='showDiv'><span class='glyphicon glyphicon-plus' style='margin-left: 20px;'>显示全部</span></div>"+
+                        "<div onclick='hideDiv()' style='display: none;background-color: #fff;cursor: pointer' id='hideDiv'><span class='glyphicon glyphicon-minus' style='margin-left: 20px;'>隐藏</span></div>";
                     document.getElementById("menu").innerHTML = html;
                     $('.aui-content-main .aui-content-menu').hover(function(){
 
@@ -110,7 +109,7 @@
         }
         function hideDiv() {
             var list = $('.aui-content-menu');
-            for(var i = 9; i < list.length; i++){
+            for(var i = 10; i < list.length; i++){
                 list[i].className = "aui-content-menu2";
             }
             document.getElementById('showDiv').style.display = "block";
@@ -195,15 +194,17 @@
                 <div class="aui-content-main" id="menu">
                 </div>
             </div>
-            <div style="float: left;width: 750px;height: 600px;border: 1px solid black;" class="clearfix">
+            <div style="float: left;width: 770px;height: 600px;border: 1px solid black;" class="clearfix">
                 广告位置
             </div>
         </div>
-        <div style="margin-top:700px;height: 500px;width: 500px;border: 1px solid black;background-color: #00b38a">
-            其他信息
+        <div class="aui-container-bxo" style="margin-top:700px;height: 500px;">
+            <div style="width:200px;margin:0 auto;font-size: 20px;">----热门职位----</div>
+            <div class="jobDiv"></div>
+            <div class="jobDiv"></div>
+            <div class="jobDiv"></div>
         </div>
     </div>
 </div>
-<span id="test"></span>
 </body>
 </html>
