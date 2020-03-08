@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.luoxd.graduation_project.mapper.ClassesMapper" >
+
+    <select id="queryClassesList" resultType="com.luoxd.graduation_project.domain.Classes">
+      select classes_id,classes_name
+      from classes
+    </select>
+
+    <select id="queryChildClassesListByClassesId" resultType="com.luoxd.graduation_project.domain.ChildClasses">
+        select child_classes_id,child_classes_name
+        from child_classes
+        where classes_id = #{classesId}
+    </select>
+
+    <select id="queryJobClassesListByChildClassesId" resultType="com.luoxd.graduation_project.domain.JobClasses">
+        select job_classes_name,isRecommend,job_classes_url,isHot
+        from job_classes
+        where child_classes_id = #{childClassesId}
+    </select>
+
+    <insert id="insertToClasses" parameterType="com.luoxd.graduation_project.domain.Classes">
+        insert into classes(`classes_id`,`classes_name`)
+        values (#{classesId},#{classesName})
+    </insert>
+
+    <insert id="insertToChildClasses" parameterType="com.luoxd.graduation_project.domain.ChildClasses">
+        insert into child_classes(`child_classes_id`,`child_classes_name`,`classes_id`)
+        values (#{childClassesId},#{childClassesName},#{classesId})
+    </insert>
+
+    <insert id="insertToJobClasses" parameterType="com.luoxd.graduation_project.domain.JobClasses">
+        insert into job_classes(`job_classes_id`,`job_classes_name`,`child_classes_id`)
+        values (#{jobClassesId},#{jobClassesName},#{childClassesId})
+    </insert>
+
+    <update id="updateRecommendByName">
+        update job_classes
+        set isRecommend = 1
+        where job_classes_name = #{jobClassesName}
+    </update>
+</mapper>
