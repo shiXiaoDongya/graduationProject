@@ -3,7 +3,7 @@ package com.luoxd.graduation_project;
 import com.luoxd.graduation_project.domain.ChildClasses;
 import com.luoxd.graduation_project.domain.Classes;
 import com.luoxd.graduation_project.domain.JobClasses;
-import com.luoxd.graduation_project.mapper.ClassesMapper;
+import com.luoxd.graduation_project.mapper.JobMapper;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.ClientProtocolException;
@@ -29,7 +29,7 @@ import java.io.IOException;
 public class PaChongTest{
 
     @Autowired
-    private ClassesMapper classesMapper;
+    private JobMapper jobMapper;
 
     @Test
     public void testPaChong(){
@@ -68,7 +68,7 @@ public class PaChongTest{
                         Classes classes = new Classes();
                         classes.setClassesId(classesId);
                         classes.setClassesName(p.text());
-                        int i = classesMapper.insertToClasses(classes);
+                        int i = jobMapper.insertToClasses(classes);
                         Elements liList = div.getElementsByTag("li");
                         for(Element li:liList){
                             Element h4 = li.getElementsByTag("h4").first();
@@ -77,7 +77,7 @@ public class PaChongTest{
                             childClasses.setChildClassesId(childClassesId);
                             childClasses.setChildClassesName(h4.text());
                             childClasses.setClassesId(classesId);
-                            int j = classesMapper.insertToChildClasses(childClasses);
+                            int j = jobMapper.insertToChildClasses(childClasses);
                             Elements alist = li.getElementsByTag("a");
                             for (Element a:alist) {
                                 System.out.println("----"+a.text());
@@ -85,7 +85,7 @@ public class PaChongTest{
                                 jobClasses.setJobClassesId(jobClassesId);
                                 jobClasses.setJobClassesName(a.text());
                                 jobClasses.setChildClassesId(childClassesId);
-                                int k = classesMapper.insertToJobClasses(jobClasses);
+                                int k = jobMapper.insertToJobClasses(jobClasses);
                                 jobClassesId++;
                             }
                             childClassesId++;
@@ -143,7 +143,7 @@ public class PaChongTest{
                     Elements aList = dd.getElementsByTag("a");
                     for(Element a:aList){
                         System.out.println(a.text());
-                        classesMapper.updateRecommendByName(a.text());
+                        jobMapper.updateRecommendByName(a.text());
                     }
                 }
 

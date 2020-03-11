@@ -11,7 +11,7 @@
         window.onload = function () {
             $.ajax({
                 type: "GET",
-                url: "/classes/testAjax",
+                url: "/job/getClasses",
                 data: {},
                 dataType: "json",
                 contentType: "application/json;charset=UTF-8",
@@ -33,7 +33,7 @@
                             var recommendClasses = data[i]['recommendJobClassesList'][j];
                             // alert(recommendClasses['jobClassesName']);
                             // alert(recommendClasses['jobClassesUrl']);
-                            html += "<a href=\"search.html?jobUrl="+recommendClasses['jobClassesUrl']+"\">"+recommendClasses['jobClassesName']+"</a>";
+                            html += "<a href="+recommendClasses['jobClassesUrl']+"\"search.jsp?jobUrl=\">"+recommendClasses['jobClassesName']+"</a>";
                         }
                         html += "<i class=\"aui-content-menu-head-list-arrow\"></i>\n" +
                             "                            </div>\n" +
@@ -53,9 +53,9 @@
                                 var jobClasses = childClasses['jobClassesList'][l];
                                 // alert(jobClasses['jobClassesName']);
                                 if(jobClasses['isHot'] == 1){
-                                    html += "<a href=\"search.html?jobClasses="+jobClasses['jobClassesUrl']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href="+jobClasses['jobClassesUrl']+"\"search.jsp?jobClasses=\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
                                 }else{
-                                    html += "<a href=\"search.html?jobClasses="+jobClasses['jobClassesUrl']+"\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href="+jobClasses['jobClassesUrl']+"\"search.jsp?jobClasses=\">"+jobClasses['jobClassesName']+"</a>";
                                 }
                             }
                             html += "</dd></dl>";
@@ -134,7 +134,7 @@
                     <li class="menu-has-children"><a href="">Pages</a>
                         <ul>
                             <li><a href="elements.html">elements</a></li>
-                            <li><a href="search.html">search</a></li>
+                            <li><a href="../templates/search.html">search</a></li>
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
@@ -152,8 +152,8 @@
     <div class="panel-body">
         <div class="aui-wrapper">
             <div class="aui-wrapper-header">
-                <form action="search.html">
-                    <input type="text" class="col-md-10 input-lg" value="5641">
+                <form action="/job/search">
+                    <input type="text" class="col-md-10 input-lg" name="keyword" value="5641">
                     <input type="submit" class="aui-wrapper-submit">
                 </form>
             </div>

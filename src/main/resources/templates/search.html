@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" th:href="@{/css/home.css}"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" th:href="@{/css/main.css}" />
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function clearCondition(){
+            document.getElementById("expCondition")[0].selected = true;
+            document.getElementById("eduCondition")[0].selected = true;
+            document.getElementById("salCondition")[0].selected = true;
+            document.getElementById("finanCondition")[0].selected = true;
+            document.getElementById("sizeCondition")[0].selected = true;
+        }
+    </script>
+</head>
+<body>
+<header id="header" class="header-scrolled">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="../static/index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="../static/index.html">首页</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="menu-has-children"><a href="">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">elements</a></li>
+                            <li><a href="search.html">search</a></li>
+                            <li><a href="single.html">single</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="ticker-btn" href="../static/regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="../static/login.html">登录</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+<div class="panel panel-default" style="height: 2000px;margin-top: 80px;">
+    <div class="panel-heading">
+        <span>测试panel</span>
+    </div>
+    <div class="panel-body">
+        <div class="aui-wrapper">
+            <div class="aui-wrapper-header">
+                <form action="">
+                    <input type="text" class="col-md-8 input-lg" value="5641">
+                    <select class="col-md-1 input-lg">
+                        <option>1</option>
+                    </select>
+                    <input type="submit" class="aui-wrapper-submit">
+                </form>
+            </div>
+        </div>
+        <div class="form-horizontal" style="margin:0px auto;width: 1300px;margin-top: 20px;">
+            <div class="form-group" >
+                <div class="input-group">
+                    <select class="form-control col-sm-1" id="expCondition" style="margin-right: 50px;">
+                        <option>工作经验</option>
+                    </select>
+
+                    <select class="form-control col-md-1" id="eduCondition" style="margin-right: 50px;">
+                        <option>学历要求</option>
+                    </select>
+
+                    <select class="form-control col-md-1" id="salCondition" style="margin-right: 50px;">
+                        <option>薪资要求</option>
+                    </select>
+
+                    <select class="form-control col-md-1" id="finanCondition" style="margin-right: 50px;">
+                        <option>融资阶段</option>
+                    </select>
+
+                    <select class="form-control col-md-1" id="sizeCondition" style="margin-right: 50px;">
+                        <option>公司规模</option>
+                    </select>
+
+                    <label class="control-label col-md-3 float-right" onclick="clearCondition()">清空筛选条件</label>
+                </div>
+            </div>
+            </div>
+        <div style="margin:0px auto;margin-top:20px;border-top: black double 4px;width: 1600px"></div>
+        <div class="panel panel-default jobList">
+            某个分类/关键字的职位
+        </div>
+        <div class="panel panel-default jobList">
+            某个分类/关键字的职位
+        </div>
+        <div class="jobList">
+            某个分类/关键字的职位
+        </div>
+    </div>
+</div>
+</body>
+</html>

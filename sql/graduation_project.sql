@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2020-03-06 17:10:47
+Date: 2020-03-11 17:17:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -178,6 +178,45 @@ INSERT INTO `classes` VALUES ('16', '咨询/翻译/法律');
 INSERT INTO `classes` VALUES ('17', '旅游');
 INSERT INTO `classes` VALUES ('18', '服务业');
 INSERT INTO `classes` VALUES ('19', '生产制造');
+
+-- ----------------------------
+-- Table structure for company
+-- ----------------------------
+DROP TABLE IF EXISTS `company`;
+CREATE TABLE `company` (
+  `company_id` int(11) NOT NULL AUTO_INCREMENT,
+  `company_name` varchar(100) DEFAULT NULL,
+  `company_size` tinyint(4) DEFAULT NULL COMMENT '1:0-20人，2:20-99人，3:100-499人，4:500-999人，5:1000-9999人，6:10000人以上',
+  `finance` tinyint(4) DEFAULT NULL COMMENT '1:未融资，2:天使轮，3:A轮，4:B轮，5:C轮，6:D轮及以上，7:已上市，8:不需要融资',
+  PRIMARY KEY (`company_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of company
+-- ----------------------------
+INSERT INTO `company` VALUES ('1', '如约', '2', '7');
+
+-- ----------------------------
+-- Table structure for job
+-- ----------------------------
+DROP TABLE IF EXISTS `job`;
+CREATE TABLE `job` (
+  `job_id` int(11) NOT NULL AUTO_INCREMENT,
+  `job_name` varchar(20) DEFAULT NULL,
+  `job_classes_id` int(11) DEFAULT NULL,
+  `exp_condition` tinyint(4) DEFAULT NULL COMMENT '1:在校/应届，2:1年以内，3:1-3年，4:3-5年，5:5-10年，6:10年以上',
+  `edu_condition` tinyint(4) DEFAULT NULL COMMENT '1:初中及以下，2:中专/中技，3:高中，4:大专，5:本科，6:硕士，7:博士',
+  `company_id` int(11) DEFAULT NULL,
+  `tag` varchar(255) DEFAULT NULL COMMENT '多个标签用","隔开',
+  `recruiterId` int(11) DEFAULT NULL,
+  `workAddress` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`job_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of job
+-- ----------------------------
+INSERT INTO `job` VALUES ('1', '测试职位', '2', '1', '5', '1', 'Java', '1', '广东广州尚层');
 
 -- ----------------------------
 -- Table structure for job_classes
