@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.ChildClasses;
 import com.luoxd.graduation_project.domain.Classes;
+import com.luoxd.graduation_project.domain.Job;
 import com.luoxd.graduation_project.domain.JobClasses;
 import com.luoxd.graduation_project.mapper.JobMapper;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
@@ -56,5 +57,10 @@ public class JobServiceImpl implements JobService {
             return resonses;
         }
         return null;
+    }
+
+    @Override
+    public List<Job> queryJobList() {
+        return jobMapper.queryJobList();
     }
 }

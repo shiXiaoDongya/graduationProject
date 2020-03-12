@@ -8,5 +8,17 @@ public class Job {
 
     private String jobName;
 
-    private String jobUrl;
+    private String jobClassesId;
+
+    private Integer expCondition;
+
+    private Integer eduCondition;
+
+    private Integer companyId;
+
+    private String tag;
+
+    private Integer recruiterId;
+
+    private String workAddress;
 }

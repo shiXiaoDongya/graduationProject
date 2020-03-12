@@ -39,4 +39,9 @@
         set isRecommend = 1
         where job_classes_name = #{jobClassesName}
     </update>
+
+    <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job">
+        select *
+        from job
+    </select>
 </mapper>

@@ -34,13 +34,16 @@ public class JobController {
     @RequestMapping(value = "/search",method = RequestMethod.GET)
     public String getJobList(HttpServletRequest request){
         String keyword = request.getParameter("keyword");
-        System.out.println(keyword);
-        List<Job> jobList = new ArrayList<>();
-        Job job = new Job();
-        job.setJobId(1);
-        job.setJobName("测试");
-        jobList.add(job);
-        request.setAttribute("",jobList);
+        List<Job> jobList = jobService.queryJobList();
+        log.info(jobList.toString());
+        request.setAttribute("jobList",jobList);
         return "search";
+    }
+
+    @RequestMapping(value = "/getJobDetail",method = RequestMethod.GET)
+    public String getJobDetail(HttpServletRequest request){
+        String jobId = request.getParameter("jobId");
+        log.info(jobId);
+        return "jobDetail";
     }
 }

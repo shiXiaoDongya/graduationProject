@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.ChildClasses;
 import com.luoxd.graduation_project.domain.Classes;
+import com.luoxd.graduation_project.domain.Job;
 import com.luoxd.graduation_project.domain.JobClasses;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -24,4 +25,6 @@ public interface JobMapper {
     int insertToJobClasses(JobClasses jobClasses);
 
     int updateRecommendByName(String jobClassesName);
+
+    List<Job> queryJobList();
 }

@@ -23,11 +23,11 @@
     <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="../static/index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+                <a href="../index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="../static/index.html">首页</a></li>
+                    <li class="menu-active"><a href="../index.html">首页</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Category</a></li>
                     <li><a href="#">Price</a></li>
@@ -91,13 +91,19 @@
             </div>
             </div>
         <div style="margin:0px auto;margin-top:20px;border-top: black double 4px;width: 1600px"></div>
-        <div class="panel panel-default jobList">
-            某个分类/关键字的职位
+        <div th:each="job:${jobList}" class="panel panel-default jobList">
+            <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px">
+                <p><a style="font-size: 20px;" th:href="@{/job/getJobDetail(jobId=${job.jobId})}" th:text="${job.jobName}"></a></p>
+                <br/>
+                <p style="font-size: 16px;"><span>薪水</span> 丨 <span th:text="${job.expCondition}"></span> 丨 <span th:text="${job.eduCondition}"></span> 丨 <span>X先生</span> 丨 <span></span>招聘者</p>
+                <br/>
+                <p style="font-size: 16px;" th:text="${job.tag}"></p>
+            </div>
+            <div style="float: right;width: 50%;border: 1px solid black">
+                公司信息
+            </div>
         </div>
         <div class="panel panel-default jobList">
-            某个分类/关键字的职位
-        </div>
-        <div class="jobList">
             某个分类/关键字的职位
         </div>
     </div>
