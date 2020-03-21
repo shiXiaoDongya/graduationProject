@@ -99,6 +99,8 @@
       <workItem from="1583886650487" duration="4224000" />
       <workItem from="1583973699820" duration="8575000" />
       <workItem from="1583991798226" duration="1367000" />
+      <workItem from="1584283020392" duration="157000" />
+      <workItem from="1584601193460" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="2020-03-08提交">
       <created>1583669425390</created>
@@ -114,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583832839214</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020-03-15 初稿">
+      <created>1584283093771</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584283093771</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,17 +159,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020-03-08提交" />
     <MESSAGE value="毕设文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="毕设文档" />
+    <MESSAGE value="2020-03-15 初稿" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-03-15 初稿" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583418686302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583418686302" />
-    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1583669423470">
+    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1584283068797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583669423470" />
+    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584283068797" />
     <state x="202" y="85" key="DiffContextDialog" timestamp="1583669374699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -209,18 +219,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583418279922" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1583669437272">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584283131932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583669437272" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584283131932" />
     <state x="567" y="64" width="786" height="912" key="find.popup" timestamp="1583639863766">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="64" width="786" height="912" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583639863766" />
-    <state x="633" y="310" key="git4idea.merge.GitPullDialog" timestamp="1584165387831">
+    <state x="633" y="310" key="git4idea.merge.GitPullDialog" timestamp="1584773041422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="310" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584165387831" />
+    <state x="633" y="310" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584773041422" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1583419146386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
