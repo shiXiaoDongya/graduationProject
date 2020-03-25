@@ -5,5 +5,8 @@
     <select id="getUsers"  resultType="com.luoxd.graduation_project.domain.User">
         SELECT * FROM User
     </select>
-
+    <insert id="insertRecruiter" parameterType="com.luoxd.graduation_project.domain.Recruiter">
+        insert into recruiter(re_username,re_password,re_realname,re_id_card,re_gender,re_phone,re_email,re_company,re_company_position,re_company_pic)
+        values (#{username},#{password},#{realname},#{idCard},#{gender},#{phone},#{email},#{company},#{companyPosition},#{companyPic})
+    </insert>
 </mapper>

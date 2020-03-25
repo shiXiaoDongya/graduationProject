@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
         messages.add(message2);
         return messages;
     }
+
+    @Override
+    public int insertRecruiter(Recruiter recruiter) {
+        return userMapper.insertRecruiter(recruiter);
+    }
 }

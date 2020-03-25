@@ -1,9 +1,6 @@
 package com.luoxd.graduation_project.mapper;
 
-import com.luoxd.graduation_project.domain.ChildClasses;
-import com.luoxd.graduation_project.domain.Classes;
-import com.luoxd.graduation_project.domain.JobClasses;
-import com.luoxd.graduation_project.domain.User;
+import com.luoxd.graduation_project.domain.*;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -21,4 +18,6 @@ public interface UserMapper {
     List<ChildClasses> queryChildClassesListByClassesId(Integer classesId);
 
     List<JobClasses> queryJobClassesListByChildClassesId(Integer childClassesId);
+
+    int insertRecruiter(Recruiter recruiter);
 }
