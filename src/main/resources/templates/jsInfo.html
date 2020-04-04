@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fileinput.css" />
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-fileinput/5.0.1/js/fileinput.min.js"></script>
+    <script type="text/javascript">
+        var upload = function (c, d) {
+            "use strict";
+            var $c = document.querySelector(c),
+                $d = document.querySelector(d),
+                file = $c.files[0],
+                reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                $d.setAttribute("src", e.target.result);
+            };
+        };
+    </script>
+    <script type="text/javascript">
+        function updatePersonInfo() {
+            var personInfoDiv = document.getElementById("personInfoDiv");
+            var classes = personInfoDiv.getElementsByClassName("editable");
+            for(var i = 0; i < classes.length; i++){
+                classes[i].removeAttribute("disabled");
+            }
+            document.getElementById("editButton").style.display="none";
+            document.getElementById("submitButton").style.display="block";
+            document.getElementById("img-txz").style.cursor = "pointer";
+            document.getElementById("img-txz").addEventListener("click",function(){
+                $("#file-txz").click();
+            },false)
+        }
+    </script>
+</head>
+<style>
+    .divLabel{
+        font-size:20px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .editable{
+    }
+</style>
+<body>
+<div class="panel-default">
+    <div class="panel-body" style="height: 700px;">
+        <form id="personInfoDiv" class="clearfix" action="jsInfo.html">
+        <div class="form-horizontal" style="float: left;width: 85%;">
+            <label class="glyphicon glyphicon-pushpin divLabel" >个人信息</label>
+            <div class="form-group">
+                <label class="control-label col-md-1">真实姓名</label>
+                <div class="col-md-3">
+                    <input type="text" name="realname" class="form-control editable" value="啦啦" disabled/>
+                </div>
+                <label class="control-label col-md-2">性别</label>
+                <div class="col-md-3">
+                        <label class="btn btn-default col-md-6 editable" for="man" disabled>
+                            <input type="radio" class="editable" name="gender" id="man" disabled> 男
+                        </label>
+                        <label class="btn btn-default col-md-6 editable" for="woman" disabled>
+                            <input type="radio" class="editable" name="gender" id="woman" disabled> 女
+                        </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-1">生日</label>
+                <div class="col-md-3">
+                    <input type="text" name="bir" class="form-control editable" disabled />
+                </div>
+                <label class="control-label col-md-2">手机号</label>
+                <div class="col-md-3">
+                    <input type="text" name="phone" class="form-control editable" disabled />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-1">学历</label>
+                <div class="col-lg-3">
+                    <select name="edu" class="form-control editable" disabled>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <label class="control-label col-md-2">毕业学校</label>
+                <div class="col-md-3">
+                    <input type="text" name="college" class="form-control editable" disabled />
+                </div>
+            </div>
+        </div>
+        <div style="float: right;width: 15%;">
+            <div style="padding-top: 20px;padding-bottom: 20px;">
+                <div class="aui-info">
+                    <div>
+
+                    </div>
+                    <img src="#" id="img-txz" style="width: 150px;height: 200px"/>
+                    <input type="file" accept="image/*" id="file-txz" name="file" onchange="upload('#file-txz', '#img-txz');" style="display: none" />
+                </div>
+            </div>
+            <div>
+                <button type="button" id="editButton" class="btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updatePersonInfo()" >编辑</button>
+                <button type="submit" id="submitButton" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
+            </div>
+        </div>
+
+        </form>
+        <hr class="divider" />
+        <div id="jobStatus">
+            <label class="glyphicon glyphicon-pushpin divLabel" >求职意向</label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

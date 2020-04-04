@@ -20,4 +20,6 @@ public interface UserMapper {
     List<JobClasses> queryJobClassesListByChildClassesId(Integer childClassesId);
 
     int insertRecruiter(Recruiter recruiter);
+
+    int insertJobSeeker(JobSeeker jobSeeker);
 }

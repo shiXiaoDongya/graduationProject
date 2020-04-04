@@ -5,10 +5,25 @@
     <title>Title</title>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css" th:href="@{/css/home.css}"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}" />
     <link rel="stylesheet" type="text/css" href="css/main.css" th:href="@{/css/main.css}" />
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript">
+        window.onload = function () {
+            $.ajax({
+                type: "GET",
+                url: "/job/getClasses2",
+                data: {},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data){
+                    for(var i = 0; i < data.length;i++) {
+                        var classes = data[i];
+                        $("#classesUl").append(" <li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
+                    }
+                }
+            });
+        }
         function clearCondition(){
             document.getElementById("expCondition")[0].selected = true;
             document.getElementById("eduCondition")[0].selected = true;
@@ -16,8 +31,68 @@
             document.getElementById("finanCondition")[0].selected = true;
             document.getElementById("sizeCondition")[0].selected = true;
         }
+        function showNext(obj) {
+            $.ajax({
+                type: "GET",
+                url: "/job/getChildClasses",
+                data: {"classesId":obj.value},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data) {
+                    document.getElementById("childClassesUl").style.display="block";
+                    $("#childClassesUl").html("");
+                    var num = (parseInt(obj.value) - 1) * 26.5;
+                    document.getElementById("childClassesUl").style.marginTop = num + "px";
+                    document.getElementById("childClassesUl").value = data[0]['classesId'];
+                    document.getElementById("jobClassesUl").value = data[0]['classesId'];
+                    for (var i = 0; i < data.length; i++) {
+                        var childClasses = data[i];
+                        $("#childClassesUl").append(" <li onmouseover=\"showNextOfNext(this)\"  data-num=\""+ i +"\" value=" + childClasses['childClassesId'] + "><a href=\"#\" >" + childClasses['childClassesName'] + "</a></li>");
+                    }
+                }
+                });
+        }
+        function showNextOfNext(obj) {
+            $.ajax({
+                type: "GET",
+                url: "/job/getJobClasses",
+                data: {"childClassesId":obj.value},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data) {
+                    document.getElementById("jobClassesUl").style.display="block";
+                    $("#jobClassesUl").html("");
+                    var num1 = document.getElementById("childClassesUl").style.marginTop;
+                    var num2 = (parseInt(obj.dataset.num)) * 26.5;
+                    var num = parseInt(num1) + num2;
+                    document.getElementById("jobClassesUl").style.marginTop = num + "px";
+                    for (var i = 0; i < data.length; i++) {
+                        var jobClasses = data[i];
+                        $("#jobClassesUl").append(" <li onclick=\"changeClasses(this)\" value=\"" + jobClasses['jobClassesId'] + "\"><a href=\"#\" >" + jobClasses['jobClassesName'] + "</a></li>");
+                    }
+                }
+            });
+        }
+        function clearLi() {
+            //$("#childClassesUl li") .remove();
+            document.getElementById("childClassesUl").style.display="none";
+        }
+        function clearLi2(){
+            document.getElementById("jobClassesUl").style.display="none";
+        }
+        function changeClasses(obj) {
+            document.getElementById("childClassesUl").style.display="none";
+            document.getElementById("jobClassesUl").style.display="none";
+            document.getElementById("jobClassesId").value= obj.value;
+            document.getElementById("jobClassesName").value = obj.getElementsByTagName("a").item(0).innerHTML;
+        }
     </script>
 </head>
+<style>
+    .tags{
+        margin-right: 10px;
+    }
+</style>
 <body>
 <header id="header" class="header-scrolled">
     <div class="container">
@@ -40,8 +115,8 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="../static/regist.html">注册</a></li>
-                    <li><a class="ticker-btn" href="../static/login.html">登录</a></li>
+                    <li><a class="ticker-btn" href="/regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="/login.html">登录</a></li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
@@ -52,59 +127,86 @@
         <span>测试panel</span>
     </div>
     <div class="panel-body">
+        <form action="#">
         <div class="aui-wrapper">
             <div class="aui-wrapper-header">
-                <form action="">
-                    <input type="text" class="col-md-8 input-lg" value="5641">
-                    <select class="col-md-1 input-lg">
-                        <option>1</option>
-                    </select>
-                    <input type="submit" class="aui-wrapper-submit">
-                </form>
+                    <input type="text" class="col-md-8 input-lg" th:value="${keyword}" name="keyword">
+                        <div class="dropdown col-md-2" style="padding: 0px">
+                            <input type="text" id="jobClassesId" name="jobClassesId" th:value="${jobClassesId}"/>
+                        <input type="text" class="col-md-12 btn btn-default dropdown-toggle input-lg" data-toggle="dropdown" th:value="${jobClassesName}" id="jobClassesName" name="jobClassesName" readonly />
+                        <ul class="dropdown-menu" onmouseout="clearLi2()" role="menu" id="classesUl">
+                        </ul>
+                        <ul  class="dropdown-menu" onmouseover="showNext(this)" style="margin-left: 160px;display: none" role="menu" id="childClassesUl">
+                        </ul>
+                        <ul  class="dropdown-menu" onmouseover="showNext(this)"  style="margin-left: 320px;display: none" role="menu" id="jobClassesUl">
+                        </ul>
+                        </div>
+                    <input type="submit" class="aui-wrapper-submit form-control">
             </div>
         </div>
         <div class="form-horizontal" style="margin:0px auto;width: 1300px;margin-top: 20px;">
-            <div class="form-group" >
+            <div class="form-group">
                 <div class="input-group">
-                    <select class="form-control col-sm-1" id="expCondition" style="margin-right: 50px;">
+                    <div class="col-md-2">
+                    <select class="form-control" id="expCondition" style="margin-right: 50px;">
                         <option>工作经验</option>
                     </select>
-
-                    <select class="form-control col-md-1" id="eduCondition" style="margin-right: 50px;">
+                    </div>
+                    <div class="col-md-2">
+                    <select class="form-control" id="eduCondition" style="margin-right: 50px;">
                         <option>学历要求</option>
                     </select>
-
-                    <select class="form-control col-md-1" id="salCondition" style="margin-right: 50px;">
+                    </div>
+                    <div class="col-md-2">
+                    <select class="form-control" id="salCondition" style="margin-right: 50px;">
                         <option>薪资要求</option>
                     </select>
-
-                    <select class="form-control col-md-1" id="finanCondition" style="margin-right: 50px;">
+                    </div>
+                    <div class="col-md-2">
+                    <select class="form-control" id="finanCondition" style="margin-right: 50px;">
                         <option>融资阶段</option>
                     </select>
-
-                    <select class="form-control col-md-1" id="sizeCondition" style="margin-right: 50px;">
+                    </div>
+                    <div class="col-md-2">
+                    <select class="form-control" id="sizeCondition" style="margin-right: 50px;">
                         <option>公司规模</option>
                     </select>
+                    </div>
 
-                    <label class="control-label col-md-3 float-right" onclick="clearCondition()">清空筛选条件</label>
+                    <label class="control-label" style="width:100px;float:right;cursor: pointer;" onclick="clearCondition()">清空筛选条件</label>
                 </div>
             </div>
             </div>
+        </form>
         <div style="margin:0px auto;margin-top:20px;border-top: black double 4px;width: 1600px"></div>
         <div th:each="job:${jobList}" class="panel panel-default jobList">
             <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px">
                 <p><a style="font-size: 20px;" th:href="@{/job/getJobDetail(jobId=${job.jobId})}" th:text="${job.jobName}"></a></p>
                 <br/>
-                <p style="font-size: 16px;"><span>薪水</span> 丨 <span th:text="${job.expCondition}"></span> 丨 <span th:text="${job.eduCondition}"></span> 丨 <span>X先生</span> 丨 <span></span>招聘者</p>
+                <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" th:text="${job.salary}"></span> 丨 <span th:text="${job.expCondition}"></span> 丨 <span th:text="${job.eduCondition}"></span> 丨 <span><a href="#"> X先生</a></span> 丨 <span>招聘者</span></p>
                 <br/>
                 <p style="font-size: 16px;" th:text="${job.tag}"></p>
+                <p th:each="tag:${job.tags}"><span th:text="${tag}"></span></p>
             </div>
             <div style="float: right;width: 50%;border: 1px solid black">
                 公司信息
             </div>
         </div>
         <div class="panel panel-default jobList">
-            某个分类/关键字的职位
+            <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px; border: 1px solid black">
+                <p><a style="font-size: 20px;" href="#">Java实习</a>　[广州]　发布于2020-04-01</p>
+                <br/>
+                <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" >4-8K·14薪</span> 丨 <span>3天/周</span> 丨 <span>1-3年</span> 丨 <span >本科</span> 丨 <span><a href="#"> X先生 高级开发工程师</a></span></p>
+                <br/>
+                <p ><span class="label label-info tags">Java</span><span class="label label-info tags">php</span><span class="label label-info tags">MySQL</span></p>
+            </div>
+            <div style="float: right;width: 50%;padding-top: 35px;padding-left: 35px;border: 1px solid black">
+                <p><a style="font-size: 20px;" href="#">XX科技有限公司</a></p>
+                <br/>
+                <p style="font-size: 16px;"> <span>所属行业</span> 丨 <span>融资阶段</span> 丨 <span >公司规模</span></p>
+                <br/>
+                <p><span class="label label-info tags">五险一金</span><span class="label label-info tags">节日福利</span><span class="label label-info tags">MySQL</span></p>
+            </div>
         </div>
     </div>
 </div>

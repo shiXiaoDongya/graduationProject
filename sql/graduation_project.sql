@@ -1,1106 +1,1260 @@
-/*
-Navicat MySQL Data Transfer
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- 主机： localhost
+-- 生成日期： 2020-04-04 10:35:31
+-- 服务器版本： 5.7.24
+-- PHP 版本： 7.1.23
 
-Source Server         : graduationProject
-Source Server Version : 50714
-Source Host           : localhost:3306
-Source Database       : graduation_project
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
-Target Server Type    : MYSQL
-Target Server Version : 50714
-File Encoding         : 65001
 
-Date: 2020-03-11 17:17:26
-*/
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
-SET FOREIGN_KEY_CHECKS=0;
+--
+-- 数据库： `graduation_project`
+--
 
--- ----------------------------
--- Table structure for child_classes
--- ----------------------------
-DROP TABLE IF EXISTS `child_classes`;
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `child_classes`
+--
+
 CREATE TABLE `child_classes` (
-  `child_classes_id` int(4) NOT NULL AUTO_INCREMENT,
+  `child_classes_id` int(4) NOT NULL,
   `child_classes_name` varchar(20) DEFAULT NULL,
-  `classes_id` int(4) DEFAULT NULL,
-  PRIMARY KEY (`child_classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
+  `classes_id` int(4) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of child_classes
--- ----------------------------
-INSERT INTO `child_classes` VALUES ('1', '后端开发', '1');
-INSERT INTO `child_classes` VALUES ('2', '移动开发', '1');
-INSERT INTO `child_classes` VALUES ('3', '测试', '1');
-INSERT INTO `child_classes` VALUES ('4', '运维/技术支持', '1');
-INSERT INTO `child_classes` VALUES ('5', '数据', '1');
-INSERT INTO `child_classes` VALUES ('6', '项目管理', '1');
-INSERT INTO `child_classes` VALUES ('7', '硬件开发', '1');
-INSERT INTO `child_classes` VALUES ('8', '前端开发', '1');
-INSERT INTO `child_classes` VALUES ('9', '通信', '1');
-INSERT INTO `child_classes` VALUES ('10', '电子/半导体', '1');
-INSERT INTO `child_classes` VALUES ('11', '高端技术职位', '1');
-INSERT INTO `child_classes` VALUES ('12', '人工智能', '1');
-INSERT INTO `child_classes` VALUES ('13', '销售技术支持', '1');
-INSERT INTO `child_classes` VALUES ('14', '其他技术职位', '1');
-INSERT INTO `child_classes` VALUES ('15', '产品经理', '2');
-INSERT INTO `child_classes` VALUES ('16', '高端产品职位', '2');
-INSERT INTO `child_classes` VALUES ('17', '其他产品职位', '2');
-INSERT INTO `child_classes` VALUES ('18', '视觉设计', '3');
-INSERT INTO `child_classes` VALUES ('19', '交互设计', '3');
-INSERT INTO `child_classes` VALUES ('20', '用户研究', '3');
-INSERT INTO `child_classes` VALUES ('21', '高端设计职位', '3');
-INSERT INTO `child_classes` VALUES ('22', '非视觉设计', '3');
-INSERT INTO `child_classes` VALUES ('23', '其他设计职位', '3');
-INSERT INTO `child_classes` VALUES ('24', '运营', '4');
-INSERT INTO `child_classes` VALUES ('25', '编辑', '4');
-INSERT INTO `child_classes` VALUES ('26', '客服', '4');
-INSERT INTO `child_classes` VALUES ('27', '高端运营职位', '4');
-INSERT INTO `child_classes` VALUES ('28', '其他运营职位', '4');
-INSERT INTO `child_classes` VALUES ('29', '政府事务', '5');
-INSERT INTO `child_classes` VALUES ('30', '市场/营销', '5');
-INSERT INTO `child_classes` VALUES ('31', '公关媒介', '5');
-INSERT INTO `child_classes` VALUES ('32', '会务会展', '5');
-INSERT INTO `child_classes` VALUES ('33', '广告', '5');
-INSERT INTO `child_classes` VALUES ('34', '高端市场职位', '5');
-INSERT INTO `child_classes` VALUES ('35', '其他市场职位', '5');
-INSERT INTO `child_classes` VALUES ('36', '人力资源', '6');
-INSERT INTO `child_classes` VALUES ('37', '行政', '6');
-INSERT INTO `child_classes` VALUES ('38', '财务', '6');
-INSERT INTO `child_classes` VALUES ('39', '法务', '6');
-INSERT INTO `child_classes` VALUES ('40', '其他职能职位', '6');
-INSERT INTO `child_classes` VALUES ('41', '高级管理职位', '7');
-INSERT INTO `child_classes` VALUES ('42', '销售', '8');
-INSERT INTO `child_classes` VALUES ('43', '销售管理', '8');
-INSERT INTO `child_classes` VALUES ('44', '其他销售职位', '8');
-INSERT INTO `child_classes` VALUES ('45', '采编/写作/出版', '9');
-INSERT INTO `child_classes` VALUES ('46', '公关媒介', '9');
-INSERT INTO `child_classes` VALUES ('47', '会务会展', '9');
-INSERT INTO `child_classes` VALUES ('48', '广告', '9');
-INSERT INTO `child_classes` VALUES ('49', '影视媒体', '9');
-INSERT INTO `child_classes` VALUES ('50', '其他传媒职位', '9');
-INSERT INTO `child_classes` VALUES ('51', '投融资', '10');
-INSERT INTO `child_classes` VALUES ('52', '风控', '10');
-INSERT INTO `child_classes` VALUES ('53', '税务审计', '10');
-INSERT INTO `child_classes` VALUES ('54', '银行', '10');
-INSERT INTO `child_classes` VALUES ('55', '互联网金融', '10');
-INSERT INTO `child_classes` VALUES ('56', '保险', '10');
-INSERT INTO `child_classes` VALUES ('57', '证券', '10');
-INSERT INTO `child_classes` VALUES ('58', '其他金融职位', '10');
-INSERT INTO `child_classes` VALUES ('59', '教育产品研发', '11');
-INSERT INTO `child_classes` VALUES ('60', '教育行政', '11');
-INSERT INTO `child_classes` VALUES ('61', '教师', '11');
-INSERT INTO `child_classes` VALUES ('62', 'IT培训', '11');
-INSERT INTO `child_classes` VALUES ('63', '职业培训', '11');
-INSERT INTO `child_classes` VALUES ('64', '招生', '11');
-INSERT INTO `child_classes` VALUES ('65', '教练', '11');
-INSERT INTO `child_classes` VALUES ('66', '其他教育培训职位', '11');
-INSERT INTO `child_classes` VALUES ('67', '临床试验', '12');
-INSERT INTO `child_classes` VALUES ('68', '医生/医技', '12');
-INSERT INTO `child_classes` VALUES ('69', '护士/护理', '12');
-INSERT INTO `child_classes` VALUES ('70', '健康整形', '12');
-INSERT INTO `child_classes` VALUES ('71', '生物制药', '12');
-INSERT INTO `child_classes` VALUES ('72', '医疗器械', '12');
-INSERT INTO `child_classes` VALUES ('73', '药店', '12');
-INSERT INTO `child_classes` VALUES ('74', '医学营销/媒体', '12');
-INSERT INTO `child_classes` VALUES ('75', '其他医疗健康职位', '12');
-INSERT INTO `child_classes` VALUES ('76', '采购', '13');
-INSERT INTO `child_classes` VALUES ('77', '进出口贸易', '13');
-INSERT INTO `child_classes` VALUES ('78', '其他采购/贸易职位', '13');
-INSERT INTO `child_classes` VALUES ('79', '物流', '14');
-INSERT INTO `child_classes` VALUES ('80', '仓储', '14');
-INSERT INTO `child_classes` VALUES ('81', '运输', '14');
-INSERT INTO `child_classes` VALUES ('82', '高端供应链职位', '14');
-INSERT INTO `child_classes` VALUES ('83', '其他供应链职位', '14');
-INSERT INTO `child_classes` VALUES ('84', '房地产规划开发', '15');
-INSERT INTO `child_classes` VALUES ('85', '设计装修与市政建设', '15');
-INSERT INTO `child_classes` VALUES ('86', '房地产经纪', '15');
-INSERT INTO `child_classes` VALUES ('87', '物业管理', '15');
-INSERT INTO `child_classes` VALUES ('88', '高端房地产职位', '15');
-INSERT INTO `child_classes` VALUES ('89', '其他房地产职位', '15');
-INSERT INTO `child_classes` VALUES ('90', '咨询/调研', '16');
-INSERT INTO `child_classes` VALUES ('91', '律师', '16');
-INSERT INTO `child_classes` VALUES ('92', '翻译', '16');
-INSERT INTO `child_classes` VALUES ('93', '高端咨询类职位', '16');
-INSERT INTO `child_classes` VALUES ('94', '其他咨询类职位', '16');
-INSERT INTO `child_classes` VALUES ('95', '旅游服务', '17');
-INSERT INTO `child_classes` VALUES ('96', '旅游产品开发/策划', '17');
-INSERT INTO `child_classes` VALUES ('97', '其他旅游职位', '17');
-INSERT INTO `child_classes` VALUES ('98', '安保/家政/维修', '18');
-INSERT INTO `child_classes` VALUES ('99', '宠物服务', '18');
-INSERT INTO `child_classes` VALUES ('100', '婚礼/花艺', '18');
-INSERT INTO `child_classes` VALUES ('101', '美容保健', '18');
-INSERT INTO `child_classes` VALUES ('102', '酒店', '18');
-INSERT INTO `child_classes` VALUES ('103', '餐饮', '18');
-INSERT INTO `child_classes` VALUES ('104', '零售', '18');
-INSERT INTO `child_classes` VALUES ('105', '运动健身', '18');
-INSERT INTO `child_classes` VALUES ('106', '其他服务业职位', '18');
-INSERT INTO `child_classes` VALUES ('107', '生产营运', '19');
-INSERT INTO `child_classes` VALUES ('108', '质量安全', '19');
-INSERT INTO `child_classes` VALUES ('109', '新能源', '19');
-INSERT INTO `child_classes` VALUES ('110', '汽车制造', '19');
-INSERT INTO `child_classes` VALUES ('111', '汽车销售与服务', '19');
-INSERT INTO `child_classes` VALUES ('112', '机械设计/制造', '19');
-INSERT INTO `child_classes` VALUES ('113', '化工', '19');
-INSERT INTO `child_classes` VALUES ('114', '服装/纺织/皮革', '19');
-INSERT INTO `child_classes` VALUES ('115', '技工/普工', '19');
-INSERT INTO `child_classes` VALUES ('116', '其他生产制造职位', '19');
+--
+-- 转存表中的数据 `child_classes`
+--
 
--- ----------------------------
--- Table structure for classes
--- ----------------------------
-DROP TABLE IF EXISTS `classes`;
+INSERT INTO `child_classes` (`child_classes_id`, `child_classes_name`, `classes_id`) VALUES
+(1, '后端开发', 1),
+(2, '移动开发', 1),
+(3, '测试', 1),
+(4, '运维/技术支持', 1),
+(5, '数据', 1),
+(6, '项目管理', 1),
+(7, '硬件开发', 1),
+(8, '前端开发', 1),
+(9, '通信', 1),
+(10, '电子/半导体', 1),
+(11, '高端技术职位', 1),
+(12, '人工智能', 1),
+(13, '销售技术支持', 1),
+(14, '其他技术职位', 1),
+(15, '产品经理', 2),
+(16, '高端产品职位', 2),
+(17, '其他产品职位', 2),
+(18, '视觉设计', 3),
+(19, '交互设计', 3),
+(20, '用户研究', 3),
+(21, '高端设计职位', 3),
+(22, '非视觉设计', 3),
+(23, '其他设计职位', 3),
+(24, '运营', 4),
+(25, '编辑', 4),
+(26, '客服', 4),
+(27, '高端运营职位', 4),
+(28, '其他运营职位', 4),
+(29, '政府事务', 5),
+(30, '市场/营销', 5),
+(31, '公关媒介', 5),
+(32, '会务会展', 5),
+(33, '广告', 5),
+(34, '高端市场职位', 5),
+(35, '其他市场职位', 5),
+(36, '人力资源', 6),
+(37, '行政', 6),
+(38, '财务', 6),
+(39, '法务', 6),
+(40, '其他职能职位', 6),
+(41, '高级管理职位', 7),
+(42, '销售', 8),
+(43, '销售管理', 8),
+(44, '其他销售职位', 8),
+(45, '采编/写作/出版', 9),
+(46, '公关媒介', 9),
+(47, '会务会展', 9),
+(48, '广告', 9),
+(49, '影视媒体', 9),
+(50, '其他传媒职位', 9),
+(51, '投融资', 10),
+(52, '风控', 10),
+(53, '税务审计', 10),
+(54, '银行', 10),
+(55, '互联网金融', 10),
+(56, '保险', 10),
+(57, '证券', 10),
+(58, '其他金融职位', 10),
+(59, '教育产品研发', 11),
+(60, '教育行政', 11),
+(61, '教师', 11),
+(62, 'IT培训', 11),
+(63, '职业培训', 11),
+(64, '招生', 11),
+(65, '教练', 11),
+(66, '其他教育培训职位', 11),
+(67, '临床试验', 12),
+(68, '医生/医技', 12),
+(69, '护士/护理', 12),
+(70, '健康整形', 12),
+(71, '生物制药', 12),
+(72, '医疗器械', 12),
+(73, '药店', 12),
+(74, '医学营销/媒体', 12),
+(75, '其他医疗健康职位', 12),
+(76, '采购', 13),
+(77, '进出口贸易', 13),
+(78, '其他采购/贸易职位', 13),
+(79, '物流', 14),
+(80, '仓储', 14),
+(81, '运输', 14),
+(82, '高端供应链职位', 14),
+(83, '其他供应链职位', 14),
+(84, '房地产规划开发', 15),
+(85, '设计装修与市政建设', 15),
+(86, '房地产经纪', 15),
+(87, '物业管理', 15),
+(88, '高端房地产职位', 15),
+(89, '其他房地产职位', 15),
+(90, '咨询/调研', 16),
+(91, '律师', 16),
+(92, '翻译', 16),
+(93, '高端咨询类职位', 16),
+(94, '其他咨询类职位', 16),
+(95, '旅游服务', 17),
+(96, '旅游产品开发/策划', 17),
+(97, '其他旅游职位', 17),
+(98, '安保/家政/维修', 18),
+(99, '宠物服务', 18),
+(100, '婚礼/花艺', 18),
+(101, '美容保健', 18),
+(102, '酒店', 18),
+(103, '餐饮', 18),
+(104, '零售', 18),
+(105, '运动健身', 18),
+(106, '其他服务业职位', 18),
+(107, '生产营运', 19),
+(108, '质量安全', 19),
+(109, '新能源', 19),
+(110, '汽车制造', 19),
+(111, '汽车销售与服务', 19),
+(112, '机械设计/制造', 19),
+(113, '化工', 19),
+(114, '服装/纺织/皮革', 19),
+(115, '技工/普工', 19),
+(116, '其他生产制造职位', 19);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `classes`
+--
+
 CREATE TABLE `classes` (
-  `classes_id` int(4) NOT NULL AUTO_INCREMENT,
-  `classes_name` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+  `classes_id` int(4) NOT NULL,
+  `classes_name` varchar(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of classes
--- ----------------------------
-INSERT INTO `classes` VALUES ('1', '技术');
-INSERT INTO `classes` VALUES ('2', '产品');
-INSERT INTO `classes` VALUES ('3', '设计');
-INSERT INTO `classes` VALUES ('4', '运营');
-INSERT INTO `classes` VALUES ('5', '市场');
-INSERT INTO `classes` VALUES ('6', '人事');
-INSERT INTO `classes` VALUES ('7', '高级管理');
-INSERT INTO `classes` VALUES ('8', '销售');
-INSERT INTO `classes` VALUES ('9', '媒体');
-INSERT INTO `classes` VALUES ('10', '金融');
-INSERT INTO `classes` VALUES ('11', '教育培训');
-INSERT INTO `classes` VALUES ('12', '医疗健康');
-INSERT INTO `classes` VALUES ('13', '采购贸易');
-INSERT INTO `classes` VALUES ('14', '供应链/物流');
-INSERT INTO `classes` VALUES ('15', '房地产/建筑');
-INSERT INTO `classes` VALUES ('16', '咨询/翻译/法律');
-INSERT INTO `classes` VALUES ('17', '旅游');
-INSERT INTO `classes` VALUES ('18', '服务业');
-INSERT INTO `classes` VALUES ('19', '生产制造');
+--
+-- 转存表中的数据 `classes`
+--
 
--- ----------------------------
--- Table structure for company
--- ----------------------------
-DROP TABLE IF EXISTS `company`;
-CREATE TABLE `company` (
-  `company_id` int(11) NOT NULL AUTO_INCREMENT,
-  `company_name` varchar(100) DEFAULT NULL,
-  `company_size` tinyint(4) DEFAULT NULL COMMENT '1:0-20人，2:20-99人，3:100-499人，4:500-999人，5:1000-9999人，6:10000人以上',
-  `finance` tinyint(4) DEFAULT NULL COMMENT '1:未融资，2:天使轮，3:A轮，4:B轮，5:C轮，6:D轮及以上，7:已上市，8:不需要融资',
-  PRIMARY KEY (`company_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+INSERT INTO `classes` (`classes_id`, `classes_name`) VALUES
+(1, '技术'),
+(2, '产品'),
+(3, '设计'),
+(4, '运营'),
+(5, '市场'),
+(6, '人事'),
+(7, '高级管理'),
+(8, '销售'),
+(9, '媒体'),
+(10, '金融'),
+(11, '教育培训'),
+(12, '医疗健康'),
+(13, '采购贸易'),
+(14, '供应链/物流'),
+(15, '房地产/建筑'),
+(16, '咨询/翻译/法律'),
+(17, '旅游'),
+(18, '服务业'),
+(19, '生产制造');
 
--- ----------------------------
--- Records of company
--- ----------------------------
-INSERT INTO `company` VALUES ('1', '如约', '2', '7');
+-- --------------------------------------------------------
 
--- ----------------------------
--- Table structure for job
--- ----------------------------
-DROP TABLE IF EXISTS `job`;
+--
+-- 表的结构 `job`
+--
+
 CREATE TABLE `job` (
-  `job_id` int(11) NOT NULL AUTO_INCREMENT,
-  `job_name` varchar(20) DEFAULT NULL,
-  `job_classes_id` int(11) DEFAULT NULL,
-  `exp_condition` tinyint(4) DEFAULT NULL COMMENT '1:在校/应届，2:1年以内，3:1-3年，4:3-5年，5:5-10年，6:10年以上',
-  `edu_condition` tinyint(4) DEFAULT NULL COMMENT '1:初中及以下，2:中专/中技，3:高中，4:大专，5:本科，6:硕士，7:博士',
-  `company_id` int(11) DEFAULT NULL,
-  `tag` varchar(255) DEFAULT NULL COMMENT '多个标签用","隔开',
-  `recruiterId` int(11) DEFAULT NULL,
-  `workAddress` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`job_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `job_id` int(11) NOT NULL,
+  `job_name` varchar(50) NOT NULL,
+  `job_detail` varchar(255) NOT NULL,
+  `exp_condition` tinyint(4) DEFAULT NULL COMMENT '1:在校生;2:应届生;3:一年以内;4:1-3年;5:3-5年;6:5-10年;7:10年以上',
+  `edu_condition` tinyint(4) DEFAULT NULL COMMENT '	1:初中及以下;2:中专/中技;3:高中;4:大专;5:本科;6:硕士;7:博士',
+  `salary` int(11) DEFAULT NULL COMMENT '0为面议',
+  `tag` varchar(255) DEFAULT NULL,
+  `recruiter_id` int(11) NOT NULL,
+  `work_city` varchar(50) DEFAULT NULL,
+  `work_address` varchar(255) NOT NULL,
+  `post_date` date DEFAULT NULL,
+  `job_classes_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of job
--- ----------------------------
-INSERT INTO `job` VALUES ('1', '测试职位', '2', '1', '5', '1', 'Java', '1', '广东广州尚层');
+--
+-- 转存表中的数据 `job`
+--
 
--- ----------------------------
--- Table structure for job_classes
--- ----------------------------
-DROP TABLE IF EXISTS `job_classes`;
+INSERT INTO `job` (`job_id`, `job_name`, `job_detail`, `exp_condition`, `edu_condition`, `salary`, `tag`, `recruiter_id`, `work_city`, `work_address`, `post_date`, `job_classes_id`) VALUES
+(1, 'Java实习生', '需熟练Java、MySQL', NULL, NULL, 2000, NULL, 1, NULL, '广州', NULL, 2);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `job_classes`
+--
+
 CREATE TABLE `job_classes` (
-  `job_classes_id` int(4) NOT NULL AUTO_INCREMENT,
+  `job_classes_id` int(4) NOT NULL,
   `job_classes_name` varchar(20) DEFAULT NULL,
   `job_classes_url` varchar(255) DEFAULT NULL,
   `child_classes_id` int(4) DEFAULT NULL,
   `isRecommend` tinyint(4) DEFAULT '0' COMMENT '0为非推荐职位分类，1为推荐职位分类',
-  `isHot` tinyint(4) DEFAULT '0' COMMENT '0为非热门职位分类，1为热门职位分类',
-  PRIMARY KEY (`job_classes_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=870 DEFAULT CHARSET=utf8;
+  `isHot` tinyint(4) DEFAULT '0' COMMENT '0为非热门职位分类，1为热门职位分类'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of job_classes
--- ----------------------------
-INSERT INTO `job_classes` VALUES ('1', '后端开发', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('2', 'Java', null, '1', '1', '0');
-INSERT INTO `job_classes` VALUES ('3', 'C++', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('4', 'PHP', null, '1', '1', '0');
-INSERT INTO `job_classes` VALUES ('5', '数据挖掘', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('6', 'C', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('7', 'C#', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('8', '.NET', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('9', 'Hadoop', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('10', 'Python', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('11', 'Delphi', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('12', 'VB', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('13', 'Perl', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('14', 'Ruby', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('15', 'Node.js', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('16', '搜索算法', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('17', 'Golang', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('18', '推荐算法', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('19', 'Erlang', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('20', '算法工程师', null, '1', '1', '0');
-INSERT INTO `job_classes` VALUES ('21', '语音/视频/图形开发', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('22', '数据采集', null, '1', '0', '0');
-INSERT INTO `job_classes` VALUES ('23', 'UE4', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('24', '移动开发', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('25', 'HTML5', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('26', 'Android', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('27', 'iOS', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('28', 'WP', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('29', '移动web前端', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('30', 'Flash开发', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('31', 'JavaScript', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('32', 'U3D', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('33', 'COCOS2DX', null, '2', '0', '0');
-INSERT INTO `job_classes` VALUES ('34', '测试工程师', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('35', '自动化测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('36', '功能测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('37', '性能测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('38', '测试开发', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('39', '移动端测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('40', '游戏测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('41', '硬件测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('42', '软件测试', null, '3', '0', '0');
-INSERT INTO `job_classes` VALUES ('43', '运维工程师', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('44', '运维开发工程师', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('45', '网络工程师', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('46', '系统工程师', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('47', 'IT技术支持', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('48', '系统管理员', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('49', '网络安全', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('50', '系统安全', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('51', 'DBA', null, '4', '0', '0');
-INSERT INTO `job_classes` VALUES ('52', '数据', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('53', 'ETL工程师', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('54', '数据仓库', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('55', '数据开发', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('56', '数据挖掘', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('57', '数据分析师', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('58', '数据架构师', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('59', '算法研究员', null, '5', '0', '0');
-INSERT INTO `job_classes` VALUES ('60', '项目经理', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('61', '项目主管', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('62', '项目助理', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('63', '项目专员', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('64', '实施顾问', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('65', '实施工程师', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('66', '需求分析工程师', null, '6', '0', '0');
-INSERT INTO `job_classes` VALUES ('67', '硬件', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('68', '嵌入式', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('69', '自动化', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('70', '单片机', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('71', '电路设计', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('72', '驱动开发', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('73', '系统集成', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('74', 'FPGA开发', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('75', 'DSP开发', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('76', 'ARM开发', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('77', 'PCB工艺', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('78', '射频工程师', null, '7', '0', '0');
-INSERT INTO `job_classes` VALUES ('79', '前端开发', null, '8', '0', '0');
-INSERT INTO `job_classes` VALUES ('80', 'web前端', null, '8', '1', '0');
-INSERT INTO `job_classes` VALUES ('81', 'JavaScript', null, '8', '0', '0');
-INSERT INTO `job_classes` VALUES ('82', 'Flash开发', null, '8', '0', '0');
-INSERT INTO `job_classes` VALUES ('83', 'HTML5', null, '8', '0', '0');
-INSERT INTO `job_classes` VALUES ('84', '通信技术工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('85', '通信研发工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('86', '数据通信工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('87', '移动通信工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('88', '电信网络工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('89', '电信交换工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('90', '有线传输工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('91', '无线射频工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('92', '通信电源工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('93', '通信标准化工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('94', '通信项目专员', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('95', '通信项目经理', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('96', '核心网工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('97', '通信测试工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('98', '通信设备工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('99', '光通信工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('100', '光传输工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('101', '光网络工程师', null, '9', '0', '0');
-INSERT INTO `job_classes` VALUES ('102', '电子工程师', null, '10', '0', '0');
-INSERT INTO `job_classes` VALUES ('103', '电气工程师', null, '10', '0', '0');
-INSERT INTO `job_classes` VALUES ('104', 'FAE', null, '10', '0', '0');
-INSERT INTO `job_classes` VALUES ('105', '电气设计工程师', null, '10', '0', '0');
-INSERT INTO `job_classes` VALUES ('106', '高端技术职位', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('107', '技术经理', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('108', '技术总监', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('109', '测试经理', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('110', '架构师', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('111', 'CTO', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('112', '运维总监', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('113', '技术合伙人', null, '11', '0', '0');
-INSERT INTO `job_classes` VALUES ('114', '智能驾驶系统工程师', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('115', '反欺诈/风控算法', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('116', '人工智能', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('117', '自然语言处理', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('118', '机器学习', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('119', '深度学习', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('120', '语音识别', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('121', '图像识别', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('122', '算法研究员', null, '12', '0', '0');
-INSERT INTO `job_classes` VALUES ('123', '销售技术支持', null, '13', '0', '0');
-INSERT INTO `job_classes` VALUES ('124', '售前工程师', null, '13', '0', '0');
-INSERT INTO `job_classes` VALUES ('125', '售后工程师', null, '13', '0', '0');
-INSERT INTO `job_classes` VALUES ('126', '其他技术职位', null, '14', '0', '0');
-INSERT INTO `job_classes` VALUES ('127', '硬件产品经理', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('128', '产品经理', null, '15', '1', '0');
-INSERT INTO `job_classes` VALUES ('129', '网页产品经理', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('130', '移动产品经理', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('131', '产品助理', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('132', '数据产品经理', null, '15', '1', '0');
-INSERT INTO `job_classes` VALUES ('133', '电商产品经理', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('134', '游戏策划', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('135', '产品专员', null, '15', '0', '0');
-INSERT INTO `job_classes` VALUES ('136', '高端产品职位', null, '16', '0', '0');
-INSERT INTO `job_classes` VALUES ('137', '产品总监', null, '16', '1', '0');
-INSERT INTO `job_classes` VALUES ('138', '游戏制作人', null, '16', '0', '0');
-INSERT INTO `job_classes` VALUES ('139', '产品VP', null, '16', '0', '0');
-INSERT INTO `job_classes` VALUES ('140', '其他产品职位', null, '17', '0', '0');
-INSERT INTO `job_classes` VALUES ('141', '视觉设计', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('142', '视觉设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('143', '网页设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('144', 'Flash设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('145', 'APP设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('146', 'UI设计师', null, '18', '1', '0');
-INSERT INTO `job_classes` VALUES ('147', '平面设计师', null, '18', '1', '0');
-INSERT INTO `job_classes` VALUES ('148', '美术设计师（2D/3D）', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('149', '广告设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('150', '多媒体设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('151', '原画师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('152', '游戏特效', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('153', '游戏界面设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('154', '游戏场景', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('155', '游戏角色', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('156', '游戏动作', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('157', '三维/CAD/制图', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('158', '美工', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('159', '包装设计', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('160', '设计师助理', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('161', '动画设计师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('162', '插画师', null, '18', '0', '0');
-INSERT INTO `job_classes` VALUES ('163', '交互设计师', null, '19', '1', '0');
-INSERT INTO `job_classes` VALUES ('164', '无线交互设计师', null, '19', '0', '0');
-INSERT INTO `job_classes` VALUES ('165', '网页交互设计师', null, '19', '0', '0');
-INSERT INTO `job_classes` VALUES ('166', '硬件交互设计师', null, '19', '0', '0');
-INSERT INTO `job_classes` VALUES ('167', '数据分析师', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('168', '用户研究员', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('169', '游戏数值策划', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('170', 'UX设计师', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('171', '用户研究经理', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('172', '用户研究总监', null, '20', '0', '0');
-INSERT INTO `job_classes` VALUES ('173', '高端设计职位', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('174', '设计经理/主管', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('175', '设计总监', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('176', '视觉设计经理', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('177', '视觉设计总监', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('178', '交互设计经理/主管', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('179', '交互设计总监', null, '21', '0', '0');
-INSERT INTO `job_classes` VALUES ('180', '非视觉设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('181', '服装/纺织设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('182', '工业设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('183', '橱柜设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('184', '家具设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('185', '家居设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('186', '珠宝设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('187', '室内设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('188', '陈列设计', null, '22', '0', '0');
-INSERT INTO `job_classes` VALUES ('189', '其他设计职位', null, '23', '0', '0');
-INSERT INTO `job_classes` VALUES ('190', '数据标注', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('191', '直播运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('192', '运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('193', '用户运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('194', '产品运营', null, '24', '1', '0');
-INSERT INTO `job_classes` VALUES ('195', '数据运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('196', '内容运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('197', '活动运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('198', '商家运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('199', '品类运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('200', '游戏运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('201', '网络推广', null, '24', '1', '0');
-INSERT INTO `job_classes` VALUES ('202', '网站运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('203', '新媒体运营', null, '24', '1', '0');
-INSERT INTO `job_classes` VALUES ('204', '社区运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('205', '微信运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('206', '微博运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('207', '策略运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('208', '线下拓展运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('209', '电商运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('210', '运营助理/专员', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('211', '内容审核', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('212', '销售运营', null, '24', '0', '0');
-INSERT INTO `job_classes` VALUES ('213', '编辑', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('214', '副主编', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('215', '内容编辑', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('216', '文案策划', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('217', '网站编辑', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('218', '记者', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('219', '采编', null, '25', '0', '0');
-INSERT INTO `job_classes` VALUES ('220', '售前咨询', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('221', '售后咨询', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('222', '网络客服', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('223', '客服经理', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('224', '客服专员/助理', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('225', '客服主管', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('226', '客服总监', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('227', '电话客服', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('228', '咨询热线/呼叫中心客服', null, '26', '0', '0');
-INSERT INTO `job_classes` VALUES ('229', '高端运营职位', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('230', '主编', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('231', '运营总监', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('232', 'COO', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('233', '客服总监', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('234', '运营经理/主管', null, '27', '0', '0');
-INSERT INTO `job_classes` VALUES ('235', '其他运营职位', null, '28', '0', '0');
-INSERT INTO `job_classes` VALUES ('236', '政策研究', null, '29', '0', '0');
-INSERT INTO `job_classes` VALUES ('237', '企业党建', null, '29', '0', '0');
-INSERT INTO `job_classes` VALUES ('238', '政府关系', null, '29', '0', '0');
-INSERT INTO `job_classes` VALUES ('239', '选址开发', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('240', '市场营销', null, '30', '1', '0');
-INSERT INTO `job_classes` VALUES ('241', '市场策划', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('242', '市场顾问', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('243', '市场推广', null, '30', '1', '0');
-INSERT INTO `job_classes` VALUES ('244', 'SEO', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('245', 'SEM', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('246', '商务渠道', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('247', '商业数据分析', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('248', '活动策划', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('249', '网络营销', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('250', '海外市场', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('251', 'APP推广', null, '30', '0', '0');
-INSERT INTO `job_classes` VALUES ('252', '公关媒介', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('253', '媒介经理', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('254', '广告协调', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('255', '品牌公关', null, '31', '1', '0');
-INSERT INTO `job_classes` VALUES ('256', '媒介专员', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('257', '活动策划执行', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('258', '媒介策划', null, '31', '0', '0');
-INSERT INTO `job_classes` VALUES ('259', '会务会展', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('260', '会议活动销售', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('261', '会议活动策划', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('262', '会议活动执行', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('263', '会展活动销售', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('264', '会展活动策划', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('265', '会展活动执行', null, '32', '0', '0');
-INSERT INTO `job_classes` VALUES ('266', '广告', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('267', '广告创意', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('268', '美术指导', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('269', '广告设计师', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('270', '策划经理', null, '33', '1', '0');
-INSERT INTO `job_classes` VALUES ('271', '文案', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('272', '广告制作', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('273', '媒介投放', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('274', '媒介合作', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('275', '媒介顾问', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('276', '广告审核', null, '33', '0', '0');
-INSERT INTO `job_classes` VALUES ('277', '高端市场职位', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('278', '市场总监', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('279', 'CMO', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('280', '公关总监', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('281', '媒介总监', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('282', '创意总监', null, '34', '0', '0');
-INSERT INTO `job_classes` VALUES ('283', '其他市场职位', null, '35', '0', '0');
-INSERT INTO `job_classes` VALUES ('284', '人力资源主管', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('285', '招聘', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('286', 'HRBP', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('287', '人力资源专员/助理', null, '36', '1', '0');
-INSERT INTO `job_classes` VALUES ('288', '培训', null, '36', '1', '0');
-INSERT INTO `job_classes` VALUES ('289', '薪资福利', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('290', '绩效考核', null, '36', '1', '0');
-INSERT INTO `job_classes` VALUES ('291', '人力资源经理', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('292', '人力资源VP/CHO', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('293', '人力资源总监', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('294', '员工关系', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('295', '组织发展', null, '36', '0', '0');
-INSERT INTO `job_classes` VALUES ('296', '行政专员/助理', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('297', '前台', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('298', '行政主管', null, '37', '1', '0');
-INSERT INTO `job_classes` VALUES ('299', '经理助理', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('300', '后勤', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('301', '商务司机', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('302', '行政经理', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('303', '行政总监', null, '37', '0', '0');
-INSERT INTO `job_classes` VALUES ('304', '成本', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('305', '财务', null, '38', '1', '0');
-INSERT INTO `job_classes` VALUES ('306', '会计', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('307', '出纳', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('308', '财务顾问', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('309', '结算', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('310', '税务', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('311', '审计', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('312', '风控', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('313', '财务经理', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('314', 'CFO', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('315', '财务总监', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('316', '财务主管', null, '38', '0', '0');
-INSERT INTO `job_classes` VALUES ('317', '法务专员/助理', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('318', '律师', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('319', '专利', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('320', '法律顾问', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('321', '法务主管', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('322', '法务经理', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('323', '法务总监', null, '39', '0', '0');
-INSERT INTO `job_classes` VALUES ('324', '其他职能职位', null, '40', '0', '0');
-INSERT INTO `job_classes` VALUES ('325', '高级管理职位', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('326', '总裁/总经理/CEO', null, '41', '1', '0');
-INSERT INTO `job_classes` VALUES ('327', '副总裁/副总经理/VP', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('328', '分公司/代表处负责人', null, '41', '1', '0');
-INSERT INTO `job_classes` VALUES ('329', '区域负责人(辖多个分公司)', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('330', '总助/CEO助理/董事长助理', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('331', '合伙人', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('332', '联合创始人', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('333', '董事会秘书', null, '41', '0', '0');
-INSERT INTO `job_classes` VALUES ('334', '销售', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('335', '销售专员', null, '42', '1', '0');
-INSERT INTO `job_classes` VALUES ('336', '销售经理', null, '42', '1', '0');
-INSERT INTO `job_classes` VALUES ('337', '客户代表', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('338', '大客户代表', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('339', 'BD经理', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('340', '商务渠道', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('341', '渠道销售', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('342', '代理商销售', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('343', '销售助理', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('344', '电话销售', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('345', '销售顾问', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('346', '商品经理', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('347', '广告销售', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('348', '网络营销', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('349', '营销主管', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('350', '销售工程师', null, '42', '1', '0');
-INSERT INTO `job_classes` VALUES ('351', '客户经理', null, '42', '0', '0');
-INSERT INTO `job_classes` VALUES ('352', '销售管理', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('353', '销售总监', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('354', '商务总监', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('355', '区域总监', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('356', '城市经理', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('357', '销售VP', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('358', '团队经理', null, '43', '0', '0');
-INSERT INTO `job_classes` VALUES ('359', '其他销售职位', null, '44', '0', '0');
-INSERT INTO `job_classes` VALUES ('360', '采编/写作/出版', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('361', '记者', null, '45', '1', '0');
-INSERT INTO `job_classes` VALUES ('362', '编辑', null, '45', '1', '0');
-INSERT INTO `job_classes` VALUES ('363', '采编', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('364', '撰稿人', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('365', '出版发行', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('366', '校对录入', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('367', '总编', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('368', '自媒体', null, '45', '0', '0');
-INSERT INTO `job_classes` VALUES ('369', '公关媒介', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('370', '媒介经理', null, '46', '1', '0');
-INSERT INTO `job_classes` VALUES ('371', '媒介专员', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('372', '广告协调', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('373', '品牌公关', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('374', '活动策划执行', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('375', '媒介策划', null, '46', '0', '0');
-INSERT INTO `job_classes` VALUES ('376', '会务会展', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('377', '会议活动销售', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('378', '会议活动策划', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('379', '会议活动执行', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('380', '会展活动销售', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('381', '会展活动策划', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('382', '会展活动执行', null, '47', '0', '0');
-INSERT INTO `job_classes` VALUES ('383', '广告', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('384', '广告创意', null, '48', '1', '0');
-INSERT INTO `job_classes` VALUES ('385', '美术指导', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('386', '广告设计师', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('387', '策划经理', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('388', '文案', null, '48', '1', '0');
-INSERT INTO `job_classes` VALUES ('389', '广告制作', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('390', '媒介投放', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('391', '媒介合作', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('392', '媒介顾问', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('393', '广告审核', null, '48', '0', '0');
-INSERT INTO `job_classes` VALUES ('394', '主持人/DJ', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('395', '影视媒体', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('396', '艺人助理', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('397', '统筹制片人', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('398', '执行制片人', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('399', '导演/编导', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('400', '摄影/摄像', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('401', '视频编辑', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('402', '音频编辑', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('403', '经纪人', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('404', '后期制作', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('405', '影视制作', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('406', '影视发行', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('407', '影视策划', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('408', '主播', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('409', '演员/配音/模特', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('410', '化妆/造型/服装', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('411', '放映管理', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('412', '录音/音效', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('413', '制片人', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('414', '编剧', null, '49', '0', '0');
-INSERT INTO `job_classes` VALUES ('415', '其他传媒职位', null, '50', '0', '0');
-INSERT INTO `job_classes` VALUES ('416', '投融资', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('417', '投资经理', null, '51', '1', '0');
-INSERT INTO `job_classes` VALUES ('418', '行业研究', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('419', '资产管理', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('420', '投资总监', null, '51', '1', '0');
-INSERT INTO `job_classes` VALUES ('421', '投资VP', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('422', '投资合伙人', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('423', '融资', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('424', '并购', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('425', '投后管理', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('426', '投资助理', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('427', '其他投融资职位', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('428', '投资顾问', null, '51', '0', '0');
-INSERT INTO `job_classes` VALUES ('429', '风控', null, '52', '1', '0');
-INSERT INTO `job_classes` VALUES ('430', '律师', null, '52', '0', '0');
-INSERT INTO `job_classes` VALUES ('431', '资信评估', null, '52', '0', '0');
-INSERT INTO `job_classes` VALUES ('432', '合规稽查', null, '52', '0', '0');
-INSERT INTO `job_classes` VALUES ('433', '审计', null, '53', '0', '0');
-INSERT INTO `job_classes` VALUES ('434', '法务', null, '53', '0', '0');
-INSERT INTO `job_classes` VALUES ('435', '会计', null, '53', '0', '0');
-INSERT INTO `job_classes` VALUES ('436', '清算', null, '53', '0', '0');
-INSERT INTO `job_classes` VALUES ('437', '银行', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('438', '信用卡销售', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('439', '分析师', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('440', '柜员', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('441', '商务渠道', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('442', '大堂经理', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('443', '理财顾问', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('444', '客户经理', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('445', '信贷管理', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('446', '风控', null, '54', '0', '0');
-INSERT INTO `job_classes` VALUES ('447', '互联网金融', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('448', '金融产品经理', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('449', '风控', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('450', '催收员', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('451', '分析师', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('452', '投资经理', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('453', '交易员', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('454', '理财顾问', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('455', '合规稽查', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('456', '审计', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('457', '清算', null, '55', '0', '0');
-INSERT INTO `job_classes` VALUES ('458', '保险业务', null, '56', '0', '0');
-INSERT INTO `job_classes` VALUES ('459', '精算师', null, '56', '0', '0');
-INSERT INTO `job_classes` VALUES ('460', '保险理赔', null, '56', '0', '0');
-INSERT INTO `job_classes` VALUES ('461', '证券', null, '57', '1', '0');
-INSERT INTO `job_classes` VALUES ('462', '证券经纪人', null, '57', '0', '0');
-INSERT INTO `job_classes` VALUES ('463', '证券分析师', null, '57', '0', '0');
-INSERT INTO `job_classes` VALUES ('464', '其他金融职位', null, '58', '0', '0');
-INSERT INTO `job_classes` VALUES ('465', '教育产品研发', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('466', '课程设计', null, '59', '1', '0');
-INSERT INTO `job_classes` VALUES ('467', '课程编辑', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('468', '教师', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('469', '培训研究', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('470', '培训师', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('471', '培训策划', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('472', '其他教育产品研发职位', null, '59', '0', '0');
-INSERT INTO `job_classes` VALUES ('473', '教育行政', null, '60', '0', '0');
-INSERT INTO `job_classes` VALUES ('474', '校长', null, '60', '0', '0');
-INSERT INTO `job_classes` VALUES ('475', '教务管理', null, '60', '1', '0');
-INSERT INTO `job_classes` VALUES ('476', '教学管理', null, '60', '0', '0');
-INSERT INTO `job_classes` VALUES ('477', '班主任/辅导员', null, '60', '0', '0');
-INSERT INTO `job_classes` VALUES ('478', '日语教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('479', '其他外语教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('480', '教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('481', '助教', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('482', '高中教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('483', '初中教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('484', '小学教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('485', '幼教', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('486', '理科教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('487', '文科教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('488', '英语教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('489', '音乐教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('490', '美术教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('491', '体育教师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('492', '就业老师', null, '61', '0', '0');
-INSERT INTO `job_classes` VALUES ('493', 'IT培训', null, '62', '1', '0');
-INSERT INTO `job_classes` VALUES ('494', 'JAVA培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('495', 'Android培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('496', 'ios培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('497', 'PHP培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('498', '.NET培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('499', 'C++培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('500', 'Unity 3D培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('501', 'Web前端培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('502', '软件测试培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('503', '动漫培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('504', 'UI设计培训讲师', null, '62', '0', '0');
-INSERT INTO `job_classes` VALUES ('505', '财会培训讲师', null, '63', '0', '0');
-INSERT INTO `job_classes` VALUES ('506', 'HR培训讲师', null, '63', '0', '0');
-INSERT INTO `job_classes` VALUES ('507', '培训师', null, '63', '0', '0');
-INSERT INTO `job_classes` VALUES ('508', '拓展培训', null, '63', '0', '0');
-INSERT INTO `job_classes` VALUES ('509', '课程顾问', null, '64', '0', '0');
-INSERT INTO `job_classes` VALUES ('510', '招生顾问', null, '64', '0', '0');
-INSERT INTO `job_classes` VALUES ('511', '留学顾问', null, '64', '0', '0');
-INSERT INTO `job_classes` VALUES ('512', '武术教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('513', '轮滑教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('514', '教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('515', '舞蹈教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('516', '瑜伽教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('517', '瘦身顾问', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('518', '游泳教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('519', '健身教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('520', '篮球/羽毛球教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('521', '跆拳道教练', null, '65', '0', '0');
-INSERT INTO `job_classes` VALUES ('522', '其他教育培训职位', null, '66', '0', '0');
-INSERT INTO `job_classes` VALUES ('523', '临床研究', null, '67', '0', '0');
-INSERT INTO `job_classes` VALUES ('524', '临床协调', null, '67', '0', '0');
-INSERT INTO `job_classes` VALUES ('525', '临床数据分析', null, '67', '0', '0');
-INSERT INTO `job_classes` VALUES ('526', '医学总监', null, '67', '0', '0');
-INSERT INTO `job_classes` VALUES ('527', '医生助理', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('528', '医学影像', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('529', 'B超医生', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('530', '中医', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('531', '医师', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('532', '心理医生', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('533', '药剂师', null, '68', '1', '0');
-INSERT INTO `job_classes` VALUES ('534', '牙科医生', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('535', '康复治疗师', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('536', '验光师', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('537', '放射科医师', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('538', '检验科医师', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('539', '其他医生职位', null, '68', '0', '0');
-INSERT INTO `job_classes` VALUES ('540', '护士长', null, '69', '0', '0');
-INSERT INTO `job_classes` VALUES ('541', '护士/护理', null, '69', '0', '0');
-INSERT INTO `job_classes` VALUES ('542', '导医', null, '69', '0', '0');
-INSERT INTO `job_classes` VALUES ('543', '健康整形', null, '70', '0', '0');
-INSERT INTO `job_classes` VALUES ('544', '营养师', null, '70', '1', '0');
-INSERT INTO `job_classes` VALUES ('545', '整形师', null, '70', '0', '0');
-INSERT INTO `job_classes` VALUES ('546', '理疗师', null, '70', '0', '0');
-INSERT INTO `job_classes` VALUES ('547', '针灸推拿', null, '70', '0', '0');
-INSERT INTO `job_classes` VALUES ('548', '生物制药', null, '71', '0', '0');
-INSERT INTO `job_classes` VALUES ('549', '药品注册', null, '71', '0', '0');
-INSERT INTO `job_classes` VALUES ('550', '药品生产', null, '71', '0', '0');
-INSERT INTO `job_classes` VALUES ('551', '医学总监', null, '71', '0', '0');
-INSERT INTO `job_classes` VALUES ('552', '医药研发', null, '71', '0', '0');
-INSERT INTO `job_classes` VALUES ('553', '医疗器械注册', null, '72', '0', '0');
-INSERT INTO `job_classes` VALUES ('554', '医疗器械生产/质量管理', null, '72', '0', '0');
-INSERT INTO `job_classes` VALUES ('555', '医疗器械研发', null, '72', '1', '0');
-INSERT INTO `job_classes` VALUES ('556', '药店店长', null, '73', '0', '0');
-INSERT INTO `job_classes` VALUES ('557', '执业药师/驻店药师', null, '73', '0', '0');
-INSERT INTO `job_classes` VALUES ('558', '药店店员', null, '73', '0', '0');
-INSERT INTO `job_classes` VALUES ('559', '医学营销/媒体', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('560', '医疗器械销售', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('561', '医学编辑', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('562', '药学编辑', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('563', '医药代表', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('564', '健康顾问', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('565', '医美咨询', null, '74', '0', '0');
-INSERT INTO `job_classes` VALUES ('566', '其他医疗健康职位', null, '75', '0', '0');
-INSERT INTO `job_classes` VALUES ('567', '采购', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('568', '采购总监', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('569', '采购经理', null, '76', '1', '0');
-INSERT INTO `job_classes` VALUES ('570', '采购专员', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('571', '买手', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('572', '采购工程师', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('573', '采购主管', null, '76', '1', '0');
-INSERT INTO `job_classes` VALUES ('574', '采购助理', null, '76', '0', '0');
-INSERT INTO `job_classes` VALUES ('575', '进出口贸易', null, '77', '1', '0');
-INSERT INTO `job_classes` VALUES ('576', '外贸经理', null, '77', '0', '0');
-INSERT INTO `job_classes` VALUES ('577', '外贸专员', null, '77', '0', '0');
-INSERT INTO `job_classes` VALUES ('578', '外贸业务员', null, '77', '0', '0');
-INSERT INTO `job_classes` VALUES ('579', '贸易跟单', null, '77', '0', '0');
-INSERT INTO `job_classes` VALUES ('580', '其他采购/贸易类职位', null, '78', '0', '0');
-INSERT INTO `job_classes` VALUES ('581', '物流', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('582', '供应链专员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('583', '供应链经理', null, '79', '1', '0');
-INSERT INTO `job_classes` VALUES ('584', '物流专员', null, '79', '1', '0');
-INSERT INTO `job_classes` VALUES ('585', '物流经理', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('586', '物流运营', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('587', '物流跟单', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('588', '贸易跟单', null, '79', '1', '0');
-INSERT INTO `job_classes` VALUES ('589', '物仓调度', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('590', '物仓项目', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('591', '运输经理/主管', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('592', '货运代理专员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('593', '货运代理经理', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('594', '水/空/陆运操作', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('595', '报关员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('596', '报检员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('597', '核销员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('598', '单证员', null, '79', '0', '0');
-INSERT INTO `job_classes` VALUES ('599', '仓储', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('600', '仓储物料经理', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('601', '仓储物料专员', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('602', '仓储物料项目', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('603', '仓储管理', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('604', '仓库文员', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('605', '配/理/拣/发货', null, '80', '0', '0');
-INSERT INTO `job_classes` VALUES ('606', '运输', null, '81', '0', '0');
-INSERT INTO `job_classes` VALUES ('607', '货运司机', null, '81', '0', '0');
-INSERT INTO `job_classes` VALUES ('608', '集装箱管理', null, '81', '0', '0');
-INSERT INTO `job_classes` VALUES ('609', '配送', null, '81', '0', '0');
-INSERT INTO `job_classes` VALUES ('610', '快递', null, '81', '0', '0');
-INSERT INTO `job_classes` VALUES ('611', '高端供应链职位', null, '82', '0', '0');
-INSERT INTO `job_classes` VALUES ('612', '供应链总监', null, '82', '0', '0');
-INSERT INTO `job_classes` VALUES ('613', '物流总监', null, '82', '0', '0');
-INSERT INTO `job_classes` VALUES ('614', '其他供应链职位', null, '83', '0', '0');
-INSERT INTO `job_classes` VALUES ('615', '房地产规划开发', null, '84', '1', '0');
-INSERT INTO `job_classes` VALUES ('616', '房产策划', null, '84', '0', '0');
-INSERT INTO `job_classes` VALUES ('617', '地产项目管理', null, '84', '0', '0');
-INSERT INTO `job_classes` VALUES ('618', '地产招投标', null, '84', '0', '0');
-INSERT INTO `job_classes` VALUES ('619', '弱电工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('620', '给排水工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('621', '暖通工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('622', '幕墙工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('623', '软装设计师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('624', '施工员', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('625', '测绘/测量', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('626', '材料员', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('627', 'BIM工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('628', '设计装修与市政建设', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('629', '高级建筑工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('630', '建筑工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('631', '建筑设计师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('632', '土木/土建/结构工程师', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('633', '室内设计', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('634', '园林设计', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('635', '城市规划设计', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('636', '工程监理', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('637', '工程造价', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('638', '预结算', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('639', '工程资料管理', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('640', '建筑施工现场管理', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('641', '景观设计', null, '85', '0', '0');
-INSERT INTO `job_classes` VALUES ('642', '房地产经纪', null, '86', '0', '0');
-INSERT INTO `job_classes` VALUES ('643', '地产置业顾问', null, '86', '0', '0');
-INSERT INTO `job_classes` VALUES ('644', '地产评估', null, '86', '0', '0');
-INSERT INTO `job_classes` VALUES ('645', '地产中介', null, '86', '0', '0');
-INSERT INTO `job_classes` VALUES ('646', '物业维修', null, '87', '0', '0');
-INSERT INTO `job_classes` VALUES ('647', '绿化工', null, '87', '0', '0');
-INSERT INTO `job_classes` VALUES ('648', '物业管理', null, '87', '1', '0');
-INSERT INTO `job_classes` VALUES ('649', '物业租赁销售', null, '87', '0', '0');
-INSERT INTO `job_classes` VALUES ('650', '物业招商管理', null, '87', '0', '0');
-INSERT INTO `job_classes` VALUES ('651', '高端房地产职位', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('652', '地产项目总监', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('653', '地产策划总监', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('654', '地产招投标总监', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('655', '物业总监', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('656', '房地产销售总监', null, '88', '0', '0');
-INSERT INTO `job_classes` VALUES ('657', '其他房地产职位', null, '89', '0', '0');
-INSERT INTO `job_classes` VALUES ('658', '咨询/调研', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('659', '企业管理咨询', null, '90', '1', '0');
-INSERT INTO `job_classes` VALUES ('660', '数据分析师', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('661', '财务咨询顾问', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('662', 'IT咨询顾问', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('663', '人力资源顾问', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('664', '咨询项目管理', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('665', '战略咨询', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('666', '猎头顾问', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('667', '市场调研', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('668', '其他咨询顾问', null, '90', '0', '0');
-INSERT INTO `job_classes` VALUES ('669', '知识产权', null, '91', '0', '0');
-INSERT INTO `job_classes` VALUES ('670', '事务所律师', null, '91', '1', '0');
-INSERT INTO `job_classes` VALUES ('671', '公司法务', null, '91', '0', '0');
-INSERT INTO `job_classes` VALUES ('672', '英语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('673', '日语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('674', '韩语/朝鲜语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('675', '法语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('676', '德语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('677', '俄语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('678', '西班牙语翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('679', '其他语种翻译', null, '92', '0', '0');
-INSERT INTO `job_classes` VALUES ('680', '高端咨询类职位', null, '93', '0', '0');
-INSERT INTO `job_classes` VALUES ('681', '咨询总监', null, '93', '0', '0');
-INSERT INTO `job_classes` VALUES ('682', '咨询经理', null, '93', '0', '0');
-INSERT INTO `job_classes` VALUES ('683', '高级翻译', null, '93', '0', '0');
-INSERT INTO `job_classes` VALUES ('684', '同声传译', null, '93', '0', '0');
-INSERT INTO `job_classes` VALUES ('685', '其他咨询/翻译类职位', null, '94', '0', '0');
-INSERT INTO `job_classes` VALUES ('686', '旅游服务', null, '95', '0', '0');
-INSERT INTO `job_classes` VALUES ('687', '计调', null, '95', '0', '0');
-INSERT INTO `job_classes` VALUES ('688', '签证', null, '95', '0', '0');
-INSERT INTO `job_classes` VALUES ('689', '旅游顾问', null, '95', '1', '0');
-INSERT INTO `job_classes` VALUES ('690', '导游', null, '95', '1', '0');
-INSERT INTO `job_classes` VALUES ('691', '预定票务', null, '95', '0', '0');
-INSERT INTO `job_classes` VALUES ('692', '旅游产品开发/策划', null, '96', '1', '0');
-INSERT INTO `job_classes` VALUES ('693', '旅游产品经理', null, '96', '0', '0');
-INSERT INTO `job_classes` VALUES ('694', '旅游策划师', null, '96', '0', '0');
-INSERT INTO `job_classes` VALUES ('695', '其他旅游职位', null, '97', '0', '0');
-INSERT INTO `job_classes` VALUES ('696', '保安', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('697', '保洁', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('698', '保姆', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('699', '月嫂', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('700', '育婴师', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('701', '护工', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('702', '安检员', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('703', '手机维修', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('704', '家电维修', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('705', '保安经理', null, '98', '0', '0');
-INSERT INTO `job_classes` VALUES ('706', '宠物美容', null, '99', '0', '0');
-INSERT INTO `job_classes` VALUES ('707', '宠物医生', null, '99', '0', '0');
-INSERT INTO `job_classes` VALUES ('708', '花艺师', null, '100', '0', '0');
-INSERT INTO `job_classes` VALUES ('709', '婚礼策划师', null, '100', '0', '0');
-INSERT INTO `job_classes` VALUES ('710', '彩妆顾问', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('711', '纹绣师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('712', '美体师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('713', '美发学徒', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('714', '美容店长', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('715', '足疗师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('716', '按摩师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('717', '发型师', null, '101', '1', '0');
-INSERT INTO `job_classes` VALUES ('718', '美甲师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('719', '化妆师', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('720', '美容师/顾问', null, '101', '0', '0');
-INSERT INTO `job_classes` VALUES ('721', '礼仪迎宾', null, '102', '0', '0');
-INSERT INTO `job_classes` VALUES ('722', '前厅经理', null, '102', '0', '0');
-INSERT INTO `job_classes` VALUES ('723', '客房经理', null, '102', '0', '0');
-INSERT INTO `job_classes` VALUES ('724', '收银', null, '102', '0', '0');
-INSERT INTO `job_classes` VALUES ('725', '酒店前台', null, '102', '1', '0');
-INSERT INTO `job_classes` VALUES ('726', '客房服务员', null, '102', '1', '0');
-INSERT INTO `job_classes` VALUES ('727', '酒店经理', null, '102', '0', '0');
-INSERT INTO `job_classes` VALUES ('728', '后厨', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('729', '配菜打荷', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('730', '茶艺师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('731', '西点师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('732', '餐饮学徒', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('733', '面点师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('734', '行政总厨', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('735', '厨师长', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('736', '传菜员', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('737', '洗碗工', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('738', '凉菜厨师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('739', '中餐厨师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('740', '西餐厨师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('741', '日式厨师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('742', '烧烤师傅', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('743', '餐饮', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('744', '收银', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('745', '服务员', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('746', '厨师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('747', '咖啡师', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('748', '送餐员', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('749', '餐饮店长', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('750', '领班', null, '103', '0', '0');
-INSERT INTO `job_classes` VALUES ('751', '督导/巡店', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('752', '陈列员', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('753', '理货员', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('754', '防损员', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('755', '卖场经理', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('756', '收银', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('757', '导购', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('758', '店员/营业员', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('759', '门店店长', null, '104', '0', '0');
-INSERT INTO `job_classes` VALUES ('760', '会籍顾问', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('761', '救生员', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('762', '健身', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('763', '瑜伽教练', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('764', '瘦身顾问', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('765', '游泳教练', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('766', '美体教练', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('767', '舞蹈教练', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('768', '健身教练', null, '105', '0', '0');
-INSERT INTO `job_classes` VALUES ('769', '其他服务业职位', null, '106', '0', '0');
-INSERT INTO `job_classes` VALUES ('770', '生产营运', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('771', '厂长/工厂经理', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('772', '生产总监', null, '107', '1', '0');
-INSERT INTO `job_classes` VALUES ('773', '生产经理/车间主任', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('774', '生产组长/拉长', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('775', '生产员', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('776', '生产设备管理', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('777', '生产计划/物料控制', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('778', '生产跟单', null, '107', '0', '0');
-INSERT INTO `job_classes` VALUES ('779', '质检员', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('780', '质量管理/测试', null, '108', '1', '0');
-INSERT INTO `job_classes` VALUES ('781', '可靠度工程师', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('782', '故障分析师', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('783', '认证工程师', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('784', '体系工程师', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('785', '审核员', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('786', '安全员', null, '108', '1', '0');
-INSERT INTO `job_classes` VALUES ('787', '汽车质量工程师', null, '108', '0', '0');
-INSERT INTO `job_classes` VALUES ('788', '电池工程师', null, '109', '0', '0');
-INSERT INTO `job_classes` VALUES ('789', '电机工程师', null, '109', '0', '0');
-INSERT INTO `job_classes` VALUES ('790', '线束设计', null, '109', '0', '0');
-INSERT INTO `job_classes` VALUES ('791', '充电桩设计', null, '109', '0', '0');
-INSERT INTO `job_classes` VALUES ('792', '汽车设计', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('793', '车身/造型设计', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('794', '底盘工程师', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('795', '动力系统工程师', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('796', '汽车电子工程师', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('797', '汽车零部件设计', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('798', '汽车项目管理', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('799', '内外饰设计工程师', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('800', '总装工程师', null, '110', '0', '0');
-INSERT INTO `job_classes` VALUES ('801', '汽车销售', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('802', '汽车配件销售', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('803', '汽车服务顾问', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('804', '汽车维修', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('805', '汽车美容', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('806', '汽车定损理赔', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('807', '二手车评估师', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('808', '4S店店长/维修站长', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('809', '汽车改装工程师', null, '111', '0', '0');
-INSERT INTO `job_classes` VALUES ('810', '机械设计/制造', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('811', '热传导', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('812', '精益工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('813', '机械工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('814', '机械设计师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('815', '机械设备工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('816', '机械维修/保养', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('817', '机械制图', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('818', '机械结构工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('819', '工业工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('820', '工艺/制程工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('821', '材料工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('822', '机电工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('823', 'CNC/数控', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('824', '冲压工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('825', '夹具工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('826', '模具工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('827', '焊接工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('828', '注塑工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('829', '铸造/锻造工程师', null, '112', '0', '0');
-INSERT INTO `job_classes` VALUES ('830', '化工工程师', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('831', '实验室技术员', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('832', '化学分析', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('833', '涂料研发', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('834', '化妆品研发', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('835', '食品/饮料研发', null, '113', '0', '0');
-INSERT INTO `job_classes` VALUES ('836', '服装/纺织设计', null, '114', '0', '0');
-INSERT INTO `job_classes` VALUES ('837', '面料辅料开发', null, '114', '0', '0');
-INSERT INTO `job_classes` VALUES ('838', '打样/制版', null, '114', '0', '0');
-INSERT INTO `job_classes` VALUES ('839', '服装/纺织/皮革跟单', null, '114', '0', '0');
-INSERT INTO `job_classes` VALUES ('840', '缝纫工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('841', '搬运工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('842', '普工/操作工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('843', '叉车', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('844', '铲车', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('845', '焊工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('846', '氩弧焊工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('847', '电工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('848', '木工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('849', '漆工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('850', '车工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('851', '磨工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('852', '铣工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('853', '钳工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('854', '钻工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('855', '铆工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('856', '钣金', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('857', '抛光', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('858', '机修工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('859', '折弯工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('860', '电镀工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('861', '喷塑工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('862', '注塑工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('863', '组装工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('864', '包装工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('865', '空调工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('866', '电梯工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('867', '锅炉工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('868', '学徒工', null, '115', '0', '0');
-INSERT INTO `job_classes` VALUES ('869', '其他生产制造职位', null, '116', '0', '0');
+--
+-- 转存表中的数据 `job_classes`
+--
+
+INSERT INTO `job_classes` (`job_classes_id`, `job_classes_name`, `job_classes_url`, `child_classes_id`, `isRecommend`, `isHot`) VALUES
+(1, '后端开发', NULL, 1, 0, 0),
+(2, 'Java', NULL, 1, 1, 0),
+(3, 'C++', NULL, 1, 0, 0),
+(4, 'PHP', NULL, 1, 1, 0),
+(5, '数据挖掘', NULL, 1, 0, 0),
+(6, 'C', NULL, 1, 0, 0),
+(7, 'C#', NULL, 1, 0, 0),
+(8, '.NET', NULL, 1, 0, 0),
+(9, 'Hadoop', NULL, 1, 0, 0),
+(10, 'Python', NULL, 1, 0, 0),
+(11, 'Delphi', NULL, 1, 0, 0),
+(12, 'VB', NULL, 1, 0, 0),
+(13, 'Perl', NULL, 1, 0, 0),
+(14, 'Ruby', NULL, 1, 0, 0),
+(15, 'Node.js', NULL, 1, 0, 0),
+(16, '搜索算法', NULL, 1, 0, 0),
+(17, 'Golang', NULL, 1, 0, 0),
+(18, '推荐算法', NULL, 1, 0, 0),
+(19, 'Erlang', NULL, 1, 0, 0),
+(20, '算法工程师', NULL, 1, 1, 0),
+(21, '语音/视频/图形开发', NULL, 1, 0, 0),
+(22, '数据采集', NULL, 1, 0, 0),
+(23, 'UE4', NULL, 2, 0, 0),
+(24, '移动开发', NULL, 2, 0, 0),
+(25, 'HTML5', NULL, 2, 0, 0),
+(26, 'Android', NULL, 2, 0, 0),
+(27, 'iOS', NULL, 2, 0, 0),
+(28, 'WP', NULL, 2, 0, 0),
+(29, '移动web前端', NULL, 2, 0, 0),
+(30, 'Flash开发', NULL, 2, 0, 0),
+(31, 'JavaScript', NULL, 2, 0, 0),
+(32, 'U3D', NULL, 2, 0, 0),
+(33, 'COCOS2DX', NULL, 2, 0, 0),
+(34, '测试工程师', NULL, 3, 0, 0),
+(35, '自动化测试', NULL, 3, 0, 0),
+(36, '功能测试', NULL, 3, 0, 0),
+(37, '性能测试', NULL, 3, 0, 0),
+(38, '测试开发', NULL, 3, 0, 0),
+(39, '移动端测试', NULL, 3, 0, 0),
+(40, '游戏测试', NULL, 3, 0, 0),
+(41, '硬件测试', NULL, 3, 0, 0),
+(42, '软件测试', NULL, 3, 0, 0),
+(43, '运维工程师', NULL, 4, 0, 0),
+(44, '运维开发工程师', NULL, 4, 0, 0),
+(45, '网络工程师', NULL, 4, 0, 0),
+(46, '系统工程师', NULL, 4, 0, 0),
+(47, 'IT技术支持', NULL, 4, 0, 0),
+(48, '系统管理员', NULL, 4, 0, 0),
+(49, '网络安全', NULL, 4, 0, 0),
+(50, '系统安全', NULL, 4, 0, 0),
+(51, 'DBA', NULL, 4, 0, 0),
+(52, '数据', NULL, 5, 0, 0),
+(53, 'ETL工程师', NULL, 5, 0, 0),
+(54, '数据仓库', NULL, 5, 0, 0),
+(55, '数据开发', NULL, 5, 0, 0),
+(56, '数据挖掘', NULL, 5, 0, 0),
+(57, '数据分析师', NULL, 5, 0, 0),
+(58, '数据架构师', NULL, 5, 0, 0),
+(59, '算法研究员', NULL, 5, 0, 0),
+(60, '项目经理', NULL, 6, 0, 0),
+(61, '项目主管', NULL, 6, 0, 0),
+(62, '项目助理', NULL, 6, 0, 0),
+(63, '项目专员', NULL, 6, 0, 0),
+(64, '实施顾问', NULL, 6, 0, 0),
+(65, '实施工程师', NULL, 6, 0, 0),
+(66, '需求分析工程师', NULL, 6, 0, 0),
+(67, '硬件', NULL, 7, 0, 0),
+(68, '嵌入式', NULL, 7, 0, 0),
+(69, '自动化', NULL, 7, 0, 0),
+(70, '单片机', NULL, 7, 0, 0),
+(71, '电路设计', NULL, 7, 0, 0),
+(72, '驱动开发', NULL, 7, 0, 0),
+(73, '系统集成', NULL, 7, 0, 0),
+(74, 'FPGA开发', NULL, 7, 0, 0),
+(75, 'DSP开发', NULL, 7, 0, 0),
+(76, 'ARM开发', NULL, 7, 0, 0),
+(77, 'PCB工艺', NULL, 7, 0, 0),
+(78, '射频工程师', NULL, 7, 0, 0),
+(79, '前端开发', NULL, 8, 0, 0),
+(80, 'web前端', NULL, 8, 1, 0),
+(81, 'JavaScript', NULL, 8, 0, 0),
+(82, 'Flash开发', NULL, 8, 0, 0),
+(83, 'HTML5', NULL, 8, 0, 0),
+(84, '通信技术工程师', NULL, 9, 0, 0),
+(85, '通信研发工程师', NULL, 9, 0, 0),
+(86, '数据通信工程师', NULL, 9, 0, 0),
+(87, '移动通信工程师', NULL, 9, 0, 0),
+(88, '电信网络工程师', NULL, 9, 0, 0),
+(89, '电信交换工程师', NULL, 9, 0, 0),
+(90, '有线传输工程师', NULL, 9, 0, 0),
+(91, '无线射频工程师', NULL, 9, 0, 0),
+(92, '通信电源工程师', NULL, 9, 0, 0),
+(93, '通信标准化工程师', NULL, 9, 0, 0),
+(94, '通信项目专员', NULL, 9, 0, 0),
+(95, '通信项目经理', NULL, 9, 0, 0),
+(96, '核心网工程师', NULL, 9, 0, 0),
+(97, '通信测试工程师', NULL, 9, 0, 0),
+(98, '通信设备工程师', NULL, 9, 0, 0),
+(99, '光通信工程师', NULL, 9, 0, 0),
+(100, '光传输工程师', NULL, 9, 0, 0),
+(101, '光网络工程师', NULL, 9, 0, 0),
+(102, '电子工程师', NULL, 10, 0, 0),
+(103, '电气工程师', NULL, 10, 0, 0),
+(104, 'FAE', NULL, 10, 0, 0),
+(105, '电气设计工程师', NULL, 10, 0, 0),
+(106, '高端技术职位', NULL, 11, 0, 0),
+(107, '技术经理', NULL, 11, 0, 0),
+(108, '技术总监', NULL, 11, 0, 0),
+(109, '测试经理', NULL, 11, 0, 0),
+(110, '架构师', NULL, 11, 0, 0),
+(111, 'CTO', NULL, 11, 0, 0),
+(112, '运维总监', NULL, 11, 0, 0),
+(113, '技术合伙人', NULL, 11, 0, 0),
+(114, '智能驾驶系统工程师', NULL, 12, 0, 0),
+(115, '反欺诈/风控算法', NULL, 12, 0, 0),
+(116, '人工智能', NULL, 12, 0, 0),
+(117, '自然语言处理', NULL, 12, 0, 0),
+(118, '机器学习', NULL, 12, 0, 0),
+(119, '深度学习', NULL, 12, 0, 0),
+(120, '语音识别', NULL, 12, 0, 0),
+(121, '图像识别', NULL, 12, 0, 0),
+(122, '算法研究员', NULL, 12, 0, 0),
+(123, '销售技术支持', NULL, 13, 0, 0),
+(124, '售前工程师', NULL, 13, 0, 0),
+(125, '售后工程师', NULL, 13, 0, 0),
+(126, '其他技术职位', NULL, 14, 0, 0),
+(127, '硬件产品经理', NULL, 15, 0, 0),
+(128, '产品经理', NULL, 15, 1, 0),
+(129, '网页产品经理', NULL, 15, 0, 0),
+(130, '移动产品经理', NULL, 15, 0, 0),
+(131, '产品助理', NULL, 15, 0, 0),
+(132, '数据产品经理', NULL, 15, 1, 0),
+(133, '电商产品经理', NULL, 15, 0, 0),
+(134, '游戏策划', NULL, 15, 0, 0),
+(135, '产品专员', NULL, 15, 0, 0),
+(136, '高端产品职位', NULL, 16, 0, 0),
+(137, '产品总监', NULL, 16, 1, 0),
+(138, '游戏制作人', NULL, 16, 0, 0),
+(139, '产品VP', NULL, 16, 0, 0),
+(140, '其他产品职位', NULL, 17, 0, 0),
+(141, '视觉设计', NULL, 18, 0, 0),
+(142, '视觉设计师', NULL, 18, 0, 0),
+(143, '网页设计师', NULL, 18, 0, 0),
+(144, 'Flash设计师', NULL, 18, 0, 0),
+(145, 'APP设计师', NULL, 18, 0, 0),
+(146, 'UI设计师', NULL, 18, 1, 0),
+(147, '平面设计师', NULL, 18, 1, 0),
+(148, '美术设计师（2D/3D）', NULL, 18, 0, 0),
+(149, '广告设计师', NULL, 18, 0, 0),
+(150, '多媒体设计师', NULL, 18, 0, 0),
+(151, '原画师', NULL, 18, 0, 0),
+(152, '游戏特效', NULL, 18, 0, 0),
+(153, '游戏界面设计师', NULL, 18, 0, 0),
+(154, '游戏场景', NULL, 18, 0, 0),
+(155, '游戏角色', NULL, 18, 0, 0),
+(156, '游戏动作', NULL, 18, 0, 0),
+(157, '三维/CAD/制图', NULL, 18, 0, 0),
+(158, '美工', NULL, 18, 0, 0),
+(159, '包装设计', NULL, 18, 0, 0),
+(160, '设计师助理', NULL, 18, 0, 0),
+(161, '动画设计师', NULL, 18, 0, 0),
+(162, '插画师', NULL, 18, 0, 0),
+(163, '交互设计师', NULL, 19, 1, 0),
+(164, '无线交互设计师', NULL, 19, 0, 0),
+(165, '网页交互设计师', NULL, 19, 0, 0),
+(166, '硬件交互设计师', NULL, 19, 0, 0),
+(167, '数据分析师', NULL, 20, 0, 0),
+(168, '用户研究员', NULL, 20, 0, 0),
+(169, '游戏数值策划', NULL, 20, 0, 0),
+(170, 'UX设计师', NULL, 20, 0, 0),
+(171, '用户研究经理', NULL, 20, 0, 0),
+(172, '用户研究总监', NULL, 20, 0, 0),
+(173, '高端设计职位', NULL, 21, 0, 0),
+(174, '设计经理/主管', NULL, 21, 0, 0),
+(175, '设计总监', NULL, 21, 0, 0),
+(176, '视觉设计经理', NULL, 21, 0, 0),
+(177, '视觉设计总监', NULL, 21, 0, 0),
+(178, '交互设计经理/主管', NULL, 21, 0, 0),
+(179, '交互设计总监', NULL, 21, 0, 0),
+(180, '非视觉设计', NULL, 22, 0, 0),
+(181, '服装/纺织设计', NULL, 22, 0, 0),
+(182, '工业设计', NULL, 22, 0, 0),
+(183, '橱柜设计', NULL, 22, 0, 0),
+(184, '家具设计', NULL, 22, 0, 0),
+(185, '家居设计', NULL, 22, 0, 0),
+(186, '珠宝设计', NULL, 22, 0, 0),
+(187, '室内设计', NULL, 22, 0, 0),
+(188, '陈列设计', NULL, 22, 0, 0),
+(189, '其他设计职位', NULL, 23, 0, 0),
+(190, '数据标注', NULL, 24, 0, 0),
+(191, '直播运营', NULL, 24, 0, 0),
+(192, '运营', NULL, 24, 0, 0),
+(193, '用户运营', NULL, 24, 0, 0),
+(194, '产品运营', NULL, 24, 1, 0),
+(195, '数据运营', NULL, 24, 0, 0),
+(196, '内容运营', NULL, 24, 0, 0),
+(197, '活动运营', NULL, 24, 0, 0),
+(198, '商家运营', NULL, 24, 0, 0),
+(199, '品类运营', NULL, 24, 0, 0),
+(200, '游戏运营', NULL, 24, 0, 0),
+(201, '网络推广', NULL, 24, 1, 0),
+(202, '网站运营', NULL, 24, 0, 0),
+(203, '新媒体运营', NULL, 24, 1, 0),
+(204, '社区运营', NULL, 24, 0, 0),
+(205, '微信运营', NULL, 24, 0, 0),
+(206, '微博运营', NULL, 24, 0, 0),
+(207, '策略运营', NULL, 24, 0, 0),
+(208, '线下拓展运营', NULL, 24, 0, 0),
+(209, '电商运营', NULL, 24, 0, 0),
+(210, '运营助理/专员', NULL, 24, 0, 0),
+(211, '内容审核', NULL, 24, 0, 0),
+(212, '销售运营', NULL, 24, 0, 0),
+(213, '编辑', NULL, 25, 0, 0),
+(214, '副主编', NULL, 25, 0, 0),
+(215, '内容编辑', NULL, 25, 0, 0),
+(216, '文案策划', NULL, 25, 0, 0),
+(217, '网站编辑', NULL, 25, 0, 0),
+(218, '记者', NULL, 25, 0, 0),
+(219, '采编', NULL, 25, 0, 0),
+(220, '售前咨询', NULL, 26, 0, 0),
+(221, '售后咨询', NULL, 26, 0, 0),
+(222, '网络客服', NULL, 26, 0, 0),
+(223, '客服经理', NULL, 26, 0, 0),
+(224, '客服专员/助理', NULL, 26, 0, 0),
+(225, '客服主管', NULL, 26, 0, 0),
+(226, '客服总监', NULL, 26, 0, 0),
+(227, '电话客服', NULL, 26, 0, 0),
+(228, '咨询热线/呼叫中心客服', NULL, 26, 0, 0),
+(229, '高端运营职位', NULL, 27, 0, 0),
+(230, '主编', NULL, 27, 0, 0),
+(231, '运营总监', NULL, 27, 0, 0),
+(232, 'COO', NULL, 27, 0, 0),
+(233, '客服总监', NULL, 27, 0, 0),
+(234, '运营经理/主管', NULL, 27, 0, 0),
+(235, '其他运营职位', NULL, 28, 0, 0),
+(236, '政策研究', NULL, 29, 0, 0),
+(237, '企业党建', NULL, 29, 0, 0),
+(238, '政府关系', NULL, 29, 0, 0),
+(239, '选址开发', NULL, 30, 0, 0),
+(240, '市场营销', NULL, 30, 1, 0),
+(241, '市场策划', NULL, 30, 0, 0),
+(242, '市场顾问', NULL, 30, 0, 0),
+(243, '市场推广', NULL, 30, 1, 0),
+(244, 'SEO', NULL, 30, 0, 0),
+(245, 'SEM', NULL, 30, 0, 0),
+(246, '商务渠道', NULL, 30, 0, 0),
+(247, '商业数据分析', NULL, 30, 0, 0),
+(248, '活动策划', NULL, 30, 0, 0),
+(249, '网络营销', NULL, 30, 0, 0),
+(250, '海外市场', NULL, 30, 0, 0),
+(251, 'APP推广', NULL, 30, 0, 0),
+(252, '公关媒介', NULL, 31, 0, 0),
+(253, '媒介经理', NULL, 31, 0, 0),
+(254, '广告协调', NULL, 31, 0, 0),
+(255, '品牌公关', NULL, 31, 1, 0),
+(256, '媒介专员', NULL, 31, 0, 0),
+(257, '活动策划执行', NULL, 31, 0, 0),
+(258, '媒介策划', NULL, 31, 0, 0),
+(259, '会务会展', NULL, 32, 0, 0),
+(260, '会议活动销售', NULL, 32, 0, 0),
+(261, '会议活动策划', NULL, 32, 0, 0),
+(262, '会议活动执行', NULL, 32, 0, 0),
+(263, '会展活动销售', NULL, 32, 0, 0),
+(264, '会展活动策划', NULL, 32, 0, 0),
+(265, '会展活动执行', NULL, 32, 0, 0),
+(266, '广告', NULL, 33, 0, 0),
+(267, '广告创意', NULL, 33, 0, 0),
+(268, '美术指导', NULL, 33, 0, 0),
+(269, '广告设计师', NULL, 33, 0, 0),
+(270, '策划经理', NULL, 33, 1, 0),
+(271, '文案', NULL, 33, 0, 0),
+(272, '广告制作', NULL, 33, 0, 0),
+(273, '媒介投放', NULL, 33, 0, 0),
+(274, '媒介合作', NULL, 33, 0, 0),
+(275, '媒介顾问', NULL, 33, 0, 0),
+(276, '广告审核', NULL, 33, 0, 0),
+(277, '高端市场职位', NULL, 34, 0, 0),
+(278, '市场总监', NULL, 34, 0, 0),
+(279, 'CMO', NULL, 34, 0, 0),
+(280, '公关总监', NULL, 34, 0, 0),
+(281, '媒介总监', NULL, 34, 0, 0),
+(282, '创意总监', NULL, 34, 0, 0),
+(283, '其他市场职位', NULL, 35, 0, 0),
+(284, '人力资源主管', NULL, 36, 0, 0),
+(285, '招聘', NULL, 36, 0, 0),
+(286, 'HRBP', NULL, 36, 0, 0),
+(287, '人力资源专员/助理', NULL, 36, 1, 0),
+(288, '培训', NULL, 36, 1, 0),
+(289, '薪资福利', NULL, 36, 0, 0),
+(290, '绩效考核', NULL, 36, 1, 0),
+(291, '人力资源经理', NULL, 36, 0, 0),
+(292, '人力资源VP/CHO', NULL, 36, 0, 0),
+(293, '人力资源总监', NULL, 36, 0, 0),
+(294, '员工关系', NULL, 36, 0, 0),
+(295, '组织发展', NULL, 36, 0, 0),
+(296, '行政专员/助理', NULL, 37, 0, 0),
+(297, '前台', NULL, 37, 0, 0),
+(298, '行政主管', NULL, 37, 1, 0),
+(299, '经理助理', NULL, 37, 0, 0),
+(300, '后勤', NULL, 37, 0, 0),
+(301, '商务司机', NULL, 37, 0, 0),
+(302, '行政经理', NULL, 37, 0, 0),
+(303, '行政总监', NULL, 37, 0, 0),
+(304, '成本', NULL, 38, 0, 0),
+(305, '财务', NULL, 38, 1, 0),
+(306, '会计', NULL, 38, 0, 0),
+(307, '出纳', NULL, 38, 0, 0),
+(308, '财务顾问', NULL, 38, 0, 0),
+(309, '结算', NULL, 38, 0, 0),
+(310, '税务', NULL, 38, 0, 0),
+(311, '审计', NULL, 38, 0, 0),
+(312, '风控', NULL, 38, 0, 0),
+(313, '财务经理', NULL, 38, 0, 0),
+(314, 'CFO', NULL, 38, 0, 0),
+(315, '财务总监', NULL, 38, 0, 0),
+(316, '财务主管', NULL, 38, 0, 0),
+(317, '法务专员/助理', NULL, 39, 0, 0),
+(318, '律师', NULL, 39, 0, 0),
+(319, '专利', NULL, 39, 0, 0),
+(320, '法律顾问', NULL, 39, 0, 0),
+(321, '法务主管', NULL, 39, 0, 0),
+(322, '法务经理', NULL, 39, 0, 0),
+(323, '法务总监', NULL, 39, 0, 0),
+(324, '其他职能职位', NULL, 40, 0, 0),
+(325, '高级管理职位', NULL, 41, 0, 0),
+(326, '总裁/总经理/CEO', NULL, 41, 1, 0),
+(327, '副总裁/副总经理/VP', NULL, 41, 0, 0),
+(328, '分公司/代表处负责人', NULL, 41, 1, 0),
+(329, '区域负责人(辖多个分公司)', NULL, 41, 0, 0),
+(330, '总助/CEO助理/董事长助理', NULL, 41, 0, 0),
+(331, '合伙人', NULL, 41, 0, 0),
+(332, '联合创始人', NULL, 41, 0, 0),
+(333, '董事会秘书', NULL, 41, 0, 0),
+(334, '销售', NULL, 42, 0, 0),
+(335, '销售专员', NULL, 42, 1, 0),
+(336, '销售经理', NULL, 42, 1, 0),
+(337, '客户代表', NULL, 42, 0, 0),
+(338, '大客户代表', NULL, 42, 0, 0),
+(339, 'BD经理', NULL, 42, 0, 0),
+(340, '商务渠道', NULL, 42, 0, 0),
+(341, '渠道销售', NULL, 42, 0, 0),
+(342, '代理商销售', NULL, 42, 0, 0),
+(343, '销售助理', NULL, 42, 0, 0),
+(344, '电话销售', NULL, 42, 0, 0),
+(345, '销售顾问', NULL, 42, 0, 0),
+(346, '商品经理', NULL, 42, 0, 0),
+(347, '广告销售', NULL, 42, 0, 0),
+(348, '网络营销', NULL, 42, 0, 0),
+(349, '营销主管', NULL, 42, 0, 0),
+(350, '销售工程师', NULL, 42, 1, 0),
+(351, '客户经理', NULL, 42, 0, 0),
+(352, '销售管理', NULL, 43, 0, 0),
+(353, '销售总监', NULL, 43, 0, 0),
+(354, '商务总监', NULL, 43, 0, 0),
+(355, '区域总监', NULL, 43, 0, 0),
+(356, '城市经理', NULL, 43, 0, 0),
+(357, '销售VP', NULL, 43, 0, 0),
+(358, '团队经理', NULL, 43, 0, 0),
+(359, '其他销售职位', NULL, 44, 0, 0),
+(360, '采编/写作/出版', NULL, 45, 0, 0),
+(361, '记者', NULL, 45, 1, 0),
+(362, '编辑', NULL, 45, 1, 0),
+(363, '采编', NULL, 45, 0, 0),
+(364, '撰稿人', NULL, 45, 0, 0),
+(365, '出版发行', NULL, 45, 0, 0),
+(366, '校对录入', NULL, 45, 0, 0),
+(367, '总编', NULL, 45, 0, 0),
+(368, '自媒体', NULL, 45, 0, 0),
+(369, '公关媒介', NULL, 46, 0, 0),
+(370, '媒介经理', NULL, 46, 1, 0),
+(371, '媒介专员', NULL, 46, 0, 0),
+(372, '广告协调', NULL, 46, 0, 0),
+(373, '品牌公关', NULL, 46, 0, 0),
+(374, '活动策划执行', NULL, 46, 0, 0),
+(375, '媒介策划', NULL, 46, 0, 0),
+(376, '会务会展', NULL, 47, 0, 0),
+(377, '会议活动销售', NULL, 47, 0, 0),
+(378, '会议活动策划', NULL, 47, 0, 0),
+(379, '会议活动执行', NULL, 47, 0, 0),
+(380, '会展活动销售', NULL, 47, 0, 0),
+(381, '会展活动策划', NULL, 47, 0, 0),
+(382, '会展活动执行', NULL, 47, 0, 0),
+(383, '广告', NULL, 48, 0, 0),
+(384, '广告创意', NULL, 48, 1, 0),
+(385, '美术指导', NULL, 48, 0, 0),
+(386, '广告设计师', NULL, 48, 0, 0),
+(387, '策划经理', NULL, 48, 0, 0),
+(388, '文案', NULL, 48, 1, 0),
+(389, '广告制作', NULL, 48, 0, 0),
+(390, '媒介投放', NULL, 48, 0, 0),
+(391, '媒介合作', NULL, 48, 0, 0),
+(392, '媒介顾问', NULL, 48, 0, 0),
+(393, '广告审核', NULL, 48, 0, 0),
+(394, '主持人/DJ', NULL, 49, 0, 0),
+(395, '影视媒体', NULL, 49, 0, 0),
+(396, '艺人助理', NULL, 49, 0, 0),
+(397, '统筹制片人', NULL, 49, 0, 0),
+(398, '执行制片人', NULL, 49, 0, 0),
+(399, '导演/编导', NULL, 49, 0, 0),
+(400, '摄影/摄像', NULL, 49, 0, 0),
+(401, '视频编辑', NULL, 49, 0, 0),
+(402, '音频编辑', NULL, 49, 0, 0),
+(403, '经纪人', NULL, 49, 0, 0),
+(404, '后期制作', NULL, 49, 0, 0),
+(405, '影视制作', NULL, 49, 0, 0),
+(406, '影视发行', NULL, 49, 0, 0),
+(407, '影视策划', NULL, 49, 0, 0),
+(408, '主播', NULL, 49, 0, 0),
+(409, '演员/配音/模特', NULL, 49, 0, 0),
+(410, '化妆/造型/服装', NULL, 49, 0, 0),
+(411, '放映管理', NULL, 49, 0, 0),
+(412, '录音/音效', NULL, 49, 0, 0),
+(413, '制片人', NULL, 49, 0, 0),
+(414, '编剧', NULL, 49, 0, 0),
+(415, '其他传媒职位', NULL, 50, 0, 0),
+(416, '投融资', NULL, 51, 0, 0),
+(417, '投资经理', NULL, 51, 1, 0),
+(418, '行业研究', NULL, 51, 0, 0),
+(419, '资产管理', NULL, 51, 0, 0),
+(420, '投资总监', NULL, 51, 1, 0),
+(421, '投资VP', NULL, 51, 0, 0),
+(422, '投资合伙人', NULL, 51, 0, 0),
+(423, '融资', NULL, 51, 0, 0),
+(424, '并购', NULL, 51, 0, 0),
+(425, '投后管理', NULL, 51, 0, 0),
+(426, '投资助理', NULL, 51, 0, 0),
+(427, '其他投融资职位', NULL, 51, 0, 0),
+(428, '投资顾问', NULL, 51, 0, 0),
+(429, '风控', NULL, 52, 1, 0),
+(430, '律师', NULL, 52, 0, 0),
+(431, '资信评估', NULL, 52, 0, 0),
+(432, '合规稽查', NULL, 52, 0, 0),
+(433, '审计', NULL, 53, 0, 0),
+(434, '法务', NULL, 53, 0, 0),
+(435, '会计', NULL, 53, 0, 0),
+(436, '清算', NULL, 53, 0, 0),
+(437, '银行', NULL, 54, 0, 0),
+(438, '信用卡销售', NULL, 54, 0, 0),
+(439, '分析师', NULL, 54, 0, 0),
+(440, '柜员', NULL, 54, 0, 0),
+(441, '商务渠道', NULL, 54, 0, 0),
+(442, '大堂经理', NULL, 54, 0, 0),
+(443, '理财顾问', NULL, 54, 0, 0),
+(444, '客户经理', NULL, 54, 0, 0),
+(445, '信贷管理', NULL, 54, 0, 0),
+(446, '风控', NULL, 54, 0, 0),
+(447, '互联网金融', NULL, 55, 0, 0),
+(448, '金融产品经理', NULL, 55, 0, 0),
+(449, '风控', NULL, 55, 0, 0),
+(450, '催收员', NULL, 55, 0, 0),
+(451, '分析师', NULL, 55, 0, 0),
+(452, '投资经理', NULL, 55, 0, 0),
+(453, '交易员', NULL, 55, 0, 0),
+(454, '理财顾问', NULL, 55, 0, 0),
+(455, '合规稽查', NULL, 55, 0, 0),
+(456, '审计', NULL, 55, 0, 0),
+(457, '清算', NULL, 55, 0, 0),
+(458, '保险业务', NULL, 56, 0, 0),
+(459, '精算师', NULL, 56, 0, 0),
+(460, '保险理赔', NULL, 56, 0, 0),
+(461, '证券', NULL, 57, 1, 0),
+(462, '证券经纪人', NULL, 57, 0, 0),
+(463, '证券分析师', NULL, 57, 0, 0),
+(464, '其他金融职位', NULL, 58, 0, 0),
+(465, '教育产品研发', NULL, 59, 0, 0),
+(466, '课程设计', NULL, 59, 1, 0),
+(467, '课程编辑', NULL, 59, 0, 0),
+(468, '教师', NULL, 59, 0, 0),
+(469, '培训研究', NULL, 59, 0, 0),
+(470, '培训师', NULL, 59, 0, 0),
+(471, '培训策划', NULL, 59, 0, 0),
+(472, '其他教育产品研发职位', NULL, 59, 0, 0),
+(473, '教育行政', NULL, 60, 0, 0),
+(474, '校长', NULL, 60, 0, 0),
+(475, '教务管理', NULL, 60, 1, 0),
+(476, '教学管理', NULL, 60, 0, 0),
+(477, '班主任/辅导员', NULL, 60, 0, 0),
+(478, '日语教师', NULL, 61, 0, 0),
+(479, '其他外语教师', NULL, 61, 0, 0),
+(480, '教师', NULL, 61, 0, 0),
+(481, '助教', NULL, 61, 0, 0),
+(482, '高中教师', NULL, 61, 0, 0),
+(483, '初中教师', NULL, 61, 0, 0),
+(484, '小学教师', NULL, 61, 0, 0),
+(485, '幼教', NULL, 61, 0, 0),
+(486, '理科教师', NULL, 61, 0, 0),
+(487, '文科教师', NULL, 61, 0, 0),
+(488, '英语教师', NULL, 61, 0, 0),
+(489, '音乐教师', NULL, 61, 0, 0),
+(490, '美术教师', NULL, 61, 0, 0),
+(491, '体育教师', NULL, 61, 0, 0),
+(492, '就业老师', NULL, 61, 0, 0),
+(493, 'IT培训', NULL, 62, 1, 0),
+(494, 'JAVA培训讲师', NULL, 62, 0, 0),
+(495, 'Android培训讲师', NULL, 62, 0, 0),
+(496, 'ios培训讲师', NULL, 62, 0, 0),
+(497, 'PHP培训讲师', NULL, 62, 0, 0),
+(498, '.NET培训讲师', NULL, 62, 0, 0),
+(499, 'C++培训讲师', NULL, 62, 0, 0),
+(500, 'Unity 3D培训讲师', NULL, 62, 0, 0),
+(501, 'Web前端培训讲师', NULL, 62, 0, 0),
+(502, '软件测试培训讲师', NULL, 62, 0, 0),
+(503, '动漫培训讲师', NULL, 62, 0, 0),
+(504, 'UI设计培训讲师', NULL, 62, 0, 0),
+(505, '财会培训讲师', NULL, 63, 0, 0),
+(506, 'HR培训讲师', NULL, 63, 0, 0),
+(507, '培训师', NULL, 63, 0, 0),
+(508, '拓展培训', NULL, 63, 0, 0),
+(509, '课程顾问', NULL, 64, 0, 0),
+(510, '招生顾问', NULL, 64, 0, 0),
+(511, '留学顾问', NULL, 64, 0, 0),
+(512, '武术教练', NULL, 65, 0, 0),
+(513, '轮滑教练', NULL, 65, 0, 0),
+(514, '教练', NULL, 65, 0, 0),
+(515, '舞蹈教练', NULL, 65, 0, 0),
+(516, '瑜伽教练', NULL, 65, 0, 0),
+(517, '瘦身顾问', NULL, 65, 0, 0),
+(518, '游泳教练', NULL, 65, 0, 0),
+(519, '健身教练', NULL, 65, 0, 0),
+(520, '篮球/羽毛球教练', NULL, 65, 0, 0),
+(521, '跆拳道教练', NULL, 65, 0, 0),
+(522, '其他教育培训职位', NULL, 66, 0, 0),
+(523, '临床研究', NULL, 67, 0, 0),
+(524, '临床协调', NULL, 67, 0, 0),
+(525, '临床数据分析', NULL, 67, 0, 0),
+(526, '医学总监', NULL, 67, 0, 0),
+(527, '医生助理', NULL, 68, 0, 0),
+(528, '医学影像', NULL, 68, 0, 0),
+(529, 'B超医生', NULL, 68, 0, 0),
+(530, '中医', NULL, 68, 0, 0),
+(531, '医师', NULL, 68, 0, 0),
+(532, '心理医生', NULL, 68, 0, 0),
+(533, '药剂师', NULL, 68, 1, 0),
+(534, '牙科医生', NULL, 68, 0, 0),
+(535, '康复治疗师', NULL, 68, 0, 0),
+(536, '验光师', NULL, 68, 0, 0),
+(537, '放射科医师', NULL, 68, 0, 0),
+(538, '检验科医师', NULL, 68, 0, 0),
+(539, '其他医生职位', NULL, 68, 0, 0),
+(540, '护士长', NULL, 69, 0, 0),
+(541, '护士/护理', NULL, 69, 0, 0),
+(542, '导医', NULL, 69, 0, 0),
+(543, '健康整形', NULL, 70, 0, 0),
+(544, '营养师', NULL, 70, 1, 0),
+(545, '整形师', NULL, 70, 0, 0),
+(546, '理疗师', NULL, 70, 0, 0),
+(547, '针灸推拿', NULL, 70, 0, 0),
+(548, '生物制药', NULL, 71, 0, 0),
+(549, '药品注册', NULL, 71, 0, 0),
+(550, '药品生产', NULL, 71, 0, 0),
+(551, '医学总监', NULL, 71, 0, 0),
+(552, '医药研发', NULL, 71, 0, 0),
+(553, '医疗器械注册', NULL, 72, 0, 0),
+(554, '医疗器械生产/质量管理', NULL, 72, 0, 0),
+(555, '医疗器械研发', NULL, 72, 1, 0),
+(556, '药店店长', NULL, 73, 0, 0),
+(557, '执业药师/驻店药师', NULL, 73, 0, 0),
+(558, '药店店员', NULL, 73, 0, 0),
+(559, '医学营销/媒体', NULL, 74, 0, 0),
+(560, '医疗器械销售', NULL, 74, 0, 0),
+(561, '医学编辑', NULL, 74, 0, 0),
+(562, '药学编辑', NULL, 74, 0, 0),
+(563, '医药代表', NULL, 74, 0, 0),
+(564, '健康顾问', NULL, 74, 0, 0),
+(565, '医美咨询', NULL, 74, 0, 0),
+(566, '其他医疗健康职位', NULL, 75, 0, 0),
+(567, '采购', NULL, 76, 0, 0),
+(568, '采购总监', NULL, 76, 0, 0),
+(569, '采购经理', NULL, 76, 1, 0),
+(570, '采购专员', NULL, 76, 0, 0),
+(571, '买手', NULL, 76, 0, 0),
+(572, '采购工程师', NULL, 76, 0, 0),
+(573, '采购主管', NULL, 76, 1, 0),
+(574, '采购助理', NULL, 76, 0, 0),
+(575, '进出口贸易', NULL, 77, 1, 0),
+(576, '外贸经理', NULL, 77, 0, 0),
+(577, '外贸专员', NULL, 77, 0, 0),
+(578, '外贸业务员', NULL, 77, 0, 0),
+(579, '贸易跟单', NULL, 77, 0, 0),
+(580, '其他采购/贸易类职位', NULL, 78, 0, 0),
+(581, '物流', NULL, 79, 0, 0),
+(582, '供应链专员', NULL, 79, 0, 0),
+(583, '供应链经理', NULL, 79, 1, 0),
+(584, '物流专员', NULL, 79, 1, 0),
+(585, '物流经理', NULL, 79, 0, 0),
+(586, '物流运营', NULL, 79, 0, 0),
+(587, '物流跟单', NULL, 79, 0, 0),
+(588, '贸易跟单', NULL, 79, 1, 0),
+(589, '物仓调度', NULL, 79, 0, 0),
+(590, '物仓项目', NULL, 79, 0, 0),
+(591, '运输经理/主管', NULL, 79, 0, 0),
+(592, '货运代理专员', NULL, 79, 0, 0),
+(593, '货运代理经理', NULL, 79, 0, 0),
+(594, '水/空/陆运操作', NULL, 79, 0, 0),
+(595, '报关员', NULL, 79, 0, 0),
+(596, '报检员', NULL, 79, 0, 0),
+(597, '核销员', NULL, 79, 0, 0),
+(598, '单证员', NULL, 79, 0, 0),
+(599, '仓储', NULL, 80, 0, 0),
+(600, '仓储物料经理', NULL, 80, 0, 0),
+(601, '仓储物料专员', NULL, 80, 0, 0),
+(602, '仓储物料项目', NULL, 80, 0, 0),
+(603, '仓储管理', NULL, 80, 0, 0),
+(604, '仓库文员', NULL, 80, 0, 0),
+(605, '配/理/拣/发货', NULL, 80, 0, 0),
+(606, '运输', NULL, 81, 0, 0),
+(607, '货运司机', NULL, 81, 0, 0),
+(608, '集装箱管理', NULL, 81, 0, 0),
+(609, '配送', NULL, 81, 0, 0),
+(610, '快递', NULL, 81, 0, 0),
+(611, '高端供应链职位', NULL, 82, 0, 0),
+(612, '供应链总监', NULL, 82, 0, 0),
+(613, '物流总监', NULL, 82, 0, 0),
+(614, '其他供应链职位', NULL, 83, 0, 0),
+(615, '房地产规划开发', NULL, 84, 1, 0),
+(616, '房产策划', NULL, 84, 0, 0),
+(617, '地产项目管理', NULL, 84, 0, 0),
+(618, '地产招投标', NULL, 84, 0, 0),
+(619, '弱电工程师', NULL, 85, 0, 0),
+(620, '给排水工程师', NULL, 85, 0, 0),
+(621, '暖通工程师', NULL, 85, 0, 0),
+(622, '幕墙工程师', NULL, 85, 0, 0),
+(623, '软装设计师', NULL, 85, 0, 0),
+(624, '施工员', NULL, 85, 0, 0),
+(625, '测绘/测量', NULL, 85, 0, 0),
+(626, '材料员', NULL, 85, 0, 0),
+(627, 'BIM工程师', NULL, 85, 0, 0),
+(628, '设计装修与市政建设', NULL, 85, 0, 0),
+(629, '高级建筑工程师', NULL, 85, 0, 0),
+(630, '建筑工程师', NULL, 85, 0, 0),
+(631, '建筑设计师', NULL, 85, 0, 0),
+(632, '土木/土建/结构工程师', NULL, 85, 0, 0),
+(633, '室内设计', NULL, 85, 0, 0),
+(634, '园林设计', NULL, 85, 0, 0),
+(635, '城市规划设计', NULL, 85, 0, 0),
+(636, '工程监理', NULL, 85, 0, 0),
+(637, '工程造价', NULL, 85, 0, 0),
+(638, '预结算', NULL, 85, 0, 0),
+(639, '工程资料管理', NULL, 85, 0, 0),
+(640, '建筑施工现场管理', NULL, 85, 0, 0),
+(641, '景观设计', NULL, 85, 0, 0),
+(642, '房地产经纪', NULL, 86, 0, 0),
+(643, '地产置业顾问', NULL, 86, 0, 0),
+(644, '地产评估', NULL, 86, 0, 0),
+(645, '地产中介', NULL, 86, 0, 0),
+(646, '物业维修', NULL, 87, 0, 0),
+(647, '绿化工', NULL, 87, 0, 0),
+(648, '物业管理', NULL, 87, 1, 0),
+(649, '物业租赁销售', NULL, 87, 0, 0),
+(650, '物业招商管理', NULL, 87, 0, 0),
+(651, '高端房地产职位', NULL, 88, 0, 0),
+(652, '地产项目总监', NULL, 88, 0, 0),
+(653, '地产策划总监', NULL, 88, 0, 0),
+(654, '地产招投标总监', NULL, 88, 0, 0),
+(655, '物业总监', NULL, 88, 0, 0),
+(656, '房地产销售总监', NULL, 88, 0, 0),
+(657, '其他房地产职位', NULL, 89, 0, 0),
+(658, '咨询/调研', NULL, 90, 0, 0),
+(659, '企业管理咨询', NULL, 90, 1, 0),
+(660, '数据分析师', NULL, 90, 0, 0),
+(661, '财务咨询顾问', NULL, 90, 0, 0),
+(662, 'IT咨询顾问', NULL, 90, 0, 0),
+(663, '人力资源顾问', NULL, 90, 0, 0),
+(664, '咨询项目管理', NULL, 90, 0, 0),
+(665, '战略咨询', NULL, 90, 0, 0),
+(666, '猎头顾问', NULL, 90, 0, 0),
+(667, '市场调研', NULL, 90, 0, 0),
+(668, '其他咨询顾问', NULL, 90, 0, 0),
+(669, '知识产权', NULL, 91, 0, 0),
+(670, '事务所律师', NULL, 91, 1, 0),
+(671, '公司法务', NULL, 91, 0, 0),
+(672, '英语翻译', NULL, 92, 0, 0),
+(673, '日语翻译', NULL, 92, 0, 0),
+(674, '韩语/朝鲜语翻译', NULL, 92, 0, 0),
+(675, '法语翻译', NULL, 92, 0, 0),
+(676, '德语翻译', NULL, 92, 0, 0),
+(677, '俄语翻译', NULL, 92, 0, 0),
+(678, '西班牙语翻译', NULL, 92, 0, 0),
+(679, '其他语种翻译', NULL, 92, 0, 0),
+(680, '高端咨询类职位', NULL, 93, 0, 0),
+(681, '咨询总监', NULL, 93, 0, 0),
+(682, '咨询经理', NULL, 93, 0, 0),
+(683, '高级翻译', NULL, 93, 0, 0),
+(684, '同声传译', NULL, 93, 0, 0),
+(685, '其他咨询/翻译类职位', NULL, 94, 0, 0),
+(686, '旅游服务', NULL, 95, 0, 0),
+(687, '计调', NULL, 95, 0, 0),
+(688, '签证', NULL, 95, 0, 0),
+(689, '旅游顾问', NULL, 95, 1, 0),
+(690, '导游', NULL, 95, 1, 0),
+(691, '预定票务', NULL, 95, 0, 0),
+(692, '旅游产品开发/策划', NULL, 96, 1, 0),
+(693, '旅游产品经理', NULL, 96, 0, 0),
+(694, '旅游策划师', NULL, 96, 0, 0),
+(695, '其他旅游职位', NULL, 97, 0, 0),
+(696, '保安', NULL, 98, 0, 0),
+(697, '保洁', NULL, 98, 0, 0),
+(698, '保姆', NULL, 98, 0, 0),
+(699, '月嫂', NULL, 98, 0, 0),
+(700, '育婴师', NULL, 98, 0, 0),
+(701, '护工', NULL, 98, 0, 0),
+(702, '安检员', NULL, 98, 0, 0),
+(703, '手机维修', NULL, 98, 0, 0),
+(704, '家电维修', NULL, 98, 0, 0),
+(705, '保安经理', NULL, 98, 0, 0),
+(706, '宠物美容', NULL, 99, 0, 0),
+(707, '宠物医生', NULL, 99, 0, 0),
+(708, '花艺师', NULL, 100, 0, 0),
+(709, '婚礼策划师', NULL, 100, 0, 0),
+(710, '彩妆顾问', NULL, 101, 0, 0),
+(711, '纹绣师', NULL, 101, 0, 0),
+(712, '美体师', NULL, 101, 0, 0),
+(713, '美发学徒', NULL, 101, 0, 0),
+(714, '美容店长', NULL, 101, 0, 0),
+(715, '足疗师', NULL, 101, 0, 0),
+(716, '按摩师', NULL, 101, 0, 0),
+(717, '发型师', NULL, 101, 1, 0),
+(718, '美甲师', NULL, 101, 0, 0),
+(719, '化妆师', NULL, 101, 0, 0),
+(720, '美容师/顾问', NULL, 101, 0, 0),
+(721, '礼仪迎宾', NULL, 102, 0, 0),
+(722, '前厅经理', NULL, 102, 0, 0),
+(723, '客房经理', NULL, 102, 0, 0),
+(724, '收银', NULL, 102, 0, 0),
+(725, '酒店前台', NULL, 102, 1, 0),
+(726, '客房服务员', NULL, 102, 1, 0),
+(727, '酒店经理', NULL, 102, 0, 0),
+(728, '后厨', NULL, 103, 0, 0),
+(729, '配菜打荷', NULL, 103, 0, 0),
+(730, '茶艺师', NULL, 103, 0, 0),
+(731, '西点师', NULL, 103, 0, 0),
+(732, '餐饮学徒', NULL, 103, 0, 0),
+(733, '面点师', NULL, 103, 0, 0),
+(734, '行政总厨', NULL, 103, 0, 0),
+(735, '厨师长', NULL, 103, 0, 0),
+(736, '传菜员', NULL, 103, 0, 0),
+(737, '洗碗工', NULL, 103, 0, 0),
+(738, '凉菜厨师', NULL, 103, 0, 0),
+(739, '中餐厨师', NULL, 103, 0, 0),
+(740, '西餐厨师', NULL, 103, 0, 0),
+(741, '日式厨师', NULL, 103, 0, 0),
+(742, '烧烤师傅', NULL, 103, 0, 0),
+(743, '餐饮', NULL, 103, 0, 0),
+(744, '收银', NULL, 103, 0, 0),
+(745, '服务员', NULL, 103, 0, 0),
+(746, '厨师', NULL, 103, 0, 0),
+(747, '咖啡师', NULL, 103, 0, 0),
+(748, '送餐员', NULL, 103, 0, 0),
+(749, '餐饮店长', NULL, 103, 0, 0),
+(750, '领班', NULL, 103, 0, 0),
+(751, '督导/巡店', NULL, 104, 0, 0),
+(752, '陈列员', NULL, 104, 0, 0),
+(753, '理货员', NULL, 104, 0, 0),
+(754, '防损员', NULL, 104, 0, 0),
+(755, '卖场经理', NULL, 104, 0, 0),
+(756, '收银', NULL, 104, 0, 0),
+(757, '导购', NULL, 104, 0, 0),
+(758, '店员/营业员', NULL, 104, 0, 0),
+(759, '门店店长', NULL, 104, 0, 0),
+(760, '会籍顾问', NULL, 105, 0, 0),
+(761, '救生员', NULL, 105, 0, 0),
+(762, '健身', NULL, 105, 0, 0),
+(763, '瑜伽教练', NULL, 105, 0, 0),
+(764, '瘦身顾问', NULL, 105, 0, 0),
+(765, '游泳教练', NULL, 105, 0, 0),
+(766, '美体教练', NULL, 105, 0, 0),
+(767, '舞蹈教练', NULL, 105, 0, 0),
+(768, '健身教练', NULL, 105, 0, 0),
+(769, '其他服务业职位', NULL, 106, 0, 0),
+(770, '生产营运', NULL, 107, 0, 0),
+(771, '厂长/工厂经理', NULL, 107, 0, 0),
+(772, '生产总监', NULL, 107, 1, 0),
+(773, '生产经理/车间主任', NULL, 107, 0, 0),
+(774, '生产组长/拉长', NULL, 107, 0, 0),
+(775, '生产员', NULL, 107, 0, 0),
+(776, '生产设备管理', NULL, 107, 0, 0),
+(777, '生产计划/物料控制', NULL, 107, 0, 0),
+(778, '生产跟单', NULL, 107, 0, 0),
+(779, '质检员', NULL, 108, 0, 0),
+(780, '质量管理/测试', NULL, 108, 1, 0),
+(781, '可靠度工程师', NULL, 108, 0, 0),
+(782, '故障分析师', NULL, 108, 0, 0),
+(783, '认证工程师', NULL, 108, 0, 0),
+(784, '体系工程师', NULL, 108, 0, 0),
+(785, '审核员', NULL, 108, 0, 0),
+(786, '安全员', NULL, 108, 1, 0),
+(787, '汽车质量工程师', NULL, 108, 0, 0),
+(788, '电池工程师', NULL, 109, 0, 0),
+(789, '电机工程师', NULL, 109, 0, 0),
+(790, '线束设计', NULL, 109, 0, 0),
+(791, '充电桩设计', NULL, 109, 0, 0),
+(792, '汽车设计', NULL, 110, 0, 0),
+(793, '车身/造型设计', NULL, 110, 0, 0),
+(794, '底盘工程师', NULL, 110, 0, 0),
+(795, '动力系统工程师', NULL, 110, 0, 0),
+(796, '汽车电子工程师', NULL, 110, 0, 0),
+(797, '汽车零部件设计', NULL, 110, 0, 0),
+(798, '汽车项目管理', NULL, 110, 0, 0),
+(799, '内外饰设计工程师', NULL, 110, 0, 0),
+(800, '总装工程师', NULL, 110, 0, 0),
+(801, '汽车销售', NULL, 111, 0, 0),
+(802, '汽车配件销售', NULL, 111, 0, 0),
+(803, '汽车服务顾问', NULL, 111, 0, 0),
+(804, '汽车维修', NULL, 111, 0, 0),
+(805, '汽车美容', NULL, 111, 0, 0),
+(806, '汽车定损理赔', NULL, 111, 0, 0),
+(807, '二手车评估师', NULL, 111, 0, 0),
+(808, '4S店店长/维修站长', NULL, 111, 0, 0),
+(809, '汽车改装工程师', NULL, 111, 0, 0),
+(810, '机械设计/制造', NULL, 112, 0, 0),
+(811, '热传导', NULL, 112, 0, 0),
+(812, '精益工程师', NULL, 112, 0, 0),
+(813, '机械工程师', NULL, 112, 0, 0),
+(814, '机械设计师', NULL, 112, 0, 0),
+(815, '机械设备工程师', NULL, 112, 0, 0),
+(816, '机械维修/保养', NULL, 112, 0, 0),
+(817, '机械制图', NULL, 112, 0, 0),
+(818, '机械结构工程师', NULL, 112, 0, 0),
+(819, '工业工程师', NULL, 112, 0, 0),
+(820, '工艺/制程工程师', NULL, 112, 0, 0),
+(821, '材料工程师', NULL, 112, 0, 0),
+(822, '机电工程师', NULL, 112, 0, 0),
+(823, 'CNC/数控', NULL, 112, 0, 0),
+(824, '冲压工程师', NULL, 112, 0, 0),
+(825, '夹具工程师', NULL, 112, 0, 0),
+(826, '模具工程师', NULL, 112, 0, 0),
+(827, '焊接工程师', NULL, 112, 0, 0),
+(828, '注塑工程师', NULL, 112, 0, 0),
+(829, '铸造/锻造工程师', NULL, 112, 0, 0),
+(830, '化工工程师', NULL, 113, 0, 0),
+(831, '实验室技术员', NULL, 113, 0, 0),
+(832, '化学分析', NULL, 113, 0, 0),
+(833, '涂料研发', NULL, 113, 0, 0),
+(834, '化妆品研发', NULL, 113, 0, 0),
+(835, '食品/饮料研发', NULL, 113, 0, 0),
+(836, '服装/纺织设计', NULL, 114, 0, 0),
+(837, '面料辅料开发', NULL, 114, 0, 0),
+(838, '打样/制版', NULL, 114, 0, 0),
+(839, '服装/纺织/皮革跟单', NULL, 114, 0, 0),
+(840, '缝纫工', NULL, 115, 0, 0),
+(841, '搬运工', NULL, 115, 0, 0),
+(842, '普工/操作工', NULL, 115, 0, 0),
+(843, '叉车', NULL, 115, 0, 0),
+(844, '铲车', NULL, 115, 0, 0),
+(845, '焊工', NULL, 115, 0, 0),
+(846, '氩弧焊工', NULL, 115, 0, 0),
+(847, '电工', NULL, 115, 0, 0),
+(848, '木工', NULL, 115, 0, 0),
+(849, '漆工', NULL, 115, 0, 0),
+(850, '车工', NULL, 115, 0, 0),
+(851, '磨工', NULL, 115, 0, 0),
+(852, '铣工', NULL, 115, 0, 0),
+(853, '钳工', NULL, 115, 0, 0),
+(854, '钻工', NULL, 115, 0, 0),
+(855, '铆工', NULL, 115, 0, 0),
+(856, '钣金', NULL, 115, 0, 0),
+(857, '抛光', NULL, 115, 0, 0),
+(858, '机修工', NULL, 115, 0, 0),
+(859, '折弯工', NULL, 115, 0, 0),
+(860, '电镀工', NULL, 115, 0, 0),
+(861, '喷塑工', NULL, 115, 0, 0),
+(862, '注塑工', NULL, 115, 0, 0),
+(863, '组装工', NULL, 115, 0, 0),
+(864, '包装工', NULL, 115, 0, 0),
+(865, '空调工', NULL, 115, 0, 0),
+(866, '电梯工', NULL, 115, 0, 0),
+(867, '锅炉工', NULL, 115, 0, 0),
+(868, '学徒工', NULL, 115, 0, 0),
+(869, '其他生产制造职位', NULL, 116, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `job_seeker`
+--
+
+CREATE TABLE `job_seeker` (
+  `js_id` int(11) NOT NULL,
+  `js_username` varchar(50) NOT NULL,
+  `js_password` varchar(50) NOT NULL,
+  `js_head_img` varchar(255) DEFAULT NULL,
+  `js_realname` varchar(50) NOT NULL,
+  `js_id_card` varchar(20) NOT NULL,
+  `js_gender` char(2) NOT NULL,
+  `js_phone` varchar(20) NOT NULL,
+  `js_email` varchar(50) NOT NULL,
+  `js_sq` varchar(50) NOT NULL,
+  `js_college` varchar(255) DEFAULT NULL,
+  `js_edu` tinyint(4) DEFAULT NULL COMMENT '1:初中及以下;2:中专/中技;3:高中;4:大专;5:本科;6:硕士;7:博士',
+  `js_exp` tinyint(4) DEFAULT NULL COMMENT '1:在校生;2:应届生;3:一年以内;4:1-3年;5:3-5年;6:5-10年;7:10年以上',
+  `js_sal` tinyint(4) DEFAULT NULL COMMENT '1:3K以下;2:3-5K;3:5-10K;4:10-15K;5:15-20K;6:20-30K;7:30-50K;8:50K以上',
+  `js_tag` varchar(255) DEFAULT NULL,
+  `js_resume_url` varchar(255) DEFAULT NULL,
+  `js_job_collection` varchar(255) DEFAULT NULL,
+  `js_job_chatted` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `job_seeker`
+--
+
+INSERT INTO `job_seeker` (`js_id`, `js_username`, `js_password`, `js_head_img`, `js_realname`, `js_id_card`, `js_gender`, `js_phone`, `js_email`, `js_sq`, `js_college`, `js_edu`, `js_exp`, `js_sal`, `js_tag`, `js_resume_url`, `js_job_collection`, `js_job_chatted`) VALUES
+(1, '123456', '123456', NULL, '88', '65464', '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'luoxd', '456', NULL, '88', '65464', '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `recruiter`
+--
+
+CREATE TABLE `recruiter` (
+  `re_id` int(11) NOT NULL,
+  `re_username` varchar(50) NOT NULL,
+  `re_password` int(11) NOT NULL,
+  `re_head_img` varchar(255) DEFAULT NULL,
+  `re_realname` varchar(50) NOT NULL,
+  `re_id_card` varchar(20) NOT NULL,
+  `re_gender` char(2) NOT NULL,
+  `re_phone` varchar(20) NOT NULL,
+  `re_email` varchar(50) NOT NULL,
+  `re_sq` varchar(20) NOT NULL,
+  `re_company` varchar(100) NOT NULL,
+  `re_company_position` varchar(50) NOT NULL,
+  `re_company_pic` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `recruiter`
+--
+
+INSERT INTO `recruiter` (`re_id`, `re_username`, `re_password`, `re_head_img`, `re_realname`, `re_id_card`, `re_gender`, `re_phone`, `re_email`, `re_sq`, `re_company`, `re_company_position`, `re_company_pic`) VALUES
+(1, 'luoxd', 123456, NULL, '一', '45632135156', '男', '13428012237', '2207715152@qq.com', '', '8', '9', '63c062e0-5d08-4d5c-aad0-0050ea5609d0.jpg');
+
+--
+-- 转储表的索引
+--
+
+--
+-- 表的索引 `child_classes`
+--
+ALTER TABLE `child_classes`
+  ADD PRIMARY KEY (`child_classes_id`);
+
+--
+-- 表的索引 `classes`
+--
+ALTER TABLE `classes`
+  ADD PRIMARY KEY (`classes_id`);
+
+--
+-- 表的索引 `job`
+--
+ALTER TABLE `job`
+  ADD PRIMARY KEY (`job_id`);
+
+--
+-- 表的索引 `job_classes`
+--
+ALTER TABLE `job_classes`
+  ADD PRIMARY KEY (`job_classes_id`);
+
+--
+-- 表的索引 `job_seeker`
+--
+ALTER TABLE `job_seeker`
+  ADD PRIMARY KEY (`js_id`);
+
+--
+-- 表的索引 `recruiter`
+--
+ALTER TABLE `recruiter`
+  ADD PRIMARY KEY (`re_id`);
+
+--
+-- 在导出的表使用AUTO_INCREMENT
+--
+
+--
+-- 使用表AUTO_INCREMENT `child_classes`
+--
+ALTER TABLE `child_classes`
+  MODIFY `child_classes_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+
+--
+-- 使用表AUTO_INCREMENT `classes`
+--
+ALTER TABLE `classes`
+  MODIFY `classes_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- 使用表AUTO_INCREMENT `job`
+--
+ALTER TABLE `job`
+  MODIFY `job_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- 使用表AUTO_INCREMENT `job_classes`
+--
+ALTER TABLE `job_classes`
+  MODIFY `job_classes_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=870;
+
+--
+-- 使用表AUTO_INCREMENT `job_seeker`
+--
+ALTER TABLE `job_seeker`
+  MODIFY `js_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- 使用表AUTO_INCREMENT `recruiter`
+--
+ALTER TABLE `recruiter`
+  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

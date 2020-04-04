@@ -5,7 +5,6 @@
     <title>Title</title>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
@@ -42,7 +41,7 @@
         登录
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" href="#">
+        <form class="form-horizontal" action="/login">
             <div class="form-group" id="usernameDiv">
                 <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
                     用户名
@@ -62,13 +61,13 @@
             <div class="form-group"id="IdDiv">
                 <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
                 </label>
-                <label for="jobSeeker" class="col-md-2">
+                <label for="js" class="col-md-2">
                     求职者
-                    <input type="radio" id="jobSeeker" name="id" value="jobSeeker">
+                    <input type="radio" id="js" name="id" value="js">
                 </label>
-                <label for="recruiter" class="col-md-2">
+                <label for="re" class="col-md-2">
                     招聘者
-                    <input type="radio" id="recruiter" name="id" value="recruiter">
+                    <input type="radio" id="re" name="id" value="re">
                 </label>
             </div>
             <div class="form-group" id="buttonDiv">

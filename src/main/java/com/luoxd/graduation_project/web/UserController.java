@@ -1,5 +1,6 @@
 package com.luoxd.graduation_project.web;
 
+import com.luoxd.graduation_project.domain.JobSeeker;
 import com.luoxd.graduation_project.domain.Recruiter;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
@@ -19,6 +20,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -116,7 +118,7 @@ public class UserController {
     public String register(@Param("username") String username, @Param("password")String password, @Param("confirmPassword")String confirmPassword,
                            @Param("realname")String realname,@Param("idCard")String idCard, @Param("phone")String phone,
                            @Param("email")String email, @Param("sq")String sq, @Param("comfirmSq")String comfirmSq, @Param("company")String company,
-                           @Param("companyPosition")String companyPosition,@Param("companyPic")MultipartFile companyPic,@Param("id")String id) throws IOException {
+                           @Param("companyPosition")String companyPosition,@Param("companyPic")MultipartFile companyPic,@Param("id")String id,HttpServletRequest request) throws IOException {
         if(id.equals("re")){
             Recruiter recruiter = new Recruiter();
             recruiter.setUsername(username);
@@ -146,13 +148,47 @@ public class UserController {
                 companyPic.transferTo(newFile);
                 log.info(recruiter.toString());
                 userService.insertRecruiter(recruiter);
-                return "redirect:regist.html";
+                HttpSession session = request.getSession();
+                session.setAttribute("user","test");
+                return "redirect:index.html";
             } else {
-                return "redirect:regist.html";
+                return "redirect:index.html";
             }
         }
         else{
-            return "redirect:regist.html";
+            JobSeeker jobSeeker = new JobSeeker();
+            jobSeeker.setUsername(username);
+            jobSeeker.setPassword(password);
+            jobSeeker.setRealname(realname);
+            jobSeeker.setIdCard(idCard);
+            jobSeeker.setGender("男");
+            jobSeeker.setPhone(phone);
+            jobSeeker.setEmail(email);
+            jobSeeker.setSq(sq);
+            userService.insertJobSeeker(jobSeeker);
+            return "redirect:index.html";
         }
+    }
+
+    @RequestMapping("/login")
+    public String login(HttpServletRequest request){
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String ida = request.getParameter("id");
+        HttpSession session = request.getSession();
+        session.setAttribute("user","test");
+        return "index";
+    }
+
+    @RequestMapping("/jsPersonCenter")
+    public String jsPersonCenter(HttpServletRequest request){
+        String id = request.getParameter("id");
+        System.out.println(id);
+        return "jsPersonCenter";
+    }
+
+    @RequestMapping("/toJsInfo")
+    public String toJsInfo(HttpServletRequest request){
+        return "jsInfo";
     }
 }

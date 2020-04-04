@@ -14,7 +14,7 @@
     </select>
 
     <select id="queryJobClassesListByChildClassesId" resultType="com.luoxd.graduation_project.domain.JobClasses">
-        select job_classes_name,isRecommend,job_classes_url,isHot
+        select job_classes_id,job_classes_name,isRecommend,job_classes_url,isHot
         from job_classes
         where child_classes_id = #{childClassesId}
     </select>
@@ -43,5 +43,21 @@
     <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job">
         select *
         from job
+    </select>
+    <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">
+        select *
+        from classes
+    </select>
+
+    <select id="queryChildClassesByClassesId" resultType="com.luoxd.graduation_project.domain.ChildClasses">
+        select *
+        from child_classes
+        where classes_id = #{classsesIdNum}
+    </select>
+
+    <select id="queryJobClassesByChildClassesId" resultType="com.luoxd.graduation_project.domain.JobClasses">
+        select *
+        from job_classes
+        where child_classes_id = #{childClassesIdNum}
     </select>
 </mapper>

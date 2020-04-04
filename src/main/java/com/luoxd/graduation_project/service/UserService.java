@@ -1,5 +1,6 @@
 package com.luoxd.graduation_project.service;
 
+import com.luoxd.graduation_project.domain.JobSeeker;
 import com.luoxd.graduation_project.domain.Message;
 import com.luoxd.graduation_project.domain.Recruiter;
 import com.luoxd.graduation_project.domain.User;
@@ -13,4 +14,6 @@ public interface UserService {
     List<Message> getOffMsg(String id);
 
     int insertRecruiter(Recruiter recruiter);
+
+    int insertJobSeeker(JobSeeker jobSeeker);
 }

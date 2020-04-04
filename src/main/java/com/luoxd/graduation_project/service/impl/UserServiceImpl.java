@@ -37,4 +37,9 @@ public class UserServiceImpl implements UserService {
     public int insertRecruiter(Recruiter recruiter) {
         return userMapper.insertRecruiter(recruiter);
     }
+
+    @Override
+    public int insertJobSeeker(JobSeeker jobSeeker) {
+        return userMapper.insertJobSeeker(jobSeeker);
+    }
 }

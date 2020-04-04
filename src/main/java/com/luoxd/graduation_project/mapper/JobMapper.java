@@ -27,4 +27,10 @@ public interface JobMapper {
     int updateRecommendByName(String jobClassesName);
 
     List<Job> queryJobList();
+
+    List<Classes> queryClasses();
+
+    List<ChildClasses> queryChildClassesByClassesId(int classsesIdNum);
+
+    List<JobClasses> queryJobClassesByChildClassesId(int childClassesIdNum);
 }

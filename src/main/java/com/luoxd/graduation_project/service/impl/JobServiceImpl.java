@@ -63,4 +63,19 @@ public class JobServiceImpl implements JobService {
     public List<Job> queryJobList() {
         return jobMapper.queryJobList();
     }
+
+    @Override
+    public List<Classes> queryClassesList2() {
+        return jobMapper.queryClasses();
+    }
+
+    @Override
+    public List<ChildClasses> queryChildClassesByClassesId(int classsesIdNum) {
+        return jobMapper.queryChildClassesByClassesId(classsesIdNum);
+    }
+
+    @Override
+    public List<JobClasses> queryJobClassesByChildClassesId(int childClassesIdNum) {
+        return jobMapper.queryJobClassesByChildClassesId(childClassesIdNum);
+    }
 }
