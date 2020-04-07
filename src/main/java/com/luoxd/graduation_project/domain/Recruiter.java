@@ -4,16 +4,17 @@ import lombok.Data;
 
 @Data
 public class Recruiter {
-    private String username;
-    private String password;
-    private String realname;
-    private String idCard;
-    private String gender;
-    private String phone;
-    private String email;
-    private String sq;
-    private String company;
-    private String companyPic;
-    private String companyPosition;
+    private Integer reId;
+    private String reUsername;
+    private String rePassword;
+    private String reRealname;
+    private String reIdCard;
+    private String reGender;
+    private String rePhone;
+    private String reEmail;
+    private String reSq;
+    private String reCompany;
+    private String reCompanyPic;
+    private String reCompanyPosition;
 
 }

@@ -6,7 +6,29 @@
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
 </head>
+<script type="text/javascript">
+    function ajaxSubmit(){
+        $.ajax({
+            //几个参数需要注意一下
+            type: "POST",//方法类型
+            dataType: "json",//预期服务器返回的数据类型
+            url: "/login" ,//url
+            data: $('#loginForm').serialize(),
+            success: function (data) {
+                if(data['success']==="true"){
+                    window.location.href="/getLoginIndex";
+                }else{
+                    alert(data['msg']);
+                }
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
+    }
+</script>
 <body>
 <header id="header" class="header-scrolled">
     <div class="container">
@@ -41,7 +63,7 @@
         登录
     </div>
     <div class="panel-body">
-        <form class="form-horizontal" action="/login">
+        <form class="form-horizontal" id="loginForm">
             <div class="form-group" id="usernameDiv">
                 <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
                     用户名
@@ -74,10 +96,10 @@
                 <label class="col-xs-12 col-sm-4 col-md-2 col-lg-2 control-label">
                 </label>
                 <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-                    <input class="btn btn-primary form-control" type="submit" value="登录">
+                    <input class="btn btn-primary form-control" type="button" onclick="ajaxSubmit()" value="登录">
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
-                    <input class="btn btn-primary form-control" type="submit" value="注册">
+                    <input class="btn btn-primary form-control" type="button" value="注册">
                 </div>
             </div>
         </form>

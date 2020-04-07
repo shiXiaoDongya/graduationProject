@@ -7,11 +7,23 @@
     </select>
     <insert id="insertRecruiter" parameterType="com.luoxd.graduation_project.domain.Recruiter">
         insert into recruiter(re_username,re_password,re_realname,re_id_card,re_gender,re_phone,re_email,re_sq,re_company,re_company_position,re_company_pic)
-        values (#{username},#{password},#{realname},#{idCard},#{gender},#{phone},#{email},#{sq},#{company},#{companyPosition},#{companyPic})
+        values (#{reUsername},#{rePassword},#{reRealname},#{reIdCard},#{reGender},#{rePhone},#{reEmail},#{reSq},#{reCompany},#{reCompanyPosition},#{reCompanyPic})
     </insert>
 
     <insert id="insertJobSeeker" parameterType="com.luoxd.graduation_project.domain.JobSeeker">
         insert into job_seeker(js_username,js_password,js_realname,js_id_card,js_gender,js_phone,js_email,js_sq)
-        values (#{username},#{password},#{realname},#{idCard},#{gender},#{phone},#{email},#{sq})
+        values (#{jsUsername},#{jsPassword},#{jsRealname},#{jsIdCard},#{jsGender},#{jsPhone},#{jsEmail},#{jsSq})
     </insert>
+
+    <select id="jobSeekerLogin" resultType="com.luoxd.graduation_project.domain.JobSeeker">
+        select *
+        from job_seeker
+        where js_username = #{username} and js_password = #{password}
+    </select>
+
+    <select id="recruiterLogin" resultType="com.luoxd.graduation_project.domain.Recruiter">
+        select *
+        from recruiter
+        where re_username = #{username} and re_password = #{password}
+    </select>
 </mapper>

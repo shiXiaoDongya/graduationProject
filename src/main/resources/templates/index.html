@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head xmlns:th="http://www.w3.org/1999/xhtml" >
+<head xmlns:th="http://www.w3.org/1999/xhtml">
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -138,7 +138,7 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li style="border: 1px white solid"><a href="#" th:text="${session.user}"></a>
+                    <li style="border: 1px white solid"><a href="#" th:text="${session.userName}"></a>
                         <ul style="margin-top: 0px">
                             <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
                             <li><a href="#">修改密码</a></li>

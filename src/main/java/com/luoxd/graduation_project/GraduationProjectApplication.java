@@ -10,8 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class GraduationProjectApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(GraduationProjectApplication.class, args);
-        WebSocket.setApplicationContext(configurableApplicationContext);
+        SpringApplication.run(GraduationProjectApplication.class, args);
     }
 
 }

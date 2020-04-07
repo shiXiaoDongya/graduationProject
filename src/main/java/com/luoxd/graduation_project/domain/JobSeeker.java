@@ -4,12 +4,13 @@ import lombok.Data;
 
 @Data
 public class JobSeeker {
-    private String username;
-    private String password;
-    private String realname;
-    private String idCard;
-    private String gender;
-    private String phone;
-    private String email;
-    private String sq;
+    private Integer jsId;
+    private String jsUsername;
+    private String jsPassword;
+    private String jsRealname;
+    private String jsIdCard;
+    private String jsGender;
+    private String jsPhone;
+    private String jsEmail;
+    private String jsSq;
 }

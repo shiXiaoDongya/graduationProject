@@ -16,4 +16,8 @@ public interface UserService {
     int insertRecruiter(Recruiter recruiter);
 
     int insertJobSeeker(JobSeeker jobSeeker);
+
+    JobSeeker jobSeekerLogin(String username, String password);
+
+    Recruiter recruiterLogin(String username, String password);
 }

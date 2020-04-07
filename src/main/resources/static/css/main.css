@@ -1109,7 +1109,6 @@ h1, h2, h3, h4, h5, h6 {
 .progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
   color: #222222;
   line-height: 40px;
-  text-transform: uppercase;
   font-weight: 500;
 }
 
@@ -1929,7 +1928,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #49e4fa;
   color: #fff;
   padding: 6px 20px !important;
-  text-transform: uppercase;
 }
 
 .ticker-btn:hover {
@@ -1987,7 +1985,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-has-children ul li a {
   padding: 4px 10px !important;
-  text-transform: uppercase !important;
 }
 
 /* Nav Menu Arrows */
@@ -2033,7 +2030,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 400;
   font-size: 12px;
-  text-transform: uppercase;
   outline: none;
 }
 
@@ -2125,7 +2121,6 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav ul li a {
   color: #fff;
   font-size: 13px;
-  text-transform: uppercase;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
   position: relative;
@@ -2242,7 +2237,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -2380,7 +2374,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   border-radius: 0;
   border: none;
-  text-transform: uppercase;
 }
 
 .banner-content .form-wrap .btn-info {
@@ -2574,7 +2567,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-list .cat-list li a {
-  text-transform: uppercase;
   font-weight: 600;
   color: #222;
 }
@@ -2640,7 +2632,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-list .single-post .btns li i, .post-list .single-post .btns li a {
-  text-transform: uppercase;
   font-weight: 500;
   color: #222;
 }
@@ -3137,7 +3128,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -3582,7 +3572,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   bottom: 30px;
   left: 20px;
-  text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 3px;

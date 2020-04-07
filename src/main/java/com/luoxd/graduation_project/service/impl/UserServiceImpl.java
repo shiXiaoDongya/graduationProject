@@ -42,4 +42,14 @@ public class UserServiceImpl implements UserService {
     public int insertJobSeeker(JobSeeker jobSeeker) {
         return userMapper.insertJobSeeker(jobSeeker);
     }
+
+    @Override
+    public JobSeeker jobSeekerLogin(String username, String password) {
+        return userMapper.jobSeekerLogin(username,password);
+    }
+
+    @Override
+    public Recruiter recruiterLogin(String username, String password) {
+        return userMapper.recruiterLogin(username,password);
+    }
 }

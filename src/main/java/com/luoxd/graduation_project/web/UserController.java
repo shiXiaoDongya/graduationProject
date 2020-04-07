@@ -121,16 +121,16 @@ public class UserController {
                            @Param("companyPosition")String companyPosition,@Param("companyPic")MultipartFile companyPic,@Param("id")String id,HttpServletRequest request) throws IOException {
         if(id.equals("re")){
             Recruiter recruiter = new Recruiter();
-            recruiter.setUsername(username);
-            recruiter.setPassword(password);
-            recruiter.setRealname(realname);
-            recruiter.setIdCard(idCard);
-            recruiter.setGender("男");
-            recruiter.setPhone(phone);
-            recruiter.setEmail(email);
-            recruiter.setSq(sq);
-            recruiter.setCompany(company);
-            recruiter.setCompanyPosition(companyPosition);
+            recruiter.setReUsername(username);
+            recruiter.setRePassword(password);
+            recruiter.setReRealname(realname);
+            recruiter.setReIdCard(idCard);
+            recruiter.setReGender("男");
+            recruiter.setRePhone(phone);
+            recruiter.setReEmail(email);
+            recruiter.setReSq(sq);
+            recruiter.setReCompany(company);
+            recruiter.setReCompanyPosition(companyPosition);
             // 原始名称
             String oldFileName = companyPic.getOriginalFilename(); // 获取上传文件的原名
             // 存储图片的虚拟本地路径
@@ -140,7 +140,7 @@ public class UserController {
             if (companyPic != null && oldFileName != null && oldFileName.length() > 0) {
                 // 新的图片名称
                 String newFileName = UUID.randomUUID() + oldFileName.substring(oldFileName.lastIndexOf("."));
-                recruiter.setCompanyPic(newFileName);
+                recruiter.setReCompanyPic(newFileName);
                 System.out.println(saveFilePath + "\\" + newFileName);
                 // 新图片
                 File newFile = new File(saveFilePath + "\\" + newFileName);
@@ -157,28 +157,52 @@ public class UserController {
         }
         else{
             JobSeeker jobSeeker = new JobSeeker();
-            jobSeeker.setUsername(username);
-            jobSeeker.setPassword(password);
-            jobSeeker.setRealname(realname);
-            jobSeeker.setIdCard(idCard);
-            jobSeeker.setGender("男");
-            jobSeeker.setPhone(phone);
-            jobSeeker.setEmail(email);
-            jobSeeker.setSq(sq);
+            jobSeeker.setJsUsername(username);
+            jobSeeker.setJsPassword(password);
+            jobSeeker.setJsRealname(realname);
+            jobSeeker.setJsIdCard(idCard);
+            jobSeeker.setJsGender("男");
+            jobSeeker.setJsPhone(phone);
+            jobSeeker.setJsEmail(email);
+            jobSeeker.setJsSq(sq);
             userService.insertJobSeeker(jobSeeker);
             return "redirect:index.html";
         }
     }
 
-    @RequestMapping("/login")
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @ResponseBody
     public String login(HttpServletRequest request){
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String ida = request.getParameter("id");
-        HttpSession session = request.getSession();
-        session.setAttribute("user","test");
+        String id = request.getParameter("id");
+        log.info("====username:"+username+",password:"+password +",id:"+id);
+        if("js".equals(id)){
+            JobSeeker js = userService.jobSeekerLogin(username,password);
+            if(js != null){
+                request.getSession().setAttribute("userType","js");
+                request.getSession().setAttribute("userId",js.getJsId());
+                request.getSession().setAttribute("userName",js.getJsUsername());
+                return "{\"success\":\"true\",\"msg\":\"\"}";
+            }
+        }else{
+            Recruiter re = userService.recruiterLogin(username,password);
+            request.getSession().setAttribute("userType","re");
+            request.getSession().setAttribute("userId",re.getReId());
+            request.getSession().setAttribute("userName",re.getReUsername());
+            return "{\"success\":\"true\",\"msg\":\"\"}";
+        }
+//        HttpSession session = request.getSession();
+//        session.setAttribute("user","test");
+        return "{\"success\":\"false\",\"msg\":\"账号或密码错误！\"}";
+
+    }
+
+    @RequestMapping(value = "/getLoginIndex",method = RequestMethod.GET)
+    public String getLoginIndex(HttpServletRequest request){
         return "index";
     }
+
 
     @RequestMapping("/jsPersonCenter")
     public String jsPersonCenter(HttpServletRequest request){

@@ -44,12 +44,6 @@ public class WebSocket {
     private String username;
     private String id;
 
-    private static ApplicationContext applicationContext;
-    //你要注入的service或者dao
-    private UserService userService;
-    public static void setApplicationContext(ApplicationContext applicationContext) {
-        WebSocket.applicationContext = applicationContext;
-    }
 
     /**
      * 建立连接
@@ -67,13 +61,7 @@ public class WebSocket {
         //把自己的信息加入到map当中去
         clients.put(username, this);
         //此处是解决无法注入的关键
-        userService = applicationContext.getBean(UserService.class);
-        List<Message> offmsg = userService.getOffMsg(id);
-        logger.info(offmsg.toString());
         Map<String, Object> map1 = new HashMap<String,Object>();
-        List<User> charList= userService.getUsers();
-        map1.put("textMessage",offmsg);
-        map1.put("charList",charList);
         try {
             sendMessageAll(JSON.toJSONString(map1),username);
         } catch (IOException e) {
