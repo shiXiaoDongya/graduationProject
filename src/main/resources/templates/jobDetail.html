@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" th:href="@{/css/home.css}"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" th:href="@{/css/main.css}" />
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
+<style>
+    .tags{
+        margin-right: 10px;
+    }
+    .headLabel{
+        font-size: 18px;
+        font-weight: 700;
+    }
+</style>
+<script type="text/javascript">
+    function chat(jobId,reId){
+        window.location.href="/job/chat";
+    }
+</script>
 <body>
-职位详情页面
+<header id="header" class="header-scrolled">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="../index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="../index.html">首页</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="menu-has-children"><a href="">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">elements</a></li>
+                            <li><a href="search.html">search</a></li>
+                            <li><a href="single.html">single</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="ticker-btn" href="/regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="/login.html">登录</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+<div class="panel panel-default" style="height: 2000px;margin-top: 80px;">
+    <div class="panel-heading" >
+        <div class="clearfix" style="width: 1200px;margin: 0 auto">
+        <div style="float: left;width: 80%">
+            <br/>
+            <p style="font-size: 30px;font-weight: 700"><span>Java实习 <font color="red">12-24K·15薪</font> </span></p>
+            <br/>
+            <p style="font-size: 15px"><span>工作地点</span> · <span>工作经验</span> · <span>教育经验</span></p>
+            <br/>
+            <p style="font-size: 15px"><span class="label label-info tags">五险一金</span><span class="label label-info tags">工作经验</span><span class="label label-info tags">教育经验</span></p>
+        </div>
+        <div style="float: right;width: 20%">
+            <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
+        </div>
+        </div>
+    </div>
+    <div class="panel-body" style="width: 1200px;margin: 0 auto">
+        <div class="clearfix">
+            <div style="float: left;margin-right: 15px">
+                <img style="width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px solid black"/>
+            </div>
+            <div style="float: left;padding-top: 14px">
+                <p>HR姓名</p>
+                <p>公司名称 所属职位</p>
+            </div>
+            <div style="float: right">
+                <button class="btn btn-default" type="button">感兴趣</button>
+                <button class="btn btn-default" type="button">举报</button>
+            </div>
+        </div>
+        <div>
+            <label class="glyphicon glyphicon-pushpin page-header headLabel">职位描述</label>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+        </div>
+        <div>
+            <label class="glyphicon glyphicon-pushpin page-header headLabel">公司介绍</label>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+        </div>
+        <div>
+            <label class="glyphicon glyphicon-pushpin page-header headLabel">工作地址</label>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+            <p>1232456</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

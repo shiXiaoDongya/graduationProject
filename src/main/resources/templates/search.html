@@ -245,7 +245,9 @@
                 <br/>
                 <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" th:text="${job.salary}"></span> 丨 <span th:text="${job.expCondition}"></span> 丨 <span th:text="${job.eduCondition}"></span> 丨 <span><a href="#"> X先生</a></span> 丨 <span>招聘者</span></p>
                 <br/>
-                <p th:each="tag:${job.tags}"><span class="label label-info tags" th:text="${tag}"></span></span></p>
+                <p>
+                    <span class="label label-info tags" th:each="tag:${job.tags}" th:text="${tag}"></span>
+                </p>
             </div>
             <div style="float: right;width: 50%;border: 1px solid black">
                 公司信息

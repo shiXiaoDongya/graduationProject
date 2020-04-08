@@ -1,9 +1,7 @@
 package com.luoxd.graduation_project.mapper;
 
-import com.luoxd.graduation_project.domain.ChildClasses;
-import com.luoxd.graduation_project.domain.Classes;
-import com.luoxd.graduation_project.domain.Job;
-import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.response.ChatResponse;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -33,4 +31,8 @@ public interface JobMapper {
     List<ChildClasses> queryChildClassesByClassesId(int classsesIdNum);
 
     List<JobClasses> queryJobClassesByChildClassesId(int childClassesIdNum);
+
+    Job getJobById(Integer jobId);
+
+    List<ChatResponse> queryChatUsers(Integer userId);
 }

@@ -60,4 +60,17 @@
         from job_classes
         where child_classes_id = #{childClassesIdNum}
     </select>
+
+    <select id="getJobById" resultType="com.luoxd.graduation_project.domain.Job">
+        select *
+        from job
+        where job_id = #{jobId}
+    </select>
+
+    <select id="queryChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
+        select recruiter.re_id,recruiter.re_realname,recruiter.re_company,recruiter.re_company_position,chat.job_id
+        from chat left join recruiter on chat.re_id = recruiter.re_id
+        where chat.js_id = #{userId}
+        group by chat.re_id,chat.job_id
+    </select>
 </mapper>

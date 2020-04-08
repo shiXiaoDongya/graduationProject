@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" th:href="@{/css/home.css}"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" th:href="@{/css/main.css}" />
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+<style>
+    .chatTime{
+        text-align: center;
+    }
+    .mySend{
+        text-align: right;
+    }
+    #chatContent p{
+        padding: 10px;
+        line-height: 5px;
+    }
+    #chatContent p span{
+        padding:10px;
+    }
+</style>
+<script type="text/javascript">
+    function showChat(obj,reId,jobId) {
+        document.getElementById("sendButton").dataset.reId = reId;
+        document.getElementById("sendButton").dataset.jobId = jobId;
+        var li = document.getElementsByClassName("list-group-item");
+        for(var i = 0; i < li.length; i++){
+            li[i].style.border="";
+        }
+        obj.style.border = "1px blue solid";
+        $('#chatContent').html("");
+        $.ajax({
+            type: "POST",
+            url: "/job/showChatContent",
+            data: {"reId":reId,"jobId":jobId},
+            dataType: "JSON",
+            success: function(data) {
+                var chatList = data['chatList'];
+                for(var i = 0; i < chatList.length; i++){
+                    $('#chatContent').append("<p class=\"chatTime\">"+chatList[i]['chatSendTime']+"</p>");
+                    if(chatList[i]['isJsSend']===1){
+                        $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: white;\">"+chatList[i]['chatContent']+"</span></p>");
+                    }else{
+                        $('#chatContent').append("<p ><span style=\"background: darksalmon;color: white;\">"+chatList[i]['chatContent']+"</span></p>");
+                    }
+                }
+            }
+        });
+        document.getElementById("noChatDiv").style.display = "none";
+        document.getElementById("chatDiv").style.display = "block";
+    }
+</script>
+<body>
+<header id="header" class="header-scrolled">
+    <div class="container">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="#" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#">首页</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="menu-has-children"><a href="">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">elements</a></li>
+                            <li><a href="../templates/search.html">search</a></li>
+                            <li><a href="single.html">single</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="ticker-btn" href="../regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="../login.html">登录</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+<div class="panel panel-default" style="height: 500px;margin-top: 80px;">
+    <div class="panel-heading">
+        <span th:text="${session.user}">测试panel</span>
+    </div>
+    <div class="panel-body" style="margin:0 auto;width:1000px;" >
+        <div class="panel panel-default" style="float:left;width: 30%;height:1000px; border:1px solid black;">
+            <div class="panel-heading">
+                30天内联系人
+            </div>
+            <ul class="list-group" >
+                <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.reId}]],[[${chat.jobId}]])" >
+                    <span id="reId" th:text="${chat.reId}"></span>
+                    <span id="jobId" th:text="${chat.jobId}"></span>
+                    <span id="count">0</span>
+                    <div style="height:100px;">
+                        <div  style="float:left;width: 40%; height: 90%; ">
+                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
+                        </div>
+                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
+                            <p><span th:text="${chat.reRealname}"></span></p>
+                            <p><span th:text="${chat.reCompany}"></span> 丨 <span th:text="${chat.reCompanyPosition}"></span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="cursor: pointer;">
+                    <div style="height:100px;">
+                        <div  style="float:left;width: 40%; height: 90%; ">
+                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
+                        </div>
+                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
+                            <p><span>名字</span></p>
+                            <p><span>公司</span> 丨 <span>所属职位</span></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-default" style="float:right;width: 70%;height:1000px;border-collapse:collapse;border:1px solid black;">
+            <div style="text-align: center;font-size: 50px;color: #b8aaf3;padding-top: 500px;" id="noChatDiv">
+                请选择一个聊天
+            </div>
+            <div class="panel-default" style="display: none;" id="chatDiv">
+            <div class=" panel-heading">
+                <span>HR姓名</span> 丨 <span>公司</span> 丨 <span>所属职位</span>
+            </div>
+            <div class=" panel-heading">
+                <a href="" >XXX职位</a>
+            </div>
+            <div class="panel-body" style="height: 900px">
+                <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent" >
+                </div>
+                <div style="height: 25%;">
+                    <textarea id="text" style="height: 85%;width:100%;resize: none" ></textarea>
+                    <button id="sendButton" type="button" data-reId data-jobId onclick="send(this)" class="btn btn-primary" style="float:right;">发送</button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<span id="userType">1</span>
+<span id="userId" th:text="${session.userId}"></span>
+<span id="message"></span>
+</body>
+<script type="text/javascript">
+    var webSocket;
+    var commWebSocket;
+    if ("WebSocket" in window)
+    {
+        webSocket = new WebSocket("ws://localhost:8281/websocket/js/"+document.getElementById('userId').innerHTML);
+
+        //连通之后的回调事件
+        webSocket.onopen = function()
+        {
+            // var received_msg = evt.data;
+            // var obj = JSON.parse(received_msg);
+            // alert(obj.users);
+            //webSocket.send( document.getElementById('username').value+"已经上线了");
+            console.log("已经连通了websocket");
+            setMessageInnerHTML("已经连通了websocket");
+        };
+
+        //接收后台服务端的消息
+        webSocket.onmessage = function (evt)
+        {
+            var received_msg = evt.data;
+            console.log("数据已接收:" +received_msg);
+            var obj = JSON.parse(received_msg);
+            console.log("可以解析成json:"+obj.messageType);
+            var lists = document.getElementsByClassName("list-group-item");
+            for(var i = 0; i < lists.length; i++){
+                var reId = lists[i].getElementById("reId");
+                var jobId = lists[i].getElementById("jobId");
+                if(obj.reId === reId && obj.jobId === jobId){
+                    lists[i].getElementById("count").innerHTML = (parseInt(lists[i].getElementById("count").innerHTML)+1);
+                }
+            }
+            setMessageInnerHTML(obj.fromusername+"对"+obj.tousername+"说："+obj.textMessage);
+        };
+
+        //连接关闭的回调事件
+        webSocket.onclose = function()
+        {
+            console.log("连接已关闭...");
+            setMessageInnerHTML("连接已经关闭....");
+        };
+    }
+    else{
+        // 浏览器不支持 WebSocket
+        alert("您的浏览器不支持 WebSocket!");
+    }
+    //将消息显示在网页上
+    function setMessageInnerHTML(innerHTML) {
+        document.getElementById('message').innerHTML += innerHTML + '<br/>';
+    }
+
+    function closeWebSocket() {
+        //直接关闭websocket的连接
+        webSocket.close();
+    }
+
+    function send(obj) {
+        setMessageInnerHTML("1-"+document.getElementById('userId').innerHTML+"对2-"+obj.dataset.reId+"说："+ $("#text").val());
+        var message = {
+            "message":document.getElementById('text').value,
+            "jsId":document.getElementById('userId').innerHTML,
+            "reId":obj.dataset.reId,
+            "jobId":obj.dataset.jobId
+        };
+        webSocket.send(JSON.stringify(message));
+        $("#text").val("");
+
+    }
+</script>
+</html>

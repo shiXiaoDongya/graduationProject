@@ -1,10 +1,8 @@
 package com.luoxd.graduation_project.service.impl;
 
-import com.luoxd.graduation_project.domain.ChildClasses;
-import com.luoxd.graduation_project.domain.Classes;
-import com.luoxd.graduation_project.domain.Job;
-import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.JobMapper;
+import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.service.JobService;
@@ -77,5 +75,15 @@ public class JobServiceImpl implements JobService {
     @Override
     public List<JobClasses> queryJobClassesByChildClassesId(int childClassesIdNum) {
         return jobMapper.queryJobClassesByChildClassesId(childClassesIdNum);
+    }
+
+    @Override
+    public Job getJobById(Integer jobId) {
+        return jobMapper.getJobById(jobId);
+    }
+
+    @Override
+    public List<ChatResponse> queryChatUsers(Integer userId) {
+        return jobMapper.queryChatUsers(userId);
     }
 }

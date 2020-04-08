@@ -5,6 +5,7 @@ import com.luoxd.graduation_project.domain.ChildClasses;
 import com.luoxd.graduation_project.domain.Classes;
 import com.luoxd.graduation_project.domain.Job;
 import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.service.JobService;
 import lombok.extern.slf4j.Slf4j;
@@ -61,9 +62,12 @@ public class JobController {
     }
 
     @RequestMapping(value = "/getJobDetail",method = RequestMethod.GET)
-    public String getJobDetail(HttpServletRequest request){
-        String jobId = request.getParameter("jobId");
-        log.info(jobId);
+    public String getJobDetail(HttpServletRequest request,Integer jobId){
+        if(jobId!=null){
+            log.info("in========"+jobId.toString());
+            Job job = jobService.getJobById(jobId);
+            request.setAttribute("job",job);
+        }
         return "jobDetail";
     }
 
@@ -99,5 +103,15 @@ public class JobController {
         }
         List<JobClasses> jobClassesList = jobService.queryJobClassesByChildClassesId(childClassesIdNum);
         return jobClassesList;
+    }
+
+    @RequestMapping(value = "/chat",method = RequestMethod.GET)
+    public String chat(HttpServletRequest request){
+        Integer userId = (Integer) request.getSession().getAttribute("userId");
+        if(userId != null){
+            List<ChatResponse> chatResponse = jobService.queryChatUsers(userId);
+            request.setAttribute("chatList",chatResponse);
+        }
+        return "chat";
     }
 }
