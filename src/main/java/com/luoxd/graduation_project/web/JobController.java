@@ -36,10 +36,9 @@ public class JobController {
     }
 
     @RequestMapping(value = "/search",method = RequestMethod.GET)
-    public String getJobList(HttpServletRequest request){
+    public String getJobList(HttpServletRequest request,Integer jobClassesId,String jobClassesName,Integer expCondition,Integer eduCondition,
+                             Integer salCondition,Integer finanCondition,Integer sizeCondition,Integer postDateCondition){
         String keyword = request.getParameter("keyword");
-        String jobClassesId = request.getParameter("jobClassesId");
-        String jobClassesName = request.getParameter("jobClassesName");
         List<Job> jobList = jobService.queryJobList();
         for (Job tempJob:jobList) {
             List<String> tags = new ArrayList<>();
@@ -52,6 +51,12 @@ public class JobController {
         request.setAttribute("keyword",keyword);
         request.setAttribute("jobClassesId",jobClassesId);
         request.setAttribute("jobClassesName",jobClassesName);
+        request.setAttribute("expCondition",expCondition);
+        request.setAttribute("eduCondition",eduCondition);
+        request.setAttribute("salCondition",salCondition);
+        request.setAttribute("finanCondition",finanCondition);
+        request.setAttribute("sizeCondition",sizeCondition);
+        request.setAttribute("postDateCondition",postDateCondition);
         return "search";
     }
 
