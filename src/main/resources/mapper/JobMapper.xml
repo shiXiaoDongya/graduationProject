@@ -67,10 +67,23 @@
         where job_id = #{jobId}
     </select>
 
-    <select id="queryChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
+    <select id="queryJsChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
         select recruiter.re_id,recruiter.re_realname,recruiter.re_company,recruiter.re_company_position,chat.job_id
         from chat left join recruiter on chat.re_id = recruiter.re_id
         where chat.js_id = #{userId}
         group by chat.re_id,chat.job_id
+    </select>
+
+    <select id="queryReChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
+        select job_seeker.js_id,job_seeker.js_realname,job_seeker.js_college,chat.job_id
+        from chat left join job_seeker on chat.js_id = job_seeker.js_id
+        where chat.re_id = #{userId}
+        group by chat.js_id,chat.job_id
+    </select>
+
+    <select id="showChatContent" resultType="com.luoxd.graduation_project.domain.Chat">
+        select *
+        from chat
+        where js_id = #{jsId} and re_id = #{reId} and job_id = #{jobId}
     </select>
 </mapper>

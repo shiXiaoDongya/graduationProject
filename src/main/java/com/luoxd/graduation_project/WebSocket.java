@@ -62,6 +62,7 @@ public class WebSocket {
         String key = userType+"-"+userId;
         //把自己的信息加入到map当中去
         clients.put(key, this);
+        log.info("在线的客户："+clients.keySet().toString());
 //        //此处是解决无法注入的关键
 //        Map<String, Object> map1 = new HashMap<String,Object>();
 //        try {

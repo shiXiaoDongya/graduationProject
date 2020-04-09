@@ -183,14 +183,14 @@ public class UserController {
                 request.getSession().setAttribute("userType","js");
                 request.getSession().setAttribute("userId",js.getJsId());
                 request.getSession().setAttribute("userName",js.getJsUsername());
-                return "{\"success\":\"true\",\"msg\":\"\"}";
+                return "{\"success\":\"true\",\"userType\":\"js\",\"msg\":\"\"}";
             }
         }else{
             Recruiter re = userService.recruiterLogin(username,password);
             request.getSession().setAttribute("userType","re");
             request.getSession().setAttribute("userId",re.getReId());
             request.getSession().setAttribute("userName",re.getReUsername());
-            return "{\"success\":\"true\",\"msg\":\"\"}";
+            return "{\"success\":\"true\",\"userType\":\"re\",\"msg\":\"\"}";
         }
 //        HttpSession session = request.getSession();
 //        session.setAttribute("user","test");

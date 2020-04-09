@@ -18,7 +18,11 @@
             data: $('#loginForm').serialize(),
             success: function (data) {
                 if(data['success']==="true"){
-                    window.location.href="/getLoginIndex";
+                    if(data['userType']==="js"){
+                        window.location.href="/getLoginIndex";
+                    }else{
+                        window.location.href="/job/chat";
+                    }
                 }else{
                     alert(data['msg']);
                 }

@@ -1,10 +1,7 @@
 package com.luoxd.graduation_project.web;
 
 
-import com.luoxd.graduation_project.domain.ChildClasses;
-import com.luoxd.graduation_project.domain.Classes;
-import com.luoxd.graduation_project.domain.Job;
-import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.service.JobService;
@@ -108,10 +105,56 @@ public class JobController {
     @RequestMapping(value = "/chat",method = RequestMethod.GET)
     public String chat(HttpServletRequest request){
         Integer userId = (Integer) request.getSession().getAttribute("userId");
+        String userType = (String)request.getSession().getAttribute("userType");
         if(userId != null){
-            List<ChatResponse> chatResponse = jobService.queryChatUsers(userId);
+            List<ChatResponse> chatResponse = jobService.queryChatUsers(userType,userId);
+            log.info("===========chatResponse:"+chatResponse.toString());
             request.setAttribute("chatList",chatResponse);
         }
-        return "chat";
+        if("js".equals(userType)){
+            return "chat";
+        }else{
+           return "reChat";
+        }
+    }
+
+    @RequestMapping(value = "/showChatContent",method = RequestMethod.POST)
+    @ResponseBody
+    public List<Chat> showChatContent(HttpServletRequest request,Integer jsId,Integer reId,Integer jobId){
+
+        String userType = (String)request.getSession().getAttribute("usetType");
+        List<Chat> chatList = null;
+        if("js".equals(userType)){
+            Integer tempJsId = (Integer) request.getSession().getAttribute("userId");
+            log.info("=============jsId:"+tempJsId+",reId:"+reId+",jobId:"+jobId);
+            chatList = jobService.showChatContent(tempJsId,reId,jobId);
+            request.setAttribute("reId",reId);
+        }else{
+            Integer tempReId = (Integer) request.getSession().getAttribute("userId");
+            log.info("=============jsId:"+jsId+",reId:"+tempReId+",jobId:"+jobId);
+            chatList = jobService.showChatContent(jsId,tempReId,jobId);
+            request.setAttribute("jsId",jsId);
+        }
+        log.info(chatList.toString());
+        return chatList;
+    }
+
+    @RequestMapping(value = "/chatContent",method = RequestMethod.GET)
+    public String chatContent(HttpServletRequest request,Integer jsId,Integer reId,Integer jobId){
+        String userType = (String)request.getSession().getAttribute("usetType");
+        List<Chat> chatList = null;
+        if("js".equals(userType)){
+            Integer tempJsId = (Integer) request.getSession().getAttribute("userId");
+            log.info("=============jsId:"+tempJsId+",reId:"+reId+",jobId:"+jobId);
+            chatList = jobService.showChatContent(tempJsId,reId,jobId);
+            request.setAttribute("reId",reId);
+        }else{
+            Integer tempReId = (Integer) request.getSession().getAttribute("userId");
+            log.info("=============jsId:"+jsId+",reId:"+tempReId+",jobId:"+jobId);
+            chatList = jobService.showChatContent(jsId,tempReId,jobId);
+            request.setAttribute("jsId",jsId);
+        }
+        request.setAttribute("chatList",chatList);
+        return "chatContent";
     }
 }

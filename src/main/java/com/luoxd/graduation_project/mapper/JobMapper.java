@@ -34,5 +34,10 @@ public interface JobMapper {
 
     Job getJobById(Integer jobId);
 
-    List<ChatResponse> queryChatUsers(Integer userId);
+    List<ChatResponse> queryJsChatUsers(Integer userId);
+
+    List<ChatResponse> queryReChatUsers(Integer userId);
+
+    List<Chat> showChatContent(Integer jsId, Integer reId, Integer jobId);
+
 }

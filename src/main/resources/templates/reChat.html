@@ -25,36 +25,9 @@
     }
 </style>
 <script type="text/javascript">
-    function showChat(obj,reId,jobId) {
-        // document.getElementById("sendButton").dataset.reId = reId;
-        // document.getElementById("sendButton").dataset.jobId = jobId;
-        // var li = document.getElementsByClassName("list-group-item");
-        // for(var i = 0; i < li.length; i++){
-        //     li[i].style.border="";
-        // }
-        // obj.style.border = "1px blue solid";
-        // $('#chatContent').html("");
-        // $.ajax({
-        //     type: "POST",
-        //     url: "/job/showChatContent",
-        //     data: {"reId":reId,"jobId":jobId},
-        //     dataType: "JSON",
-        //     success: function(data) {
-        //         //var chatList = data['chatList'];
-        //         for(var i = 0; i < data.length; i++){
-        //             $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
-        //             if(data[i]['isJsSend']===1){
-        //                 $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: white;\">"+data[i]['chatContent']+"</span></p>");
-        //             }else{
-        //                 $('#chatContent').append("<p ><span style=\"background: darksalmon;color: white;\">"+data[i]['chatContent']+"</span></p>");
-        //             }
-        //         }
-        //     }
-        // });
-        // document.getElementById("noChatDiv").style.display = "none";
-        // document.getElementById("chatDiv").style.display = "block";
+    function showChat(obj,jsId,jobId) {
         document.getElementById("noChatDiv").style.display = "none";
-        var url = "/job/chatContent?reId="+reId+"&jobId="+jobId;
+        var url = "/job/chatContent?jsId="+jsId+"&jobId="+jobId;
         $('#chatDiv').load(url);
     }
 </script>
@@ -97,8 +70,8 @@
                 30天内联系人
             </div>
             <ul class="list-group" >
-                <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.reId}]],[[${chat.jobId}]])" >
-                    <span id="reId" th:text="${chat.reId}"></span>
+                <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.jsId}]],[[${chat.jobId}]])" >
+                    <span id="reId" th:text="${chat.jsId}"></span>
                     <span id="jobId" th:text="${chat.jobId}"></span>
                     <span id="count">0</span>
                     <div style="height:100px;">
@@ -106,8 +79,8 @@
                             <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
                         </div>
                         <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
-                            <p><span th:text="${chat.reRealname}"></span></p>
-                            <p><span th:text="${chat.reCompany}"></span> 丨 <span th:text="${chat.reCompanyPosition}"></span></p>
+                            <p><span th:text="${chat.jsRealname}"></span></p>
+                            <p><span th:text="${chat.jsCollege}"></span></p>
                         </div>
                     </div>
                 </li>
@@ -129,22 +102,22 @@
                 请选择一个聊天
             </div>
             <div id="chatDiv"></div>
-<!--            <div class="panel-default" style="display: none;" id="chatDiv">-->
-<!--            <div class=" panel-heading">-->
-<!--                <span>HR姓名</span> 丨 <span>公司</span> 丨 <span>所属职位</span>-->
-<!--            </div>-->
-<!--            <div class=" panel-heading">-->
-<!--                <a href="" >XXX职位</a>-->
-<!--            </div>-->
-<!--            <div class="panel-body" style="height: 900px">-->
-<!--                <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent" >-->
-<!--                </div>-->
-<!--                <div style="height: 25%;">-->
-<!--                    <textarea id="text" style="height: 85%;width:100%;resize: none" ></textarea>-->
-<!--                    <button id="sendButton" type="button" data-reId data-jobId onclick="send(this)" class="btn btn-primary" style="float:right;">发送</button>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            </div>-->
+            <!--            <div class="panel-default" style="display: none;" id="chatDiv">-->
+            <!--            <div class=" panel-heading">-->
+            <!--                <span>HR姓名</span> 丨 <span>公司</span> 丨 <span>所属职位</span>-->
+            <!--            </div>-->
+            <!--            <div class=" panel-heading">-->
+            <!--                <a href="" >XXX职位</a>-->
+            <!--            </div>-->
+            <!--            <div class="panel-body" style="height: 900px">-->
+            <!--                <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent" >-->
+            <!--                </div>-->
+            <!--                <div style="height: 25%;">-->
+            <!--                    <textarea id="text" style="height: 85%;width:100%;resize: none" ></textarea>-->
+            <!--                    <button id="sendButton" type="button" data-reId data-jobId onclick="send(this)" class="btn btn-primary" style="float:right;">发送</button>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            </div>-->
 
         </div>
     </div>

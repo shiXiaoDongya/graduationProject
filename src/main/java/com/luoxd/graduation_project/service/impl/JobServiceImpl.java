@@ -83,7 +83,17 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
-    public List<ChatResponse> queryChatUsers(Integer userId) {
-        return jobMapper.queryChatUsers(userId);
+    public List<ChatResponse> queryChatUsers(String userType,Integer userId) {
+        if("js".equals(userType)){
+            return jobMapper.queryJsChatUsers(userId);
+        }else{
+            return jobMapper.queryReChatUsers(userId);
+        }
+    }
+
+    @Override
+    public List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId) {
+        log.info("jobMapper=======jsId:"+jsId+",reId:"+reId+",jobId:"+jobId);
+        return jobMapper.showChatContent(jsId,reId,jobId);
     }
 }

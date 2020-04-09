@@ -1,9 +1,6 @@
 package com.luoxd.graduation_project.service;
 
-import com.luoxd.graduation_project.domain.ChildClasses;
-import com.luoxd.graduation_project.domain.Classes;
-import com.luoxd.graduation_project.domain.Job;
-import com.luoxd.graduation_project.domain.JobClasses;
+import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 
@@ -22,5 +19,7 @@ public interface JobService {
 
     Job getJobById(Integer jobId);
 
-    List<ChatResponse> queryChatUsers(Integer userId);
+    List<ChatResponse> queryChatUsers(String userType,Integer userId);
+
+    List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId);
 }
