@@ -141,7 +141,7 @@ public class JobController {
 
     @RequestMapping(value = "/chatContent",method = RequestMethod.GET)
     public String chatContent(HttpServletRequest request,Integer jsId,Integer reId,Integer jobId){
-        String userType = (String)request.getSession().getAttribute("usetType");
+        String userType = (String)request.getSession().getAttribute("userType");
         List<Chat> chatList = null;
         if("js".equals(userType)){
             Integer tempJsId = (Integer) request.getSession().getAttribute("userId");
@@ -154,6 +154,7 @@ public class JobController {
             chatList = jobService.showChatContent(jsId,tempReId,jobId);
             request.setAttribute("jsId",jsId);
         }
+        log.info(chatList.toString());
         request.setAttribute("chatList",chatList);
         return "chatContent";
     }
