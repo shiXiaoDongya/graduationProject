@@ -42,8 +42,8 @@
             <div style="height: 25%;">
                 <textarea id="text" style="height: 85%;width:100%;resize: none" ></textarea>
                 <div style="float: right">
-                <button class="btn btn-primary" type="button" th:if="${session.userType=='js'}" th:onclick="jsSend([[${reId}]])">js发送</button>
-                <button class="btn btn-primary" type="button" th:if="${session.userType=='re'}" th:onclick="jsSend([[${jsId}]])">re发送</button>
+                <button class="btn btn-primary" type="button" th:if="${session.userType=='js'}" th:onclick="jsSend([[${reId}]],[[${jobId}]])">发送</button>
+                <button class="btn btn-primary" type="button" th:if="${session.userType=='re'}" th:onclick="reSend([[${jsId}]],[[${jobId}]])">发送</button>
                 </div>
             </div>
         </div>
@@ -51,12 +51,31 @@
 
 </div>
 </body>
+<span th:text="${jobId}" id="jobId2"></span>
+<span id="newMsg"></span>
 <script type="text/javascript">
+    Date.prototype.Format = function (fmt) { // author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, // 月份
+            "d+": this.getDate(), // 日
+            "h+": this.getHours(), // 小时
+            "m+": this.getMinutes(), // 分
+            "s+": this.getSeconds(), // 秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), // 季度
+            "S": this.getMilliseconds() // 毫秒
+        };
+        if (/(y+)/.test(fmt))
+            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
     var webSocket;
+    var newMsg = [];
     var commWebSocket;
     if ("WebSocket" in window)
     {
-        webSocket = new WebSocket("ws://localhost:8281/websocket/"+document.getElementById('userType').innerHTML+"/"+document.getElementById('userId').innerHTML);
+        webSocket = new WebSocket("ws://localhost:8281/websocket/"+document.getElementById('userType').innerHTML+"/"+document.getElementById('userId').innerHTML+"/"+document.getElementById("jobId2").innerHTML);
 
         //连通之后的回调事件
         webSocket.onopen = function()
@@ -72,11 +91,29 @@
         //接收后台服务端的消息
         webSocket.onmessage = function (evt)
         {
+            var chat = [];
             var received_msg = evt.data;
             console.log("数据已接收:" +received_msg);
             var obj = JSON.parse(received_msg);
             setMessageInnerHTML(obj.from+"对"+obj.to+"说："+obj.msg);
-            msg.push()
+            $("#chatContent").append("<p class=\"chatTime\">" + obj.time + "</p>");
+            $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
+            var fromChars = obj.from.split("-");
+            var toChars = obj.to.split("-");
+            if(fromChars[0] === "js"){
+                chat['jsId'] = fromChars[1];
+                chat['reId'] = toChars[1];
+                chat['chatContent'] = obj.msg;
+                chat['charSendTime'] = obj.time;
+                chat['isJsSend'] = 1;
+            }else{
+                chat['jsId'] = toChars[1];
+                chat['reId'] = fromChars[1];
+                chat['chatContent'] = obj.msg;
+                chat['charSendTime'] = obj.time;
+                chat['isJsSend'] = 0;
+            }
+            newMsg.push(chat);
         };
 
         //连接关闭的回调事件
@@ -84,6 +121,7 @@
         {
             console.log("连接已关闭...");
             setMessageInnerHTML("连接已经关闭....");
+            setMessageInnerHTML("ininininininininininninininin");
         };
     }
     else{
@@ -100,42 +138,32 @@
         webSocket.close();
     }
 
-    function send(userId,jobId) {
-        if(document.getElementById('userType').innerHTML === "js"){
-            setMessageInnerHTML(document.getElementById('userType').innerHTML+"-"+document.getElementById('userId').innerHTML+"对re-"+obj.dataset.reId+"说："+ $("#text").val());
-        }else{
-            setMessageInnerHTML(document.getElementById('userType').innerHTML+"-"+document.getElementById('userId').innerHTML+"对js-"+obj.dataset.reId+"说："+ $("#text").val());
-        }
-        var fromType;
-        var toType;
-        if(document.getElementById('userType').innerHTML === "js"){
-            fromType = "js";
-            toType = "re";
-        }else{
-            fromType = "re";
-            toType = "js";
-        }
+    function jsSend(toId,jobId) {
+        setMessageInnerHTML("js-"+document.getElementById('userId').innerHTML+"-"+jobId+"对re-"+toId+"-"+jobId+"说："+ $("#text").val());
         var message = {
             "msg":document.getElementById('text').value,
-            "from":fromType+"-"+document.getElementById('userId').innerHTML,
-            "to":toType+"-"+userId,
-            "jobId":jobId
+            "from":"js-"+document.getElementById('userId').innerHTML+"-"+jobId,
+            "to":"re-"+toId+"-"+jobId,
+            "time": new Date().Format("yyyy-MM-dd hh:mm:ss")
         };
+        $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
+        $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
         webSocket.send(JSON.stringify(message));
         $("#text").val("");
 
     }
-    function jsSend(toId) {
-        setMessageInnerHTML("js-"+document.getElementById('userId').innerHTML+"对re-"+toId+"说："+ $("#text").val());
+    function reSend(toId,jobId) {
+        setMessageInnerHTML("re-"+document.getElementById('userId').innerHTML+"-"+jobId+"对js-"+toId+"-"+jobId+"说："+ $("#text").val());
         var message = {
             "msg":document.getElementById('text').value,
-            "from":"js-"+document.getElementById('userId').innerHTML,
-            "to":"re-"+toId,
-            "jobId":jobId
+            "from":"re-"+document.getElementById('userId').innerHTML+"-"+jobId,
+            "to":"js-"+toId+"-"+jobId,
+            "time": new Date().Format("yyyy-MM-dd hh:mm:ss")
         };
+        $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
+        $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
         webSocket.send(JSON.stringify(message));
         $("#text").val("");
-
     }
 </script>
 </html>

@@ -106,7 +106,7 @@ public class WebSocket {
      *
      * @param message 消息
      * @param session 会话
-     * message格式{"msg":"","from":"","to":"","jobId":""}
+     * message格式{"msg":"","from":"","to":"","jobId":"","time":""}
      */
     @OnMessage
     public void onMessage(String message, Session session)
@@ -118,11 +118,13 @@ public class WebSocket {
             String from = jsonObject.getString("from");
             String to = jsonObject.getString("to");
             String jobId = jsonObject.getString("jobId");
+            String time = jsonObject.getString("time");
             Map<String, Object> msgMap = new HashMap<String,Object>();
             msgMap.put("msg",msg);
             msgMap.put("from",from);
             msgMap.put("to",to);
             msgMap.put("jobId",jobId);
+            msgMap.put("time",time);
             sendMessageTo(JSON.toJSONString(msgMap),to);
 //            String textMessage = jsonObject.getString("message");
 //            String fromusername = jsonObject.getString("from");
@@ -150,7 +152,7 @@ public class WebSocket {
 
 
     public void sendMessageTo(String message, String ToUserName) throws IOException {
-        if(clients.keySet().contains(ToUserName)){
+        if(clients.containsKey(ToUserName)){
             clients.get(ToUserName).session.getAsyncRemote().sendText(message);
         }
 //        for (WebSocket item : clients.values()) {
