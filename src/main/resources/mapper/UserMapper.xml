@@ -26,4 +26,16 @@
         from recruiter
         where re_username = #{username} and re_password = #{password}
     </select>
+
+    <select id="checkJsUsername" resultType="com.luoxd.graduation_project.domain.JobSeeker">
+        select *
+        from job_seeker
+        where js_username = #{username}
+    </select>
+
+    <select id="checkReUsername" resultType="com.luoxd.graduation_project.domain.Recruiter">
+        select *
+        from recruiter
+        where re_username = #{username}
+    </select>
 </mapper>

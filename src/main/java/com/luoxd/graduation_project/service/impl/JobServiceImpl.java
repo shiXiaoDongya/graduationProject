@@ -2,15 +2,18 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.JobMapper;
+import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
+import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.JobService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 @Slf4j
 @Service
@@ -58,8 +61,35 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
-    public List<Job> queryJobList() {
-        return jobMapper.queryJobList();
+    public List<JobResponse> queryJobList(SearchRequest searchRequest) {
+        List<JobResponse> jobResponseList = new ArrayList<>();
+        List<Job> jobList = jobMapper.queryJobList(searchRequest);
+        if(jobList != null) {
+            for (Job tempJob : jobList) {
+                JobResponse jobResponse = new JobResponse();
+                List<String> tags = null;
+                if (tempJob.getTag() != null) {
+                    String[] tempTags = tempJob.getTag().split(",");
+                    tags = Arrays.asList(tempTags);
+                }
+                jobResponse.setJobId(tempJob.getJobId());
+                jobResponse.setJobName(tempJob.getJobName());
+                jobResponse.setJobDetail(tempJob.getJobDetail());
+                jobResponse.setExpCondition(tempJob.getExpCondition());
+                jobResponse.setEduCondition(tempJob.getEduCondition());
+                jobResponse.setSalary(tempJob.getSalary());
+                jobResponse.setCompanyId(tempJob.getCompanyId());
+                jobResponse.setTags(tags);
+                jobResponse.setRecruiterId(tempJob.getRecruiterId());
+                jobResponse.setWorkCity(tempJob.getWorkCity());
+                jobResponse.setWorkAddress(tempJob.getWorkAddress());
+                jobResponse.setJobClassesId(tempJob.getJobClassesId());
+                jobResponseList.add(jobResponse);
+            }
+            return jobResponseList;
+        }else{
+            return null;
+        }
     }
 
     @Override

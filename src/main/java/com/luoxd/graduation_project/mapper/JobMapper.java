@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -24,7 +25,7 @@ public interface JobMapper {
 
     int updateRecommendByName(String jobClassesName);
 
-    List<Job> queryJobList();
+    List<Job> queryJobList(SearchRequest request);
 
     List<Classes> queryClasses();
 

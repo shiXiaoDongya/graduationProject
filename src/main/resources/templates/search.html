@@ -89,6 +89,7 @@
             changeJobList();
         }
         function changeJobList() {
+            var keyword = document.getElementById("keyword").value;
             var jobClassesId = document.getElementById("jobClassesId").value;
             var jobClassesName = document.getElementById("jobClassesName").value;
             var expCondition = document.getElementById("expCondition").value;
@@ -97,7 +98,7 @@
             var finanCondition = document.getElementById("finanCondition").value;
             var sizeCondition = document.getElementById("sizeCondition").value;
             var postDateCondition = document.getElementById("postDateCondition").value;
-            window.location.href="/job/search?jobClassesId="+jobClassesId+"&jobClassesName="+jobClassesName+"&expCondition="+expCondition+
+            window.location.href="/job/search?keyword="+keyword+"&jobClassesId="+jobClassesId+"&jobClassesName="+jobClassesName+"&expCondition="+expCondition+
                     "&eduCondition="+eduCondition+"&salCondition="+salCondition+"&finanCondition="+finanCondition+"&sizeCondition="+sizeCondition+
                     "&postDateCondition="+postDateCondition;
         }
@@ -130,7 +131,7 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="/regist.html">注册</a></li>
+                    <li><a class="ticker-btn" href="/register.html">注册</a></li>
                     <li><a class="ticker-btn" href="/login.html">登录</a></li>
                 </ul>
             </nav><!-- #nav-menu-container -->
@@ -145,7 +146,7 @@
         <form action="#">
         <div class="aui-wrapper">
             <div class="aui-wrapper-header">
-                    <input type="text" class="col-md-8 input-lg" th:value="${keyword}" name="keyword">
+                    <input type="text" class="col-md-8 input-lg" th:value="${keyword}" id="keyword" name="keyword">
                         <div class="dropdown col-md-2" style="padding: 0px" id="jobClassesDiv">
                             <input type="text" id="jobClassesId" name="jobClassesId" th:value="${jobClassesId}" hidden/>
                         <input type="text" class="col-md-12 btn btn-default dropdown-toggle input-lg" data-toggle="dropdown" th:value="${jobClassesName}" id="jobClassesName" name="jobClassesName" readonly />

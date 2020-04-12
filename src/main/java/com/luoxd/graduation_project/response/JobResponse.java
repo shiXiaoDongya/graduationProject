@@ -1,11 +1,11 @@
-package com.luoxd.graduation_project.domain;
+package com.luoxd.graduation_project.response;
 
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class Job {
+public class JobResponse {
     private Integer jobId;
 
     private String jobName;
@@ -20,7 +20,7 @@ public class Job {
 
     private Integer companyId;
 
-    private String tag;
+    private List<String> tags;
 
     private Integer recruiterId;
 

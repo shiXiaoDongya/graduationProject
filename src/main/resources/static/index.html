@@ -26,13 +26,13 @@
                         html +=
                             "                        <div class=\"aui-content-menu-head\">\n"+
                             "                            <div class=\"aui-content-menu-head-list\">"
-                        + "<h2>"+classes['classesName']+"</h2>";
+                            + "<h2>"+classes['classesName']+"</h2>";
                         // alert(classes['recommendJobClassesList']);
                         for(var j = 0; j < classes['recommendJobClassesList'].length;j++){
                             var recommendClasses = data[i]['recommendJobClassesList'][j];
                             // alert(recommendClasses['jobClassesName']);
                             // alert(recommendClasses['jobClassesUrl']);
-                            html += "<a href="+recommendClasses['jobClassesUrl']+"\"search.jsp?jobUrl=\">"+recommendClasses['jobClassesName']+"</a>";
+                            html += "<a href=\"/job/search?jobClassesId="+recommendClasses['jobClassesId']+"&jobClassesName="+recommendClasses['jobClassesName']+"\">"+recommendClasses['jobClassesName']+"</a>";
                         }
                         html += "<i class=\"aui-content-menu-head-list-arrow\"></i>\n" +
                             "                            </div>\n" +
@@ -52,9 +52,9 @@
                                 var jobClasses = childClasses['jobClassesList'][l];
                                 // alert(jobClasses['jobClassesName']);
                                 if(jobClasses['isHot'] == 1){
-                                    html += "<a href="+jobClasses['jobClassesUrl']+"\"search.jsp?jobClasses=\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
                                 }else{
-                                    html += "<a href="+jobClasses['jobClassesUrl']+"\"search.jsp?jobClasses=\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"\">"+jobClasses['jobClassesName']+"</a>";
                                 }
                             }
                             html += "</dd></dl>";
@@ -120,24 +120,25 @@
     <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="#" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+                <a href="index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#">首页</a></li>
+                    <li class="menu-active"><a href="index.html">首页</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Category</a></li>
                     <li><a href="#">Price</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li class="menu-has-children"><a href="">Pages</a>
+                    <li class="menu-has-children">
+                        <a href="">Pages</a>
                         <ul>
                             <li><a href="elements.html">elements</a></li>
-                            <li><a href="../templates/search.html">search</a></li>
+                            <li><a href="search.html">search</a></li>
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="regist.html">注册</a></li>
+                    <li ><a class="ticker-btn" href="register.html">注册</a></li>
                     <li><a class="ticker-btn" href="login.html">登录</a></li>
                 </ul>
             </nav><!-- #nav-menu-container -->
@@ -145,14 +146,11 @@
     </div>
 </header><!-- #header -->
 <div class="panel panel-default" style="height: 2000px;margin-top: 80px;">
-    <div class="panel-heading">
-        <span>测试panel</span>
-    </div>
     <div class="panel-body">
         <div class="aui-wrapper">
             <div class="aui-wrapper-header">
                 <form action="/job/search">
-                    <input type="text" class="col-md-10 input-lg" name="keyword" value="5641">
+                    <input type="text" class="col-md-10 input-lg" name="keyword" placeholder="职位搜索">
                     <input type="submit" class="aui-wrapper-submit">
                 </form>
             </div>
@@ -193,7 +191,12 @@
                 </div>
             </div>
             <div style="float: left;width: 760px;height: 600px;border: 1px solid black;" class="clearfix">
-                广告位置
+                <div style="width: 379px;float: left">
+                    <a href=""><img src="/indexImg/pic1.jpg"  style="width:100%;height:298px;" /></a>
+                    <a href=""><img src="/indexImg/pic2.jpg"  style="width: 100%;height: 298px;"/></a>
+                </div>
+                <a href=""><img src="../indexImg/pic3.jpg" style="width: 379px;height: 298px;" /></a>
+                <a href=""><img src="../indexImg/pic4.jpg" style="width: 379px;height: 298px;" /></a>
             </div>
         </div>
         <div class="aui-container-bxo" style="margin-top:700px;height: 500px;">

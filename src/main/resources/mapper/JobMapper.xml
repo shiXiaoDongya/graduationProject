@@ -40,9 +40,73 @@
         where job_classes_name = #{jobClassesName}
     </update>
 
-    <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job">
+    <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job" parameterType="com.luoxd.graduation_project.request.SearchRequest">
         select *
         from job
+        where 1 = 1
+        <if test="keyword != null and keyword != ''">
+            and job_name LIKE concat('%',#{keyword},'%')
+        </if>
+        <if test="jobClassesId != null and jobClassesId != ''">
+            and job_classes_id = #{jobClassesId}
+        </if>
+        <if test="expCondition != null and expCondition != ''">
+            and exp_condition = #{expCondition}
+        </if>
+        <if test="eduCondition != null and eduCondition != ''">
+            and edu_condition = #{eduCondition}
+        </if>
+        <if test="salCondition != null and salCondition != ''">
+            <choose>
+                <when test="salCondition ==1 ">
+                    and salary &lt; 3000
+                </when >
+                <when test="salCondition ==2 ">
+                    and salary &gt;= 3000 and salary &lt; 5000
+                </when >
+                <when test="salCondition ==3 ">
+                    and salary &gt;= 5000 and salary &lt; 10000
+                </when >
+                <when test="salCondition ==4 ">
+                    and salary &gt;= 10000 and salary &lt; 15000
+                </when >
+                <when test="salCondition ==5 ">
+                    and salary &gt;= 15000 and salary &lt; 20000
+                </when >
+                <when test="salCondition ==6 ">
+                    and salary &gt;= 20000 and salary &lt; 30000
+                </when >
+                <when test="salCondition ==7 ">
+                    and salary &gt;= 30000 and salary &lt; 50000
+                </when >
+                <when test="salCondition ==8 ">
+                    and salary &gt;= 50000
+                </when >
+                <otherwise>
+                </otherwise>
+            </choose>
+        </if>
+        <if test="postDateCondition != null and postDateCondition != ''">
+            <choose>
+                <when test="postDateCondition ==1 ">
+                    and  post_date = curdate()
+                </when >
+                <when test="postDateCondition ==2 ">
+                    and post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and post_date &lt;= curdate()
+                </when >
+                <when test="postDateCondition ==3 ">
+                    and post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and post_date &lt;= curdate()
+                </when >
+                <when test="salCondition ==4 ">
+                    and post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and post_date &lt;= curdate()
+                </when >
+                <when test="salCondition ==5 ">
+                    and post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and post_date &lt;= curdate()
+                </when >
+                <otherwise>
+                </otherwise>
+            </choose>
+        </if>
     </select>
     <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">
         select *

@@ -52,4 +52,14 @@ public class UserServiceImpl implements UserService {
     public Recruiter recruiterLogin(String username, String password) {
         return userMapper.recruiterLogin(username,password);
     }
+
+    @Override
+    public JobSeeker checkJsUsername(String username) {
+        return userMapper.checkJsUsername(username);
+    }
+
+    @Override
+    public Recruiter checkReUsername(String username) {
+        return userMapper.checkReUsername(username);
+    }
 }

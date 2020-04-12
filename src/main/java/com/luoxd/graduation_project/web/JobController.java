@@ -2,8 +2,10 @@ package com.luoxd.graduation_project.web;
 
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
+import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.JobService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -34,27 +36,23 @@ public class JobController {
     }
 
     @RequestMapping(value = "/search",method = RequestMethod.GET)
-    public String getJobList(HttpServletRequest request,Integer jobClassesId,String jobClassesName,Integer expCondition,Integer eduCondition,
-                             Integer salCondition,Integer finanCondition,Integer sizeCondition,Integer postDateCondition){
-        String keyword = request.getParameter("keyword");
-        List<Job> jobList = jobService.queryJobList();
-        for (Job tempJob:jobList) {
-            List<String> tags = new ArrayList<>();
-            tags.add("Java");
-            tags.add("PHP");
-            tempJob.setTags(tags);
-        }
+//    public String getJobList(HttpServletRequest request,Integer jobClassesId,String jobClassesName,Integer expCondition,Integer eduCondition,
+//                             Integer salCondition,Integer finanCondition,Integer sizeCondition,Integer postDateCondition){
+        public String getJobList(HttpServletRequest request,SearchRequest searchRequest){
+        log.info(searchRequest.toString());
+        String keyword = searchRequest.getKeyword();
+        List<JobResponse> jobList = jobService.queryJobList(searchRequest);
         log.info(jobList.toString());
         request.setAttribute("jobList",jobList);
-        request.setAttribute("keyword",keyword);
-        request.setAttribute("jobClassesId",jobClassesId);
-        request.setAttribute("jobClassesName",jobClassesName);
-        request.setAttribute("expCondition",expCondition);
-        request.setAttribute("eduCondition",eduCondition);
-        request.setAttribute("salCondition",salCondition);
-        request.setAttribute("finanCondition",finanCondition);
-        request.setAttribute("sizeCondition",sizeCondition);
-        request.setAttribute("postDateCondition",postDateCondition);
+        request.setAttribute("keyword",searchRequest.getKeyword());
+        request.setAttribute("jobClassesId",searchRequest.getJobClassesId());
+        request.setAttribute("jobClassesName",searchRequest.getJobClassesName());
+        request.setAttribute("expCondition",searchRequest.getExpCondition());
+        request.setAttribute("eduCondition",searchRequest.getEduCondition());
+        request.setAttribute("salCondition",searchRequest.getSalCondition());
+        request.setAttribute("finanCondition",searchRequest.getFinanCondition());
+        request.setAttribute("sizeCondition",searchRequest.getSizeCondition());
+        request.setAttribute("postDateCondition",searchRequest.getPostDateCondition());
         return "search";
     }
 
@@ -80,7 +78,6 @@ public class JobController {
     @ResponseBody
     public List<ChildClasses> getChildClasses(HttpServletRequest request){
         String classesId = request.getParameter("classesId");
-        log.info("classesId===>"+classesId);
         int classsesIdNum = 0;
         if (StringUtils.isNotEmpty(classesId)){
             classsesIdNum = Integer.parseInt(classesId);
@@ -93,7 +90,6 @@ public class JobController {
     @ResponseBody
     public List<JobClasses> getJobClasses(HttpServletRequest request){
         String childClassesId = request.getParameter("childClassesId");
-        log.info("classesId===>"+childClassesId);
         int childClassesIdNum = 0;
         if (StringUtils.isNotEmpty(childClassesId)){
             childClassesIdNum = Integer.parseInt(childClassesId);

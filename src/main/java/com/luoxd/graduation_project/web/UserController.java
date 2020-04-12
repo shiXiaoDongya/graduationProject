@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -116,9 +117,9 @@ public class UserController {
 
     @RequestMapping("/register")
     public String register(@Param("username") String username, @Param("password")String password, @Param("confirmPassword")String confirmPassword,
-                           @Param("realname")String realname,@Param("idCard")String idCard, @Param("phone")String phone,
+                           @Param("realname")String realname, @Param("idCard")String idCard, @Param("phone")String phone,
                            @Param("email")String email, @Param("sq")String sq, @Param("comfirmSq")String comfirmSq, @Param("company")String company,
-                           @Param("companyPosition")String companyPosition,@Param("companyPic")MultipartFile companyPic,@Param("id")String id,HttpServletRequest request) throws IOException {
+                           @Param("companyPosition")String companyPosition, @Param("companyPic")MultipartFile companyPic, @Param("id")String id, HttpServletRequest request) throws IOException {
         if(id.equals("re")){
             Recruiter recruiter = new Recruiter();
             recruiter.setReUsername(username);
@@ -148,9 +149,11 @@ public class UserController {
                 companyPic.transferTo(newFile);
                 log.info(recruiter.toString());
                 userService.insertRecruiter(recruiter);
-                HttpSession session = request.getSession();
-                session.setAttribute("user","test");
-                return "redirect:index.html";
+                Recruiter re = userService.recruiterLogin(recruiter.getReUsername(),recruiter.getRePassword());
+                request.getSession().setAttribute("userType","re");
+                request.getSession().setAttribute("userId",re.getReId());
+                request.getSession().setAttribute("userName",re.getReUsername());
+                return "index";
             } else {
                 return "redirect:index.html";
             }
@@ -166,7 +169,11 @@ public class UserController {
             jobSeeker.setJsEmail(email);
             jobSeeker.setJsSq(sq);
             userService.insertJobSeeker(jobSeeker);
-            return "redirect:index.html";
+            JobSeeker js = userService.jobSeekerLogin(jobSeeker.getJsUsername(),jobSeeker.getJsPassword());
+            request.getSession().setAttribute("userType", "js");
+            request.getSession().setAttribute("userId", js.getJsId());
+            request.getSession().setAttribute("userName", js.getJsUsername());
+            return "index";
         }
     }
 
@@ -215,4 +222,23 @@ public class UserController {
     public String toJsInfo(HttpServletRequest request){
         return "jsInfo";
     }
+
+    @RequestMapping(value = "/usernameCheck",method = RequestMethod.GET)
+    @ResponseBody
+    public String usernameCheck(String username,String id){
+        log.info("========username:"+username+",id:"+id);
+        if("js".equals(id)){
+            JobSeeker jobSeeker = userService.checkJsUsername(username);
+            if(jobSeeker == null){
+                return "{\"exist\":\"false\"}";
+            }
+        }else{
+            Recruiter recruiter = userService.checkReUsername(username);
+            if(recruiter == null){
+                return "{\"exist\":\"false\"}";
+            }
+        }
+        return "{\"exist\":\"true\"}";
+    }
+
 }

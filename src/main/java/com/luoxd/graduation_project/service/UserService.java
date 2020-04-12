@@ -20,4 +20,8 @@ public interface UserService {
     JobSeeker jobSeekerLogin(String username, String password);
 
     Recruiter recruiterLogin(String username, String password);
+
+    JobSeeker checkJsUsername(String username);
+
+    Recruiter checkReUsername(String username);
 }
