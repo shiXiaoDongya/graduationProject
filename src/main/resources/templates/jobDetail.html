@@ -51,11 +51,10 @@
             </nav><!-- #nav-menu-container -->
         </div>
     </div>
-</header><!-- #header -->
-<div class="panel panel-default" style="height: 2000px;margin-top: 80px;">
+</header><!-- #header -->2000px;margin-top: 80px;">
     <div class="panel-heading" >
-        <div class="clearfix" style="width: 1200px;margin: 0 auto">
-        <div style="float: left;width: 80%">
+        <div class="clearfix" style="width: 1100px;margin: 0 auto">
+        <div style="float: left;width: 70%">
             <br/>
             <p style="font-size: 30px;font-weight: 700"><span>Java实习 <font color="red">12-24K·15薪</font> </span></p>
             <br/>
@@ -63,19 +62,19 @@
             <br/>
             <p style="font-size: 15px"><span class="label label-info tags">五险一金</span><span class="label label-info tags">工作经验</span><span class="label label-info tags">教育经验</span></p>
         </div>
-        <div style="float: right;width: 20%">
+        <div style="float: right;width: 30%">
             <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
         </div>
         </div>
     </div>
-    <div class="panel-body" style="width: 1200px;margin: 0 auto">
+    <div class="panel-body" style="width: 1100px;margin: 0 auto">
         <div class="clearfix">
             <div style="float: left;margin-right: 15px">
                 <img style="width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px solid black"/>
             </div>
             <div style="float: left;padding-top: 14px">
-                <p>HR姓名</p>
-                <p>公司名称 所属职位</p>
+                <p th:text="${job.reRealname}">HR姓名</p>
+                <p ><span th:text="${job.companyName}">公司名称</span>　<span th:text="${job.reCompanyPosition}">所属职位</span></p>
             </div>
             <div style="float: right">
                 <button class="btn btn-default" type="button">感兴趣</button>

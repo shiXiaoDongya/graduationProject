@@ -44,15 +44,16 @@ public class JobController {
         List<JobResponse> jobList = jobService.queryJobList(searchRequest);
         log.info(jobList.toString());
         request.setAttribute("jobList",jobList);
-        request.setAttribute("keyword",searchRequest.getKeyword());
-        request.setAttribute("jobClassesId",searchRequest.getJobClassesId());
-        request.setAttribute("jobClassesName",searchRequest.getJobClassesName());
-        request.setAttribute("expCondition",searchRequest.getExpCondition());
-        request.setAttribute("eduCondition",searchRequest.getEduCondition());
-        request.setAttribute("salCondition",searchRequest.getSalCondition());
-        request.setAttribute("finanCondition",searchRequest.getFinanCondition());
-        request.setAttribute("sizeCondition",searchRequest.getSizeCondition());
-        request.setAttribute("postDateCondition",searchRequest.getPostDateCondition());
+        request.setAttribute("searchRequest",searchRequest);
+//        request.setAttribute("keyword",searchRequest.getKeyword());
+//        request.setAttribute("jobClassesId",searchRequest.getJobClassesId());
+//        request.setAttribute("jobClassesName",searchRequest.getJobClassesName());
+//        request.setAttribute("expCondition",searchRequest.getExpCondition());
+//        request.setAttribute("eduCondition",searchRequest.getEduCondition());
+//        request.setAttribute("salCondition",searchRequest.getSalCondition());
+//        request.setAttribute("finanCondition",searchRequest.getFinanCondition());
+//        request.setAttribute("sizeCondition",searchRequest.getSizeCondition());
+//        request.setAttribute("postDateCondition",searchRequest.getPostDateCondition());
         return "search";
     }
 
@@ -61,6 +62,7 @@ public class JobController {
         if(jobId!=null){
             log.info("in========"+jobId.toString());
             Job job = jobService.getJobById(jobId);
+            log.info("=========="+job.toString());
             request.setAttribute("job",job);
         }
         return "jobDetail";

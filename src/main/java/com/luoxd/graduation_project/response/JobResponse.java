@@ -12,21 +12,31 @@ public class JobResponse {
 
     private String jobDetail;
 
-    private Integer expCondition;
+    private String expConditionStr;
 
-    private Integer eduCondition;
+    private String eduConditionStr;
 
     private Integer salary;
 
-    private Integer companyId;
+    private Integer reCompanyId;
 
     private List<String> tags;
 
-    private Integer recruiterId;
+    private String reRealname;
+
+    private String reCompanyPosition;
 
     private String workCity;
 
     private String workAddress;
 
     private String jobClassesId;
+
+    private String companyName;
+
+    private String industry;
+
+    private String finanConditionStr;
+
+    private String sizeConditionStr;
 }

@@ -10,6 +10,7 @@
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript">
         window.onload = function () {
+            $("#classesUl").append("<li onclick=\"changeClasses(this)\" value=\"null\"><a href=\"#\">不限</a></li>");
             $.ajax({
                 type: "GET",
                 url: "/job/getClasses2",
@@ -42,7 +43,7 @@
                 success: function(data) {
                     document.getElementById("childClassesUl").style.display="block";
                     $("#childClassesUl").html("");
-                    var num = (parseInt(obj.value) - 1) * 26.5;
+                    var num = (parseInt(obj.value) ) * 26.5;
                     document.getElementById("childClassesUl").style.marginTop = num + "px";
                     document.getElementById("childClassesUl").value = data[0]['classesId'];
                     document.getElementById("jobClassesUl").value = data[0]['classesId'];
@@ -146,10 +147,10 @@
         <form action="#">
         <div class="aui-wrapper">
             <div class="aui-wrapper-header">
-                    <input type="text" class="col-md-8 input-lg" th:value="${keyword}" id="keyword" name="keyword">
+                    <input type="text" class="col-md-8 input-lg" th:value="${searchRequest.keyword}" id="keyword" name="keyword">
                         <div class="dropdown col-md-2" style="padding: 0px" id="jobClassesDiv">
-                            <input type="text" id="jobClassesId" name="jobClassesId" th:value="${jobClassesId}" hidden/>
-                        <input type="text" class="col-md-12 btn btn-default dropdown-toggle input-lg" data-toggle="dropdown" th:value="${jobClassesName}" id="jobClassesName" name="jobClassesName" readonly />
+                            <input type="text" id="jobClassesId" name="jobClassesId" th:value="${searchRequest.jobClassesId}" hidden/>
+                        <input type="text" class="col-md-12 btn btn-default dropdown-toggle input-lg" data-toggle="dropdown" th:value="${searchRequest.jobClassesName}" id="jobClassesName" name="jobClassesName" readonly />
                         <ul class="dropdown-menu" onmouseout="clearLi2()" role="menu" id="classesUl">
                         </ul>
                         <ul  class="dropdown-menu" onmouseover="showNext(this)" style="margin-left: 160px;display: none" role="menu" id="childClassesUl">
@@ -166,72 +167,72 @@
                     <div class="col-md-2">
                     <select class="form-control" id="expCondition" style="margin-right: 50px;" onchange="changeJobList()">
                         <option value="">工作经验</option>
-                        <option th:selected="${expCondition==1}" value="1">在校生</option>
-                        <option th:selected="${expCondition==2}" value="2">应届生</option>
-                        <option th:selected="${expCondition==3}" value="3">1年以内</option>
-                        <option th:selected="${expCondition==4}" value="4">1-3年</option>
-                        <option th:selected="${expCondition==5}" value="5">3-5年</option>
-                        <option th:selected="${expCondition==6}" value="6">5-10年</option>
-                        <option th:selected="${expCondition==7}" value="7">10年以上</option>
+                        <option th:selected="${searchRequest.expCondition==1}" value="1">在校生</option>
+                        <option th:selected="${searchRequest.expCondition==2}" value="2">应届生</option>
+                        <option th:selected="${searchRequest.expCondition==3}" value="3">1年以内</option>
+                        <option th:selected="${searchRequest.expCondition==4}" value="4">1-3年</option>
+                        <option th:selected="${searchRequest.expCondition==5}" value="5">3-5年</option>
+                        <option th:selected="${searchRequest.expCondition==6}" value="6">5-10年</option>
+                        <option th:selected="${searchRequest.expCondition==7}" value="7">10年以上</option>
                     </select>
                     </div>
                     <div class="col-md-2">
                     <select class="form-control" id="eduCondition" style="margin-right: 50px;" onchange="changeJobList()">
                         <option value="">学历要求</option>
-                        <option th:selected="${eduCondition==1}" value="1">初中及以下</option>
-                        <option th:selected="${eduCondition==2}" value="2">中专/中技</option>
-                        <option th:selected="${eduCondition==3}" value="3">高中</option>
-                        <option th:selected="${eduCondition==4}" value="4">大专</option>
-                        <option th:selected="${eduCondition==5}" value="5">本科</option>
-                        <option th:selected="${eduCondition==6}" value="6">硕士</option>
-                        <option th:selected="${eduCondition==7}" value="7">博士</option>
+                        <option th:selected="${searchRequest.eduCondition==1}" value="1">初中及以下</option>
+                        <option th:selected="${searchRequest.eduCondition==2}" value="2">中专/中技</option>
+                        <option th:selected="${searchRequest.eduCondition==3}" value="3">高中</option>
+                        <option th:selected="${searchRequest.eduCondition==4}" value="4">大专</option>
+                        <option th:selected="${searchRequest.eduCondition==5}" value="5">本科</option>
+                        <option th:selected="${searchRequest.eduCondition==6}" value="6">硕士</option>
+                        <option th:selected="${searchRequest.eduCondition==7}" value="7">博士</option>
                     </select>
                     </div>
                     <div class="col-md-2">
                     <select class="form-control" id="salCondition" style="margin-right: 50px;" onchange="changeJobList()">
                         <option value="">薪资要求</option>
-                        <option th:selected="${salCondition==1}" value="1">3K以下</option>
-                        <option th:selected="${salCondition==2}" value="2">3-5K</option>
-                        <option th:selected="${salCondition==3}" value="3">5-10K</option>
-                        <option th:selected="${salCondition==4}" value="4">10-15K</option>
-                        <option th:selected="${salCondition==5}" value="5">15-20K</option>
-                        <option th:selected="${salCondition==6}" value="6">20-30K</option>
-                        <option th:selected="${salCondition==7}" value="7">30-50K</option>
-                        <option th:selected="${salCondition==8}" value="8">50K以上</option>
+                        <option th:selected="${searchRequest.salCondition==1}" value="1">3K以下</option>
+                        <option th:selected="${searchRequest.salCondition==2}" value="2">3-5K</option>
+                        <option th:selected="${searchRequest.salCondition==3}" value="3">5-10K</option>
+                        <option th:selected="${searchRequest.salCondition==4}" value="4">10-15K</option>
+                        <option th:selected="${searchRequest.salCondition==5}" value="5">15-20K</option>
+                        <option th:selected="${searchRequest.salCondition==6}" value="6">20-30K</option>
+                        <option th:selected="${searchRequest.salCondition==7}" value="7">30-50K</option>
+                        <option th:selected="${searchRequest.salCondition==8}" value="8">50K以上</option>
                     </select>
                     </div>
                     <div class="col-md-2">
                     <select class="form-control" id="finanCondition" style="margin-right: 50px;" onchange="changeJobList()">
                         <option value="">融资阶段</option>
-                        <option th:selected="${finanCondition==1}" value="1">未融资</option>
-                        <option th:selected="${finanCondition==2}" value="2">天使轮</option>
-                        <option th:selected="${finanCondition==3}" value="3">A轮</option>
-                        <option th:selected="${finanCondition==4}" value="4">B轮</option>
-                        <option th:selected="${finanCondition==5}" value="5">C轮</option>
-                        <option th:selected="${finanCondition==6}" value="6">D轮及以上</option>
-                        <option th:selected="${finanCondition==7}" value="7">已上市</option>
-                        <option th:selected="${finanCondition==8}" value="8">不需要融资</option>
+                        <option th:selected="${searchRequest.finanCondition==1}" value="1">未融资</option>
+                        <option th:selected="${searchRequest.finanCondition==2}" value="2">天使轮</option>
+                        <option th:selected="${searchRequest.finanCondition==3}" value="3">A轮</option>
+                        <option th:selected="${searchRequest.finanCondition==4}" value="4">B轮</option>
+                        <option th:selected="${searchRequest.finanCondition==5}" value="5">C轮</option>
+                        <option th:selected="${searchRequest.finanCondition==6}" value="6">D轮及以上</option>
+                        <option th:selected="${searchRequest.finanCondition==7}" value="7">已上市</option>
+                        <option th:selected="${searchRequest.finanCondition==8}" value="8">不需要融资</option>
                     </select>
                     </div>
                     <div class="col-md-2">
                     <select class="form-control" id="sizeCondition" style="margin-right: 50px;" onchange="changeJobList()">
                         <option value="">公司规模</option>
-                        <option th:selected="${sizeCondition==1}" value="1">0-20人</option>
-                        <option th:selected="${sizeCondition==2}" value="2">20-99人</option>
-                        <option th:selected="${sizeCondition==3}" value="3">100-499人</option>
-                        <option th:selected="${sizeCondition==4}" value="4">500-999人</option>
-                        <option th:selected="${sizeCondition==5}" value="5">1000-9999人</option>
-                        <option th:selected="${sizeCondition==6}" value="6">10000人以上</option>
+                        <option th:selected="${searchRequest.sizeCondition==1}" value="1">0-20人</option>
+                        <option th:selected="${searchRequest.sizeCondition==2}" value="2">20-99人</option>
+                        <option th:selected="${searchRequest.sizeCondition==3}" value="3">100-499人</option>
+                        <option th:selected="${searchRequest.sizeCondition==4}" value="4">500-999人</option>
+                        <option th:selected="${searchRequest.sizeCondition==5}" value="5">1000-9999人</option>
+                        <option th:selected="${searchRequest.sizeCondition==6}" value="6">10000人以上</option>
                     </select>
                     </div>
                     <div class="col-md-2">
                         <select class="form-control" id="postDateCondition" style="margin-right: 50px;" onchange="changeJobList()">
                             <option value="">发布时间</option>
-                            <option th:selected="${postDateCondition==1}" value="1">一天以内</option>
-                            <option th:selected="${postDateCondition==2}" value="2">三天以内</option>
-                            <option th:selected="${postDateCondition==3}" value="3">七天以内</option>
-                            <option th:selected="${postDateCondition==4}" value="4">十五天以内</option>
-                            <option th:selected="${postDateCondition==5}" value="5">一个月以内</option>
+                            <option th:selected="${searchRequest.postDateCondition==1}" value="1">一天以内</option>
+                            <option th:selected="${searchRequest.postDateCondition==2}" value="2">三天以内</option>
+                            <option th:selected="${searchRequest.postDateCondition==3}" value="3">七天以内</option>
+                            <option th:selected="${searchRequest.postDateCondition==4}" value="4">十五天以内</option>
+                            <option th:selected="${searchRequest.postDateCondition==5}" value="5">一个月以内</option>
                         </select>
                     </div>
                     <label class="control-label" style="width:100px;float:right;cursor: pointer;" onclick="clearCondition()">清空筛选条件</label>
@@ -244,14 +245,19 @@
             <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px">
                 <p><a style="font-size: 20px;" th:href="@{/job/getJobDetail(jobId=${job.jobId})}" th:text="${job.jobName}"></a></p>
                 <br/>
-                <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" th:text="${job.salary}"></span> 丨 <span th:text="${job.expCondition}"></span> 丨 <span th:text="${job.eduCondition}"></span> 丨 <span><a href="#"> X先生</a></span> 丨 <span>招聘者</span></p>
+                <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" th:text="${job.salary}"></span> 丨 <span th:text="${job.expConditionStr}"></span> 丨 <span th:text="${job.eduConditionStr}"></span> 丨 <span><a href="#" th:text="${job.reRealname}"> X先生</a></span> 丨 <span th:text="${job.reCompanyPosition}">招聘者</span></p>
                 <br/>
                 <p>
                     <span class="label label-info tags" th:each="tag:${job.tags}" th:text="${tag}"></span>
                 </p>
             </div>
-            <div style="float: right;width: 50%;border: 1px solid black">
-                公司信息
+            <div style="float: right;width: 50%;padding-top: 35px;padding-left: 35px;">
+                <p><a style="font-size: 20px;" href="#" th:text="${job.companyName}"></a></p>
+                <br/>
+                <p style="font-size: 16px;"><span th:text="${job.industry}">所属行业</span> 丨 <span th:text="${job.finanConditionStr}">融资阶段</span> 丨 <span th:text="${job.sizeConditionStr}">公司规模</span></p>
+                <br/>
+                <p><span class="label label-info tags">五险一金</span><span class="label label-info tags">节日福利</span><span
+                        class="label label-info tags">MySQL</span></p>
             </div>
         </div>
 <!--        <div class="panel panel-default jobList">-->

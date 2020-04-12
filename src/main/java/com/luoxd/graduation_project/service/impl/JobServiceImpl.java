@@ -8,18 +8,19 @@ import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.JobService;
+import com.luoxd.graduation_project.utils.Condition2StrUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+
 @Slf4j
 @Service
 public class JobServiceImpl implements JobService {
     @Autowired
     private JobMapper jobMapper;
+
 
     @Override
     public List<ClassesResonse> queryClassesList() {
@@ -65,6 +66,7 @@ public class JobServiceImpl implements JobService {
         List<JobResponse> jobResponseList = new ArrayList<>();
         List<Job> jobList = jobMapper.queryJobList(searchRequest);
         if(jobList != null) {
+            log.info(jobList.toString());
             for (Job tempJob : jobList) {
                 JobResponse jobResponse = new JobResponse();
                 List<String> tags = null;
@@ -75,15 +77,21 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setJobId(tempJob.getJobId());
                 jobResponse.setJobName(tempJob.getJobName());
                 jobResponse.setJobDetail(tempJob.getJobDetail());
-                jobResponse.setExpCondition(tempJob.getExpCondition());
-                jobResponse.setEduCondition(tempJob.getEduCondition());
+                jobResponse.setExpConditionStr(Condition2StrUtils.getExpStr(tempJob.getExpCondition()));
+                jobResponse.setEduConditionStr(Condition2StrUtils.getEduStr(tempJob.getEduCondition()));
                 jobResponse.setSalary(tempJob.getSalary());
-                jobResponse.setCompanyId(tempJob.getCompanyId());
+                jobResponse.setReCompanyId(tempJob.getReCompanyId());
                 jobResponse.setTags(tags);
-                jobResponse.setRecruiterId(tempJob.getRecruiterId());
+                jobResponse.setReRealname(tempJob.getReRealname());
+                jobResponse.setReCompanyPosition(tempJob.getReCompanyPosition());
                 jobResponse.setWorkCity(tempJob.getWorkCity());
                 jobResponse.setWorkAddress(tempJob.getWorkAddress());
                 jobResponse.setJobClassesId(tempJob.getJobClassesId());
+                jobResponse.setCompanyName(tempJob.getCompanyName());
+                jobResponse.setIndustry(tempJob.getIndustry());
+                jobResponse.setFinanConditionStr(Condition2StrUtils.getFinanStr(tempJob.getFinanCondition()));
+                jobResponse.setSizeConditionStr(Condition2StrUtils.getSizeStr(tempJob.getSizeCondition()));
+
                 jobResponseList.add(jobResponse);
             }
             return jobResponseList;

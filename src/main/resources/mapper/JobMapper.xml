@@ -41,46 +41,48 @@
     </update>
 
     <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job" parameterType="com.luoxd.graduation_project.request.SearchRequest">
-        select *
-        from job
+        select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_company_position,job.work_city,job.work_address,job.job_classes_id,company.company_name,company.industry,company.finan_condition,company.size_condition
+        from job left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
         where 1 = 1
         <if test="keyword != null and keyword != ''">
-            and job_name LIKE concat('%',#{keyword},'%')
+            and job.job_name LIKE concat('%',#{keyword},'%')
         </if>
         <if test="jobClassesId != null and jobClassesId != ''">
-            and job_classes_id = #{jobClassesId}
+            and job.job_classes_id = #{jobClassesId}
         </if>
         <if test="expCondition != null and expCondition != ''">
-            and exp_condition = #{expCondition}
+            and job.exp_condition = #{expCondition}
         </if>
         <if test="eduCondition != null and eduCondition != ''">
-            and edu_condition = #{eduCondition}
+            and job.edu_condition = #{eduCondition}
         </if>
         <if test="salCondition != null and salCondition != ''">
             <choose>
                 <when test="salCondition ==1 ">
-                    and salary &lt; 3000
+                    and job.salary &lt; 3000
                 </when >
                 <when test="salCondition ==2 ">
-                    and salary &gt;= 3000 and salary &lt; 5000
+                    and job.salary &gt;= 3000 and job.salary &lt; 5000
                 </when >
                 <when test="salCondition ==3 ">
-                    and salary &gt;= 5000 and salary &lt; 10000
+                    and job.salary &gt;= 5000 and job.salary &lt; 10000
                 </when >
                 <when test="salCondition ==4 ">
-                    and salary &gt;= 10000 and salary &lt; 15000
+                    and job.salary &gt;= 10000 and job.salary &lt; 15000
                 </when >
                 <when test="salCondition ==5 ">
-                    and salary &gt;= 15000 and salary &lt; 20000
+                    and job.salary &gt;= 15000 and job.salary &lt; 20000
                 </when >
                 <when test="salCondition ==6 ">
-                    and salary &gt;= 20000 and salary &lt; 30000
+                    and job.salary &gt;= 20000 and job.salary &lt; 30000
                 </when >
                 <when test="salCondition ==7 ">
-                    and salary &gt;= 30000 and salary &lt; 50000
+                    and job.salary &gt;= 30000 and job.salary &lt; 50000
                 </when >
                 <when test="salCondition ==8 ">
-                    and salary &gt;= 50000
+                    and job.salary &gt;= 50000
                 </when >
                 <otherwise>
                 </otherwise>
@@ -89,19 +91,19 @@
         <if test="postDateCondition != null and postDateCondition != ''">
             <choose>
                 <when test="postDateCondition ==1 ">
-                    and  post_date = curdate()
+                    and  job.post_date = curdate()
                 </when >
                 <when test="postDateCondition ==2 ">
-                    and post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="postDateCondition ==3 ">
-                    and post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and post_date &lt;= curdate()
+                    and job.post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==4 ">
-                    and post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==5 ">
-                    and post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and post_date &lt;= curdate()
+                    and job.post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
                 </when >
                 <otherwise>
                 </otherwise>
@@ -126,9 +128,11 @@
     </select>
 
     <select id="getJobById" resultType="com.luoxd.graduation_project.domain.Job">
-        select *
-        from job
-        where job_id = #{jobId}
+        select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_company_position,job.work_city,job.work_address,job.job_classes_id,company.company_name,company.industry,company.finan_condition,company.size_condition
+        from job left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
+        where job.job_id = #{jobId}
     </select>
 
     <select id="queryJsChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
