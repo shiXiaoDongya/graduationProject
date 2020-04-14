@@ -1,0 +1,1467 @@
+20:50:21.423 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10428 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:50:21.427 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:50:21.608 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:50:21.608 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:50:23.266 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:50:23.277 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:50:23.278 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:50:23.278 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:50:23.446 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:50:23.446 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1837 ms
+20:50:24.097 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:50:24.172 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:50:24.452 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:50:24.491 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:50:24.517 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:50:24.520 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.071 seconds (JVM running for 6.758)
+20:50:41.647 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:50:41.647 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:50:41.655 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+20:50:42.182 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:50:42.189 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:50:42.497 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:50:48.212 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+20:50:56.756 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+20:50:56.820 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+20:50:56.829 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+20:50:59.247 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - in========5
+20:50:59.252 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+20:50:59.253 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+20:51:00.913 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+20:51:01.226 [http-nio-8281-exec-2] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+20:51:02.490 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+20:51:02.491 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+20:51:02.692 [http-nio-8281-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'job_seeker on chat.js_id = job_seeker.job_id
+        left join recruiter on chat' at line 3
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\JobMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select chat.js_id,job_seeker.js_realname,chat.re_id,recruiter.re_realname,company.company_name,         recruiter.re_company_position,chat.job_id,chat.chat_content,chat.chat_send_time,chat.is_js_send         from chat left job_seeker on chat.js_id = job_seeker.job_id         left join recruiter on chat.re_id = recruiter.re_id         left join company on recruiter.company_id = company.company_id         where js_id = ? and re_id = ? and job_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'job_seeker on chat.js_id = job_seeker.job_id
+        left join recruiter on chat' at line 3
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'job_seeker on chat.js_id = job_seeker.job_id
+        left join recruiter on chat' at line 3] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'job_seeker on chat.js_id = job_seeker.job_id
+        left join recruiter on chat' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor37.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy73.showChatContent(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy74.showChatContent(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.JobServiceImpl.showChatContent(JobServiceImpl.java:143)
+	at com.luoxd.graduation_project.web.JobController.showChatContent(JobController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+20:51:54.972 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 9836 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:51:54.976 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:51:55.241 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:51:55.241 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:51:56.850 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:51:56.868 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:51:56.869 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:51:56.869 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:51:57.132 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:51:57.132 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1890 ms
+20:51:57.686 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:51:57.745 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:51:58.009 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:51:58.053 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:51:58.074 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:51:58.077 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.143 seconds (JVM running for 6.345)
+20:52:12.125 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:52:12.126 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:52:12.140 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+20:52:18.518 [http-nio-8281-exec-9] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+20:52:18.543 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:52:18.545 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:52:18.732 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:52:20.567 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+20:52:20.593 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+20:52:20.596 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+20:52:26.862 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========5
+20:52:26.867 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+20:52:26.869 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+20:52:28.060 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+20:52:28.275 [http-nio-8281-exec-7] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+20:52:29.168 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+20:52:29.168 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+20:52:29.248 [http-nio-8281-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error querying database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\JobMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select chat.js_id,job_seeker.js_realname,chat.re_id,recruiter.re_realname,company.company_name,         recruiter.re_company_position,chat.job_id,chat.chat_content,chat.chat_send_time,chat.is_js_send         from chat left join job_seeker on chat.js_id = job_seeker.job_id         left join recruiter on chat.re_id = recruiter.re_id         left join company on recruiter.company_id = company.company_id         where js_id = ? and re_id = ? and job_id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+; Column 'js_id' in where clause is ambiguous; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor37.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy73.showChatContent(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy74.showChatContent(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.JobServiceImpl.showChatContent(JobServiceImpl.java:143)
+	at com.luoxd.graduation_project.web.JobController.showChatContent(JobController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+20:53:44.866 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10708 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:53:44.871 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:53:44.969 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:53:44.969 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:53:46.650 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:53:46.662 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:53:46.662 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:53:46.663 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:53:46.792 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:53:46.792 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1823 ms
+20:53:47.364 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:53:47.439 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:53:47.723 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:53:47.764 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:53:47.787 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:53:47.790 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 3.832 seconds (JVM running for 5.903)
+20:53:53.443 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:53:53.444 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:53:53.453 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+20:53:59.134 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+20:53:59.157 [http-nio-8281-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:53:59.160 [http-nio-8281-exec-8] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:53:59.312 [http-nio-8281-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:54:00.946 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+20:54:00.975 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+20:54:00.978 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+20:54:02.023 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - in========5
+20:54:02.030 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+20:54:02.030 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+20:54:03.146 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+20:54:03.380 [http-nio-8281-exec-3] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+20:54:04.328 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+20:54:04.328 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+20:54:04.415 [http-nio-8281-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error querying database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\JobMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select chat.js_id,job_seeker.js_realname,chat.re_id,recruiter.re_realname,company.company_name,         recruiter.re_company_position,chat.job_id,chat.chat_content,chat.chat_send_time,chat.is_js_send         from chat left join job_seeker on chat.js_id = job_seeker.js_id         left join recruiter on chat.re_id = recruiter.re_id         left join company on recruiter.company_id = company.company_id         where js_id = ? and re_id = ? and job_id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+; Column 'js_id' in where clause is ambiguous; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'js_id' in where clause is ambiguous
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor37.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy73.showChatContent(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy74.showChatContent(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.JobServiceImpl.showChatContent(JobServiceImpl.java:143)
+	at com.luoxd.graduation_project.web.JobController.showChatContent(JobController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+20:54:37.706 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 4336 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:54:37.711 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:54:37.840 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:54:37.841 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:54:39.688 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:54:39.698 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:54:39.698 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:54:39.699 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:54:39.837 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:54:39.838 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1997 ms
+20:54:40.375 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:54:40.435 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:54:40.724 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:54:40.769 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:54:40.791 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:54:40.794 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 3.938 seconds (JVM running for 5.821)
+20:54:44.411 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:54:44.412 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:54:44.420 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+20:54:49.953 [http-nio-8281-exec-9] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+20:54:49.973 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:54:49.977 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:54:50.130 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:54:51.784 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+20:54:51.810 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+20:54:51.814 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+20:54:54.803 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========5
+20:54:54.810 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+20:54:54.813 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+20:54:55.930 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+20:54:56.162 [http-nio-8281-exec-10] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+20:54:57.305 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+20:54:57.306 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+20:54:57.387 [http-nio-8281-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'recruiter.company_id' in 'on clause'
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\JobMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select chat.js_id,job_seeker.js_realname,chat.re_id,recruiter.re_realname,company.company_name,         recruiter.re_company_position,chat.job_id,chat.chat_content,chat.chat_send_time,chat.is_js_send         from chat left join job_seeker on chat.js_id = job_seeker.js_id         left join recruiter on chat.re_id = recruiter.re_id         left join company on recruiter.company_id = company.company_id         where chat.js_id = ? and chat.re_id = ? and chat.job_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'recruiter.company_id' in 'on clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'recruiter.company_id' in 'on clause'] with root cause
+java.sql.SQLSyntaxErrorException: Unknown column 'recruiter.company_id' in 'on clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor37.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy73.showChatContent(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy74.showChatContent(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.JobServiceImpl.showChatContent(JobServiceImpl.java:143)
+	at com.luoxd.graduation_project.web.JobController.showChatContent(JobController.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+20:55:39.908 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 1948 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:55:39.917 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:55:40.027 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:55:40.027 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:55:41.682 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:55:41.692 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:55:41.692 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:55:41.692 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:55:41.806 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:55:41.807 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1779 ms
+20:55:42.331 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:55:42.390 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:55:42.664 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:55:42.699 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:55:42.719 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:55:42.722 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 3.586 seconds (JVM running for 5.442)
+20:55:47.817 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:55:47.818 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:55:47.832 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+20:55:54.777 [http-nio-8281-exec-9] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+20:55:54.797 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:55:54.799 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:55:54.917 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:55:57.426 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+20:55:57.449 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+20:55:57.453 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+20:56:03.820 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========5
+20:56:03.822 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+20:56:03.823 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+20:56:04.848 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+20:56:05.042 [http-nio-8281-exec-6] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+20:56:05.849 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+20:56:05.850 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+20:56:05.869 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - [Chat(chatId=null, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=null, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+20:56:43.617 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+20:56:43.618 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:56:43.652 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:56:45.225 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 1948 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:56:45.226 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:56:45.714 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+20:56:45.786 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:56:45.787 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:56:45.787 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:56:45.787 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:56:45.830 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:56:45.830 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 598 ms
+20:56:46.085 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:56:46.114 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:56:46.406 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:56:46.439 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:56:46.443 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:56:46.444 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.353 seconds (JVM running for 69.161)
+20:56:46.446 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:56:55.642 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8600 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:56:55.646 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:56:55.756 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:56:55.756 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:56:57.768 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:56:57.781 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:56:57.782 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:56:57.782 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:56:57.924 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:56:57.924 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2167 ms
+20:56:58.511 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:56:58.581 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:56:58.848 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:56:58.884 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:56:58.906 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:56:58.909 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.328 seconds (JVM running for 7.129)
+20:59:53.450 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:59:53.451 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:59:53.468 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+21:00:04.409 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+21:00:04.430 [http-nio-8281-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:00:04.432 [http-nio-8281-exec-8] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+21:00:04.565 [http-nio-8281-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:00:06.137 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+21:00:06.159 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+21:00:06.162 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+21:00:11.823 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========5
+21:00:11.825 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+21:00:11.826 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+21:00:13.180 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+21:00:13.409 [http-nio-8281-exec-1] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+21:00:14.875 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+21:00:14.876 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+21:00:14.882 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]

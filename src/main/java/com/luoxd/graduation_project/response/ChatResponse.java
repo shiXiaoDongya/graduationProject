@@ -1,5 +1,6 @@
 package com.luoxd.graduation_project.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
@@ -9,7 +10,8 @@ public class ChatResponse {
     private String jsCollege;
     private Integer reId;
     private String reRealname;
-    private String reCompany;
+    @JsonProperty("reCompany")
+    private String companyName;
     private String reCompanyPosition;
     private Integer jobId;
 }

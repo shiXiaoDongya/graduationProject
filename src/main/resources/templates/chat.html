@@ -33,6 +33,9 @@
             dataType: "JSON",
             success: function(data) {
                 //var chatList = data['chatList'];
+                document.getElementById("reRealname").innerHTML=data[0]['reRealname'];
+                document.getElementById("companyName").innerHTML=data[0]['companyName'];
+                document.getElementById("reCompanyPosition").innerHTML=data[0]['reCompanyPosition'];
                 for(var i = 0; i < data.length; i++){
                     $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
                     if(data[i]['isJsSend']===1){
@@ -87,8 +90,15 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="../regist.html">注册</a></li>
-                    <li><a class="ticker-btn" href="../login.html">登录</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
+                    <li style="border: 1px white solid"><a href="#" th:if="${session.userName != null}" th:text="${session.userName}"></a>
+                        <ul style="margin-top: 0px">
+                            <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="#">注销</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
@@ -96,7 +106,7 @@
 </header><!-- #header -->
 <div class="panel panel-default" style="height: 500px;margin-top: 80px;">
     <div class="panel-heading">
-        <span th:text="${session.user}">测试panel</span>
+        <span th:text="${session.userName}+'的聊天'"></span>
     </div>
     <div class="panel-body" style="margin:0 auto;width:1000px;" >
         <div class="panel panel-default" style="float:left;width: 30%;height:1000px; border:1px solid black;">
@@ -105,27 +115,13 @@
             </div>
             <ul class="list-group" >
                 <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.reId}]],[[${chat.jobId}]])" >
-                    <span id="reId" th:text="${chat.reId}"></span>
-                    <span id="jobId" th:text="${chat.jobId}"></span>
-                    <span id="count">0</span>
                     <div style="height:100px;">
                         <div  style="float:left;width: 40%; height: 90%; ">
                             <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
                         </div>
                         <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
                             <p><span th:text="${chat.reRealname}"></span></p>
-                            <p><span th:text="${chat.reCompany}"></span> 丨 <span th:text="${chat.reCompanyPosition}"></span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item" style="cursor: pointer;">
-                    <div style="height:100px;">
-                        <div  style="float:left;width: 40%; height: 90%; ">
-                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
-                        </div>
-                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
-                            <p><span>名字</span></p>
-                            <p><span>公司</span> 丨 <span>所属职位</span></p>
+                            <p><span th:text="${chat.companyName}"></span> 丨 <span th:text="${chat.reCompanyPosition}"></span></p>
                         </div>
                     </div>
                 </li>
@@ -137,17 +133,20 @@
             </div>
             <div class="panel-default" style="display: none;" id="chatDiv">
             <div class=" panel-heading">
-                <span>HR姓名</span> 丨 <span>公司</span> 丨 <span>所属职位</span>
+                <span id="reRealname"></span> 丨 <span id="companyName"></span> 丨 <span id="reCompanyPosition">开发工程师</span>
             </div>
             <div class=" panel-heading">
-                <a href="" >XXX职位</a>
+                <a href="" >java实习生</a>
             </div>
             <div class="panel-body" style="height: 900px">
                 <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent" >
                 </div>
                 <div style="height: 25%;">
                     <textarea id="text" style="height: 85%;width:100%;resize: none" ></textarea>
-                    <button id="sendButton" type="button" onclick="send(this)" class="btn btn-primary" style="float:right;">发送</button>
+                    <div style="float:right;">
+                        <button  type="button" class="btn btn-primary">简历发送</button>
+                        <button id="sendButton" type="button" onclick="send(this)" class="btn btn-primary">发送</button>
+                    </div>
                 </div>
             </div>
             </div>

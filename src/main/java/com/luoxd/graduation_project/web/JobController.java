@@ -61,9 +61,11 @@ public class JobController {
     public String getJobDetail(HttpServletRequest request,Integer jobId){
         if(jobId!=null){
             log.info("in========"+jobId.toString());
-            Job job = jobService.getJobById(jobId);
-            log.info("=========="+job.toString());
-            request.setAttribute("job",job);
+            SearchRequest searchRequest = new SearchRequest();
+            searchRequest.setJobId(jobId);
+            List<JobResponse> job = jobService.queryJobList(searchRequest);
+            log.info("=========="+job.get(0).toString());
+            request.setAttribute("job",job.get(0));
         }
         return "jobDetail";
     }
@@ -145,6 +147,7 @@ public class JobController {
             Integer tempJsId = (Integer) request.getSession().getAttribute("userId");
             log.info("=============jsId:"+tempJsId+",reId:"+reId+",jobId:"+jobId);
             chatList = jobService.showChatContent(tempJsId,reId,jobId);
+            log.info(chatList.toString());
             request.setAttribute("reId",reId);
         }else{
             Integer tempReId = (Integer) request.getSession().getAttribute("userId");

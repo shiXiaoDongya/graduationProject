@@ -45,24 +45,32 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="/register.html">注册</a></li>
-                    <li><a class="ticker-btn" href="/login.html">登录</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
+                    <li style="border: 1px white solid"><a href="#" th:if="${session.userName != null}" th:text="${session.userName}"></a>
+                        <ul style="margin-top: 0px">
+                            <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="#">注销</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
     </div>
-</header><!-- #header -->2000px;margin-top: 80px;">
+</header><!-- #header -->
+    <div class="panel panel-default" style="margin-top: 70px;">
     <div class="panel-heading" >
         <div class="clearfix" style="width: 1100px;margin: 0 auto">
         <div style="float: left;width: 70%">
             <br/>
-            <p style="font-size: 30px;font-weight: 700"><span>Java实习 <font color="red">12-24K·15薪</font> </span></p>
+            <p style="font-size: 30px;font-weight: 700"><span th:text="${job.jobName}"></span>　<span style="color: red" th:text="${job.salary}+'元/月'">12-24K·15薪</span></p>
             <br/>
-            <p style="font-size: 15px"><span>工作地点</span> · <span>工作经验</span> · <span>教育经验</span></p>
+            <p style="font-size: 15px"><span th:text="${job.workCity}"></span> · <span th:text="${job.expConditionStr}">工作经验</span> · <span th:text="${job.eduConditionStr}">教育经验</span></p>
             <br/>
-            <p style="font-size: 15px"><span class="label label-info tags">五险一金</span><span class="label label-info tags">工作经验</span><span class="label label-info tags">教育经验</span></p>
+            <p style="font-size: 15px" ><span class="label label-info tags" th:each="companyTag:${job.companyTags}" th:text="${companyTag}"></span></p>
         </div>
-        <div style="float: right;width: 30%">
+        <div style="float: right;width: 30%;padding-top: 40px;">
             <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
         </div>
         </div>
@@ -83,27 +91,19 @@
         </div>
         <div>
             <label class="glyphicon glyphicon-pushpin page-header headLabel">职位描述</label>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
+            <p th:utext="${job.jobDetail}">1232456</p>
         </div>
         <div>
             <label class="glyphicon glyphicon-pushpin page-header headLabel">公司介绍</label>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
+            <p>阿里巴巴集团的使命是让天下没有难做的生意。
+                我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+                我们的愿景
+                我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。</p>
         </div>
         <div>
             <label class="glyphicon glyphicon-pushpin page-header headLabel">工作地址</label>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
-            <p>1232456</p>
+            <p th:text="${job.workAddress}"></p>
         </div>
     </div>
 </div>

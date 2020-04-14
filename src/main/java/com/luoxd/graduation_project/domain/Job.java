@@ -36,9 +36,13 @@ public class Job {
 
     private String companyName;
 
+    private String companyHeadImg;
+
     private String industry;
 
     private Integer finanCondition;
 
     private Integer sizeCondition;
+
+    private String companyTags;
 }

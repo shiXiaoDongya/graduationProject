@@ -49,15 +49,16 @@
 </header><!-- #header -->
 <div class="panel panel-default" style="width: 90%;margin: 0px auto;margin-top: 80px">
     <div class="panel-heading">
-        <span>测试panel</span>
+        <span th:text="${session.userName}+'的个人中心'">测试panel</span>
     </div>
     <div class="panel-body">
         <div style="float: left;width: 23%;">
             <ul class="list-group">
-                <li class="list-group-item"><a href="#">个人信息</a></li>
+                <li class="list-group-item"><a href="#">个人信息及简历</a></li>
                 <li class="list-group-item"><a href="#">收藏职位</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
                 <li class="list-group-item"><a href="#">意见反馈</a></li>
+                <li class="list-group-item"><a href="#">推荐职位</a></li>
             </ul>
         </div>
         <div style="float: right;border: 1px solid black;width: 76%;" id="info" ></div>

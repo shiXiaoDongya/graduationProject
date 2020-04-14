@@ -82,15 +82,23 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setSalary(tempJob.getSalary());
                 jobResponse.setReCompanyId(tempJob.getReCompanyId());
                 jobResponse.setTags(tags);
+                jobResponse.setRecruiterId(tempJob.getRecruiterId());
                 jobResponse.setReRealname(tempJob.getReRealname());
                 jobResponse.setReCompanyPosition(tempJob.getReCompanyPosition());
                 jobResponse.setWorkCity(tempJob.getWorkCity());
                 jobResponse.setWorkAddress(tempJob.getWorkAddress());
                 jobResponse.setJobClassesId(tempJob.getJobClassesId());
                 jobResponse.setCompanyName(tempJob.getCompanyName());
+                jobResponse.setCompanyHeadImg(tempJob.getCompanyHeadImg());
                 jobResponse.setIndustry(tempJob.getIndustry());
                 jobResponse.setFinanConditionStr(Condition2StrUtils.getFinanStr(tempJob.getFinanCondition()));
                 jobResponse.setSizeConditionStr(Condition2StrUtils.getSizeStr(tempJob.getSizeCondition()));
+                List<String> companyTags = null;
+                if (tempJob.getCompanyTags() != null) {
+                    String[] tempCompanyTags = tempJob.getCompanyTags().split(",");
+                    companyTags = Arrays.asList(tempCompanyTags);
+                }
+                jobResponse.setCompanyTags(companyTags);
 
                 jobResponseList.add(jobResponse);
             }

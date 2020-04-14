@@ -22,6 +22,8 @@ public class JobResponse {
 
     private List<String> tags;
 
+    private Integer recruiterId;
+
     private String reRealname;
 
     private String reCompanyPosition;
@@ -34,9 +36,13 @@ public class JobResponse {
 
     private String companyName;
 
+    private String companyHeadImg;
+
     private String industry;
 
     private String finanConditionStr;
 
     private String sizeConditionStr;
+
+    private List<String> companyTags;
 }

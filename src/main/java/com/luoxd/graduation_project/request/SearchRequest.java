@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class SearchRequest {
+    private Integer jobId;
     private String keyword;
     private Integer jobClassesId;
     private String jobClassesName;
