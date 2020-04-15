@@ -2,30 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdfd5c34-61ad-4b76-964f-f299d6e69779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/罗晓东-201621314215-计算科学学院-信息与计算科学162班-基于SSM框架的求职招聘系统的设计与实现-2020-04-14.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-04-13.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-04-14.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-04-15.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/reIndex.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/罗晓东-201621314215-计算科学学院-信息与计算科学162班-基于SSM框架的求职招聘系统的设计与实现-2020-3-20.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-03-04.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-03-05.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-03-06.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-03-07.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-03-08.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/domain/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/domain/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/domain/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/domain/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/request/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/request/SearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/response/ChatResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/response/ChatResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/response/JobResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/response/JobResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/JobServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/罗晓东-201621314215-计算科学学院-信息与计算科学162班-基于SSM框架的求职招聘系统的设计与实现-2020-04-14.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/罗晓东-201621314215-计算科学学院-信息与计算科学162班-基于SSM框架的求职招聘系统的设计与实现-2020-04-14.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jsInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jsInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jsPersonCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jsPersonCenter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/domain/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/domain/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/web/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -214,7 +202,9 @@
       <workItem from="1586690391653" duration="1906000" />
       <workItem from="1586694121082" duration="3237000" />
       <workItem from="1586702591808" duration="4376000" />
-      <workItem from="1586867274109" duration="1825000" />
+      <workItem from="1586867274109" duration="1995000" />
+      <workItem from="1586935298682" duration="1623000" />
+      <workItem from="1586953074187" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="2020-03-08提交">
       <created>1583669425390</created>
@@ -307,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586670841136</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2020-04-14 文档初稿和整体逻辑完善">
+      <created>1586869269996</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586869269996</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +377,8 @@
     <MESSAGE value="2020-04-10 修改聊天WebSocket逻辑和论文文档" />
     <MESSAGE value="2020-04-11 完善基础和文档" />
     <MESSAGE value="2020-04-12 搜索页面筛选逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020-04-12 搜索页面筛选逻辑" />
+    <MESSAGE value="2020-04-14 文档初稿和整体逻辑完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-04-14 文档初稿和整体逻辑完善" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585119309080">
@@ -407,10 +405,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586596535581" />
-    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1586670839707">
+    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1586869267984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586670839707" />
+    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586869267984" />
     <state x="202" y="85" width="1536" height="832" key="DiffContextDialog" timestamp="1586589009842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -419,38 +417,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="331" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583418277893" />
-    <state width="1876" height="409" key="GridCell.Tab.0.bottom" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom" timestamp="1586936929176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.0.center" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929176" />
+    <state width="1876" height="258" key="GridCell.Tab.0.center" timestamp="1586936929176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.0.left" timestamp="1586869011705">
+    <state width="1876" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929176" />
+    <state width="1876" height="258" key="GridCell.Tab.0.left" timestamp="1586936929176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011705" />
-    <state width="1876" height="409" key="GridCell.Tab.0.right" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929176" />
+    <state width="1876" height="258" key="GridCell.Tab.0.right" timestamp="1586936929176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.1.bottom" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929176" />
+    <state width="1876" height="258" key="GridCell.Tab.1.bottom" timestamp="1586936929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.1.center" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929177" />
+    <state width="1876" height="258" key="GridCell.Tab.1.center" timestamp="1586936929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.1.left" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929177" />
+    <state width="1876" height="258" key="GridCell.Tab.1.left" timestamp="1586936929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
-    <state width="1876" height="409" key="GridCell.Tab.1.right" timestamp="1586869011706">
+    <state width="1876" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929177" />
+    <state width="1876" height="258" key="GridCell.Tab.1.right" timestamp="1586936929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="409" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586869011706" />
+    <state width="1876" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586936929177" />
     <state width="1876" height="342" key="GridCell.Tab.2.bottom" timestamp="1586261984975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -475,10 +473,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583418279922" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586670876902">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586869285521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586670876902" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586869285521" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585638670220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

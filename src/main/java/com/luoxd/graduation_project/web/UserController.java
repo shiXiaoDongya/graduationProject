@@ -207,7 +207,16 @@ public class UserController {
 
     @RequestMapping(value = "/getLoginIndex",method = RequestMethod.GET)
     public String getLoginIndex(HttpServletRequest request){
-        return "index";
+        if(request.getSession().getAttribute("userName") != null){
+            return "index";
+        }else{
+            return "redirect:index.html";
+        }
+    }
+
+    @RequestMapping(value = "/getReIndex",method = RequestMethod.GET)
+    public String getReIndex(HttpServletRequest request){
+        return "reIndex";
     }
 
 

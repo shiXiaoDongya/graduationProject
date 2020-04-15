@@ -1,0 +1,1528 @@
+15:22:55.314 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 4644 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:22:55.325 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:22:55.612 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:22:55.613 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:22:57.419 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:22:57.434 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:22:57.434 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:22:57.435 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:22:57.593 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:22:57.593 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1980 ms
+15:22:58.358 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:22:58.436 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:22:58.772 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:22:58.816 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:22:58.841 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:22:58.847 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.815 seconds (JVM running for 8.751)
+15:23:47.433 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:23:47.434 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:23:47.449 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+15:23:48.053 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:23:48.061 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:23:48.425 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:23:57.699 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:24:04.530 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:04.588 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:24:04.595 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:24:13.331 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=4, jobClassesName=PHP, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:13.338 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+15:24:13.339 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - [JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expConditionStr=在校生, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null)]
+15:24:13.663 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=4, jobClassesName=PHP, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:13.679 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+15:24:13.679 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - [JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expConditionStr=在校生, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null)]
+15:24:17.910 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=1, jobClassesName=后端开发, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:17.914 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - []
+15:24:17.914 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - []
+15:24:19.796 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=0, jobClassesName=不限, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:19.957 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, jobClassesId=3, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+15:24:19.957 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expConditionStr=在校生, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权]), JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expConditionStr=在校生, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, jobClassesId=3, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null)]
+15:24:20.381 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=0, jobClassesName=不限, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:24:20.390 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, jobClassesId=3, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+15:24:20.392 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expConditionStr=在校生, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, jobClassesId=4, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权]), JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expConditionStr=在校生, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, jobClassesId=3, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null)]
+15:24:24.410 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========5
+15:24:24.423 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+15:24:24.423 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+15:24:26.793 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+15:24:27.050 [http-nio-8281-exec-5] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+15:24:28.416 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+15:24:28.417 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+15:24:28.430 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+15:34:16.340 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+15:34:16.962 [http-nio-8281-exec-7] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+15:34:21.657 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+15:34:21.658 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+15:34:22.028 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+15:34:26.548 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - =============jsId:1,reId:2,jobId:3
+15:34:26.549 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:2,jobId:3
+15:34:26.552 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - [Chat(chatId=4, jsId=1, jsRealname=88, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3, chatContent=聊天测试, chatSendTime=2020-04-08 22:10:00, isJsSend=1)]
+15:34:26.558 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - =============jsId:1,reId:1,jobId:2
+15:34:26.559 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:1,jobId:2
+15:34:26.560 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - [Chat(chatId=3, jsId=1, jsRealname=88, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2, chatContent=你好，我对这个职位也感兴趣, chatSendTime=2020-04-06 16:26:00, isJsSend=1)]
+15:34:29.434 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - =============jsId:1,reId:2,jobId:3
+15:34:31.573 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:2,jobId:3
+15:34:31.575 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - [Chat(chatId=4, jsId=1, jsRealname=88, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3, chatContent=聊天测试, chatSendTime=2020-04-08 22:10:00, isJsSend=1)]
+15:34:30.638 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+15:34:31.577 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+15:34:32.795 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+15:34:36.126 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+15:34:36.127 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+15:34:36.130 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+15:35:32.107 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:35:33.418 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:35:33.422 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:35:33.422 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:36:37.595 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:36:42.553 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:36:42.560 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:36:42.566 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:38:55.289 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:38:56.781 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:38:56.798 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:38:56.799 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:40:54.290 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11632 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:40:54.295 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:40:54.434 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:40:54.435 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:40:56.280 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:40:56.294 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:40:56.295 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:40:56.295 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:40:56.440 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:40:56.440 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2005 ms
+15:40:57.083 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:40:57.157 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:40:57.438 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:40:57.480 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:40:57.507 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:40:57.510 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.574 seconds (JVM running for 7.217)
+15:41:09.711 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:41:09.712 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:41:09.733 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+15:41:11.158 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:41:11.167 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:41:11.454 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:41:17.155 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:41:26.903 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:41:26.933 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:41:26.936 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:41:44.208 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 6476 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:41:44.214 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:41:44.354 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:41:44.354 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:41:46.355 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:41:46.368 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:41:46.369 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:41:46.369 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:41:46.549 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:41:46.549 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2194 ms
+15:41:47.254 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:41:47.317 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:41:47.579 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:41:47.620 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:41:47.642 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:41:47.645 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.302 seconds (JVM running for 6.511)
+15:42:09.809 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:42:09.810 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:42:09.846 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 36 ms
+15:42:10.273 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:42:10.276 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:42:10.428 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:42:11.923 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:42:11.965 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:42:11.969 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:42:15.734 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:42:15.742 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:42:15.742 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:42:48.813 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:42:48.896 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:42:48.899 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:44:13.562 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 1976 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:44:13.567 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:44:13.728 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:44:13.728 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:44:15.516 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:44:15.525 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:44:15.526 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:44:15.526 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:44:15.658 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:44:15.659 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1930 ms
+15:44:16.263 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:44:16.329 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:44:16.593 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:44:16.632 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:44:16.656 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:44:16.660 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.477 seconds (JVM running for 6.991)
+15:44:29.228 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:44:29.228 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:44:29.238 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+15:44:29.575 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:44:29.578 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:44:29.700 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:44:56.192 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+15:44:59.387 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null)
+15:44:59.425 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expCondition=1, eduCondition=5, salary=3000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+15:44:59.430 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - [JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助]), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿<br>
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。﻿﻿﻿﻿<br>
+﻿﻿<br>
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。﻿﻿﻿﻿<br>
+﻿﻿<br>
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿<br>
+﻿﻿<br>
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+﻿<br>﻿
+【开放岗位】﻿﻿<br>
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿<br>
+﻿﻿<br>
+【工作地点】杭州or深圳﻿﻿<br>
+﻿﻿<br>
+【岗位要求】﻿﻿<br>
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿<br>
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿<br>
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 ﻿﻿<br>
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿<br>
+﻿﻿<br>
+【联系方式】﻿﻿<br>
+投递简历请发送到 *****-inc.com﻿﻿<br>
+微信: *****************﻿﻿<br>
+电话:***********﻿﻿<br>
+可直接内推!!!﻿﻿<br>
+有任何问题可随时微信or电话骚扰哦~﻿﻿<br>
+﻿﻿<br>
+【写在最后】﻿﻿<br>
+If not you, who!﻿﻿﻿<br>
+If not now, when!﻿﻿<br>, expConditionStr=在校生, eduConditionStr=本科, salary=3000, reCompanyId=3, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权]), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=3-5年, eduConditionStr=本科, salary=15000, reCompanyId=1, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权])]
+15:45:18.670 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========5
+15:45:18.677 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - [Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+15:45:18.678 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expConditionStr=1-3年, eduConditionStr=本科, salary=15000, reCompanyId=2, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, jobClassesId=2, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助])
+15:45:21.416 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=1, reRealname=一, companyName=null, reCompanyPosition=9, jobId=2), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=2, reRealname=啦啦, companyName=null, reCompanyPosition=HR, jobId=3), ChatResponse(jsId=null, jsRealname=null, jsCollege=null, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6)]
+15:45:21.716 [http-nio-8281-exec-4] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[js-1]
+15:45:25.693 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - =============jsId:1,reId:6,jobId:6
+15:45:25.694 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - jobMapper=======jsId:1,reId:6,jobId:6
+15:45:25.705 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [Chat(chatId=1, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，我对贵公司的岗位很感兴趣, chatSendTime=2020-04-12 15:50:00, isJsSend=1), Chat(chatId=2, jsId=1, jsRealname=88, reId=6, reRealname=罗先生, companyName=阿里巴巴集团, reCompanyPosition=开发工程师, jobId=6, chatContent=你好，可以发一下你的简历吗？, chatSendTime=2020-04-12 15:51:00, isJsSend=0)]
+15:48:14.994 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 7548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:48:15.005 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:48:15.099 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:48:15.100 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:48:17.910 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:48:17.919 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:48:17.920 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:48:17.920 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:48:18.058 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:48:18.059 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2959 ms
+15:48:18.687 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:48:18.754 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:48:19.035 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:48:19.084 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:48:19.106 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:48:19.114 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.214 seconds (JVM running for 7.561)
+15:48:22.970 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:48:22.971 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:48:23.004 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 32 ms
+15:48:24.693 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:48:24.719 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:48:25.083 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:48:31.643 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:luoxd,password:123456,id:re
+20:23:00.393 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 7908 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+20:23:00.400 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+20:23:00.637 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:23:00.637 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:23:03.617 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+20:23:03.632 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+20:23:03.633 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:23:03.633 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+20:23:04.080 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:23:04.081 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3444 ms
+20:23:04.639 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:23:05.064 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:23:05.382 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:23:05.438 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+20:23:05.479 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+20:23:05.485 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 7.012 seconds (JVM running for 10.332)
+20:23:16.693 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:23:16.693 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:23:16.741 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 47 ms
+20:23:18.156 [http-nio-8281-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:23:18.170 [http-nio-8281-exec-2] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+20:23:18.569 [http-nio-8281-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:23:27.363 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:luoxd,password:123456,id:re

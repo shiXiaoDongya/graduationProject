@@ -28,11 +28,11 @@
     <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="../index.html" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+                <a href="/getLoginIndex" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="../index.html">首页</a></li>
+                    <li class="menu-active"><a href="/getLoginIndex">首页</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Category</a></li>
                     <li><a href="#">Price</a></li>
@@ -47,7 +47,7 @@
                     </li>
                     <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
                     <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
-                    <li style="border: 1px white solid"><a href="#" th:if="${session.userName != null}" th:text="${session.userName}"></a>
+                    <li style="border: 1px white solid" th:if="${session.userName != null}"><a href="#" th:text="${session.userName}"></a>
                         <ul style="margin-top: 0px">
                             <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
                             <li><a href="#">修改密码</a></li>
