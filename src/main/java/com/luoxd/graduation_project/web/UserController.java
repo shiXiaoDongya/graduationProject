@@ -1,7 +1,9 @@
 package com.luoxd.graduation_project.web;
 
+import com.luoxd.graduation_project.domain.Job;
 import com.luoxd.graduation_project.domain.JobSeeker;
 import com.luoxd.graduation_project.domain.Recruiter;
+import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +31,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -251,6 +254,10 @@ public class UserController {
     }
     @RequestMapping("/turnJobManage")
     public String turnJobManage(HttpServletRequest request){
+        Integer userId = (Integer)request.getSession().getAttribute("userId");
+        List<JobResponse> jobList = userService.queryJobListByReId(userId);
+        log.info(jobList.toString());
+        request.setAttribute("jobList",jobList);
         return "jobManage";
     }
 

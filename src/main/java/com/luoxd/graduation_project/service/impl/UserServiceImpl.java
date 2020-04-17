@@ -4,12 +4,15 @@ import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.UserMapper;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
+import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.UserService;
+import com.luoxd.graduation_project.utils.Condition2StrUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -61,5 +64,56 @@ public class UserServiceImpl implements UserService {
     @Override
     public Recruiter checkReUsername(String username) {
         return userMapper.checkReUsername(username);
+    }
+
+    @Override
+    public List<JobResponse> queryJobListByReId(Integer userId) {
+        List<JobResponse> jobResponseList = new ArrayList<>();
+        List<Job> jobList = userMapper.queryJobListByReId(userId);
+        if(jobList != null) {
+            for (Job tempJob : jobList) {
+                JobResponse jobResponse = new JobResponse();
+                List<String> tags = null;
+                if (tempJob.getTag() != null) {
+                    String[] tempTags = tempJob.getTag().split(",");
+                    tags = Arrays.asList(tempTags);
+                }
+                jobResponse.setJobId(tempJob.getJobId());
+                jobResponse.setJobName(tempJob.getJobName());
+                jobResponse.setJobDetail(tempJob.getJobDetail());
+                jobResponse.setExpCondition(tempJob.getExpCondition());
+                jobResponse.setEduCondition(tempJob.getEduCondition());
+                jobResponse.setExpConditionStr(Condition2StrUtils.getExpStr(tempJob.getExpCondition()));
+                jobResponse.setEduConditionStr(Condition2StrUtils.getEduStr(tempJob.getEduCondition()));
+                jobResponse.setSalary(tempJob.getSalary());
+                jobResponse.setReCompanyId(tempJob.getReCompanyId());
+                jobResponse.setTagsStr(tempJob.getTag());
+                jobResponse.setTags(tags);
+                jobResponse.setRecruiterId(tempJob.getRecruiterId());
+                jobResponse.setReRealname(tempJob.getReRealname());
+                jobResponse.setReCompanyPosition(tempJob.getReCompanyPosition());
+                jobResponse.setWorkCity(tempJob.getWorkCity());
+                jobResponse.setWorkAddress(tempJob.getWorkAddress());
+                jobResponse.setPostDate(tempJob.getPostDate());
+                jobResponse.setJobClassesId(tempJob.getJobClassesId());
+                jobResponse.setJobClassesName(tempJob.getJobClassesName());
+                jobResponse.setCompanyName(tempJob.getCompanyName());
+                jobResponse.setCompanyHeadImg(tempJob.getCompanyHeadImg());
+                jobResponse.setIndustry(tempJob.getIndustry());
+                jobResponse.setFinanConditionStr(Condition2StrUtils.getFinanStr(tempJob.getFinanCondition()));
+                jobResponse.setSizeConditionStr(Condition2StrUtils.getSizeStr(tempJob.getSizeCondition()));
+                List<String> companyTags = null;
+                if (tempJob.getCompanyTags() != null) {
+                    String[] tempCompanyTags = tempJob.getCompanyTags().split(",");
+                    companyTags = Arrays.asList(tempCompanyTags);
+                }
+                jobResponse.setCompanyTags(companyTags);
+
+                jobResponseList.add(jobResponse);
+            }
+            return jobResponseList;
+        }else{
+            return null;
+        }
     }
 }

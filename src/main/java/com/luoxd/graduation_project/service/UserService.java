@@ -1,10 +1,8 @@
 package com.luoxd.graduation_project.service;
 
-import com.luoxd.graduation_project.domain.JobSeeker;
-import com.luoxd.graduation_project.domain.Message;
-import com.luoxd.graduation_project.domain.Recruiter;
-import com.luoxd.graduation_project.domain.User;
+import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.response.ClassesResonse;
+import com.luoxd.graduation_project.response.JobResponse;
 
 import java.util.List;
 
@@ -24,4 +22,6 @@ public interface UserService {
     JobSeeker checkJsUsername(String username);
 
     Recruiter checkReUsername(String username);
+
+    List<JobResponse> queryJobListByReId(Integer userId);
 }

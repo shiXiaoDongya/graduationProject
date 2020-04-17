@@ -12,13 +12,19 @@ public class JobResponse {
 
     private String jobDetail;
 
+    private Integer expCondition;
+
     private String expConditionStr;
+
+    private Integer eduCondition;
 
     private String eduConditionStr;
 
     private Integer salary;
 
     private Integer reCompanyId;
+
+    private String tagsStr;
 
     private List<String> tags;
 
@@ -32,7 +38,11 @@ public class JobResponse {
 
     private String workAddress;
 
+    private String postDate;
+
     private String jobClassesId;
+
+    private String jobClassesName;
 
     private String companyName;
 

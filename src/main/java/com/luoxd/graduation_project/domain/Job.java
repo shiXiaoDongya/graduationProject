@@ -32,7 +32,11 @@ public class Job {
 
     private String workAddress;
 
+    private String postDate;
+
     private String jobClassesId;
+
+    private String jobClassesName;
 
     private String companyName;
 

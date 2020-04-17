@@ -30,4 +30,6 @@ public interface UserMapper {
     JobSeeker checkJsUsername(String username);
 
     Recruiter checkReUsername(String username);
+
+    List<Job> queryJobListByReId(Integer userId);
 }
