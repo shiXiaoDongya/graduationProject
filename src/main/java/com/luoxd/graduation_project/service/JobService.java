@@ -24,4 +24,6 @@ public interface JobService {
     List<ChatResponse> queryChatUsers(String userType,Integer userId);
 
     List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId);
+
+    Integer jobListCount(SearchRequest searchRequest);
 }

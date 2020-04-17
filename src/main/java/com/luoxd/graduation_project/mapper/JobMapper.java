@@ -41,4 +41,5 @@ public interface JobMapper {
 
     List<Chat> showChatContent(Integer jsId, Integer reId, Integer jobId);
 
+    Integer jobListCount(SearchRequest searchRequest);
 }

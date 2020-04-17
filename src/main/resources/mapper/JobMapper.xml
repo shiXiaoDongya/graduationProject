@@ -114,6 +114,7 @@
             and job.job_id = #{jobId}
         </if>
         order by post_date DESC
+        limit #{start},2
     </select>
     <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">
         select *
@@ -163,5 +164,78 @@
         left join recruiter on chat.re_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
         where chat.js_id = #{jsId} and chat.re_id = #{reId} and chat.job_id = #{jobId}
+    </select>
+
+    <select id="jobListCount" resultType="java.lang.Integer" parameterType="com.luoxd.graduation_project.request.SearchRequest">
+        select count(*)
+        from job left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
+        where 1 = 1
+        <if test="keyword != null and keyword != ''">
+            and job.job_name LIKE concat('%',#{keyword},'%')
+        </if>
+        <if test="jobClassesId != null and jobClassesId != ''">
+            and job.job_classes_id = #{jobClassesId}
+        </if>
+        <if test="expCondition != null and expCondition != ''">
+            and job.exp_condition = #{expCondition}
+        </if>
+        <if test="eduCondition != null and eduCondition != ''">
+            and job.edu_condition = #{eduCondition}
+        </if>
+        <if test="salCondition != null and salCondition != ''">
+            <choose>
+                <when test="salCondition ==1 ">
+                    and job.salary &lt; 3000
+                </when >
+                <when test="salCondition ==2 ">
+                    and job.salary &gt;= 3000 and job.salary &lt; 5000
+                </when >
+                <when test="salCondition ==3 ">
+                    and job.salary &gt;= 5000 and job.salary &lt; 10000
+                </when >
+                <when test="salCondition ==4 ">
+                    and job.salary &gt;= 10000 and job.salary &lt; 15000
+                </when >
+                <when test="salCondition ==5 ">
+                    and job.salary &gt;= 15000 and job.salary &lt; 20000
+                </when >
+                <when test="salCondition ==6 ">
+                    and job.salary &gt;= 20000 and job.salary &lt; 30000
+                </when >
+                <when test="salCondition ==7 ">
+                    and job.salary &gt;= 30000 and job.salary &lt; 50000
+                </when >
+                <when test="salCondition ==8 ">
+                    and job.salary &gt;= 50000
+                </when >
+                <otherwise>
+                </otherwise>
+            </choose>
+        </if>
+        <if test="postDateCondition != null and postDateCondition != ''">
+            <choose>
+                <when test="postDateCondition ==1 ">
+                    and  job.post_date = curdate()
+                </when >
+                <when test="postDateCondition ==2 ">
+                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and job.post_date &lt;= curdate()
+                </when >
+                <when test="postDateCondition ==3 ">
+                    and job.post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and job.post_date &lt;= curdate()
+                </when >
+                <when test="salCondition ==4 ">
+                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and job.post_date &lt;= curdate()
+                </when >
+                <when test="salCondition ==5 ">
+                    and job.post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
+                </when >
+                <otherwise>
+                </otherwise>
+            </choose>
+        </if>
+        <if test="jobId != null and jobId != ''">
+            and job.job_id = #{jobId}
+        </if>
     </select>
 </mapper>

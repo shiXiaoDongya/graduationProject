@@ -66,7 +66,6 @@ public class JobServiceImpl implements JobService {
         List<JobResponse> jobResponseList = new ArrayList<>();
         List<Job> jobList = jobMapper.queryJobList(searchRequest);
         if(jobList != null) {
-            log.info(jobList.toString());
             for (Job tempJob : jobList) {
                 JobResponse jobResponse = new JobResponse();
                 List<String> tags = null;
@@ -141,5 +140,10 @@ public class JobServiceImpl implements JobService {
     public List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId) {
         log.info("jobMapper=======jsId:"+jsId+",reId:"+reId+",jobId:"+jobId);
         return jobMapper.showChatContent(jsId,reId,jobId);
+    }
+
+    @Override
+    public Integer jobListCount(SearchRequest searchRequest) {
+        return jobMapper.jobListCount(searchRequest);
     }
 }

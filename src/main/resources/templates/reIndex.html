@@ -12,6 +12,10 @@
             var url = "/toJsInfo";
             $('#info').load(url);
         }
+        function turnJobManage() {
+            var url = "/turnJobManage";
+            $('#info').load(url);
+        }
     </script>
 </head>
 <body>
@@ -54,11 +58,11 @@
     <div class="panel-body">
         <div style="float: left;width: 23%;">
             <ul class="list-group">
-                <li class="list-group-item"><a href="#">个人信息及简历</a></li>
-                <li class="list-group-item"><a href="#">收藏职位</a></li>
+                <li class="list-group-item"><a href="#">个人信息</a></li>
+                <li class="list-group-item" onclick="turnJobManage()"><a href="#">职位管理</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
-                <li class="list-group-item"><a href="#">意见反馈</a></li>
-                <li class="list-group-item"><a href="#">推荐职位</a></li>
+                <li class="list-group-item"><a href="#">推荐求职者</a></li>
+                <li class="list-group-item"><a href="#">消息记录</a></li>
             </ul>
         </div>
         <div style="float: right;border: 1px solid black;width: 76%;" id="info" ></div>

@@ -25,6 +25,7 @@ import java.util.List;
 @RequestMapping(value = "/job")
 public class JobController {
 
+    private static final double PAGESIZE = 2.0;
     @Autowired
     private JobService jobService;
 
@@ -40,9 +41,21 @@ public class JobController {
 //                             Integer salCondition,Integer finanCondition,Integer sizeCondition,Integer postDateCondition){
         public String getJobList(HttpServletRequest request,SearchRequest searchRequest){
         log.info(searchRequest.toString());
-        String keyword = searchRequest.getKeyword();
+        if(searchRequest.getIndexPage() == null){
+            searchRequest.setIndexPage(1);
+        }
+        searchRequest.setStart((int) ((searchRequest.getIndexPage()-1)*PAGESIZE));
+        log.info("==========setStart:"+searchRequest.getStart());
+        if(searchRequest.getTotalPage() == null){
+            Integer i = jobService.jobListCount(searchRequest);
+            Integer totalPage = (int) Math.ceil(i/PAGESIZE);
+            searchRequest.setTotalPage(totalPage);
+        }
+        log.info("======================indexPage:"+searchRequest.getIndexPage());
+        log.info("======================totalPage:"+searchRequest.getTotalPage());
+        //String keyword = searchRequest.getKeyword();
         List<JobResponse> jobList = jobService.queryJobList(searchRequest);
-        log.info(jobList.toString());
+        //log.info(jobList.toString());
         request.setAttribute("jobList",jobList);
         request.setAttribute("searchRequest",searchRequest);
 //        request.setAttribute("keyword",searchRequest.getKeyword());
@@ -54,6 +67,7 @@ public class JobController {
 //        request.setAttribute("finanCondition",searchRequest.getFinanCondition());
 //        request.setAttribute("sizeCondition",searchRequest.getSizeCondition());
 //        request.setAttribute("postDateCondition",searchRequest.getPostDateCondition());
+
         return "search";
     }
 

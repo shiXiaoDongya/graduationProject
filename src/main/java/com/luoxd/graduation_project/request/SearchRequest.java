@@ -14,4 +14,7 @@ public class SearchRequest {
     private Integer finanCondition;
     private Integer sizeCondition;
     private Integer postDateCondition;
+    private Integer indexPage;
+    private Integer totalPage;
+    private Integer start;
 }

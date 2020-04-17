@@ -249,5 +249,9 @@ public class UserController {
         }
         return "{\"exist\":\"true\"}";
     }
+    @RequestMapping("/turnJobManage")
+    public String turnJobManage(HttpServletRequest request){
+        return "jobManage";
+    }
 
 }

@@ -132,8 +132,8 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
-                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="../register.html">注册</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="../login.html">登录</a></li>
                     <li style="border: 1px white solid" th:if="${session.userName != null}"><a href="#"  th:text="${session.userName}"></a>
                         <ul style="margin-top: 0px">
                             <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
@@ -269,6 +269,26 @@
                 </div>
             </div>
         </div>
+        <ul class="pagination pagination-lg" >
+            <li th:class="${searchRequest.indexPage==1}?'disabled' : ''"><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-1})}">上一页</a></li>
+            <li th:if="${searchRequest.indexPage-3 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-3})}" th:text="${searchRequest.indexPage -3}" >1</a></li>
+            <li th:if="${searchRequest.indexPage-2 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-2})}" th:text="${searchRequest.indexPage -2}" >1</a></li>
+            <li th:if="${searchRequest.indexPage-1 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-1})}" th:text="${searchRequest.indexPage -1}" >1</a></li>
+            <li class="active"><a href="#" th:text="${searchRequest.indexPage}" >1</a></li>
+            <li th:if="${searchRequest.indexPage+1 <=searchRequest.totalPage}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+1})}" th:text="${searchRequest.indexPage +1}" >1</a></li>
+            <li th:if="${searchRequest.indexPage+2 <=searchRequest.totalPage}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+2})}" th:text="${searchRequest.indexPage +2}" >1</a></li>
+            <li th:if="${searchRequest.indexPage+3 <=searchRequest.totalPage}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+3})}" th:text="${searchRequest.indexPage +3}" >1</a></li>
+
+            <li th:class="${searchRequest.indexPage==searchRequest.totalPage}?'disabled' : ''" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+1})}">下一页</a></li>
+        </ul><br>
 <!--        <div class="panel panel-default jobList">-->
 <!--            <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px; border: 1px solid black">-->
 <!--                <p><a style="font-size: 20px;" href="#">Java实习</a>　[广州]　发布于2020-04-01</p>-->
