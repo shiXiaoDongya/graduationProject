@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.service;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
@@ -26,4 +27,6 @@ public interface JobService {
     List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId);
 
     Integer jobListCount(SearchRequest searchRequest);
+
+    Integer addOrUpdateJob(JobRequest jobRequest);
 }

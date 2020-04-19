@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.JobMapper;
+import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
@@ -146,5 +147,16 @@ public class JobServiceImpl implements JobService {
     @Override
     public Integer jobListCount(SearchRequest searchRequest) {
         return jobMapper.jobListCount(searchRequest);
+    }
+
+    @Override
+    public Integer addOrUpdateJob(JobRequest jobRequest) {
+        Integer result;
+        if(jobRequest.getJobId() == null){
+            result = jobMapper.addJob(jobRequest);
+        }else{
+            result = jobMapper.updateJob(jobRequest);
+        }
+        return result;
     }
 }

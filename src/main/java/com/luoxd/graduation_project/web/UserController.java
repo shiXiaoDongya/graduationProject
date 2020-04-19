@@ -256,9 +256,13 @@ public class UserController {
     public String turnJobManage(HttpServletRequest request){
         Integer userId = (Integer)request.getSession().getAttribute("userId");
         List<JobResponse> jobList = userService.queryJobListByReId(userId);
-        log.info(jobList.toString());
+        //log.info(jobList.toString());
         request.setAttribute("jobList",jobList);
         return "jobManage";
     }
 
+    @RequestMapping("/turnReInfo")
+    public String turnReInfo(HttpServletRequest request){
+        return "reInfo";
+    }
 }

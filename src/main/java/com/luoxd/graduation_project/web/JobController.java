@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.web;
 
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
@@ -11,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -175,10 +177,13 @@ public class JobController {
         return "chatContent";
     }
 
-    @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RequestMapping(value = "/addOrUpdateJob",method = RequestMethod.POST)
     @ResponseBody
-    public String test(HttpServletRequest request){
-        log.info("=============in");
+    public String addOrUpdateJob(HttpServletRequest request,JobRequest jobRequest){
+        Integer reId = (Integer) request.getSession().getAttribute("userId");
+        jobRequest.setReId(reId);
+        log.info(jobRequest.toString());
+        Integer i = jobService.addOrUpdateJob(jobRequest);
         return "";
     }
 }

@@ -238,4 +238,16 @@
             and job.job_id = #{jobId}
         </if>
     </select>
+
+    <insert id="addJob" parameterType="com.luoxd.graduation_project.request.JobRequest">
+        insert into
+        job(job_name,job_detail,exp_condition,edu_condition,salary,work_city,work_address,job_classes_id,tag,recruiter_id,post_date)
+        values(#{jobName},#{jobDetail},#{expCondition},#{eduCondition},#{salary},#{workCity},#{workAddress},#{jobClassesId},#{tag},#{reId},curdate())
+    </insert>
+
+    <update id="updateJob" parameterType="com.luoxd.graduation_project.request.JobRequest">
+        update job
+        set job_name=#{jobName},job_detail=#{jobDetail},exp_condition=#{expCondition},edu_condition=#{eduCondition},salary=#{salary},work_city=#{workCity},work_address=#{workAddress},job_classes_id=#{jobClassesId},tag=#{tag}
+        where job_id = #{jobId}
+    </update>
 </mapper>

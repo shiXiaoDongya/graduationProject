@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
 import org.apache.ibatis.annotations.Mapper;
@@ -42,4 +43,8 @@ public interface JobMapper {
     List<Chat> showChatContent(Integer jsId, Integer reId, Integer jobId);
 
     Integer jobListCount(SearchRequest searchRequest);
+
+    Integer addJob(JobRequest jobRequest);
+
+    Integer updateJob(JobRequest jobRequest);
 }
