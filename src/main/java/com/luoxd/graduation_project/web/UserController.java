@@ -265,4 +265,15 @@ public class UserController {
     public String turnReInfo(HttpServletRequest request){
         return "reInfo";
     }
+
+    @RequestMapping("/turnJsFeedback")
+    public String turnJsFeedback(HttpServletRequest request){
+        return "jsFeedback";
+    }
+
+    @RequestMapping("turnJsRecommend")
+    public String turnJsRecommend(HttpServletRequest request){
+        return "jsRecommend";
+    }
+
 }

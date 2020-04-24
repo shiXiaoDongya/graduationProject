@@ -142,42 +142,57 @@
 <body>
 <div class="panel panel-default"  style="width: 1598px;height: 800px;">
     <div class="panel panel-heading clearfix" style="font-size: 20px;font-weight: 700">
-        我发布的职位
-        <div style="float: right;margin-right: 20px;" >
-        <button class="btn btn-primary" type="button" onclick="showModal2()">发布职位</button>
-        </div>
+        我回复的留言反馈
     </div>
     <div class="panel panel-body">
         <div>
             <table class="table table-bordered " style="table-layout:fixed;">
                 <thead>
                 <tr>
-                    <th class="col-md-1">职位名称</th>
-                    <th class="col-md-2">职位描述</th>
-                    <th class="col-md-1">经验要求</th>
-                    <th class="col-md-1">学历要求</th>
-                    <th class="col-md-1">薪资(单位:元/月)</th>
-                    <th class="col-md-1">工作城市</th>
-                    <th class="col-md-1">工作地址</th>
-                    <th class="col-md-1">发布日期</th>
-                    <th class="col-md-1">职位分类</th>
-                    <th class="col-md-1">技能标签</th>
+                    <th class="col-md-1">发送者</th>
+                    <th class="col-md-2">留言内容</th>
+                    <th class="col-md-1">留言时间</th>
+                    <th class="col-md-1">回复内容</th>
+                    <th class="col-md-1">回复时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                    <td >123456</td>
+                    <td >留言测试</td>
+                    <td >2020-03-29 15:20:12</td>
+                    <td >回复内容xxxxxxx</td>
+                    <td >2020-03-29 16:06:37</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-heading clearfix" style="font-size: 20px;font-weight: 700">
+        待回复的留言反馈
+    </div>
+    <div class="panel panel-body">
+        <div>
+            <table class="table table-bordered " style="table-layout:fixed;">
+                <thead>
+                <tr>
+                    <th class="col-md-1">发送者</th>
+                    <th class="col-md-2">留言内容</th>
+                    <th class="col-md-1">留言时间</th>
+                    <th class="col-md-1">回复内容</th>
+                    <th class="col-md-1">回复时间</th>
                     <th class="col-md-1">操作</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="job:${jobList}">
-                    <td th:text="${job.jobName}" th:title="${job.jobName}">Java实习生</td>
-                    <td th:text="${job.jobDetail}" th:title="${job.jobDetail}">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-                    <td th:text="${job.expConditionStr}" th:title="${job.expConditionStr}">在校生</td>
-                    <td th:text="${job.eduConditionStr}" th:title="${job.eduConditionStr}">本科</td>
-                    <td th:text="${job.salary}" th:title="${job.salary}">3000/月</td>
-                    <td th:text="${job.workCity}" th:title="${job.workCity}">广州</td>
-                    <td th:text="${job.workAddress}" th:title="${job.workAddress}">广州白云仲恺农业工程学院</td>
-                    <td th:text="${job.postDate}" th:title="${job.postDate}">2020-04-17 10:47:00</td>
-                    <td th:text="${job.jobClassesName}" th:title="${job.jobClassesName}">Java</td>
-                    <td th:text="${job.tagsStr}" th:title="${job.tagsStr}"></td>
-                    <td><button class="btn btn-primary" type="button" th:onclick="showModal([[${job.jobId}]],[[${job.jobName}]],[[${job.jobDetail}]],[[${job.expCondition}]],[[${job.eduCondition}]],[[${job.salary}]],[[${job.workCity}]],[[${job.workAddress}]],[[${job.postDate}]],[[${job.jobClassesId}]],[[${job.jobClassesName}]],[[${job.tagsStr}]])">修改</button> <button class="btn btn-danger" type="button">删除</button></td>
+                <tr>
+                    <td >123456</td>
+                    <td >留言测试2</td>
+                    <td >2020-03-29 15:22:12</td>
+                    <td ></td>
+                    <td ></td>
+                    <td>
+                        <button class="btn btn-primary" type="button">回复</button>
+                    </td>
                 </tr>
             </table>
         </div>

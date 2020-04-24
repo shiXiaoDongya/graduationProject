@@ -20,6 +20,10 @@
             var url = "/turnReInfo";
             $('#info').load(url);
         }
+        function turnJsRecommend() {
+            var url = "/turnJsRecommend";
+            $('#info').load(url);
+        }
     </script>
 </head>
 <body>
@@ -42,7 +46,7 @@
                 <li class="list-group-item" onclick="turnReInfo()"><a href="#">个人信息</a></li>
                 <li class="list-group-item" onclick="turnJobManage()"><a href="#">职位管理</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
-                <li class="list-group-item"><a href="#">推荐求职者</a></li>
+                <li class="list-group-item" onclick="turnJsRecommend()"><a href="#">求职者推荐</a></li>
                 <li class="list-group-item"><a href="#">消息记录</a></li>
             </ul>
         </div>

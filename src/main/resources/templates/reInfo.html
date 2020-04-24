@@ -55,7 +55,7 @@
             <div class="form-group">
                 <label class="control-label col-md-1">真实姓名</label>
                 <div class="col-md-3">
-                    <input type="text" name="realname" class="form-control editable" value="啦啦" disabled/>
+                    <input type="text" name="realname" class="form-control editable" value="罗先生" disabled/>
                 </div>
                 <label class="control-label col-md-2">性别</label>
                 <div class="col-md-3">
@@ -70,11 +70,11 @@
             <div class="form-group">
                 <label class="control-label col-md-1">手机号</label>
                 <div class="col-md-3">
-                    <input type="text" name="bir" class="form-control editable" disabled />
+                    <input type="text" name="bir" class="form-control editable" value="13205222222" disabled />
                 </div>
                 <label class="control-label col-md-2">邮箱</label>
                 <div class="col-md-3">
-                    <input type="text" name="phone" class="form-control editable" disabled />
+                    <input type="text" name="phone" class="form-control editable" disabled value="123456@qq.com" />
                 </div>
             </div>
         </div>
@@ -103,37 +103,47 @@
                 <div class="form-group">
                     <label class="control-label col-md-1">公司名称</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="" disabled/>
+                        <input type="text" name="realname" class="form-control editable" value="阿里巴巴集团" disabled/>
                     </div>
                     <label class="control-label col-md-1">职称</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java" disabled/>
+                        <input type="text" name="realname" class="form-control editable" value="开发工程师" disabled/>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-md-1">公司描述</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java开发" disabled/>
+                        <input type="text" name="realname" class="form-control editable" value="" disabled/>
                     </div>
-                    <label class="control-label col-md-1">期望城市</label>
+                    <label class="control-label col-md-1">所属行业</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="广州" disabled/>
+                        <input type="text" name="realname" class="form-control editable" value="互联网" disabled/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-md-1">期望薪水</label>
+                    <label class="control-label col-md-1">融资阶段</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="面议" disabled/>
+                        <select class="form-control" disabled>
+                            <option>不需要融资</option>
+                        </select>
                     </div>
-                    <label class="control-label col-md-1">技能标签</label>
+                    <label class="control-label col-md-1">公司规模</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java丨数据库丨后端" disabled/>
+                        <select class="form-control" disabled>
+                            <option>10000人以上</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-1">公司福利</label>
+                    <div class="col-md-6">
+                       <input type="text" class="form-control" value="五险一金 丨 保险 丨 定期体检 丨 节日福利 丨 年终奖 丨 股票期权" disabled>
                     </div>
                 </div>
             </div>
             <div style="float: right;width: 15%;">
                 <div style="padding-top: 20px;padding-bottom: 20px;">
-                    <img src="#" id="img-txz2" style="width: 150px;height: 200px"/>
+                    <img src="../companyHeadImg/cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg" id="img-txz2" style="width: 150px;height: 200px"/>
                     <input type="file" accept="image/*" id="file-txz2" name="file" onchange="upload('#file-txz2', '#img-txz2');" style="display: none" />
                 </div>
                 <div >
@@ -141,6 +151,7 @@
                     <button type="submit" id="submitButton2" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
                 </div>
             </div>
+
         </form>
         <hr class="divider" />
 </div>
