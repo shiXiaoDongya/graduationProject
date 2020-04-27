@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.JobMapper;
+import com.luoxd.graduation_project.request.ChatRequest;
 import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
@@ -13,6 +14,7 @@ import com.luoxd.graduation_project.utils.Condition2StrUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
@@ -132,14 +134,21 @@ public class JobServiceImpl implements JobService {
     @Override
     public List<ChatResponse> queryChatUsers(String userType,Integer userId) {
         if("js".equals(userType)){
-            return jobMapper.queryJsChatUsers(userId);
+            List<ChatResponse> tempChatResponseList = jobMapper.queryJsChatUsers(userId);
+            for (ChatResponse tempChatResponse:tempChatResponseList) {
+                tempChatResponse.setNotRead(jobMapper.getJsNotReadCount(userId,tempChatResponse.getReId(),tempChatResponse.getJobId()));
+            }
+            log.info("==========:"+tempChatResponseList.toString());
+            return tempChatResponseList;
         }else{
             return jobMapper.queryReChatUsers(userId);
         }
     }
 
     @Override
+    @Transactional(rollbackFor=Exception.class)
     public List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId) {
+        Integer read = jobMapper.read(jsId,reId,jobId);
         log.info("jobMapper=======jsId:"+jsId+",reId:"+reId+",jobId:"+jobId);
         return jobMapper.showChatContent(jsId,reId,jobId);
     }
@@ -158,5 +167,10 @@ public class JobServiceImpl implements JobService {
             result = jobMapper.updateJob(jobRequest);
         }
         return result;
+    }
+
+    @Override
+    public Integer insertChats(List<ChatRequest> chatRequestList) {
+        return jobMapper.insertChats(chatRequestList);
     }
 }

@@ -10,14 +10,64 @@
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
 <script type="text/javascript">
-    function showChat(obj,reId,jobId) {
-        if(newMsg){
-            for(var tmp=0; tmp < newMsg.length;tmp++){
-                if(newMsg[tmp].get("jobId") == jobId){
-                    alert("in");
+    window.onload = function () {
+        getChatUsers();
+    }
+
+    function getChatUsers(tempReId,tempJobId) {
+        $("#usersUl").html("");
+        $.ajax({
+            type: "POST",
+            url: "/job/getChatUsers",
+            dataType: "JSON",
+            success: function(data) {
+                for(var i = 0; i < data.length; i++){
+                    var reId = data[i]['reId'];
+                    var jobId = data[i]['jobId'];
+                    var reRealname = data[i]['reRealname'];
+                    var notRead;
+                    if(data[i]['notRead']){
+                        notRead = data[i]['notRead'];
+                    }else{
+                        notRead = "";
+                    }
+                    var companyName;
+                    if(data[i]['reCompany']){
+                        companyName = data[i]['reCompany'];
+                    }else{
+                        companyName = "";
+                    }
+                    var reCompanyPosition = data[i]['reCompanyPosition'];
+                    if(tempReId === reId && tempJobId === jobId){
+                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
+                            "                    <div style=\"height:100px;\">\n" +
+                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                        </div>\n" +
+                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                            "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
+                            "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n" +
+                            "                </li>")
+                    }else {
+                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
+                            "                    <div style=\"height:100px;\">\n" +
+                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                        </div>\n" +
+                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                            "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
+                            "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n" +
+                            "                </li>")
+                    }
                 }
             }
-        }
+        })
+    }
+    function showChat(obj,reId,jobId) {
         document.getElementById("sendButton").dataset.reId = reId;
         document.getElementById("sendButton").dataset.jobId = jobId;
         var li = document.getElementsByClassName("list-group-item");
@@ -26,31 +76,79 @@
         }
         obj.style.border = "1px blue solid";
         $('#chatContent').html("");
-        $.ajax({
-            type: "POST",
-            url: "/job/showChatContent",
-            data: {"reId":reId,"jobId":jobId},
-            dataType: "JSON",
-            success: function(data) {
-                //var chatList = data['chatList'];
-                document.getElementById("reRealname").innerHTML=data[0]['reRealname'];
-                document.getElementById("companyName").innerHTML=data[0]['companyName'];
-                document.getElementById("reCompanyPosition").innerHTML=data[0]['reCompanyPosition'];
-                for(var i = 0; i < data.length; i++){
-                    $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
-                    if(data[i]['isJsSend']===1){
-                        $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">"+data[i]['chatContent']+"</span></p>");
-                    }else{
-                        $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+data[i]['chatContent']+"</span></p>");
+        $.when(
+            $.ajax({
+                type: "POST",
+                url: "/job/showChatContent",
+                data: {"reId": reId, "jobId": jobId},
+                dataType: "JSON",
+                success: function (data) {
+                    //var chatList = data['chatList'];
+                    document.getElementById("reRealname").innerHTML = data[0]['reRealname'];
+                    document.getElementById("companyName").innerHTML = data[0]['companyName'];
+                    document.getElementById("reCompanyPosition").innerHTML = data[0]['reCompanyPosition'];
+                    for (var i = 0; i < data.length; i++) {
+                        $('#chatContent').append("<p class=\"chatTime\">" + data[i]['chatSendTime'] + "</p>");
+                        if (data[i]['isJsSend'] === 1) {
+                            $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
+                        } else {
+                            $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
+                        }
+                    }
+                }
+            })
+        ).done(function () {
+            // newMsg.sort((a,b)=> {
+            //     return a.get('chatSendTime') > b.get('chatSendTime') ? 1 : -1;
+            // });
+            if(newMsg){
+                for(var tmp=0; tmp < newMsg.length;tmp++){
+                    if(newMsg[tmp]['jobId'] == jobId && newMsg[tmp]['reId'] == reId){
+                        $('#chatContent').append("<p class=\"chatTime\">"+newMsg[tmp]['chatSendTime']+"</p>");
+                        if(newMsg[tmp]['isJsSend']==1){
+                            $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">" + newMsg[tmp]['chatContent'] + "</span></p>");
+                        }else{
+                            newMsg[tmp]['isRead'] = 1;
+                            $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+newMsg[tmp]['chatContent']+"</span></p>");
+                        }
                     }
                 }
             }
+        }).fail(function () {
+
         });
         document.getElementById("noChatDiv").style.display = "none";
         document.getElementById("chatDiv").style.display = "block";
         // document.getElementById("noChatDiv").style.display = "none";
         // var url = "/job/chatContent?reId="+reId+"&jobId="+jobId;
         // $('#chatDiv').load(url);
+        getChatUsers(reId,jobId);
+    }
+    function saveChatContent() {
+        //把发送的消息存入数据库
+        var sendMsg = newMsg;
+        for(var i = 0; i < sendMsg.length; i++){
+            if(sendMsg[i]['isJsSend'] == 0){
+                sendMsg.splice(i, 1);
+            }
+        }
+        if(sendMsg) {
+            $.ajax({
+                type: "POST",
+                url: "/job/saveChatContent",
+                data: {"msg": JSON.stringify(sendMsg)},
+                dataType: "JSON",
+                success: function (data) {
+                    if (data['success'] == "true") {
+                        alert("正常退出");
+                    } else {
+                        alert("消息保存失败");
+                    }
+                },
+                fail: function () {
+                }
+            })
+        }
     }
 </script>
 <style>
@@ -113,18 +211,7 @@
             <div class="panel-heading">
                 30天内联系人
             </div>
-            <ul class="list-group" >
-                <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.reId}]],[[${chat.jobId}]])" >
-                    <div style="height:100px;">
-                        <div  style="float:left;width: 40%; height: 90%; ">
-                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
-                        </div>
-                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
-                            <p><span th:text="${chat.reRealname}"></span></p>
-                            <p><span th:text="${chat.companyName}"></span> 丨 <span th:text="${chat.reCompanyPosition}"></span></p>
-                        </div>
-                    </div>
-                </li>
+            <ul class="list-group" id="usersUl">
             </ul>
         </div>
         <div class="panel panel-default" style="float:right;width: 70%;height:1000px;border-collapse:collapse;border:1px solid black;">
@@ -195,7 +282,7 @@
         //接收后台服务端的消息
         webSocket.onmessage = function (evt)
         {
-            var chat = new Map();
+            var chat = {};
             var received_msg = evt.data;
             console.log("数据已接收:" +received_msg);
             var obj = JSON.parse(received_msg);
@@ -204,26 +291,28 @@
             $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
             var fromChars = obj.from.split("-");
             var toChars = obj.to.split("-");
-            chat.set("jsId",toChars[1]);
-            chat.set("reId",fromChars[1]);
-            chat.set("jobId",obj.jobId);
-            chat.set("chatContent",obj.msg);
-            chat.set("charSendTime",obj.time);
-            chat.set("isJsSend",0);
-            // chat['jsId'] = toChars[1];
-            // chat['reId'] = fromChars[1];
-            // chat['jobId'] = obj.jobId;
-            // chat['chatContent'] = obj.msg;
-            // chat['charSendTime'] = obj.time;
-            // chat['isJsSend'] = 0;
+            chat['jsId'] = toChars[1];
+            chat['reId'] = fromChars[1];
+            chat['jobId'] = obj.jobId;
+            chat['chatContent'] = obj.msg;
+            chat['chatSendTime'] = obj.time;
+            chat['isJsSend'] = 0;
+            chat['isRead'] = 0;
+            // chat.set("jsId",toChars[1]);
+            // chat.set("reId",fromChars[1]);
+            // chat.set("jobId",obj.jobId);
+            // chat.set("chatContent",obj.msg);
+            // chat.set("chatSendTime",obj.time);
+            // chat.set("isJsSend",0);
+            // chat.set("isRead",0);
             newMsg.push(chat);
         };
 
         //连接关闭的回调事件
-        webSocket.onclose = function()
-        {
+        webSocket.onclose = function() {
             console.log("连接已关闭...");
             setMessageInnerHTML("连接已经关闭....");
+            saveChatContent();
         };
     }
     else{
@@ -247,6 +336,22 @@
             "jobId":jobId,
             "time": new Date().Format("yyyy-MM-dd hh:mm:ss")
         };
+        var chat = {};
+        chat['jsId'] = document.getElementById('userId').innerHTML;
+        chat['reId'] = toId;
+        chat['jobId'] = jobId;
+        chat['chatContent'] = message['msg'];
+        chat['chatSendTime'] = message['time'];
+        chat['isJsSend'] = 1;
+        chat['isRead'] = 0;
+        // chat.set("jsId",document.getElementById('userId').innerHTML);
+        // chat.set("reId",toId);
+        // chat.set("jobId",jobId);
+        // chat.set("chatContent",message['msg']);
+        // chat.set("chatSendTime",message['time']);
+        // chat.set("isJsSend",1);
+        // chat.set("isRead",0);
+        newMsg.push(chat);
         $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
         $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
         webSocket.send(JSON.stringify(message));

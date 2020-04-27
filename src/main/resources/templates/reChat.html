@@ -25,6 +25,45 @@
     }
 </style>
 <script type="text/javascript">
+    window.onload = function () {
+        getChatUsers();
+    }
+    function getChatUsers() {
+        $("#usersUl").html("");
+        $.ajax({
+            type: "POST",
+            url: "/job/getChatUsers",
+            dataType: "JSON",
+            success: function(data) {
+                for(var i = 0; i < data.length; i++){
+                    var jsId = data[i]['jsId'];
+                    var jobId = data[i]['jobId'];
+                    var jsRealname = data[i]['jsRealname'];
+                    var jsCollege = data[i]['jsCollege'];
+                    var notRead;
+                    if(data[i]['notRead']){
+                        notRead = data[i]['notRead'];
+                    }else{
+                        notRead = "";
+                    }
+                    $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this,"+jsId+","+jobId+")\" >\n" +
+                        "                    <span id=\"reId\" >"+jsId+"</span>\n" +
+                        "                    <span id=\"jobId\" >"+jobId+"</span>\n" +
+                        "                    <span id=\"count\">0</span>\n" +
+                        "                    <div style=\"height:100px;\">\n" +
+                        "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                        "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                        "                        </div>\n" +
+                        "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                        "                            <p><span ></span>"+jsRealname+"</p>\n" +
+                        "                            <p><span >"+jsCollege+"</span></p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                </li>")
+                }
+            }
+        })
+    }
     function showChat(obj,jsId,jobId) {
         document.getElementById("sendButton").dataset.jsId = jsId;
         document.getElementById("sendButton").dataset.jobId = jobId;
@@ -93,32 +132,7 @@
             <div class="panel-heading">
                 30天内联系人
             </div>
-            <ul class="list-group" >
-                <li class="list-group-item" th:each="chat:${chatList}" style="cursor: pointer;margin-bottom: 2px" th:onclick="showChat(this,[[${chat.jsId}]],[[${chat.jobId}]])" >
-                    <span id="reId" th:text="${chat.jsId}"></span>
-                    <span id="jobId" th:text="${chat.jobId}"></span>
-                    <span id="count">0</span>
-                    <div style="height:100px;">
-                        <div  style="float:left;width: 40%; height: 90%; ">
-                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
-                        </div>
-                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
-                            <p><span th:text="${chat.jsRealname}"></span></p>
-                            <p><span th:text="${chat.jsCollege}"></span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item" style="cursor: pointer;">
-                    <div style="height:100px;">
-                        <div  style="float:left;width: 40%; height: 90%; ">
-                            <img src="" style="float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid"/>
-                        </div>
-                        <div style="float:right;width: 60%;height: 90%;padding-top: 15px">
-                            <p><span>名字</span></p>
-                            <p><span>公司</span> 丨 <span>所属职位</span></p>
-                        </div>
-                    </div>
-                </li>
+            <ul class="list-group" id="usersUl">
             </ul>
         </div>
         <div class="panel panel-default" style="float:right;width: 70%;height:1000px;border-collapse:collapse;border:1px solid black;">

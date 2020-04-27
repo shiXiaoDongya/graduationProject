@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.ChatRequest;
 import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
@@ -47,4 +48,10 @@ public interface JobMapper {
     Integer addJob(JobRequest jobRequest);
 
     Integer updateJob(JobRequest jobRequest);
+
+    Integer getJsNotReadCount(Integer userId, Integer reId, Integer jobId);
+
+    Integer read(Integer jsId, Integer reId, Integer jobId);
+
+    Integer insertChats(List<ChatRequest> list);
 }

@@ -1,16 +1,11 @@
-package com.luoxd.graduation_project.domain;
+package com.luoxd.graduation_project.request;
 
 import lombok.Data;
 
 @Data
-public class Chat {
-    private Integer chatId;
+public class ChatRequest {
     private Integer jsId;
-    private String jsRealname;
     private Integer reId;
-    private String reRealname;
-    private String companyName;
-    private String reCompanyPosition;
     private Integer jobId;
     private String chatContent;
     private String chatSendTime;

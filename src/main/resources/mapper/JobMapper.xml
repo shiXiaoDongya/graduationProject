@@ -114,7 +114,9 @@
             and job.job_id = #{jobId}
         </if>
         order by post_date DESC
+        <if test="start != null and start != ''">
         limit #{start},2
+        </if>
     </select>
     <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">
         select *
@@ -152,7 +154,6 @@
     <select id="queryReChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
         select job_seeker.js_id,job_seeker.js_realname,job_seeker.js_college,chat.job_id
         from chat left join job_seeker on chat.js_id = job_seeker.js_id
-        left join company on recruiter.re_company_id = company.company_id
         where chat.re_id = #{userId}
         group by chat.js_id,chat.job_id
     </select>
@@ -250,4 +251,32 @@
         set job_name=#{jobName},job_detail=#{jobDetail},exp_condition=#{expCondition},edu_condition=#{eduCondition},salary=#{salary},work_city=#{workCity},work_address=#{workAddress},job_classes_id=#{jobClassesId},tag=#{tag}
         where job_id = #{jobId}
     </update>
+
+    <select id="getJsNotReadCount" resultType="java.lang.Integer">
+        select count(*)
+        from chat
+        where js_id = #{userId} and re_id = #{reId} and job_id = #{jobId} and is_read = 0 and is_js_send=0
+    </select>
+
+    <select id="read">
+        update chat
+        set is_read = 1
+        where js_id = #{jsId} and re_id = #{reId} and job_id = #{jobId}
+    </select>
+
+    <insert id="insertChats" parameterType="java.util.List" useGeneratedKeys="false">
+        insert into
+        chat(js_id,re_id,job_id,chat_content,chat_send_time,is_js_send,is_read)
+        values <foreach collection="list" item="item" index="index" separator=",">
+        (
+        #{item.jsId},
+        #{item.reId},
+        #{item.jobId},
+        #{item.chatContent},
+        #{item.chatSendTime},
+        #{item.isJsSend},
+        #{item.isRead}
+        )
+    </foreach>
+    </insert>
 </mapper>

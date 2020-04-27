@@ -1,7 +1,10 @@
 package com.luoxd.graduation_project.web;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.ChatRequest;
 import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
@@ -120,13 +123,7 @@ public class JobController {
 
     @RequestMapping(value = "/chat",method = RequestMethod.GET)
     public String chat(HttpServletRequest request){
-        Integer userId = (Integer) request.getSession().getAttribute("userId");
         String userType = (String)request.getSession().getAttribute("userType");
-        if(userId != null){
-            List<ChatResponse> chatResponse = jobService.queryChatUsers(userType,userId);
-            log.info("===========chatResponse:"+chatResponse.toString());
-            request.setAttribute("chatList",chatResponse);
-        }
         if("js".equals(userType)){
             return "chat";
         }else{
@@ -155,26 +152,18 @@ public class JobController {
         return chatList;
     }
 
-    @RequestMapping(value = "/chatContent",method = RequestMethod.GET)
-    public String chatContent(HttpServletRequest request,Integer jsId,Integer reId,Integer jobId){
+    @RequestMapping(value = "/getChatUsers",method = RequestMethod.POST)
+    @ResponseBody
+    public List<ChatResponse> getChatUsers(HttpServletRequest request,Integer jsId,Integer reId,Integer jobId){
+        Integer userId = (Integer) request.getSession().getAttribute("userId");
         String userType = (String)request.getSession().getAttribute("userType");
-        List<Chat> chatList = null;
-        if("js".equals(userType)){
-            Integer tempJsId = (Integer) request.getSession().getAttribute("userId");
-            log.info("=============jsId:"+tempJsId+",reId:"+reId+",jobId:"+jobId);
-            chatList = jobService.showChatContent(tempJsId,reId,jobId);
-            log.info(chatList.toString());
-            request.setAttribute("reId",reId);
-        }else{
-            Integer tempReId = (Integer) request.getSession().getAttribute("userId");
-            log.info("=============jsId:"+jsId+",reId:"+tempReId+",jobId:"+jobId);
-            chatList = jobService.showChatContent(jsId,tempReId,jobId);
-            request.setAttribute("jsId",jsId);
+        List<ChatResponse> chatResponse = null;
+        if(userId != null){
+            chatResponse = jobService.queryChatUsers(userType,userId);
+            log.info("===========chatResponse:"+chatResponse.toString());
+            request.setAttribute("chatList",chatResponse);
         }
-        log.info(chatList.toString());
-        request.setAttribute("jobId",jobId);
-        request.setAttribute("chatList",chatList);
-        return "chatContent";
+        return chatResponse;
     }
 
     @RequestMapping(value = "/addOrUpdateJob",method = RequestMethod.POST)
@@ -185,5 +174,18 @@ public class JobController {
         log.info(jobRequest.toString());
         Integer i = jobService.addOrUpdateJob(jobRequest);
         return "";
+    }
+    @RequestMapping(value = "/saveChatContent",method = RequestMethod.POST)
+    @ResponseBody
+    public String saveChatContent(HttpServletRequest request){
+        String json = request.getParameter("msg");
+        List<ChatRequest> chatRequestList = JSONArray.parseArray(json, ChatRequest.class);
+        log.info(chatRequestList.toString());
+        Integer successCode = jobService.insertChats(chatRequestList);
+        if(successCode > 0){
+            return "{\"success\":\"true\"}";
+        }else {
+            return "{\"success\":\"false\"}";
+        }
     }
 }

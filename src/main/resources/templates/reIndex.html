@@ -24,6 +24,9 @@
             var url = "/turnJsRecommend";
             $('#info').load(url);
         }
+        function turnReChat() {
+            window.location.href="/job/chat";
+        }
     </script>
 </head>
 <body>
@@ -47,7 +50,7 @@
                 <li class="list-group-item" onclick="turnJobManage()"><a href="#">职位管理</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
                 <li class="list-group-item" onclick="turnJsRecommend()"><a href="#">求职者推荐</a></li>
-                <li class="list-group-item"><a href="#">消息记录</a></li>
+                <li class="list-group-item" onclick="turnReChat()"><a href="#">消息记录</a></li>
             </ul>
         </div>
         <div style="float: right;width: 85%;" id="info" ></div>

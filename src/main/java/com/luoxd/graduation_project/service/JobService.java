@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.service;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.ChatRequest;
 import com.luoxd.graduation_project.request.JobRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.ChatResponse;
@@ -29,4 +30,6 @@ public interface JobService {
     Integer jobListCount(SearchRequest searchRequest);
 
     Integer addOrUpdateJob(JobRequest jobRequest);
+
+    Integer insertChats(List<ChatRequest> chatRequestList);
 }

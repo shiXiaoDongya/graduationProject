@@ -14,4 +14,5 @@ public class ChatResponse {
     private String companyName;
     private String reCompanyPosition;
     private Integer jobId;
+    private Integer notRead;
 }
