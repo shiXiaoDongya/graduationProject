@@ -111,6 +111,7 @@
                             newMsg[tmp]['isRead'] = 1;
                             $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+newMsg[tmp]['chatContent']+"</span></p>");
                         }
+                        newMsg.splice(tmp,1);
                     }
                 }
             }
@@ -124,23 +125,22 @@
         // $('#chatDiv').load(url);
         getChatUsers(reId,jobId);
     }
-    function saveChatContent() {
+    function saveChatContent(chat) {
         //把发送的消息存入数据库
-        var sendMsg = newMsg;
-        for(var i = 0; i < sendMsg.length; i++){
-            if(sendMsg[i]['isJsSend'] == 0){
-                sendMsg.splice(i, 1);
-            }
-        }
-        if(sendMsg) {
+        // var sendMsg = newMsg;
+        // for(var i = 0; i < sendMsg.length; i++){
+        //     if(sendMsg[i]['isJsSend'] == 0){
+        //         sendMsg.splice(i, 1);
+        //     }
+        // }
+        if(chat) {
             $.ajax({
                 type: "POST",
                 url: "/job/saveChatContent",
-                data: {"msg": JSON.stringify(sendMsg)},
+                data: {"msg": JSON.stringify(chat)},
                 dataType: "JSON",
                 success: function (data) {
                     if (data['success'] == "true") {
-                        alert("正常退出");
                     } else {
                         alert("消息保存失败");
                     }
@@ -286,11 +286,16 @@
             var received_msg = evt.data;
             console.log("数据已接收:" +received_msg);
             var obj = JSON.parse(received_msg);
-            setMessageInnerHTML(obj.from+"对"+obj.to+"说："+obj.msg);
-            $("#chatContent").append("<p class=\"chatTime\">" + obj.time + "</p>");
-            $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
+            //setMessageInnerHTML(obj.from+"对"+obj.to+"说："+obj.msg);
+            var reId = document.getElementById("sendButton").dataset.reId;
+            var jobId = document.getElementById("sendButton").dataset.jobId;
+
             var fromChars = obj.from.split("-");
             var toChars = obj.to.split("-");
+            if(reId == fromChars[1] && jobId == obj.jobId){
+                $("#chatContent").append("<p class=\"chatTime\">" + obj.time + "</p>");
+                $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
+            }
             chat['jsId'] = toChars[1];
             chat['reId'] = fromChars[1];
             chat['jobId'] = obj.jobId;
@@ -312,7 +317,7 @@
         webSocket.onclose = function() {
             console.log("连接已关闭...");
             setMessageInnerHTML("连接已经关闭....");
-            saveChatContent();
+            //saveChatContent();
         };
     }
     else{
@@ -351,7 +356,8 @@
         // chat.set("chatSendTime",message['time']);
         // chat.set("isJsSend",1);
         // chat.set("isRead",0);
-        newMsg.push(chat);
+        //newMsg.push(chat);
+        saveChatContent(chat);
         $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
         $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
         webSocket.send(JSON.stringify(message));

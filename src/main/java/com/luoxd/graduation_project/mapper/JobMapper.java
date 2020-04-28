@@ -53,5 +53,5 @@ public interface JobMapper {
 
     Integer read(Integer jsId, Integer reId, Integer jobId);
 
-    Integer insertChats(List<ChatRequest> list);
+    Integer insertChats(ChatRequest chatRequest);
 }

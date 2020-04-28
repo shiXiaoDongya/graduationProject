@@ -28,7 +28,7 @@
     window.onload = function () {
         getChatUsers();
     }
-    function getChatUsers() {
+    function getChatUsers(tempJsId,tempJobId) {
         $("#usersUl").html("");
         $.ajax({
             type: "POST",
@@ -46,20 +46,37 @@
                     }else{
                         notRead = "";
                     }
-                    $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this,"+jsId+","+jobId+")\" >\n" +
-                        "                    <span id=\"reId\" >"+jsId+"</span>\n" +
-                        "                    <span id=\"jobId\" >"+jobId+"</span>\n" +
-                        "                    <span id=\"count\">0</span>\n" +
-                        "                    <div style=\"height:100px;\">\n" +
-                        "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                        "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
-                        "                        </div>\n" +
-                        "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                        "                            <p><span ></span>"+jsRealname+"</p>\n" +
-                        "                            <p><span >"+jsCollege+"</span></p>\n" +
-                        "                        </div>\n" +
-                        "                    </div>\n" +
-                        "                </li>")
+                    if(tempJsId === jsId && tempJobId === jobId){
+                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
+                            "                    <span id=\"reId\" >" + jsId + "</span>\n" +
+                            "                    <span id=\"jobId\" >" + jobId + "</span>\n" +
+                            "                    <span id=\"count\">0</span>\n" +
+                            "                    <div style=\"height:100px;\">\n" +
+                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                        </div>\n" +
+                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                            "                            <p><span ></span>" + jsRealname + "</p>\n" +
+                            "                            <p><span >" + jsCollege + "</span></p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n" +
+                            "                </li>")
+                    }else {
+                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
+                            "                    <span id=\"reId\" >" + jsId + "</span>\n" +
+                            "                    <span id=\"jobId\" >" + jobId + "</span>\n" +
+                            "                    <span id=\"count\">0</span>\n" +
+                            "                    <div style=\"height:100px;\">\n" +
+                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                        </div>\n" +
+                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                            "                            <p><span ></span>" + jsRealname + "</p>\n" +
+                            "                            <p><span >" + jsCollege + "</span></p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>\n" +
+                            "                </li>")
+                    }
                 }
             }
         })
@@ -73,25 +90,73 @@
         }
         obj.style.border = "1px blue solid";
         $('#chatContent').html("");
-        $.ajax({
-            type: "POST",
-            url: "/job/showChatContent",
-            data: {"jsId":jsId,"jobId":jobId},
-            dataType: "JSON",
-            success: function(data) {
-                //var chatList = data['chatList'];
-                for(var i = 0; i < data.length; i++){
-                    $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
-                    if(data[i]['isJsSend']===1){
-                        $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+data[i]['chatContent']+"</span></p>");
-                    }else{
-                        $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">"+data[i]['chatContent']+"</span></p>");
+        $.when(
+            $.ajax({
+                type: "POST",
+                url: "/job/showChatContent",
+                data: {"jsId":jsId,"jobId":jobId},
+                dataType: "JSON",
+                success: function(data) {
+                    //var chatList = data['chatList'];
+                    for(var i = 0; i < data.length; i++){
+                        $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
+                        if(data[i]['isJsSend']===1){
+                            $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+data[i]['chatContent']+"</span></p>");
+                        }else{
+                            $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">"+data[i]['chatContent']+"</span></p>");
+                        }
+                    }
+                }
+            })
+        ).done(function () {
+            // newMsg.sort((a,b)=> {
+            //     return a.get('chatSendTime') > b.get('chatSendTime') ? 1 : -1;
+            // });
+            if(newMsg){
+                for(var tmp=0; tmp < newMsg.length;tmp++){
+                    if(newMsg[tmp]['jobId'] == jobId && newMsg[tmp]['jsId'] == jsId){
+                        $('#chatContent').append("<p class=\"chatTime\">"+newMsg[tmp]['chatSendTime']+"</p>");
+                        if(newMsg[tmp]['isJsSend']==0){
+                            $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">" + newMsg[tmp]['chatContent'] + "</span></p>");
+                        }else{
+                            newMsg[tmp]['isRead'] = 1;
+                            $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+newMsg[tmp]['chatContent']+"</span></p>");
+                        }
+                        newMsg.splice(tmp,1);
                     }
                 }
             }
+        }).fail(function () {
+
         });
         document.getElementById("noChatDiv").style.display = "none";
         document.getElementById("chatDiv").style.display = "block";
+        getChatUsers(jsId,jobId);
+    }
+    function saveChatContent(chat) {
+        //把发送的消息存入数据库
+        // var sendMsg = newMsg;
+        // for(var i = 0; i < sendMsg.length; i++){
+        //     if(sendMsg[i]['isJsSend'] == 1){
+        //         sendMsg.splice(i, 1);
+        //     }
+        // }
+        if(chat) {
+            $.ajax({
+                type: "POST",
+                url: "/job/saveChatContent",
+                data: {"msg": JSON.stringify(chat)},
+                dataType: "JSON",
+                success: function (data) {
+                    if (data['success'] == "true") {
+                    } else {
+                        alert("消息保存失败");
+                    }
+                },
+                fail: function () {
+                }
+            })
+        }
     }
 </script>
 <body>
@@ -206,16 +271,23 @@
             console.log("数据已接收:" +received_msg);
             var obj = JSON.parse(received_msg);
             setMessageInnerHTML(obj.from+"对"+obj.to+"说："+obj.msg);
-            $("#chatContent").append("<p class=\"chatTime\">" + obj.time + "</p>");
-            $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
+
+            var jsId = document.getElementById("sendButton").dataset.jsId;
+            var jobId = document.getElementById("sendButton").dataset.jobId;
+
             var fromChars = obj.from.split("-");
             var toChars = obj.to.split("-");
+            if(jsId == fromChars[1] && jobId == obj.jobId){
+                $("#chatContent").append("<p class=\"chatTime\">" + obj.time + "</p>");
+                $("#chatContent").append("<p><span style=\"background: #b8aaf3;color: black;\">" + obj.msg + "</span></p>");
+            }
             chat['jsId'] = fromChars[1];
             chat['reId'] = toChars[1];
             chat['jobId'] = obj.jobId;
             chat['chatContent'] = obj.msg;
-            chat['charSendTime'] = obj.time;
+            chat['chatSendTime'] = obj.time;
             chat['isJsSend'] = 1;
+            chat['isRead'] = 0;
             newMsg.push(chat);
         };
 
@@ -224,6 +296,7 @@
         {
             console.log("连接已关闭...");
             setMessageInnerHTML("连接已经关闭....");
+            //saveChatContent();
         };
     }
     else{
@@ -251,6 +324,16 @@
             "jobId":jobId,
             "time": new Date().Format("yyyy-MM-dd hh:mm:ss")
         };
+        var chat = {};
+        chat['jsId'] = toId;
+        chat['reId'] = document.getElementById('userId').innerHTML;
+        chat['jobId'] = jobId;
+        chat['chatContent'] = message['msg'];
+        chat['chatSendTime'] = message['time'];
+        chat['isJsSend'] = 0;
+        chat['isRead'] = 0;
+        // newMsg.push(chat);
+        saveChatContent(chat);
         $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
         $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
         webSocket.send(JSON.stringify(message));

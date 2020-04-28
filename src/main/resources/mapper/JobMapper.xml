@@ -164,7 +164,7 @@
         from chat left join job_seeker on chat.js_id = job_seeker.js_id
         left join recruiter on chat.re_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
-        where chat.js_id = #{jsId} and chat.re_id = #{reId} and chat.job_id = #{jobId}
+        where chat.js_id = #{jsId} and chat.re_id = #{reId} and chat.job_id = #{jobId} and chat.is_read = 1
     </select>
 
     <select id="jobListCount" resultType="java.lang.Integer" parameterType="com.luoxd.graduation_project.request.SearchRequest">
@@ -264,19 +264,18 @@
         where js_id = #{jsId} and re_id = #{reId} and job_id = #{jobId}
     </select>
 
-    <insert id="insertChats" parameterType="java.util.List" useGeneratedKeys="false">
+    <insert id="insertChats" parameterType="com.luoxd.graduation_project.request.ChatRequest">
         insert into
         chat(js_id,re_id,job_id,chat_content,chat_send_time,is_js_send,is_read)
-        values <foreach collection="list" item="item" index="index" separator=",">
+        values
         (
-        #{item.jsId},
-        #{item.reId},
-        #{item.jobId},
-        #{item.chatContent},
-        #{item.chatSendTime},
-        #{item.isJsSend},
-        #{item.isRead}
+        #{jsId},
+        #{reId},
+        #{jobId},
+        #{chatContent},
+        #{chatSendTime},
+        #{isJsSend},
+        #{isRead}
         )
-    </foreach>
     </insert>
 </mapper>

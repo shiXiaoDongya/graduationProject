@@ -179,9 +179,9 @@ public class JobController {
     @ResponseBody
     public String saveChatContent(HttpServletRequest request){
         String json = request.getParameter("msg");
-        List<ChatRequest> chatRequestList = JSONArray.parseArray(json, ChatRequest.class);
-        log.info(chatRequestList.toString());
-        Integer successCode = jobService.insertChats(chatRequestList);
+        ChatRequest chatRequest = JSONArray.parseObject(json, ChatRequest.class);
+        log.info(chatRequest.toString());
+        Integer successCode = jobService.insertChats(chatRequest);
         if(successCode > 0){
             return "{\"success\":\"true\"}";
         }else {

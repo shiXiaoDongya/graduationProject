@@ -31,5 +31,5 @@ public interface JobService {
 
     Integer addOrUpdateJob(JobRequest jobRequest);
 
-    Integer insertChats(List<ChatRequest> chatRequestList);
+    Integer insertChats(ChatRequest chatRequest);
 }

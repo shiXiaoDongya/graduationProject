@@ -148,9 +148,10 @@ public class JobServiceImpl implements JobService {
     @Override
     @Transactional(rollbackFor=Exception.class)
     public List<Chat> showChatContent(Integer jsId,Integer reId, Integer jobId) {
+        List<Chat> chatList = jobMapper.showChatContent(jsId,reId,jobId);
         Integer read = jobMapper.read(jsId,reId,jobId);
         log.info("jobMapper=======jsId:"+jsId+",reId:"+reId+",jobId:"+jobId);
-        return jobMapper.showChatContent(jsId,reId,jobId);
+        return chatList;
     }
 
     @Override
@@ -170,7 +171,7 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
-    public Integer insertChats(List<ChatRequest> chatRequestList) {
-        return jobMapper.insertChats(chatRequestList);
+    public Integer insertChats(ChatRequest chatRequest) {
+        return jobMapper.insertChats(chatRequest);
     }
 }
