@@ -114,8 +114,8 @@
             and job.job_id = #{jobId}
         </if>
         order by post_date DESC
-        <if test="start != null and start != ''">
-        limit #{start},2
+        <if test="start != null">
+            limit #{start},2
         </if>
     </select>
     <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">

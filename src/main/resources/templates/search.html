@@ -245,6 +245,10 @@
             </div>
         </form>
         <div style="margin:0px auto;margin-top:20px;border-top: black double 4px;width: 1600px"></div>
+        <div th:if="${#lists.isEmpty(jobList)}" style="text-align: center;font-size: 50px;font-weight: 500;margin-top: 50px;">
+            暂无该关键字的匹配
+        </div>
+        <div th:if="${not #lists.isEmpty(jobList)}">
         <div th:each="job:${jobList}" class="panel panel-default jobList">
             <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px">
                 <p><a style="font-size: 20px;" th:href="@{/job/getJobDetail(jobId=${job.jobId})}" th:text="${job.jobName}"></a><span ><a style="font-size: 20px;" href="#" th:if="${job.workCity != null}" th:text="'['+${job.workCity}+']'">[广州]</a></span></p>
@@ -271,8 +275,8 @@
         </div>
         <div style="margin: 0 auto;width: 1600px;text-align: center">
         <ul class="pagination pagination-lg" >
-            <li th:class="${searchRequest.indexPage==1}?'disabled' : ''"><a th:href="${searchRequest.indexPage==1}?'#':'@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
-            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-1})}'">上一页</a></li>
+            <li th:class="${searchRequest.indexPage==1}?'disabled' : ''"><a th:if="${searchRequest.indexPage==1}" href="#">上一页</a><a th:if="${searchRequest.indexPage!=1}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-1})}">上一页</a></li>
             <li th:if="${searchRequest.indexPage-3 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-3})}" th:text="${searchRequest.indexPage -3}" >1</a></li>
             <li th:if="${searchRequest.indexPage-2 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
@@ -286,10 +290,10 @@
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+2})}" th:text="${searchRequest.indexPage +2}" >1</a></li>
             <li th:if="${searchRequest.indexPage+3 <=searchRequest.totalPage}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+3})}" th:text="${searchRequest.indexPage +3}" >1</a></li>
-
-            <li th:class="${searchRequest.indexPage==searchRequest.totalPage}?'disabled' : ''" ><a th:href="${searchRequest.indexPage==searchRequest.totalPage}?'#':'@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
-            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+1})}'">下一页</a></li>
+            <li th:class="${searchRequest.indexPage==searchRequest.totalPage}?'disabled' : ''" ><a th:if="${searchRequest.indexPage==searchRequest.totalPage}" href="#">下一页</a><a th:if="${searchRequest.indexPage != searchRequest.totalPage}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+1})}">下一页</a></li>
         </ul><br>
+        </div>
         </div>
 <!--        <div class="panel panel-default jobList">-->
 <!--            <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px; border: 1px solid black">-->

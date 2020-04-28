@@ -69,6 +69,7 @@ public class JobServiceImpl implements JobService {
         List<JobResponse> jobResponseList = new ArrayList<>();
         List<Job> jobList = jobMapper.queryJobList(searchRequest);
         if(jobList != null) {
+            log.info("===jobList:"+jobList.toString());
             for (Job tempJob : jobList) {
                 JobResponse jobResponse = new JobResponse();
                 List<String> tags = null;

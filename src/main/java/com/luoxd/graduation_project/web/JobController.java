@@ -50,14 +50,12 @@ public class JobController {
             searchRequest.setIndexPage(1);
         }
         searchRequest.setStart((int) ((searchRequest.getIndexPage()-1)*PAGESIZE));
-        log.info("==========setStart:"+searchRequest.getStart());
         if(searchRequest.getTotalPage() == null){
             Integer i = jobService.jobListCount(searchRequest);
             Integer totalPage = (int) Math.ceil(i/PAGESIZE);
             searchRequest.setTotalPage(totalPage);
         }
-        log.info("======================indexPage:"+searchRequest.getIndexPage());
-        log.info("======================totalPage:"+searchRequest.getTotalPage());
+        log.info(searchRequest.toString());
         //String keyword = searchRequest.getKeyword();
         List<JobResponse> jobList = jobService.queryJobList(searchRequest);
         //log.info(jobList.toString());
