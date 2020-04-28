@@ -44,4 +44,22 @@
         from job left join job_classes on job.job_classes_id = job_classes.job_classes_id
         where recruiter_id = #{userId}
     </select>
+
+    <insert id="sendFeedback">
+        insert into
+        feedback(js_id,feedback_content,feedback_send_time)
+        values (#{jsId},#{msg},CURRENT_TIMESTAMP())
+    </insert>
+
+    <select id="getFeedbackList" resultType="com.luoxd.graduation_project.domain.Feedback">
+        select *
+        from feedback
+        where 1 = 1
+        <if test="jsId != null and jsId != ''">
+            and js_id = #{jsId}
+        </if>
+        <if test="adminId != null and adminId != ''">
+            and admin_id = #{adminId}
+        </if>
+    </select>
 </mapper>

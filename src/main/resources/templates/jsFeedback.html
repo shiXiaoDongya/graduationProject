@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,6 +7,72 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
+<script type="text/javascript">
+    $(function(){
+        getFeedback();
+    });
+    function sendFeedback() {
+        var msg = document.getElementById("feedbackMsg").value;
+        if(msg){
+            $.ajax({
+                type: "POST",
+                url: "/sendFeedback",
+                data: {"msg": msg},
+                dataType: "JSON",
+                success: function (data) {
+                    if(data['success'] == true){
+                        document.getElementById("feedbackMsg").value = "";
+                        alert("留言提交成功");
+                        getFeedback();
+                    }else{
+                        alert("留言提交失败");
+                    }
+                }
+            });
+        }else{
+            alert("留言不能为空")
+        }
+    }
+
+    function getFeedback() {
+        $.ajax({
+            type: "POST",
+            url: "/getFeedback",
+            dataType: "JSON",
+            success: function (data) {
+                $("#feedbackBody").html("");
+                for (var i = 0; i < data.length; i++) {
+                    var feedbackId = data[i]['feedbackId'];
+                    var feedbackContent = data[i]['feedbackContent'];
+                    var feedbackSendTime = data[i]['feedbackSendTime'];
+                    var adminId = data[i]['adminId'];
+                    var state;
+                    if (adminId) {
+                        state = "已回复";
+                    } else {
+                        state = "待回复"
+                    }
+                    var feedbackReply = data[i]['feedbackReply'];
+                    if(!feedbackReply){
+                        feedbackReply = '';
+                    }
+                    var feedbackReplytime = data[i]['feedbackReplytime'];
+                    if(!feedbackReplytime){
+                        feedbackReplytime = '';
+                    }
+                    $("#feedbackBody").append("<tr >\n" +
+                        "                        <td >" + feedbackContent + "</td>\n" +
+                        "                        <td >" + feedbackSendTime + "</td>\n" +
+                        "                        <td >" + state + "</td>\n" +
+                        "                        <td >" + feedbackReply + "</td>\n" +
+                        "                        <td >" + feedbackReplytime + "</td>\n" +
+                        "                        <td><button class=\"btn btn-danger\" th:onclick=\"deleteFeedback(" + feedbackId + ")\">删除</button> </td>\n" +
+                        "                    </tr>");
+                }
+            }
+        });
+    }
+</script>
 <body>
 <div  style="width: 1275px;height: 1600px;padding-top: 50px;">
     <div class="panel panel-default" style="width: 60%;margin: 0 auto">
@@ -14,9 +80,9 @@
         反馈留言
     </div>
     <div class="panel panel-body">
-        <textarea style="width: 100%;height: 500px;resize: none"></textarea>
+        <textarea style="width: 100%;height: 500px;resize: none" id="feedbackMsg"></textarea>
         <div style="float: right;">
-            <button class="btn btn-primary" type="button">发送</button>
+            <button class="btn btn-primary" type="button" onclick="sendFeedback()">发送</button>
         </div>
     </div>
     </div>
@@ -40,23 +106,23 @@
                         <th>操作</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>反馈测试1</td>
-                        <td>2020-04-19 20:56:03</td>
-                        <td>已回复</td>
-                        <td>回复测试1</td>
-                        <td>2020-04-19 21:06:03</td>
-                        <td><button class="btn btn-danger">删除</button> </td>
+                <tbody id="feedbackBody">
+                    <tr th:each="feedback:${feedbackList}">
+                        <td th:text="${feedback.feedbackContent}">反馈测试1</td>
+                        <td th:text="${feedback.feedbackSendTime}">2020-04-19 20:56:03</td>
+                        <td th:text="${feedback.adminId == null?'待回复':'已回复'}">已回复</td>
+                        <td th:text="${feedback.feedbackReply}">回复测试1</td>
+                        <td th:text="${feedback.feedbackReplytime}" >2020-04-19 21:06:03</td>
+                        <td><button class="btn btn-danger" th:onclick="deleteFeedback([[${feedback.feedbackId}]])">删除</button> </td>
                     </tr>
-                    <tr>
-                        <td>反馈测试2</td>
-                        <td>2020-04-19 20:58:44</td>
-                        <td>待回复</td>
-                        <td></td>
-                        <td></td>
-                        <td><button class="btn btn-danger">删除</button> </td>
-                    </tr>
+<!--                    <tr>-->
+<!--                        <td>反馈测试2</td>-->
+<!--                        <td>2020-04-19 20:58:44</td>-->
+<!--                        <td>待回复</td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td><button class="btn btn-danger">删除</button> </td>-->
+<!--                    </tr>-->
                 </tbody>
             </table>
             </div>

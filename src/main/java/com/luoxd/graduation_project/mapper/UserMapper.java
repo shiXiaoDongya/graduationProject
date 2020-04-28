@@ -32,4 +32,8 @@ public interface UserMapper {
     Recruiter checkReUsername(String username);
 
     List<Job> queryJobListByReId(Integer userId);
+
+    Integer sendFeedback(Integer jsId, String msg);
+
+    List<Feedback> getFeedbackList(Integer jsId, Integer adminId);
 }

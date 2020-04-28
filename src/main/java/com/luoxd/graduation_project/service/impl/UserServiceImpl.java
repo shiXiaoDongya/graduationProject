@@ -116,4 +116,14 @@ public class UserServiceImpl implements UserService {
             return null;
         }
     }
+
+    @Override
+    public Integer sendFeedback(Integer jsId, String msg) {
+        return userMapper.sendFeedback(jsId,msg);
+    }
+
+    @Override
+    public List<Feedback> getFeedbackList(Integer jsId, Integer adminId) {
+        return userMapper.getFeedbackList(jsId,adminId);
+    }
 }

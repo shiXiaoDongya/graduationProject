@@ -3298,3 +3298,646 @@ If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyI
 掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
 3、时间要求：
 需要能进行连续6个月以上的实习。, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=本科, salary=2800, reCompanyId=3, tagsStr=null, tags=[javascript, 前端ui, php, web开发, java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权])
+15:10:09.427 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10564 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+15:10:09.433 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+15:10:09.779 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:10:09.779 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:10:11.319 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+15:10:11.333 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+15:10:11.333 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:10:11.334 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+15:10:11.497 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:10:11.497 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1718 ms
+15:10:12.272 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:10:12.355 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+15:10:12.686 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:10:12.723 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+15:10:12.745 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+15:10:12.749 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.173 seconds (JVM running for 8.932)
+15:10:40.799 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:10:40.800 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:10:40.817 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+15:10:42.097 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:10:42.102 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:10:42.360 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:11:03.297 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+16:34:51.414 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11792 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:34:51.420 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:34:51.529 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:34:51.529 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:34:53.575 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:34:53.590 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:34:53.591 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:34:53.591 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:34:53.742 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:34:53.742 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2212 ms
+16:34:54.447 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:34:54.519 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+16:34:55.342 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:34:55.383 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+16:34:55.410 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+16:34:55.413 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.185 seconds (JVM running for 7.783)
+16:35:04.660 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:35:04.661 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:35:04.702 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 41 ms
+16:35:09.640 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+16:35:09.664 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:35:09.666 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:35:09.807 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:46:02.148 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8708 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:46:02.153 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:46:02.236 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:46:02.236 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:46:04.063 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:46:04.076 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:46:04.077 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:46:04.077 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:46:04.214 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:46:04.215 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1978 ms
+16:46:04.803 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:46:04.882 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+16:46:05.159 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:46:05.195 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+16:46:05.222 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+16:46:05.225 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.269 seconds (JVM running for 6.485)
+16:47:55.500 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:47:55.501 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:47:55.515 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+16:48:03.160 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - 21345
+555
+16:48:30.636 [http-nio-8281-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:48:30.641 [http-nio-8281-exec-4] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+16:48:30.808 [http-nio-8281-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:48:36.084 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+16:49:21.401 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - 第一，哈哈；
+第二，？？？’
+16:57:52.557 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:57:52.566 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:57:52.579 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:58:31.515 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8708 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:58:31.516 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:58:33.783 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+16:58:33.955 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:58:33.957 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:58:33.958 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:58:33.958 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:58:34.078 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:58:34.080 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2541 ms
+16:58:34.464 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:58:34.490 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+16:58:34.815 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:58:34.830 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+16:58:34.833 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+16:58:34.833 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 3.956 seconds (JVM running for 756.08)
+16:58:34.835 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:58:43.577 [Thread-18] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:58:48.773 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8708 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:58:48.774 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:58:49.820 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+16:58:51.042 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:58:51.044 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:58:51.045 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:58:51.046 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:58:52.420 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:58:52.421 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3644 ms
+16:58:55.108 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.luoxd.graduation_project.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+16:58:55.109 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:58:56.944 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:59:01.142 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.luoxd.graduation_project.web.UserController required a bean of type 'com.luoxd.graduation_project.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.luoxd.graduation_project.service.UserService' in your configuration.
+
+16:59:04.530 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8708 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:59:04.531 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:59:05.442 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+16:59:05.556 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:59:05.559 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:59:05.559 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:59:05.560 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:59:05.650 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:59:05.651 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1115 ms
+16:59:06.099 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:59:06.154 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+16:59:06.611 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:59:06.834 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+16:59:06.840 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+16:59:06.842 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 2.381 seconds (JVM running for 788.088)
+16:59:06.853 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:59:46.486 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 856 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+16:59:46.490 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+16:59:46.618 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:59:46.618 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:59:52.562 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+16:59:52.575 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+16:59:52.575 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:59:52.576 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:59:52.723 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:59:52.724 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6106 ms
+16:59:54.129 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:59:54.204 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+16:59:54.506 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:59:54.550 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+16:59:54.574 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+16:59:54.577 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 14.625 seconds (JVM running for 23.743)
+17:00:26.389 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:00:26.392 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:00:26.404 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+17:00:38.842 [http-nio-8281-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:00:38.846 [http-nio-8281-exec-4] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:00:51.882 [http-nio-8281-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:00:58.397 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+17:01:07.543 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - 12345
+17:01:13.068 [http-nio-8281-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'feedback_send_time' doesn't have a default value
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into         feedback(js_id,feedback_content)         values (?,?)
+### Cause: java.sql.SQLException: Field 'feedback_send_time' doesn't have a default value
+; Field 'feedback_send_time' doesn't have a default value; nested exception is java.sql.SQLException: Field 'feedback_send_time' doesn't have a default value] with root cause
+java.sql.SQLException: Field 'feedback_send_time' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy73.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy77.sendFeedback(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.sendFeedback(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.UserServiceImpl.sendFeedback(UserServiceImpl.java:122)
+	at com.luoxd.graduation_project.web.UserController.sendFeedback(UserController.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+17:01:36.027 [Thread-40] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:01:36.029 [Thread-40] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:01:36.040 [Thread-40] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:01:37.226 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 856 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+17:01:37.227 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+17:01:37.741 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+17:01:37.851 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+17:01:37.853 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+17:01:37.853 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:01:37.853 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:01:37.905 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:01:37.906 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 674 ms
+17:01:38.185 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:01:38.218 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+17:01:38.499 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:01:38.549 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+17:01:38.556 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+17:01:38.585 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.437 seconds (JVM running for 127.749)
+17:01:38.589 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:01:47.131 [Thread-47] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:01:51.746 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 856 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+17:01:51.746 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+17:01:52.419 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+17:01:52.543 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+17:01:52.544 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+17:01:52.544 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:01:52.544 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:01:52.606 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:01:52.607 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 856 ms
+17:01:52.871 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:01:52.886 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+17:01:53.029 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:01:53.042 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+17:01:53.045 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+17:01:53.045 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.366 seconds (JVM running for 142.209)
+17:01:53.046 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:03:06.907 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 12780 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+17:03:06.913 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+17:03:06.996 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:03:06.997 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:03:08.755 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+17:03:08.764 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+17:03:08.765 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:03:08.765 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:03:08.883 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:03:08.884 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1887 ms
+17:03:09.457 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:03:09.517 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+17:03:09.781 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:03:09.819 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+17:03:09.845 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+17:03:09.849 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 3.933 seconds (JVM running for 6.104)
+17:03:33.352 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:03:33.352 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:03:33.360 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+17:03:34.183 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:03:34.187 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:03:34.497 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:03:42.745 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+17:03:50.320 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+17:03:50.355 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+17:03:50.363 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+17:03:58.231 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - 1231456
+17:03:58.322 [http-nio-8281-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'feedback_reply' doesn't have a default value
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into         feedback(js_id,feedback_content,feedback_send_time)         values (?,?,CURRENT_TIMESTAMP())
+### Cause: java.sql.SQLException: Field 'feedback_reply' doesn't have a default value
+; Field 'feedback_reply' doesn't have a default value; nested exception is java.sql.SQLException: Field 'feedback_reply' doesn't have a default value] with root cause
+java.sql.SQLException: Field 'feedback_reply' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy73.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy77.sendFeedback(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.sendFeedback(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.UserServiceImpl.sendFeedback(UserServiceImpl.java:122)
+	at com.luoxd.graduation_project.web.UserController.sendFeedback(UserController.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+17:06:58.020 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - 1231456
+17:10:04.333 [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:10:04.335 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:10:04.348 [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:10:06.403 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 12780 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+17:10:06.403 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+17:10:07.026 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+17:10:07.100 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+17:10:07.100 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+17:10:07.101 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:10:07.101 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:10:07.141 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:10:07.141 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 732 ms
+17:10:07.329 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:10:07.350 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+17:10:07.539 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:10:07.562 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+17:10:07.565 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+17:10:07.566 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.237 seconds (JVM running for 423.814)
+17:10:07.568 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+17:10:07.579 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:10:07.580 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:10:07.584 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+17:10:07.587 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - 66666
+17:10:07.587 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+17:10:07.588 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:10:07.595 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+17:17:51.968 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 12648 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+17:17:51.971 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+17:17:52.778 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:17:52.779 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:17:54.841 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+17:17:54.852 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+17:17:54.853 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:17:54.854 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+17:17:54.988 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:17:54.989 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2210 ms
+17:17:55.641 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:17:55.721 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+17:17:56.314 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:17:56.468 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+17:17:56.500 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+17:17:56.504 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.229 seconds (JVM running for 8.861)
+17:18:02.782 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:18:02.782 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:18:02.794 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+17:18:30.481 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+17:18:30.517 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:18:30.522 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+17:18:30.779 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:20:16.752 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - 123156
+17:21:04.449 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - 反馈测试
+23:00:09.740 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10948 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+23:00:09.747 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+23:00:09.954 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+23:00:09.955 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23:00:11.713 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+23:00:11.729 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+23:00:11.729 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:00:11.729 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:00:11.874 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:00:11.874 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1919 ms
+23:00:12.548 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:00:12.621 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:00:13.700 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:00:13.757 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+23:00:13.784 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+23:00:13.789 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.494 seconds (JVM running for 8.136)
+23:00:46.059 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:00:46.060 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:00:46.132 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 71 ms
+23:00:50.976 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+23:00:51.008 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:00:51.011 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:00:51.202 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:00:56.327 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:08:56.550 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11004 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+23:08:56.554 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+23:08:56.633 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+23:08:56.633 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23:08:58.409 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+23:08:58.420 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+23:08:58.421 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:08:58.421 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:08:58.570 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:08:58.570 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1937 ms
+23:08:59.088 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:08:59.152 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:08:59.504 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:08:59.548 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+23:08:59.577 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+23:08:59.581 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.047 seconds (JVM running for 5.894)
+23:09:22.361 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:09:22.362 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:09:22.370 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+23:09:27.096 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+23:09:27.115 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:09:27.118 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:09:27.245 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:09:31.717 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:10:03.466 [http-nio-8281-exec-9] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:10:53.031 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=1, feedbackReply=回复, feedbackReplytime=2020-04-28 00:00:00)]
+23:11:07.908 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=1, feedbackReply=回复, feedbackReplytime=2020-04-28 00:00:00)]
+23:11:29.876 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:12:19.451 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - 再测试测试
+23:12:28.558 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:14:16.372 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:14:16.763 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:14:20.074 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - 666
+23:14:29.420 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:17:22.879 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+23:17:22.880 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:17:22.889 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+23:17:24.986 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11004 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+23:17:24.987 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+23:17:25.778 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+23:17:25.879 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+23:17:25.880 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+23:17:25.880 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:17:25.881 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:17:25.920 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:17:25.921 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 928 ms
+23:17:26.155 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:17:26.174 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:17:26.354 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:17:26.378 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+23:17:26.382 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+23:17:26.383 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.533 seconds (JVM running for 512.683)
+23:17:26.386 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+23:24:32.222 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 1772 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+23:24:32.226 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+23:24:32.346 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+23:24:32.347 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23:24:34.175 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+23:24:34.188 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+23:24:34.189 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:24:34.189 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:24:34.342 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:24:34.342 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1995 ms
+23:24:34.955 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:24:35.037 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:24:35.388 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:24:35.429 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+23:24:35.453 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+23:24:35.456 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.407 seconds (JVM running for 6.538)
+23:25:33.212 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:25:33.213 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:25:33.220 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+23:25:47.586 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:25:47.592 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:25:48.037 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:25:52.664 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+23:27:43.157 [http-nio-8281-exec-9] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:js
+23:27:48.306 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+23:29:51.357 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10800 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+23:29:51.362 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+23:29:51.490 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+23:29:51.490 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+23:29:53.000 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+23:29:53.014 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+23:29:53.014 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:29:53.015 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+23:29:53.152 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:29:53.152 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1661 ms
+23:29:53.777 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+23:29:53.838 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+23:29:54.180 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:29:54.220 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+23:29:54.242 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+23:29:54.245 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.225 seconds (JVM running for 6.234)
+23:30:11.310 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:30:11.311 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+23:30:11.329 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+23:30:16.778 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+23:30:16.802 [http-nio-8281-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:30:16.804 [http-nio-8281-exec-6] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+23:30:16.956 [http-nio-8281-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:33:35.133 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:34:16.583 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+23:35:03.178 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]

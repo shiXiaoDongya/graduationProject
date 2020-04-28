@@ -1,5 +1,6 @@
 package com.luoxd.graduation_project.web;
 
+import com.luoxd.graduation_project.domain.Feedback;
 import com.luoxd.graduation_project.domain.Job;
 import com.luoxd.graduation_project.domain.JobSeeker;
 import com.luoxd.graduation_project.domain.Recruiter;
@@ -271,9 +272,33 @@ public class UserController {
         return "jsFeedback";
     }
 
-    @RequestMapping("turnJsRecommend")
+
+    @RequestMapping("/turnJsRecommend")
     public String turnJsRecommend(HttpServletRequest request){
         return "jsRecommend";
+    }
+
+    @RequestMapping("/sendFeedback")
+    @ResponseBody
+    public String sendFeedback(HttpServletRequest request){
+        String msg = request.getParameter("msg");
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
+        log.info(msg);
+        Integer resultCode = userService.sendFeedback(jsId,msg);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
+
+    @RequestMapping("/getFeedback")
+    @ResponseBody
+    public List<Feedback> getFeedback(HttpServletRequest request){
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
+        List<Feedback> feedbackList = userService.getFeedbackList(jsId,null);
+        log.info(feedbackList.toString());
+        return feedbackList;
     }
 
 }

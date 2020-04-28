@@ -24,4 +24,8 @@ public interface UserService {
     Recruiter checkReUsername(String username);
 
     List<JobResponse> queryJobListByReId(Integer userId);
+
+    Integer sendFeedback(Integer jsId, String msg);
+
+    List<Feedback> getFeedbackList(Integer jsId, Integer adminId);
 }
