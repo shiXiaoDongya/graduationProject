@@ -18,10 +18,18 @@
             data: $('#loginForm').serialize(),
             success: function (data) {
                 if(data['success']==="true"){
-                    if(data['userType']==="js"){
-                        window.location.href="/getLoginIndex";
-                    }else{
-                        window.location.href="/getReIndex";
+                    alert(data['userType']);
+                    switch (data['userType']) {
+                        case "js":
+                            window.location.href="/getLoginIndex";
+                            break;
+                        case "re":
+                             window.location.href="/getReIndex";
+                             break;
+                        case "admin":
+                            window.location.href="/getAdminIndex";
+                            break;
+                        default:break;
                     }
                 }else{
                     alert(data['msg']);
@@ -100,7 +108,7 @@
                 </label>
                 <label for="js" class="col-md-2">
                     管理员
-                    <input type="radio" id="admin" name="admin" value="admin">
+                    <input type="radio" id="admin" name="id" value="admin">
                 </label>
             </div>
             <div class="form-group" id="buttonDiv">

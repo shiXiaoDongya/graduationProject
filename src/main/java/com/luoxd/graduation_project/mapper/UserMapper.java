@@ -36,4 +36,6 @@ public interface UserMapper {
     Integer sendFeedback(Integer jsId, String msg);
 
     List<Feedback> getFeedbackList(Integer jsId, Integer adminId);
+
+    Admin adminLogin(String username, String password);
 }

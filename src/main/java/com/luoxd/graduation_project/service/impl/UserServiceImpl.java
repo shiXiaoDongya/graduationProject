@@ -126,4 +126,9 @@ public class UserServiceImpl implements UserService {
     public List<Feedback> getFeedbackList(Integer jsId, Integer adminId) {
         return userMapper.getFeedbackList(jsId,adminId);
     }
+
+    @Override
+    public Admin adminLogin(String username, String password) {
+        return userMapper.adminLogin(username,password);
+    }
 }

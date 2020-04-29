@@ -62,4 +62,10 @@
             and admin_id = #{adminId}
         </if>
     </select>
+
+    <select id="adminLogin" resultType="com.luoxd.graduation_project.domain.Admin">
+        select *
+        from admin
+        where admin_username = #{username} and admin_password = #{password}
+    </select>
 </mapper>

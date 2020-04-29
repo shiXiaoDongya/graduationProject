@@ -1,9 +1,6 @@
 package com.luoxd.graduation_project.web;
 
-import com.luoxd.graduation_project.domain.Feedback;
-import com.luoxd.graduation_project.domain.Job;
-import com.luoxd.graduation_project.domain.JobSeeker;
-import com.luoxd.graduation_project.domain.Recruiter;
+import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
@@ -188,21 +185,51 @@ public class UserController {
         String password = request.getParameter("password");
         String id = request.getParameter("id");
         log.info("====username:"+username+",password:"+password +",id:"+id);
-        if("js".equals(id)){
-            JobSeeker js = userService.jobSeekerLogin(username,password);
-            if(js != null){
-                request.getSession().setAttribute("userType","js");
-                request.getSession().setAttribute("userId",js.getJsId());
-                request.getSession().setAttribute("userName",js.getJsUsername());
-                return "{\"success\":\"true\",\"userType\":\"js\",\"msg\":\"\"}";
-            }
-        }else{
-            Recruiter re = userService.recruiterLogin(username,password);
-            request.getSession().setAttribute("userType","re");
-            request.getSession().setAttribute("userId",re.getReId());
-            request.getSession().setAttribute("userName",re.getReUsername());
-            return "{\"success\":\"true\",\"userType\":\"re\",\"msg\":\"\"}";
+        switch(id){
+            case "js":
+                JobSeeker js = userService.jobSeekerLogin(username,password);
+                if(js != null){
+                    request.getSession().setAttribute("userType","js");
+                    request.getSession().setAttribute("userId",js.getJsId());
+                    request.getSession().setAttribute("userName",js.getJsUsername());
+                    return "{\"success\":\"true\",\"userType\":\"js\",\"msg\":\"\"}";
+                }
+                break;
+            case "re":
+                Recruiter re = userService.recruiterLogin(username,password);
+                if(re != null) {
+                    request.getSession().setAttribute("userType", "re");
+                    request.getSession().setAttribute("userId", re.getReId());
+                    request.getSession().setAttribute("userName", re.getReUsername());
+                    return "{\"success\":\"true\",\"userType\":\"re\",\"msg\":\"\"}";
+                }
+                break;
+            case "admin":
+                Admin admin = userService.adminLogin(username,password);
+                if(admin != null) {
+                    request.getSession().setAttribute("userType", "admin");
+                    request.getSession().setAttribute("userId", admin.getAdminId());
+                    request.getSession().setAttribute("userName", admin.getAdminUsername());
+                    return "{\"success\":\"true\",\"userType\":\"admin\",\"msg\":\"\"}";
+                }
+                break;
+            default:;
         }
+//        if("js".equals(id)){
+//            JobSeeker js = userService.jobSeekerLogin(username,password);
+//            if(js != null){
+//                request.getSession().setAttribute("userType","js");
+//                request.getSession().setAttribute("userId",js.getJsId());
+//                request.getSession().setAttribute("userName",js.getJsUsername());
+//                return "{\"success\":\"true\",\"userType\":\"js\",\"msg\":\"\"}";
+//            }
+//        }else{
+//            Recruiter re = userService.recruiterLogin(username,password);
+//            request.getSession().setAttribute("userType","re");
+//            request.getSession().setAttribute("userId",re.getReId());
+//            request.getSession().setAttribute("userName",re.getReUsername());
+//            return "{\"success\":\"true\",\"userType\":\"re\",\"msg\":\"\"}";
+//        }
 //        HttpSession session = request.getSession();
 //        session.setAttribute("user","test");
         return "{\"success\":\"false\",\"msg\":\"账号或密码错误！\"}";
@@ -223,6 +250,10 @@ public class UserController {
         return "reIndex";
     }
 
+    @RequestMapping("/getAdminIndex")
+    public String getAdminIndex(HttpServletRequest request){
+        return "adminIndex";
+    }
 
     @RequestMapping("/jsPersonCenter")
     public String jsPersonCenter(HttpServletRequest request){
@@ -266,6 +297,7 @@ public class UserController {
     public String turnReInfo(HttpServletRequest request){
         return "reInfo";
     }
+
 
     @RequestMapping("/turnJsFeedback")
     public String turnJsFeedback(HttpServletRequest request){
