@@ -38,4 +38,8 @@ public interface UserMapper {
     List<Feedback> getFeedbackList(Integer jsId, Integer adminId);
 
     Admin adminLogin(String username, String password);
+
+    List<Feedback> getNoReplyFeedbackList();
+
+    Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId);
 }

@@ -68,4 +68,16 @@
         from admin
         where admin_username = #{username} and admin_password = #{password}
     </select>
+
+    <select id="getNoReplyFeedbackList" resultType="com.luoxd.graduation_project.domain.Feedback">
+        select *
+        from feedback
+        where admin_id IS NULL
+    </select>
+
+    <update id="replyFeedback">
+        update feedback
+        set admin_id = #{adminId},feedback_reply = #{replyMsg}, feedback_replytime = CURRENT_TIMESTAMP()
+        where feedback_id = #{feedbackId}
+    </update>
 </mapper>

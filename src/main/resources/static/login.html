@@ -18,7 +18,6 @@
             data: $('#loginForm').serialize(),
             success: function (data) {
                 if(data['success']==="true"){
-                    alert(data['userType']);
                     switch (data['userType']) {
                         case "js":
                             window.location.href="/getLoginIndex";

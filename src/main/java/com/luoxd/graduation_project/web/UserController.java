@@ -333,4 +333,38 @@ public class UserController {
         return feedbackList;
     }
 
+    @RequestMapping("turnAdminFeedback")
+    public String turnAdminFeedback(HttpServletRequest request){
+        return "adminFeedback";
+    }
+
+    @RequestMapping("/getMyFeedback")
+    @ResponseBody
+    public List<Feedback> getMyFeedback(HttpServletRequest request){
+        Integer adminId = (Integer)request.getSession().getAttribute("userId");
+        List<Feedback> myFeedbackList = userService.getFeedbackList(null,adminId);
+        return myFeedbackList;
+    }
+
+    @RequestMapping("getNoReplyFeedback")
+    @ResponseBody
+    public List<Feedback> getNoReplyFeedback(HttpServletRequest request){
+        List<Feedback> noReplyFeedbackList = userService.getNoReplyFeedbackList();
+        return noReplyFeedbackList;
+    }
+
+    @RequestMapping("replyFeedback")
+    @ResponseBody
+    public String replyFeedback(HttpServletRequest request){
+        Integer adminId = (Integer)request.getSession().getAttribute("userId");
+        Integer feedbackId = Integer.parseInt(request.getParameter("feedbackId"));
+        String replyMsg = request.getParameter("msg");
+        log.info("feedbackId:"+feedbackId+",replyMsg:"+replyMsg);
+        Integer resultCode = userService.replyFeedback(adminId,replyMsg,feedbackId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
 }

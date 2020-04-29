@@ -131,4 +131,14 @@ public class UserServiceImpl implements UserService {
     public Admin adminLogin(String username, String password) {
         return userMapper.adminLogin(username,password);
     }
+
+    @Override
+    public List<Feedback> getNoReplyFeedbackList() {
+        return userMapper.getNoReplyFeedbackList();
+    }
+
+    @Override
+    public Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId) {
+        return userMapper.replyFeedback(adminId,replyMsg,feedbackId);
+    }
 }
