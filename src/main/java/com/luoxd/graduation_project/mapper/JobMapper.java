@@ -54,4 +54,8 @@ public interface JobMapper {
     Integer read(Integer jsId, Integer reId, Integer jobId);
 
     Integer insertChats(ChatRequest chatRequest);
+
+    List<JobCollection> getCollection(Integer jsId, Integer jobId);
+
+    Integer jobCollection(Integer jsId, Integer jobId);
 }

@@ -278,4 +278,19 @@
         #{isRead}
         )
     </insert>
+
+    <select id="getCollection" resultType="com.luoxd.graduation_project.domain.JobCollection">
+        select *
+        from job_collection
+        where js_id = #{jsId}
+        <if test="jobId != null and jobId != ''">
+            and job_id = #{jobId}
+        </if>
+    </select>
+
+    <insert id="jobCollection">
+        insert into
+        job_collection(js_id,job_id)
+        values (#{jsId},#{jobId})
+    </insert>
 </mapper>

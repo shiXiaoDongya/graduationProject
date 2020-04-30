@@ -55,9 +55,10 @@ public class JobController {
             Integer totalPage = (int) Math.ceil(i/PAGESIZE);
             searchRequest.setTotalPage(totalPage);
         }
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
         log.info(searchRequest.toString());
         //String keyword = searchRequest.getKeyword();
-        List<JobResponse> jobList = jobService.queryJobList(searchRequest);
+        List<JobResponse> jobList = jobService.queryJobList(jsId,searchRequest);
         //log.info(jobList.toString());
         request.setAttribute("jobList",jobList);
         request.setAttribute("searchRequest",searchRequest);
@@ -80,7 +81,8 @@ public class JobController {
             log.info("in========"+jobId.toString());
             SearchRequest searchRequest = new SearchRequest();
             searchRequest.setJobId(jobId);
-            List<JobResponse> job = jobService.queryJobList(searchRequest);
+            Integer jsId = (Integer)request.getSession().getAttribute("userId");
+            List<JobResponse> job = jobService.queryJobList(jsId,searchRequest);
             log.info("=========="+job.get(0).toString());
             request.setAttribute("job",job.get(0));
         }
@@ -184,6 +186,19 @@ public class JobController {
             return "{\"success\":\"true\"}";
         }else {
             return "{\"success\":\"false\"}";
+        }
+    }
+
+    @RequestMapping(value="jobCollection",method = RequestMethod.GET)
+    @ResponseBody
+    public String jobCollection(HttpServletRequest request){
+        Integer jsId = Integer.parseInt(request.getParameter("jsId"));
+        Integer jobId = Integer.parseInt(request.getParameter("jobId"));
+        Integer resultCode = jobService.jobCollection(jsId,jobId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
         }
     }
 }

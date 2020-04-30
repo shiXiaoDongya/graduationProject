@@ -65,7 +65,7 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
-    public List<JobResponse> queryJobList(SearchRequest searchRequest) {
+    public List<JobResponse> queryJobList(Integer jsId, SearchRequest searchRequest) {
         List<JobResponse> jobResponseList = new ArrayList<>();
         List<Job> jobList = jobMapper.queryJobList(searchRequest);
         if(jobList != null) {
@@ -103,7 +103,16 @@ public class JobServiceImpl implements JobService {
                     companyTags = Arrays.asList(tempCompanyTags);
                 }
                 jobResponse.setCompanyTags(companyTags);
-
+                if(jsId == null){
+                    jobResponse.setIsCollected(0);
+                }else{
+                    List<JobCollection> jobCollectionList  = jobMapper.getCollection(jsId,jobResponse.getJobId());
+                    if(jobCollectionList.size() > 0){
+                        jobResponse.setIsCollected(1);
+                    }else{
+                        jobResponse.setIsCollected(0);
+                    }
+                }
                 jobResponseList.add(jobResponse);
             }
             return jobResponseList;
@@ -174,5 +183,10 @@ public class JobServiceImpl implements JobService {
     @Override
     public Integer insertChats(ChatRequest chatRequest) {
         return jobMapper.insertChats(chatRequest);
+    }
+
+    @Override
+    public Integer jobCollection(Integer jsId, Integer jobId) {
+        return jobMapper.jobCollection(jsId,jobId);
     }
 }

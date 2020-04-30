@@ -55,4 +55,6 @@ public class JobResponse {
     private String sizeConditionStr;
 
     private List<String> companyTags;
+
+    private Integer isCollected;
 }

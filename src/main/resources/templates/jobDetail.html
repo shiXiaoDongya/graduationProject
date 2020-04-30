@@ -22,6 +22,29 @@
     function chat(jobId,reId){
         window.location.href="/job/chat";
     }
+    function jobCollection(jsId,jobId) {
+        document.getElementById("collectButton").disabled=true;
+        if(jsId == null){
+            alert("请先进行登录");
+            document.getElementById("collectButton").disabled=false;
+        }else{
+            $.ajax({
+                type: "GET",
+                url: "/job/jobCollection",
+                data: {"jsId":jsId,"jobId":jobId},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data) {
+                   if(data['success'] == true){
+                       alert("收藏成功");
+                       window.location.href = "/job/getJobDetail?jobId="+jobId;
+                   }else{
+                       alert("收藏失败");
+                   }
+                }
+            });
+        }
+    }
 </script>
 <body>
 <header id="header" class="header-scrolled">
@@ -45,8 +68,8 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
-                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="../register.html">注册</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="../login.html">登录</a></li>
                     <li style="border: 1px white solid" th:if="${session.userName != null}"><a href="#" th:text="${session.userName}"></a>
                         <ul style="margin-top: 0px">
                             <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
@@ -85,7 +108,8 @@
                 <p ><span th:text="${job.companyName}">公司名称</span>　<span th:text="${job.reCompanyPosition}">所属职位</span></p>
             </div>
             <div style="float: right">
-                <button class="btn btn-default" type="button">感兴趣</button>
+                <button class="btn btn-default" type="button" th:if="${job.isCollected == 1}">取消收藏</button>
+                <button class="btn btn-default" type="button" th:if="${job.isCollected == 0}" th:onclick="jobCollection([[${session.userId}]],[[${job.jobId}]])" id="collectButton">感兴趣</button>
                 <button class="btn btn-default" type="button">举报</button>
             </div>
         </div>

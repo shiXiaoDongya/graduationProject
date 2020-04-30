@@ -13,7 +13,7 @@ import java.util.List;
 public interface JobService {
     List<ClassesResonse> queryClassesList();
 
-    List<JobResponse> queryJobList(SearchRequest searchRequest);
+    List<JobResponse> queryJobList(Integer jsId,SearchRequest searchRequest);
 
     List<Classes> queryClassesList2();
 
@@ -32,4 +32,6 @@ public interface JobService {
     Integer addOrUpdateJob(JobRequest jobRequest);
 
     Integer insertChats(ChatRequest chatRequest);
+
+    Integer jobCollection(Integer jsId, Integer jobId);
 }
