@@ -149,6 +149,7 @@
         left join company on recruiter.re_company_id = company.company_id
         where chat.js_id = #{userId}
         group by chat.re_id,chat.job_id
+        order by max(chat.chat_send_time)
     </select>
 
     <select id="queryReChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
@@ -156,6 +157,7 @@
         from chat left join job_seeker on chat.js_id = job_seeker.js_id
         where chat.re_id = #{userId}
         group by chat.js_id,chat.job_id
+        order by max(chat.chat_send_time)
     </select>
 
     <select id="showChatContent" resultType="com.luoxd.graduation_project.domain.Chat">

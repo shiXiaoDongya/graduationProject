@@ -70,6 +70,8 @@
         ).done(function () {
             if(i ===  1){
                 getNewUser();
+            }else{
+                $("#newUserUl").html("");
             }
         })
     }
@@ -172,13 +174,14 @@
             {
                 $("#" + id).click();
             }else{
-                $.ajax({
-                    type: "GET",
-                    url: "/job/getNewUser",
-                    data: {"reId": reId, "jobId": jobId},
-                    dataType: "JSON",
-                    success: function (data) {
-                        //var chatList = data['chatList'];
+                $.when(
+                    $.ajax({
+                        type: "GET",
+                        url: "/job/getNewUser",
+                        data: {"reId": reId, "jobId": jobId},
+                        dataType: "JSON",
+                        success: function (data) {
+                            //var chatList = data['chatList'];
                             var reId = data['reId'];
                             var jobId = data['jobId'];
                             var reRealname = data['reRealname'];
@@ -186,20 +189,24 @@
                             var reCompanyPosition = data['reCompanyPosition'];
                             var jobName = data['jobName'];
                             var jobId = data['jobId'];
-                            $("#newUserUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat2(this,\'"+reId+"\',\'"+jobId+"\',\'"+reRealname+"\',\'"+companyName+"\',\'"+reCompanyPosition+"\',\'"+jobName+"\')\" >\n" +
+                            $("#newUserUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat2(this,\'" + reId + "\',\'" + jobId + "\',\'" + reRealname + "\',\'" + companyName + "\',\'" + reCompanyPosition + "\',\'" + jobName + "\')\" >\n" +
                                 "                    <div style=\"height:100px;\">\n" +
                                 "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
                                 "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                                 "                        </div>\n" +
                                 "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                                "                            <p><span> "+reRealname+"</span> </p>\n" +
-                                "                            <p><span >"+companyName+"</span> 丨 <span>"+reCompanyPosition+"</span></p>\n" +
+                                "                            <p><span> " + reRealname + "</span> </p>\n" +
+                                "                            <p><span >" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
                                 "                        </div>\n" +
                                 "                    </div>\n" +
                                 "                </li>");
                         }
+                    })
+                ).done(function () {
+                    $("#" + id).click();
                 })
             }
+
         }
         i++
     }
