@@ -12,6 +12,7 @@ public class Chat {
     private String companyName;
     private String reCompanyPosition;
     private Integer jobId;
+    private String jobName;
     private String chatContent;
     private String chatSendTime;
     private Integer isJsSend;

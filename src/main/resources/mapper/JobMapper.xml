@@ -160,10 +160,11 @@
 
     <select id="showChatContent" resultType="com.luoxd.graduation_project.domain.Chat">
         select chat.chat_id,chat.js_id,job_seeker.js_realname,chat.re_id,recruiter.re_realname,company.company_name,
-        recruiter.re_company_position,chat.job_id,chat.chat_content,chat.chat_send_time,chat.is_js_send
+        recruiter.re_company_position,chat.job_id,job.job_name,chat.chat_content,chat.chat_send_time,chat.is_js_send
         from chat left join job_seeker on chat.js_id = job_seeker.js_id
         left join recruiter on chat.re_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
+        left join job on chat.job_id = job.job_id
         where chat.js_id = #{jsId} and chat.re_id = #{reId} and chat.job_id = #{jobId} and chat.is_read = 1
     </select>
 
@@ -293,4 +294,13 @@
         job_collection(js_id,job_id)
         values (#{jsId},#{jobId})
     </insert>
+
+    <select id="getNewChat" resultType="com.luoxd.graduation_project.response.ChatResponse">
+        select recruiter.re_id,recruiter.re_realname,company.company_name,
+        recruiter.re_company_position,job.job_name
+        from  recruiter
+        left join company on recruiter.re_company_id = company.company_id
+        left join job on job.recruiter_id = recruiter.re_id
+        where recruiter.re_id = #{reId}
+    </select>
 </mapper>

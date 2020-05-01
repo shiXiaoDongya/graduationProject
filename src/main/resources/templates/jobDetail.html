@@ -20,7 +20,7 @@
 </style>
 <script type="text/javascript">
     function chat(jobId,reId){
-        window.location.href="/job/chat";
+        window.location.href="/job/chat?reId="+reId+"&jobId="+jobId;
     }
     function jobCollection(jsId,jobId) {
         document.getElementById("collectButton").disabled=true;

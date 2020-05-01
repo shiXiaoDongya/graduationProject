@@ -10,60 +10,66 @@
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
 <script type="text/javascript">
+    var i = 1;
     window.onload = function () {
         getChatUsers();
     }
-
     function getChatUsers(tempReId,tempJobId) {
         $("#usersUl").html("");
-        $.ajax({
-            type: "POST",
-            url: "/job/getChatUsers",
-            dataType: "JSON",
-            success: function(data) {
-                for(var i = 0; i < data.length; i++){
-                    var reId = data[i]['reId'];
-                    var jobId = data[i]['jobId'];
-                    var reRealname = data[i]['reRealname'];
-                    var notRead;
-                    if(data[i]['notRead']){
-                        notRead = data[i]['notRead'];
-                    }else{
-                        notRead = "";
-                    }
-                    var companyName;
-                    if(data[i]['reCompany']){
-                        companyName = data[i]['reCompany'];
-                    }else{
-                        companyName = "";
-                    }
-                    var reCompanyPosition = data[i]['reCompanyPosition'];
-                    if(tempReId === reId && tempJobId === jobId){
-                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
-                            "                    <div style=\"height:100px;\">\n" +
-                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
-                            "                        </div>\n" +
-                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                            "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
-                            "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
-                            "                        </div>\n" +
-                            "                    </div>\n" +
-                            "                </li>")
-                    }else {
-                        $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
-                            "                    <div style=\"height:100px;\">\n" +
-                            "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
-                            "                        </div>\n" +
-                            "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                            "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
-                            "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
-                            "                        </div>\n" +
-                            "                    </div>\n" +
-                            "                </li>")
+        $.when(
+            $.ajax({
+                type: "POST",
+                url: "/job/getChatUsers",
+                dataType: "JSON",
+                success: function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        var reId = data[i]['reId'];
+                        var jobId = data[i]['jobId'];
+                        var reRealname = data[i]['reRealname'];
+                        var notRead;
+                        if (data[i]['notRead']) {
+                            notRead = data[i]['notRead'];
+                        } else {
+                            notRead = "";
+                        }
+                        var companyName;
+                        if (data[i]['reCompany']) {
+                            companyName = data[i]['reCompany'];
+                        } else {
+                            companyName = "";
+                        }
+                        var reCompanyPosition = data[i]['reCompanyPosition'];
+                        if (tempReId === reId && tempJobId === jobId) {
+                            $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
+                                "                    <div style=\"height:100px;\">\n" +
+                                "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                        </div>\n" +
+                                "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                                "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
+                                "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </li>")
+                        } else {
+                            $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
+                                "                    <div style=\"height:100px;\">\n" +
+                                "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                        </div>\n" +
+                                "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                                "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
+                                "                            <p><span \">" + companyName + "</span> 丨 <span>" + reCompanyPosition + "</span></p>\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </li>")
+                        }
                     }
                 }
+            })
+        ).done(function () {
+            if(i ===  1){
+                getNewUser();
             }
         })
     }
@@ -84,15 +90,19 @@
                 dataType: "JSON",
                 success: function (data) {
                     //var chatList = data['chatList'];
-                    document.getElementById("reRealname").innerHTML = data[0]['reRealname'];
-                    document.getElementById("companyName").innerHTML = data[0]['companyName'];
-                    document.getElementById("reCompanyPosition").innerHTML = data[0]['reCompanyPosition'];
-                    for (var i = 0; i < data.length; i++) {
-                        $('#chatContent').append("<p class=\"chatTime\">" + data[i]['chatSendTime'] + "</p>");
-                        if (data[i]['isJsSend'] === 1) {
-                            $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
-                        } else {
-                            $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
+                    if(data.length>0){
+                        document.getElementById("reRealname").innerHTML = data[0]['reRealname'];
+                        document.getElementById("companyName").innerHTML = data[0]['companyName'];
+                        document.getElementById("reCompanyPosition").innerHTML = data[0]['reCompanyPosition'];
+                        document.getElementById("jobUrl").innerHTML = data[0]['jobName'];
+                        document.getElementById("jobUrl").setAttribute("href","/job/getJobDetail?jobId="+data[0]['jobId'])
+                        for (var i = 0; i < data.length; i++) {
+                            $('#chatContent').append("<p class=\"chatTime\">" + data[i]['chatSendTime'] + "</p>");
+                            if (data[i]['isJsSend'] === 1) {
+                                $('#chatContent').append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
+                            } else {
+                                $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">" + data[i]['chatContent'] + "</span></p>");
+                            }
                         }
                     }
                 }
@@ -149,6 +159,66 @@
                 }
             })
         }
+    }
+
+    function getNewUser() {
+        var reId = document.getElementById("reId").innerText;
+        var jobId = document.getElementById("jobId").innerText;
+        if(reId && jobId) {
+            var id = reId + "-" + jobId + "-li";
+            document.getElementById("reId").innerText = "";
+            document.getElementById("jobId").innerText = "";
+            if($("#" + id).length>0)
+            {
+                $("#" + id).click();
+            }else{
+                $.ajax({
+                    type: "GET",
+                    url: "/job/getNewUser",
+                    data: {"reId": reId, "jobId": jobId},
+                    dataType: "JSON",
+                    success: function (data) {
+                        //var chatList = data['chatList'];
+                            var reId = data['reId'];
+                            var jobId = data['jobId'];
+                            var reRealname = data['reRealname'];
+                            var companyName = data['reCompany'];
+                            var reCompanyPosition = data['reCompanyPosition'];
+                            var jobName = data['jobName'];
+                            var jobId = data['jobId'];
+                            $("#newUserUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat2(this,\'"+reId+"\',\'"+jobId+"\',\'"+reRealname+"\',\'"+companyName+"\',\'"+reCompanyPosition+"\',\'"+jobName+"\')\" >\n" +
+                                "                    <div style=\"height:100px;\">\n" +
+                                "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
+                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                        </div>\n" +
+                                "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
+                                "                            <p><span> "+reRealname+"</span> </p>\n" +
+                                "                            <p><span >"+companyName+"</span> 丨 <span>"+reCompanyPosition+"</span></p>\n" +
+                                "                        </div>\n" +
+                                "                    </div>\n" +
+                                "                </li>");
+                        }
+                })
+            }
+        }
+        i++
+    }
+    function showChat2(obj,reId,jobId,reRealname,companyName,reCompanyPosition,jobName) {
+        var li = document.getElementsByClassName("list-group-item");
+        for(var i = 0; i < li.length; i++){
+            li[i].style.border="";
+        }
+        obj.style.border = "1px blue solid";
+        document.getElementById("sendButton").dataset.reId = reId;
+        document.getElementById("sendButton").dataset.jobId = jobId;
+        $('#chatContent').html("");
+        document.getElementById("reRealname").innerHTML = reRealname;
+        document.getElementById("companyName").innerHTML = companyName;
+        document.getElementById("reCompanyPosition").innerHTML = reCompanyPosition;
+        document.getElementById("jobUrl").innerText = jobName;
+        document.getElementById("jobUrl").setAttribute("href","/job/getJobDetail?jobId="+jobId);
+        document.getElementById("noChatDiv").style.display = "none";
+        document.getElementById("chatDiv").style.display = "block";
     }
 </script>
 <style>
@@ -211,8 +281,14 @@
             <div class="panel-heading">
                 30天内联系人
             </div>
-            <ul class="list-group" id="usersUl">
+            <ul class="list-group" >
+                <div id="usersUl"></div>
+                <div id="newUserUl"></div>
+                <div id="reId" th:text="${reId}"></div>
+                <div id="jobId" th:text="${jobId}"></div>
             </ul>
+<!--            <div th:text="${reId}" id="reId" hidden></div>-->
+<!--            <div th:text="${jobId}" id="jobId" hidden></div>-->
         </div>
         <div class="panel panel-default" style="float:right;width: 70%;height:1000px;border-collapse:collapse;border:1px solid black;">
             <div style="text-align: center;font-size: 50px;color: #b8aaf3;padding-top: 500px;" id="noChatDiv">
@@ -223,7 +299,7 @@
                 <span id="reRealname"></span> 丨 <span id="companyName"></span> 丨 <span id="reCompanyPosition">开发工程师</span>
             </div>
             <div class=" panel-heading">
-                <a href="" >java实习生</a>
+                <a href="" id="jobUrl"></a>
             </div>
             <div class="panel-body" style="height: 900px">
                 <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent" >
@@ -245,7 +321,9 @@
 <span id="userId" th:text="${session.userId}"></span>
 <span id="message"></span>
 </body>
+
 <script type="text/javascript">
+
     Date.prototype.Format = function (fmt) { // author: meizz
         var o = {
             "M+": this.getMonth() + 1, // 月份
@@ -356,7 +434,7 @@
         // chat.set("chatSendTime",message['time']);
         // chat.set("isJsSend",1);
         // chat.set("isRead",0);
-        //newMsg.push(chat);
+        newMsg.push(chat);
         saveChatContent(chat);
         $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
         $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");

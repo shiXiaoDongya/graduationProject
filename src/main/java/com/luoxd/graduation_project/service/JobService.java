@@ -34,4 +34,6 @@ public interface JobService {
     Integer insertChats(ChatRequest chatRequest);
 
     Integer jobCollection(Integer jsId, Integer jobId);
+
+    ChatResponse getNewChat(Integer reId, Integer jobId);
 }

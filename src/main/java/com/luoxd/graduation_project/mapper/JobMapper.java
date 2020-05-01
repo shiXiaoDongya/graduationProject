@@ -58,4 +58,6 @@ public interface JobMapper {
     List<JobCollection> getCollection(Integer jsId, Integer jobId);
 
     Integer jobCollection(Integer jsId, Integer jobId);
+
+    ChatResponse getNewChat(Integer reId, Integer jobId);
 }

@@ -189,4 +189,9 @@ public class JobServiceImpl implements JobService {
     public Integer jobCollection(Integer jsId, Integer jobId) {
         return jobMapper.jobCollection(jsId,jobId);
     }
+
+    @Override
+    public ChatResponse getNewChat(Integer reId, Integer jobId) {
+        return jobMapper.getNewChat(reId,jobId);
+    }
 }

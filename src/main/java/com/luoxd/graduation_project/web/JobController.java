@@ -122,9 +122,11 @@ public class JobController {
     }
 
     @RequestMapping(value = "/chat",method = RequestMethod.GET)
-    public String chat(HttpServletRequest request){
+    public String chat(HttpServletRequest request,Integer reId,Integer jobId){
         String userType = (String)request.getSession().getAttribute("userType");
         if("js".equals(userType)){
+            request.setAttribute("reId",reId);
+            request.setAttribute("jobId",jobId);
             return "chat";
         }else{
            return "reChat";
@@ -161,7 +163,6 @@ public class JobController {
         if(userId != null){
             chatResponse = jobService.queryChatUsers(userType,userId);
             log.info("===========chatResponse:"+chatResponse.toString());
-            request.setAttribute("chatList",chatResponse);
         }
         return chatResponse;
     }
@@ -200,5 +201,14 @@ public class JobController {
         }else{
             return "{\"success\":false}";
         }
+    }
+
+    @RequestMapping(value = "/getNewUser",method = RequestMethod.GET)
+    @ResponseBody
+    public ChatResponse getNewUser(HttpServletRequest request,Integer reId, Integer jobId){
+        ChatResponse newChat = jobService.getNewChat(reId,jobId);
+        newChat.setJobId(jobId);
+        log.info("=====newChat:"+newChat.toString());
+        return newChat;
     }
 }
