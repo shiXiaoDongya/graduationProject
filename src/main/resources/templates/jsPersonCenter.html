@@ -20,6 +20,10 @@
             var url = "/turnJsFeedback";
             $('#info').load(url);
         }
+        function turnJsJobCollection() {
+            var url = "/turnJsJobCollection";
+            $('#info').load(url);
+        }
     </script>
 </head>
 <body>
@@ -64,9 +68,9 @@
         <div style="float: left;width: 23%;">
             <ul class="list-group">
                 <li class="list-group-item" onclick="turnJsInfo()"><a href="#">个人信息及简历</a></li>
-                <li class="list-group-item"><a href="#">收藏职位</a></li>
+                <li class="list-group-item" onclick="turnJsJobCollection()"><a href="#">收藏职位</a></li>
                 <li class="list-group-item" onclick="turnJsFeedback()"><a href="#">意见反馈</a></li>
-                <li class="list-group-item"><a href="#">推荐职位</a></li>
+                <li class="list-group-item"><a href="">推荐职位</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
             </ul>
         </div>

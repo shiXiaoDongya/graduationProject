@@ -36,4 +36,8 @@ public interface JobService {
     Integer jobCollection(Integer jsId, Integer jobId);
 
     ChatResponse getNewChat(Integer reId, Integer jobId);
+
+    List<JobResponse> getJobCollection(Integer jsId);
+
+    Integer cancelCollection(Integer jsId, Integer jobId);
 }

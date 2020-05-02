@@ -211,4 +211,23 @@ public class JobController {
         log.info("=====newChat:"+newChat.toString());
         return newChat;
     }
+
+    @RequestMapping(value = "/getJobCollection",method = RequestMethod.GET)
+    @ResponseBody
+    public List<JobResponse> getJobCollection(HttpServletRequest request){
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
+        List<JobResponse> jobCollection = jobService.getJobCollection(jsId);
+        return jobCollection;
+    }
+
+    @RequestMapping(value = "/cancelCollection",method = RequestMethod.GET)
+    @ResponseBody
+    public String cancelCollection(HttpServletRequest request,Integer jsId,Integer jobId){
+        Integer resultCode = jobService.cancelCollection(jsId,jobId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
 }

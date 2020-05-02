@@ -56,5 +56,7 @@ public class JobResponse {
 
     private List<String> companyTags;
 
+    private Integer jsId;
+
     private Integer isCollected;
 }

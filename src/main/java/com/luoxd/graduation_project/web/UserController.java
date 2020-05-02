@@ -1,7 +1,9 @@
 package com.luoxd.graduation_project.web;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.JobResponse;
+import com.luoxd.graduation_project.service.JobService;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.AddressUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -40,6 +42,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private JobService jobService;
 
     private String mynewpic;
 
@@ -355,14 +360,14 @@ public class UserController {
         return myFeedbackList;
     }
 
-    @RequestMapping("getNoReplyFeedback")
+    @RequestMapping("/getNoReplyFeedback")
     @ResponseBody
     public List<Feedback> getNoReplyFeedback(HttpServletRequest request){
         List<Feedback> noReplyFeedbackList = userService.getNoReplyFeedbackList();
         return noReplyFeedbackList;
     }
 
-    @RequestMapping("replyFeedback")
+    @RequestMapping("/replyFeedback")
     @ResponseBody
     public String replyFeedback(HttpServletRequest request){
         Integer adminId = (Integer)request.getSession().getAttribute("userId");
@@ -375,5 +380,10 @@ public class UserController {
         }else{
             return "{\"success\":false}";
         }
+    }
+
+    @RequestMapping("/turnJsJobCollection")
+    public String turnJsJobCollection(HttpServletRequest request){
+        return "jsJobCollection";
     }
 }

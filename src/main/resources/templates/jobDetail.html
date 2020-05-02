@@ -49,6 +49,27 @@
             });
         }
     }
+    function cancelCollection(jsId,jobId) {
+        if(jsId){
+            $.ajax({
+                type: "GET",
+                url: "/job/cancelCollection",
+                data: {"jsId": jsId, "jobId": jobId},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function (data) {
+                    if (data['success'] == true) {
+                        alert("取消收藏成功");
+                        window.location.href = "/job/getJobDetail?jobId="+jobId;
+                    } else {
+                        alert("取消收藏失败");
+                    }
+                }
+            });
+        }else {
+            alert("请先登录");
+        }
+    }
 </script>
 <body>
 <header id="header" class="header-scrolled">
@@ -112,7 +133,7 @@
                 <p ><span th:text="${job.companyName}">公司名称</span>　<span th:text="${job.reCompanyPosition}">所属职位</span></p>
             </div>
             <div style="float: right">
-                <button class="btn btn-default" type="button" th:if="${job.isCollected == 1}">取消收藏</button>
+                <button class="btn btn-default" type="button" th:if="${job.isCollected == 1}" th:onclick="cancelCollection([[${session.userId}]],[[${job.jobId}]])">取消收藏</button>
                 <button class="btn btn-default" type="button" th:if="${job.isCollected == 0}" th:onclick="jobCollection([[${session.userId}]],[[${job.jobId}]])" id="collectButton">感兴趣</button>
                 <button class="btn btn-default" type="button">举报</button>
             </div>

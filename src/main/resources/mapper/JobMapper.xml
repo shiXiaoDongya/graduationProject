@@ -305,4 +305,19 @@
         left join job on job.recruiter_id = recruiter.re_id
         where recruiter.re_id = #{reId}
     </select>
+
+    <select id="getJobCollection" resultType="com.luoxd.graduation_project.domain.Job">
+        select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_company_position,job.work_city,job.work_address,job.post_date,job.job_classes_id,
+        company.company_name,company.company_head_img,company.industry,company.finan_condition,company.size_condition,company.company_tags
+        from job_collection left join job on job_collection.job_id = job.job_id
+        left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
+        where job_collection.js_id = #{jsId}
+    </select>
+
+    <delete id="cancelCollection">
+        delete from job_collection
+        where js_id = #{jsId} and job_id = #{jobId}
+    </delete>
 </mapper>

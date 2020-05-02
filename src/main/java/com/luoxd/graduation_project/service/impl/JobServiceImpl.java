@@ -194,4 +194,57 @@ public class JobServiceImpl implements JobService {
     public ChatResponse getNewChat(Integer reId, Integer jobId) {
         return jobMapper.getNewChat(reId,jobId);
     }
+
+    @Override
+    public List<JobResponse> getJobCollection(Integer jsId) {
+        List<JobResponse> jobResponseList = new ArrayList<>();
+        List<Job> jobList = jobMapper.getJobCollection(jsId);
+        if(jobList != null) {
+            log.info("===jobList:"+jobList.toString());
+            for (Job tempJob : jobList) {
+                JobResponse jobResponse = new JobResponse();
+                List<String> tags = null;
+                if (tempJob.getTag() != null) {
+                    String[] tempTags = tempJob.getTag().split(",");
+                    tags = Arrays.asList(tempTags);
+                }
+                jobResponse.setJobId(tempJob.getJobId());
+                jobResponse.setJobName(tempJob.getJobName());
+                jobResponse.setJobDetail(tempJob.getJobDetail());
+                jobResponse.setExpConditionStr(Condition2StrUtils.getExpStr(tempJob.getExpCondition()));
+                jobResponse.setEduConditionStr(Condition2StrUtils.getEduStr(tempJob.getEduCondition()));
+                jobResponse.setSalary(tempJob.getSalary());
+                jobResponse.setReCompanyId(tempJob.getReCompanyId());
+                jobResponse.setTags(tags);
+                jobResponse.setRecruiterId(tempJob.getRecruiterId());
+                jobResponse.setReRealname(tempJob.getReRealname());
+                jobResponse.setReCompanyPosition(tempJob.getReCompanyPosition());
+                jobResponse.setWorkCity(tempJob.getWorkCity());
+                jobResponse.setWorkAddress(tempJob.getWorkAddress());
+                jobResponse.setPostDate(tempJob.getPostDate());
+                jobResponse.setJobClassesId(tempJob.getJobClassesId());
+                jobResponse.setCompanyName(tempJob.getCompanyName());
+                jobResponse.setCompanyHeadImg(tempJob.getCompanyHeadImg());
+                jobResponse.setIndustry(tempJob.getIndustry());
+                jobResponse.setFinanConditionStr(Condition2StrUtils.getFinanStr(tempJob.getFinanCondition()));
+                jobResponse.setSizeConditionStr(Condition2StrUtils.getSizeStr(tempJob.getSizeCondition()));
+                List<String> companyTags = null;
+                if (tempJob.getCompanyTags() != null) {
+                    String[] tempCompanyTags = tempJob.getCompanyTags().split(",");
+                    companyTags = Arrays.asList(tempCompanyTags);
+                }
+                jobResponse.setCompanyTags(companyTags);
+                jobResponse.setJsId(jsId);
+                jobResponseList.add(jobResponse);
+            }
+            return jobResponseList;
+        }else{
+            return null;
+        }
+    }
+
+    @Override
+    public Integer cancelCollection(Integer jsId, Integer jobId) {
+        return jobMapper.cancelCollection(jsId,jobId);
+    }
 }
