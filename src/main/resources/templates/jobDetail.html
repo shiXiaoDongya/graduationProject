@@ -19,8 +19,12 @@
     }
 </style>
 <script type="text/javascript">
-    function chat(jobId,reId){
-        window.location.href="/job/chat?reId="+reId+"&jobId="+jobId;
+    function chat(jsId,jobId,reId){
+        if(jsId){
+            window.location.href="/job/chat?reId="+reId+"&jobId="+jobId;
+        }else{
+            alert("请先进行登录");
+        }
     }
     function jobCollection(jsId,jobId) {
         document.getElementById("collectButton").disabled=true;
@@ -74,7 +78,7 @@
                         <ul style="margin-top: 0px">
                             <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
                             <li><a href="#">修改密码</a></li>
-                            <li><a href="#">注销</a></li>
+                            <li><a href="/logout">注销</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -94,7 +98,7 @@
             <p style="font-size: 15px" ><span class="label label-info tags" th:each="companyTag:${job.companyTags}" th:text="${companyTag}"></span></p>
         </div>
         <div style="float: right;width: 30%;padding-top: 40px;">
-            <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
+            <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${session.userId}]],[[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
         </div>
         </div>
     </div>
