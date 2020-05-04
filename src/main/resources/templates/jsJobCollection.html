@@ -20,57 +20,62 @@
             dataType: "json",
             contentType: "application/json;charset=UTF-8",
             success: function(data) {
-                for(var i = 0; i < data.length; i++){
-                    var jsId = data[i]['jsId'];
-                    var jobId = data[i]['jobId'];
-                    var jobName = data[i]['jobName'];
-                    var workCity = '';
-                    if(data[i]['workCity']){
-                        workCity = data[i]['workCity'];
-                    }
-                    var salary = data[i]['jobName'] + "元/月";
-                    var expConditionStr = data[i]['expConditionStr'];
-                    var eduConditionStr = data[i]['eduConditionStr'];
-                    var reRealname = data[i]['reRealname'];
-                    var reCompanyPosition = data[i]['reCompanyPosition'];
-                    var companyName = data[i]['companyName'];
-                    var industry = data[i]['industry'];
-                    var finanConditionStr = data[i]['finanConditionStr'];
-                    var sizeConditionStr = data[i]['sizeConditionStr'];
-                    var companyHeadImg = "#";
-                    if(data[i]['companyHeadImg']){
-                        companyHeadImg = "../companyHeadImg/"+data[i]['companyHeadImg'];
-                    }
-                    var html = "<div id=\"jobCollectionDiv\" class=\"panel panel-default jobList\">" +
-                        "<div style=\"float: left;width: 50%;padding-top: 35px;padding-left: 35px\">\n" +
-                        "                <p><a style=\"font-size: 20px;\" href=\"/job/getJobDetail?jobId="+jobId+"\" >"+jobName+"</a><span ><a style=\"font-size: 20px;\" href=\"#\" >["+workCity+"]</a></span><button type=\"button\" class=\"btn btn-primary\" style=\"float:right;margin-right: 80px;\" onclick=\"cancelCollection("+jsId+","+jobId+")\">取消收藏</button> </p>\n" +
-                        "                <br/>\n" +
-                        "                <p style=\"font-size: 16px;\"><span style=\"color: orange;font-weight: 700\" >"+salary+"</span> 丨 <span >"+expConditionStr+"</span> 丨 <span >"+eduConditionStr+"</span> 丨 <span><a href=\"#\" > "+reRealname+"</a></span> 丨 <span >"+reCompanyPosition+"</span></p>\n" +
-                        "                <br/>\n" +
-                        "                <p>\n";
-                            for(var j = 0; j < data[i]['tags'].length; j++){
-                                html += "<span class=\"label label-info tags\">"+data[i]['tags'][j]+"</span>"
-                            }
-                    html += "                </p>\n" +
-                        "            </div>\n" +
-                        "            <div style=\"float: right;width: 50%;padding-top: 35px;padding-left: 35px;\">\n" +
-                        "                <div style=\"float: left;width: 75%;overflow: hidden\" >\n" +
-                        "                    <p><a style=\"font-size: 20px;\" href=\"#\" >"+companyName+"</a></p>\n" +
-                        "                    <br/>\n" +
-                        "                    <p style=\"font-size: 16px;\"><span >"+industry+"</span> 丨 <span >"+finanConditionStr+"</span> 丨 <span >"+sizeConditionStr+"</span></p>\n" +
-                        "                    <br/>\n" +
-                        "                    <p style=\"white-space:nowrap;overflow: hidden\">";
-                            for(var k = 0; k < data[i]['companyTags'].length; k++){
-                                html += "<span class=\"label label-info tags\" >"+data[i]['companyTags'][k]+"</span>";
-                             }
-                        html+="</p>\n" +
-                        "                </div>\n" +
-                        "                <div style=\"float: right;width: 25%;\">\n" +
-                        "                    <img  th:src=\""+companyHeadImg+"\" style=\"width:100px;height:100px;border: 1px solid black\" />\n" +
-                        "                </div>\n" +
-                        "            </div>" +
+                if (data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        var jsId = data[i]['jsId'];
+                        var jobId = data[i]['jobId'];
+                        var jobName = data[i]['jobName'];
+                        var workCity = '';
+                        if (data[i]['workCity']) {
+                            workCity = data[i]['workCity'];
+                        }
+                        var salary = data[i]['jobName'] + "元/月";
+                        var expConditionStr = data[i]['expConditionStr'];
+                        var eduConditionStr = data[i]['eduConditionStr'];
+                        var reRealname = data[i]['reRealname'];
+                        var reCompanyPosition = data[i]['reCompanyPosition'];
+                        var companyName = data[i]['companyName'];
+                        var industry = data[i]['industry'];
+                        var finanConditionStr = data[i]['finanConditionStr'];
+                        var sizeConditionStr = data[i]['sizeConditionStr'];
+                        var companyHeadImg = "#";
+                        if (data[i]['companyHeadImg']) {
+                            companyHeadImg = "../companyHeadImg/" + data[i]['companyHeadImg'];
+                        }
+                        var html = "<div id=\"jobCollectionDiv\" class=\"panel panel-default jobList\">" +
+                            "<div style=\"float: left;width: 50%;padding-top: 35px;padding-left: 35px\">\n" +
+                            "                <p><a style=\"font-size: 20px;\" href=\"/job/getJobDetail?jobId=" + jobId + "\" >" + jobName + "</a><span ><a style=\"font-size: 20px;\" href=\"#\" >[" + workCity + "]</a></span><button type=\"button\" class=\"btn btn-primary\" style=\"float:right;margin-right: 80px;\" onclick=\"cancelCollection(" + jsId + "," + jobId + ")\">取消收藏</button> </p>\n" +
+                            "                <br/>\n" +
+                            "                <p style=\"font-size: 16px;\"><span style=\"color: orange;font-weight: 700\" >" + salary + "</span> 丨 <span >" + expConditionStr + "</span> 丨 <span >" + eduConditionStr + "</span> 丨 <span><a href=\"#\" > " + reRealname + "</a></span> 丨 <span >" + reCompanyPosition + "</span></p>\n" +
+                            "                <br/>\n" +
+                            "                <p>\n";
+                        for (var j = 0; j < data[i]['tags'].length; j++) {
+                            html += "<span class=\"label label-info tags\">" + data[i]['tags'][j] + "</span>"
+                        }
+                        html += "                </p>\n" +
+                            "            </div>\n" +
+                            "            <div style=\"float: right;width: 50%;padding-top: 35px;padding-left: 35px;\">\n" +
+                            "                <div style=\"float: left;width: 75%;overflow: hidden\" >\n" +
+                            "                    <p><a style=\"font-size: 20px;\" href=\"#\" >" + companyName + "</a></p>\n" +
+                            "                    <br/>\n" +
+                            "                    <p style=\"font-size: 16px;\"><span >" + industry + "</span> 丨 <span >" + finanConditionStr + "</span> 丨 <span >" + sizeConditionStr + "</span></p>\n" +
+                            "                    <br/>\n" +
+                            "                    <p style=\"white-space:nowrap;overflow: hidden\">";
+                        for (var k = 0; k < data[i]['companyTags'].length; k++) {
+                            html += "<span class=\"label label-info tags\" >" + data[i]['companyTags'][k] + "</span>";
+                        }
+                        html += "</p>\n" +
+                            "                </div>\n" +
+                            "                <div style=\"float: right;width: 25%;\">\n" +
+                            "                    <img  th:src=\"" + companyHeadImg + "\" style=\"width:100px;height:100px;border: 1px solid black\" />\n" +
+                            "                </div>\n" +
+                            "            </div>" +
                             "</div>";
-                    $("#jobCollectionDiv").append(html);
+                        $("#jobCollectionDiv").append(html);
+                    }
+                }else{
+                    document.getElementById("jobCollectionDiv").style.display="none";
+                    document.getElementById("noJobCollectionDiv").style.display="block";
                 }
             }
         });
@@ -106,6 +111,9 @@
 <div class="panel-default">
     <div class="panel-body" style="height: 1500px;">
         <div id="jobCollectionDiv">
+        </div>
+        <div id="noJobCollectionDiv" style="display: none;text-align: center;font-size: 20px;font-weight: 600">
+            暂无收藏职位
         </div>
     </div>
 </div>

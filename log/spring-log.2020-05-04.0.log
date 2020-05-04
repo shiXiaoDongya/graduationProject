@@ -1,0 +1,537 @@
+09:53:31.312 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 3784 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+09:53:31.316 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+09:53:31.471 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09:53:31.472 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09:53:33.172 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+09:53:33.186 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+09:53:33.187 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:53:33.187 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+09:53:33.345 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:53:33.345 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1873 ms
+09:53:34.102 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:53:34.177 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+09:53:34.506 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09:53:34.543 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+09:53:34.566 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+09:53:34.569 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.586 seconds (JVM running for 7.933)
+09:55:21.527 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:55:21.527 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:55:21.540 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+09:55:28.262 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+09:55:28.291 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:55:28.294 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+09:55:28.594 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:55:31.623 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+09:55:31.696 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+09:55:31.828 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+09:55:33.240 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - in========5
+09:55:33.246 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+09:55:33.248 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=null, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0)
+09:55:47.712 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+09:55:47.722 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+09:55:47.725 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+09:55:49.834 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=2, totalPage=null, start=null)
+09:55:49.841 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=2, totalPage=2, start=2)
+09:55:49.846 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=null, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+09:55:50.930 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========4
+09:55:50.938 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=null, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+09:55:50.940 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；<br/>
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；<br/>
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=1, tagsStr=null, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=null, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权], jsId=null, isCollected=0)
+09:59:20.488 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=null, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+09:59:20.491 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=null, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=3, start=0)
+09:59:20.503 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+09:59:22.611 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=null, start=null)
+09:59:22.619 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=3, start=4)
+09:59:22.621 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+09:59:22.740 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=null, start=null)
+09:59:22.742 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=3, start=4)
+09:59:22.747 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+09:59:23.968 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========2
+09:59:23.977 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+09:59:23.979 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tagsStr=null, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)
+09:59:32.521 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=null, start=null)
+09:59:32.530 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=3, totalPage=3, start=4)
+09:59:32.545 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+09:59:34.194 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========3
+09:59:34.197 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+09:59:34.198 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tagsStr=null, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=null, companyName=null, companyHeadImg=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)
+09:59:38.009 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=2, totalPage=null, start=null)
+09:59:38.011 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=2, totalPage=3, start=2)
+09:59:38.019 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=null, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权)]
+09:59:43.563 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=null, start=null)
+09:59:43.572 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=, jobClassesId=null, jobClassesName=, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=3, start=0)
+09:59:43.578 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+09:59:44.448 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========8
+09:59:44.458 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+09:59:44.460 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=本科, salary=2800, reCompanyId=3, tagsStr=null, tags=[javascript, 前端ui, php, web开发, java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+10:00:34.808 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=80, jobClassesName=web前端, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+10:00:34.814 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=80, jobClassesName=web前端, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=1, start=0)
+10:00:34.819 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+10:01:19.337 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:01:21.200 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:01:22.092 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:01:22.449 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:03:39.889 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:03:40.225 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:03:40.807 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:03:56.151 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:03:56.520 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:04:12.595 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:04:35.816 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:04:51.277 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:05:02.935 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:06:47.555 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:39:33.970 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+10:39:35.612 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+10:39:35.623 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+10:39:35.632 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+10:39:45.307 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:40:24.370 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:40:25.221 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:44:31.189 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+10:44:32.090 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:49:49.882 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:49:49.890 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:49:49.923 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:49:51.828 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 3784 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:49:51.829 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:49:52.478 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:49:52.569 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:49:52.571 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:49:52.571 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:49:52.571 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:49:52.621 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:49:52.622 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 785 ms
+10:49:52.853 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:49:52.877 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:49:53.084 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:49:53.103 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:49:53.107 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:49:53.107 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.404 seconds (JVM running for 3386.411)
+10:49:53.109 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:53:38.228 [Thread-19] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:53:39.677 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 3784 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:53:39.678 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:53:40.433 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:53:40.527 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:53:40.528 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:53:40.528 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:53:40.529 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:53:40.575 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:53:40.576 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 889 ms
+10:53:40.810 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:53:40.837 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:53:41.085 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:53:41.112 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:53:41.119 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:53:41.120 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.54 seconds (JVM running for 3614.42)
+10:53:41.122 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:55:35.389 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:55:37.506 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 3784 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:55:37.507 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:55:38.008 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:55:38.161 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:55:38.162 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:55:38.162 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:55:38.163 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:55:38.215 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:55:38.216 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 704 ms
+10:55:38.524 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:55:38.541 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:55:38.683 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:55:38.705 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:55:38.710 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:55:38.711 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.329 seconds (JVM running for 3732.008)
+10:55:38.713 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:55:41.396 [Thread-29] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:55:47.237 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 3784 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:55:47.238 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:55:47.619 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:55:47.689 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:55:47.690 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:55:47.690 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:55:47.690 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:55:47.728 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:55:47.728 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 487 ms
+10:55:47.873 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:55:47.887 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:55:47.990 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:55:48.002 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:55:48.005 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:55:48.006 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 0.833 seconds (JVM running for 3741.304)
+10:55:48.007 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:56:19.779 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 6764 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:56:19.789 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:56:19.986 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:56:19.987 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:56:22.276 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:56:22.289 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:56:22.290 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:56:22.290 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:56:22.445 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:56:22.446 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2459 ms
+10:56:23.081 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:56:23.369 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:56:23.659 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:56:23.716 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:56:23.747 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:56:23.750 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.356 seconds (JVM running for 7.848)
+10:58:01.330 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:58:01.331 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:58:01.340 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+10:58:05.744 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+10:58:05.779 [http-nio-8281-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:58:05.781 [http-nio-8281-exec-6] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+10:58:06.126 [http-nio-8281-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:58:12.607 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:58:12.913 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+10:59:06.529 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+11:01:57.664 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+11:03:09.618 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+11:03:15.608 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+11:03:38.515 [http-nio-8281-exec-8] INFO  c.l.g.web.UserController - ====username:罗先生,password:123456,id:re
+11:03:58.794 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - ===========chatResponse:[ChatResponse(jsId=1, jsRealname=88, jsCollege=null, reId=null, reRealname=null, companyName=null, reCompanyPosition=null, jobId=6, jobName=null, notRead=null)]
+11:03:58.878 [http-nio-8281-exec-9] INFO  c.luoxd.graduation_project.WebSocket - 在线的客户：[re-6]
+11:04:31.329 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin

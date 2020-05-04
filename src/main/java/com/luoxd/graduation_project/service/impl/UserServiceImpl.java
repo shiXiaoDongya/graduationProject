@@ -141,4 +141,9 @@ public class UserServiceImpl implements UserService {
     public Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId) {
         return userMapper.replyFeedback(adminId,replyMsg,feedbackId);
     }
+
+    @Override
+    public Integer deleteFeedback(Integer feedbackId) {
+        return userMapper.deleteFeedback(feedbackId);
+    }
 }

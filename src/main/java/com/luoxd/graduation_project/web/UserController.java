@@ -386,4 +386,15 @@ public class UserController {
     public String turnJsJobCollection(HttpServletRequest request){
         return "jsJobCollection";
     }
+
+    @RequestMapping("/deleteFeedback")
+    @ResponseBody
+    public String deleteFeedback(HttpServletRequest request,Integer feedbackId){
+        Integer resultCode = userService.deleteFeedback(feedbackId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
 }

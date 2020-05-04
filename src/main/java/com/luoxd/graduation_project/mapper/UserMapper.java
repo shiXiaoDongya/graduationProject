@@ -42,4 +42,6 @@ public interface UserMapper {
     List<Feedback> getNoReplyFeedbackList();
 
     Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId);
+
+    Integer deleteFeedback(Integer feedbackId);
 }

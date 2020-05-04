@@ -80,4 +80,9 @@
         set admin_id = #{adminId},feedback_reply = #{replyMsg}, feedback_replytime = CURRENT_TIMESTAMP()
         where feedback_id = #{feedbackId}
     </update>
+
+    <delete id="deleteFeedback">
+        delete from feedback
+        where feedback_id = #{feedbackId}
+    </delete>
 </mapper>

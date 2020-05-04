@@ -1,0 +1,2750 @@
+11:56:50.928 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 5668 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:56:50.931 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:56:51.079 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:56:51.079 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:56:53.346 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:56:53.357 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:56:53.358 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:56:53.358 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:56:53.482 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:56:53.483 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2403 ms
+11:56:54.145 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:56:54.215 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:56:54.532 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:56:54.570 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:56:54.594 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:56:54.597 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.194 seconds (JVM running for 7.657)
+11:57:38.299 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:57:38.300 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:57:38.314 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+11:57:44.465 [http-nio-8281-exec-10] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+11:57:44.509 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:57:44.512 [http-nio-8281-exec-10] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:57:44.760 [http-nio-8281-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:57:46.763 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+11:57:46.803 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+11:57:46.809 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+11:57:48.116 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - in========5
+11:57:48.126 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+11:57:48.128 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=null, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0)
+11:57:58.976 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+11:57:58.979 [http-nio-8281-exec-2] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+11:57:58.986 [http-nio-8281-exec-2] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+11:58:00.847 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - in========6
+11:58:00.855 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+11:58:00.861 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+11:59:40.153 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+11:59:40.161 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+11:59:40.164 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+11:59:43.924 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - in========6
+11:59:43.938 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+11:59:43.941 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:00:05.957 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:00:05.962 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:00:05.966 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:00:54.212 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:00:54.226 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:00:54.229 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:01:27.052 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========6
+12:01:27.066 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:01:27.068 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:05:47.102 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - in========6
+12:05:47.113 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:05:47.117 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:05:58.880 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========6
+12:05:58.885 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:05:58.895 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:06:00.183 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========6
+12:06:00.186 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:06:00.190 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:08:06.602 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========6
+12:08:06.606 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:08:06.608 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:11:04.151 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - in========6
+12:11:04.180 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:11:04.182 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:11:06.839 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:11:06.856 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:11:06.858 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:11:55.444 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - in========6
+12:11:55.462 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:11:55.468 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:12:15.610 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========6
+12:12:15.617 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:12:15.618 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:13:40.793 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:13:40.891 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:13:40.908 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:13:48.992 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:13:48.999 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:13:49.007 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:15:16.535 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========6
+12:15:16.545 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:15:16.550 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:15:21.298 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========6
+12:15:21.305 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:15:21.307 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:15:45.568 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========6
+12:15:45.579 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:15:45.586 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:15:58.767 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - in========6
+12:15:58.774 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:15:58.777 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:16:11.331 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:16:11.354 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:16:11.363 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:16:39.563 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - in========6
+12:16:39.572 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:16:39.574 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:18:32.676 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========6
+12:18:32.680 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:18:32.714 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:19:15.665 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:19:15.669 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:19:15.672 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:19:51.507 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:19:51.513 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:19:51.520 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:19:51.638 [http-nio-8281-exec-4] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Path contains "../" after call to StringUtils#cleanPath: [job/.../static/js/autosize.js]
+12:19:51.874 [http-nio-8281-exec-8] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Path contains "../" after call to StringUtils#cleanPath: [job/.../static/js/autosize.js]
+12:20:01.592 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - in========6
+12:20:01.597 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:20:01.599 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:20:02.176 [http-nio-8281-exec-10] WARN  o.s.w.s.r.ResourceHttpRequestHandler - Path contains "../" after call to StringUtils#cleanPath: [job/.../static/js/autosize.js]
+12:20:05.420 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:20:05.423 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:20:05.426 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:20:40.665 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========6
+12:20:40.677 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:20:40.679 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:24:01.124 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8040 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+12:24:01.128 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+12:24:01.196 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12:24:01.196 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12:24:02.823 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+12:24:02.836 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+12:24:02.837 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:24:02.837 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+12:24:02.990 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:24:02.990 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1794 ms
+12:24:03.744 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+12:24:03.815 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+12:24:04.170 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12:24:04.223 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+12:24:04.247 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+12:24:04.250 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.955 seconds (JVM running for 8.191)
+12:24:25.554 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:24:25.555 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:24:25.567 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+12:24:25.626 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - in========6
+12:24:25.699 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:24:25.704 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+12:24:25.960 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:24:26.082 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:24:26.090 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:24:39.616 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:null
+12:24:39.682 [http-nio-8281-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.luoxd.graduation_project.web.UserController.login(UserController.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+12:24:42.568 [http-nio-8281-exec-6] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+12:24:45.508 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+12:24:45.523 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+12:24:45.531 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:24:47.594 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========5
+12:24:47.598 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+12:24:47.607 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=null, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0)
+12:24:59.559 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:24:59.563 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:24:59.571 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:25:49.266 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:25:49.278 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:25:49.284 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:26:00.824 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - in========6
+12:26:01.135 [http-nio-8281-exec-3] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:26:01.831 [http-nio-8281-exec-3] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:26:18.608 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - in========6
+12:26:18.619 [http-nio-8281-exec-1] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:26:18.622 [http-nio-8281-exec-1] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:28:37.817 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========6
+12:28:37.832 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:28:37.837 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:28:51.005 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - in========6
+12:28:51.015 [http-nio-8281-exec-7] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:28:51.019 [http-nio-8281-exec-7] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:59:25.956 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - in========6
+12:59:25.980 [http-nio-8281-exec-6] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:59:25.980 [http-nio-8281-exec-6] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+12:59:43.741 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - in========6
+12:59:43.782 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+12:59:43.784 [http-nio-8281-exec-5] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+13:02:25.900 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - ====username:123456,password:123456,id:js
+13:02:27.373 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+13:02:27.382 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+13:02:27.387 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+13:02:29.070 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - in========5
+13:02:29.079 [http-nio-8281-exec-8] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助)]
+13:02:29.082 [http-nio-8281-exec-8] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=null, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0)
+13:02:42.148 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=null, totalPage=null, start=null)
+13:02:42.156 [http-nio-8281-exec-10] INFO  c.l.g.web.JobController - SearchRequest(jobId=null, keyword=null, jobClassesId=2, jobClassesName=Java, expCondition=null, eduCondition=null, salCondition=null, finanCondition=null, sizeCondition=null, postDateCondition=null, indexPage=1, totalPage=2, start=0)
+13:02:42.169 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=5, jobName=Java, jobDetail=工作职责：<br/>
+1.负责集团内部相关web系统的软件开发的工作；<br/>
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；<br/>
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+任职要求：<br/>
+1.计算机类、信息系统类相关专业；<br/>
+2.熟悉Java常见web开发框架，如Spring、Mybatis；<br/>
+3.熟悉常见数据Oracle、MySQL的开发；<br/>
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；<br/>
+其它福利待遇：<br/>
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；<br/>
+2. 免费提供五星级的一日三餐和公寓住宿；<br/>
+3. 免费班车接送；<br/>
+4. 公司有自己的幼儿园，解决员工子女上学问题；<br/>, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+13:02:43.420 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - in========6
+13:02:43.427 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权)]
+13:02:43.429 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=null, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=null, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0)
+13:02:49.584 [http-nio-8281-exec-10] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+13:02:54.545 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+13:05:47.497 [http-nio-8281-exec-5] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[]
+13:05:49.549 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
+13:05:52.566 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - [Feedback(feedbackId=1, jsId=1, feedbackContent=1231456, feedbackSendTime=2020-04-28 17:06:58, adminId=1, feedbackReply=回复测试, feedbackReplytime=2020-04-29 22:56:28), Feedback(feedbackId=2, jsId=1, feedbackContent=66666, feedbackSendTime=2020-04-28 17:10:07, adminId=1, feedbackReply=回复22222, feedbackReplytime=2020-04-29 23:04:31), Feedback(feedbackId=3, jsId=1, feedbackContent=123156, feedbackSendTime=2020-04-28 17:20:16, adminId=1, feedbackReply=3333, feedbackReplytime=2020-04-29 23:08:02), Feedback(feedbackId=4, jsId=1, feedbackContent=反馈测试, feedbackSendTime=2020-04-28 17:21:04, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=5, jsId=1, feedbackContent=再测试测试, feedbackSendTime=2020-04-28 23:12:19, adminId=null, feedbackReply=null, feedbackReplytime=null), Feedback(feedbackId=6, jsId=1, feedbackContent=666, feedbackSendTime=2020-04-28 23:14:20, adminId=null, feedbackReply=null, feedbackReplytime=null)]
