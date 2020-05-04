@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
+</head>
+<script type="text/javascript">
+    $(function () {
+        getJobList();
+    })
+    function getJobList() {
+        $("#jobList").html("");
+        $.ajax({
+            type: "GET",
+            url: "/job/getJobList",
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            success: function(data) {
+                for(var i = 0; i < data.length; i++){
+                    $("#jobList").append("<tr>\n" +
+                        "                        <td><a href=\"/job/getJobDetail?jobId="+data[i]['jobId']+"\">"+data[i]['jobName']+"</a></td>\n" +
+                        "                        <td>"+data[i]['jobDetail']+"</td>\n" +
+                        "                        <td>"+data[i]['tagsStr']+"</td>\n" +
+                        "                        <td>"+data[i]['postDate']+"</td>\n" +
+                        "                        <td>"+data[i]['reRealname']+"</td>\n" +
+                        "                        <td>"+data[i]['jobClassesName']+"</td>\n" +
+                        "                        <td><button type=\"button\" class=\"btn btn-primary\" onclick=\"adminChangeClasses("+data[i]['jobId']+",\'"+data[i]['jobClassesName']+"\')\">修改分类</button> <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteJob(jobId)\">删除</button></td>\n" +
+                        "                    </tr>")
+                }
+            }
+        });
+    }
+
+    function adminChangeClasses(jobId,jobClassesName) {
+        document.getElementById("jobId").value = jobId;
+        document.getElementById("jobClassesName").value = jobClassesName;
+        $("#myModal").modal()
+    }
+    function showClasses() {
+        $.ajax({
+            type: "GET",
+            url: "/job/getClasses2",
+            data: {},
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            success: function(data){
+                for(var i = 0; i < data.length;i++) {
+                    var classes = data[i];
+                    $("#classesUl").append(" <li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
+                }
+            }
+        });
+    }
+    function showNext(obj) {
+        $.ajax({
+            type: "GET",
+            url: "/job/getChildClasses",
+            data: {"classesId":obj.value},
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            success: function(data) {
+                document.getElementById("childClassesUl").style.display="block";
+                $("#childClassesUl").html("");
+                var num = (parseInt(obj.value)-1 ) * 26.5;
+                document.getElementById("childClassesUl").style.marginTop = num + "px";
+                document.getElementById("childClassesUl").value = data[0]['classesId'];
+                document.getElementById("jobClassesUl").value = data[0]['classesId'];
+                for (var i = 0; i < data.length; i++) {
+                    var childClasses = data[i];
+                    $("#childClassesUl").append(" <li onmouseover=\"showNextOfNext(this)\"  data-num=\""+ i +"\" value=" + childClasses['childClassesId'] + "><a href=\"#\" >" + childClasses['childClassesName'] + "</a></li>");
+                }
+            }
+        });
+    }
+    function showNextOfNext(obj) {
+        $.ajax({
+            type: "GET",
+            url: "/job/getJobClasses",
+            data: {"childClassesId":obj.value},
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            success: function(data) {
+                document.getElementById("jobClassesUl").style.display="block";
+                $("#jobClassesUl").html("");
+                var num1 = document.getElementById("childClassesUl").style.marginTop;
+                var num2 = (parseInt(obj.dataset.num)) * 26.5;
+                var num = parseInt(num1) + num2;
+                document.getElementById("jobClassesUl").style.marginTop = num + "px";
+                for (var i = 0; i < data.length; i++) {
+                    var jobClasses = data[i];
+                    $("#jobClassesUl").append(" <li onclick=\"changeClasses(this)\" value=\"" + jobClasses['jobClassesId'] + "\"><a href=\"#\" >" + jobClasses['jobClassesName'] + "</a></li>");
+                }
+            }
+        });
+    }
+    function clearLi() {
+        //$("#childClassesUl li") .remove();
+        document.getElementById("childClassesUl").style.display="none";
+    }
+    function clearLi2(){
+        document.getElementById("jobClassesUl").style.display="none";
+    }
+    function changeClasses(obj) {
+        document.getElementById("jobClassesId").value = obj.value;
+        document.getElementById("jobClassesName").value = obj.innerText;
+    }
+    function ajaxSubmit() {
+        var jobId = document.getElementById("jobId").value;
+        var jobClassesId = document.getElementById("jobClassesId").value;
+        $.when(
+            $.ajax({
+                type: "GET",
+                url: "/job/changeJobClasses",
+                data: {"jobId":jobId,"jobClassesId":jobClassesId},
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data) {
+                    if(data['success'] == true){
+                        alert("修改成功");
+                        getJobList();
+                    }else{
+                        alert("修改失败");
+                    }
+                }
+            })
+        ).done(function () {
+            $("#myModal").modal('hide');
+        });
+
+    }
+</script>
+<style>
+    .table tbody tr td{
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+</style>
+<body>
+<div  style="width: 1250px;height: 1600px;padding-top: 50px;">
+    <div class="panel panel-default" style="width: 95%;margin: 0 auto">
+        <div class="panel panel-body">
+            <div>
+                <table class="table table-bordered " style="table-layout:fixed;">
+                    <thead>
+                    <tr>
+                        <th class="col-md-1">职位名称</th>
+                        <th class="col-md-2">职位描述</th>
+                        <th class="col-md-1">技能标签</th>
+                        <th class="col-md-1">发布日期</th>
+                        <th class="col-md-1">发布者</th>
+                        <th class="col-md-1">职位分类</th>
+                        <th class="col-md-2">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="jobList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+                <div class="modal-body">
+                    <input type="text" value="" id="jobId" hidden/>
+                    <div class="form-group">
+                        <label for="jobClassesName" class="col-sm-4 control-label">职位分类</label>
+                        <div class="input-group form-control" style="padding: 0"><!--保持内联，消除边框，类似于form-inline-->
+                            <input type="text" id="jobClassesId" name="jobClassesId" hidden/>
+                            <input type="text" id="jobClassesName" name="jobClassesName" class="form-control " disabled/>
+                            <div class="input-group-btn dropdown" id="jobClassesDiv"><!--不换行，与相邻元素内联，包含dropdown-->
+                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        onclick="showClasses()">
+                                    请选择<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" onmouseout="clearLi2()" role="menu" id="classesUl">
+                                </ul>
+                                <ul class="dropdown-menu" onmouseover="showNext(this)"
+                                    style="margin-left: 160px;display: none" role="menu" id="childClassesUl">
+                                </ul>
+                                <ul class="dropdown-menu" onmouseover="showNext(this)"
+                                    style="margin-left: 320px;display: none" role="menu" id="jobClassesUl">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer form-group" >
+                    <button type="button" onclick="ajaxSubmit()" class="btn btn-primary">修改</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</body>
+<script type="text/javascript">
+    $('#jobClassesDiv').on('hidden.bs.dropdown', function() {
+        clearLi();
+        clearLi2();
+    })
+</script>
+</html>

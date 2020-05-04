@@ -9,11 +9,15 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
-            var url = "/turnAdminFeedback";
+            var url = "/turnAdminJobManage";
             $('#info').load(url);
         }
         function turnAdminFeedback() {
             var url = "/turnAdminFeedback";
+            $('#info').load(url);
+        }
+        function turnAdminJobManage() {
+            var url = "/turnAdminJobManage";
             $('#info').load(url);
         }
     </script>
@@ -42,7 +46,7 @@
                     </li>
                     <li style="border: 1px white solid"><a href="#" th:text="${session.userName}"></a>
                         <ul style="margin-top: 0px">
-                            <li><a th:href="@{/jsPersonCenter(id=${session.id})}">个人中心</a> </li>
+                            <li><a th:href="@{/jsPersonCenter(type=${session.userType})}">个人中心</a> </li>
                             <li><a href="#">我的简历</a></li>
                         </ul>
                     </li>
@@ -58,7 +62,7 @@
     <div class="panel-body">
         <div style="float: left;width: 23%;">
             <ul class="list-group">
-                <li class="list-group-item" ><a href="#">职位管理</a></li>
+                <li class="list-group-item" onclick="turnAdminJobManage()" ><a href="#">职位管理</a></li>
                 <li class="list-group-item" ><a href="#">招聘者注册审核</a></li>
                 <li class="list-group-item" onclick="turnAdminFeedback()"><a href="#">反馈留言</a></li>
                 <li class="list-group-item" ><a href="#">首页广告管理</a></li>

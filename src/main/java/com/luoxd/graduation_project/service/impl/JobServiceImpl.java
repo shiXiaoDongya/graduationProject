@@ -84,6 +84,7 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setEduConditionStr(Condition2StrUtils.getEduStr(tempJob.getEduCondition()));
                 jobResponse.setSalary(tempJob.getSalary());
                 jobResponse.setReCompanyId(tempJob.getReCompanyId());
+                jobResponse.setTagsStr(tempJob.getTag());
                 jobResponse.setTags(tags);
                 jobResponse.setRecruiterId(tempJob.getRecruiterId());
                 jobResponse.setReRealname(tempJob.getReRealname());
@@ -92,6 +93,7 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setWorkAddress(tempJob.getWorkAddress());
                 jobResponse.setPostDate(tempJob.getPostDate());
                 jobResponse.setJobClassesId(tempJob.getJobClassesId());
+                jobResponse.setJobClassesName(tempJob.getJobClassesName());
                 jobResponse.setCompanyName(tempJob.getCompanyName());
                 jobResponse.setCompanyHeadImg(tempJob.getCompanyHeadImg());
                 jobResponse.setIndustry(tempJob.getIndustry());
@@ -246,5 +248,10 @@ public class JobServiceImpl implements JobService {
     @Override
     public Integer cancelCollection(Integer jsId, Integer jobId) {
         return jobMapper.cancelCollection(jsId,jobId);
+    }
+
+    @Override
+    public Integer changeJobClasses(Integer jobId, Integer jobClassesId) {
+        return jobMapper.changeJobClasses(jobId,jobClassesId);
     }
 }

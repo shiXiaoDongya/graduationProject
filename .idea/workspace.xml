@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdfd5c34-61ad-4b76-964f-f299d6e69779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-05-03.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-05-04.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/autosize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/spring-log.2020-05-05.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminJobManage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/spring-log.2020-05-04.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring-log.2020-05-04.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/mapper/JobMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/service/impl/JobServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/JobController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luoxd/graduation_project/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobDetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jsFeedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jsFeedback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jsJobCollection.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jsJobCollection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jsPersonCenter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jsPersonCenter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luoxd/graduation_project/web/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +257,11 @@
       <workItem from="1588424434204" duration="2447000" />
       <workItem from="1588478081207" duration="1592000" />
       <workItem from="1588479710407" duration="1492000" />
-      <workItem from="1588557175004" duration="3186000" />
+      <workItem from="1588557175004" duration="5010000" />
+      <workItem from="1588575296187" duration="4533000" />
+      <workItem from="1588589493307" duration="38000" />
+      <workItem from="1588596816168" duration="1722000" />
+      <workItem from="1588605836965" duration="3490000" />
     </task>
     <task id="LOCAL-00001" summary="2020-03-08提交">
       <created>1583669425390</created>
@@ -468,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588426779705</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="2020-05-02 求职者删除留言">
+      <created>1588561541143</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1588561541143</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +540,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="2020-03-25 增加招聘者的注册功能" />
     <MESSAGE value="2020-04-03 登录跳转逻辑、个人中心部分、职位搜索部分、修改一些样式" />
     <MESSAGE value="2020-04-07 完成登录注册逻辑" />
     <MESSAGE value="2020-04-08 职位搜索页面的条件筛选逻辑" />
@@ -553,7 +564,8 @@
     <MESSAGE value="2020-05-01 聊天跳转完善" />
     <MESSAGE value="2020-05-02 增加注销功能" />
     <MESSAGE value="2020-05-02 查看收藏职位" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020-05-02 查看收藏职位" />
+    <MESSAGE value="2020-05-02 求职者删除留言" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-05-02 求职者删除留言" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585119309080">
@@ -568,10 +580,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586595698487" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1588560702242">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1588608948214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588560702242" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588608948214" />
     <state x="690" y="294" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587195382479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -580,10 +592,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586596535581" />
-    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1588426777833">
+    <state x="475" y="112" key="CommitChangelistDialog2" timestamp="1588561539686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588426777833" />
+    <state x="475" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588561539686" />
     <state x="202" y="85" width="1536" height="832" key="DiffContextDialog" timestamp="1586589009842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -592,38 +604,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="331" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583418277893" />
-    <state width="1876" height="250" key="GridCell.Tab.0.bottom" timestamp="1588560975906">
+    <state width="1876" height="129" key="GridCell.Tab.0.bottom" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975906" />
-    <state width="1876" height="250" key="GridCell.Tab.0.center" timestamp="1588560975906">
+    <state width="1876" height="129" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
+    <state width="1876" height="129" key="GridCell.Tab.0.center" timestamp="1588609108290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975906" />
-    <state width="1876" height="250" key="GridCell.Tab.0.left" timestamp="1588560975906">
+    <state width="1876" height="129" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108290" />
+    <state width="1876" height="129" key="GridCell.Tab.0.left" timestamp="1588609108289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975906" />
-    <state width="1876" height="250" key="GridCell.Tab.0.right" timestamp="1588560975906">
+    <state width="1876" height="129" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108289" />
+    <state width="1876" height="129" key="GridCell.Tab.0.right" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975906" />
-    <state width="1876" height="250" key="GridCell.Tab.1.bottom" timestamp="1588560975907">
+    <state width="1876" height="129" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
+    <state width="1876" height="129" key="GridCell.Tab.1.bottom" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975907" />
-    <state width="1876" height="250" key="GridCell.Tab.1.center" timestamp="1588560975907">
+    <state width="1876" height="129" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
+    <state width="1876" height="129" key="GridCell.Tab.1.center" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975907" />
-    <state width="1876" height="250" key="GridCell.Tab.1.left" timestamp="1588560975907">
+    <state width="1876" height="129" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
+    <state width="1876" height="129" key="GridCell.Tab.1.left" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975907" />
-    <state width="1876" height="250" key="GridCell.Tab.1.right" timestamp="1588560975907">
+    <state width="1876" height="129" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
+    <state width="1876" height="129" key="GridCell.Tab.1.right" timestamp="1588609108291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="250" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588560975907" />
+    <state width="1876" height="129" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588609108291" />
     <state width="1876" height="342" key="GridCell.Tab.2.bottom" timestamp="1588337451687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -648,10 +660,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583418279922" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588426799287">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588561548489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588426799287" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588561548489" />
     <state x="752" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585638670220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -660,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="283" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586485738680" />
-    <state x="567" y="64" width="786" height="912" key="find.popup" timestamp="1588403515860">
+    <state x="567" y="64" width="786" height="912" key="find.popup" timestamp="1588579801086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="64" width="786" height="912" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588403515860" />
+    <state x="567" y="64" width="786" height="912" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588579801086" />
     <state x="633" y="310" key="git4idea.merge.GitPullDialog" timestamp="1585128343193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

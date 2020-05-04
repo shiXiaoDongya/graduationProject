@@ -230,4 +230,24 @@ public class JobController {
             return "{\"success\":false}";
         }
     }
+
+    @RequestMapping(value = "/getJobList",method = RequestMethod.GET)
+    @ResponseBody
+    private List<JobResponse> getJobList(){
+        List<JobResponse> jobList = jobService.queryJobList(null,null);
+        log.info(jobList.toString());
+        return jobList;
+    }
+
+    @RequestMapping(value = "/changeJobClasses",method = RequestMethod.GET)
+    @ResponseBody
+    private String changeJobClasses(HttpServletRequest request,Integer jobId, Integer jobClassesId){
+        log.info("====="+jobId+"====="+jobClassesId);
+        Integer resultCode = jobService.changeJobClasses(jobId,jobClassesId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
 }

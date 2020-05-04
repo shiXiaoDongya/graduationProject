@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -271,9 +272,16 @@ public class UserController {
 
     @RequestMapping("/jsPersonCenter")
     public String jsPersonCenter(HttpServletRequest request){
-        String id = request.getParameter("id");
-        System.out.println(id);
-        return "jsPersonCenter";
+        String type = request.getParameter("type");
+        if(!StringUtils.isEmpty(type)){
+            switch (type){
+                case "js":return "jsPersonCenter";
+                case "re":return "reIndex";
+                case "admin":return "adminIndex";
+                default:;
+            }
+        }
+        return "redirect:index.html";
     }
 
     @RequestMapping("/toJsInfo")
@@ -347,7 +355,7 @@ public class UserController {
         return feedbackList;
     }
 
-    @RequestMapping("turnAdminFeedback")
+    @RequestMapping("/turnAdminFeedback")
     public String turnAdminFeedback(HttpServletRequest request){
         return "adminFeedback";
     }
@@ -382,12 +390,12 @@ public class UserController {
         }
     }
 
-    @RequestMapping("/turnJsJobCollection")
+    @RequestMapping(value = "/turnJsJobCollection",method = RequestMethod.GET)
     public String turnJsJobCollection(HttpServletRequest request){
         return "jsJobCollection";
     }
 
-    @RequestMapping("/deleteFeedback")
+    @RequestMapping(value = "/deleteFeedback",method = RequestMethod.GET)
     @ResponseBody
     public String deleteFeedback(HttpServletRequest request,Integer feedbackId){
         Integer resultCode = userService.deleteFeedback(feedbackId);
@@ -396,5 +404,10 @@ public class UserController {
         }else{
             return "{\"success\":false}";
         }
+    }
+
+    @RequestMapping(value = "/turnAdminJobManage",method = RequestMethod.GET)
+    public String turnAdminJobManage(HttpServletRequest request){
+        return "adminJobManage";
     }
 }

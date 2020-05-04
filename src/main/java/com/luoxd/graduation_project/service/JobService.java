@@ -40,4 +40,6 @@ public interface JobService {
     List<JobResponse> getJobCollection(Integer jsId);
 
     Integer cancelCollection(Integer jsId, Integer jobId);
+
+    Integer changeJobClasses(Integer jobId, Integer jobClassesId);
 }
