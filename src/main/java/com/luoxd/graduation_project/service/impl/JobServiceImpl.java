@@ -96,6 +96,7 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setJobClassesName(tempJob.getJobClassesName());
                 jobResponse.setCompanyName(tempJob.getCompanyName());
                 jobResponse.setCompanyHeadImg(tempJob.getCompanyHeadImg());
+                jobResponse.setCompanyDetail(tempJob.getCompanyDetail());
                 jobResponse.setIndustry(tempJob.getIndustry());
                 jobResponse.setFinanConditionStr(Condition2StrUtils.getFinanStr(tempJob.getFinanCondition()));
                 jobResponse.setSizeConditionStr(Condition2StrUtils.getSizeStr(tempJob.getSizeCondition()));

@@ -158,4 +158,9 @@ public class UserServiceImpl implements UserService {
     public Integer updateJobSeeker(JobSeekerRequest jsRequest) {
         return userMapper.updateJobSeeker(jsRequest);
     }
+
+    @Override
+    public String getJobTags(Integer jsId) {
+        return userMapper.getJobTags(jsId);
+    }
 }

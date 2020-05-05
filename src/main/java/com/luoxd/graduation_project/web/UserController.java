@@ -449,4 +449,19 @@ public class UserController {
         return "jsPersonCenter";
     }
 
+    @RequestMapping("/getJobTags")
+    @ResponseBody
+    public String getJobTags(HttpServletRequest request){
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
+        String jobTags = userService.getJobTags(jsId);
+        if(!(StringUtils.isEmpty(jobTags))){
+            return "{\"success\":true}";
+        }
+        return "{\"success\":false}";
+    }
+
+    @RequestMapping("/turnJobRecommend")
+    public String turnJobRecommend(HttpServletRequest request){
+        return "jobRecommend";
+    }
 }

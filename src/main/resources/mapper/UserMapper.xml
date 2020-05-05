@@ -100,4 +100,8 @@
         </if>
         where js_id = #{jsId}
     </update>
+
+    <select id="getJobTags" resultType="java.lang.String">
+        select js_tag from job_seeker where js_id = #{jsId}
+    </select>
 </mapper>

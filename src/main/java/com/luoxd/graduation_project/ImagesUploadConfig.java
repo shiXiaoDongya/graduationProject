@@ -12,8 +12,8 @@ public class ImagesUploadConfig implements WebMvcConfigurer {
 
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //获取文件的真实路径
-        String path = System.getProperty("user.dir")+"\\src\\main\\resources\\static\\jsHeadImg\\";
+        String path = System.getProperty("user.dir")+"\\src\\main\\resources\\static\\";
         //       /images/**是对应resource下工程目录
-        registry.addResourceHandler("/jsHeadImg/**").addResourceLocations("file:"+path);
+        registry.addResourceHandler("/**").addResourceLocations("file:"+path);
     }
 }

@@ -48,6 +48,8 @@ public class JobResponse {
 
     private String companyHeadImg;
 
+    private String companyDetail;
+
     private String industry;
 
     private String finanConditionStr;

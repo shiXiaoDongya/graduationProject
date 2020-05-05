@@ -42,4 +42,6 @@ public interface UserService {
     JobSeekerResponse getJsById(Integer jsId);
 
     Integer updateJobSeeker(JobSeekerRequest jsRequest);
+
+    String getJobTags(Integer jsId);
 }

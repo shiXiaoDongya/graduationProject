@@ -42,6 +42,8 @@ public class Job {
 
     private String companyHeadImg;
 
+    private String companyDetail;
+
     private String industry;
 
     private Integer finanCondition;
