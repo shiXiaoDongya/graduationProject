@@ -12,6 +12,7 @@ public class Condition2StrUtils {
     private static final Map<Integer,String> sizeCondition =  new HashMap<Integer,String>();
 
     static {
+        expCondition.put(null,"不限");
         expCondition.put(1,"在校生");
         expCondition.put(2,"应届生");
         expCondition.put(3,"1年以内");
@@ -20,6 +21,7 @@ public class Condition2StrUtils {
         expCondition.put(6,"5-10年");
         expCondition.put(7,"10年以上");
 
+        eduCondition.put(null,"不限");
         eduCondition.put(1,"初中及以下");
         eduCondition.put(2,"中专/中技");
         eduCondition.put(3,"高中");

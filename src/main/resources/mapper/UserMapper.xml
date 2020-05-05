@@ -43,6 +43,7 @@
         select job_id,job_name,job_detail,exp_condition,edu_condition,salary,tag,work_city,work_address,post_date,job.job_classes_id,job_classes_name
         from job left join job_classes on job.job_classes_id = job_classes.job_classes_id
         where recruiter_id = #{userId}
+        order by post_date DESC
     </select>
 
     <insert id="sendFeedback">

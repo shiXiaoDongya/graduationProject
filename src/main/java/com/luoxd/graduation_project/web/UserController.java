@@ -261,12 +261,22 @@ public class UserController {
 
     @RequestMapping(value = "/getReIndex", method = RequestMethod.GET)
     public String getReIndex(HttpServletRequest request) {
-        return "reIndex";
+        Integer reId = (Integer)request.getSession().getAttribute("userId");
+        if(reId != null){
+            return "reIndex";
+        }else{
+            return "redirect:index.html";
+        }
     }
 
     @RequestMapping("/getAdminIndex")
     public String getAdminIndex(HttpServletRequest request) {
-        return "adminIndex";
+        Integer adminId = (Integer)request.getSession().getAttribute("userId");
+        if(adminId != null){
+            return "adminIndex";
+        }else{
+            return "redirect:index.html";
+        }
     }
 
     @RequestMapping("/jsPersonCenter")

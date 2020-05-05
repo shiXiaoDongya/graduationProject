@@ -173,8 +173,12 @@ public class JobController {
         Integer reId = (Integer) request.getSession().getAttribute("userId");
         jobRequest.setReId(reId);
         log.info(jobRequest.toString());
-        Integer i = jobService.addOrUpdateJob(jobRequest);
-        return "";
+        Integer resultCode = jobService.addOrUpdateJob(jobRequest);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else {
+            return "{\"success\":false}";
+        }
     }
     @RequestMapping(value = "/saveChatContent",method = RequestMethod.POST)
     @ResponseBody
@@ -182,8 +186,8 @@ public class JobController {
         String json = request.getParameter("msg");
         ChatRequest chatRequest = JSONArray.parseObject(json, ChatRequest.class);
         log.info(chatRequest.toString());
-        Integer successCode = jobService.insertChats(chatRequest);
-        if(successCode > 0){
+        Integer resultCode = jobService.insertChats(chatRequest);
+        if(resultCode > 0){
             return "{\"success\":\"true\"}";
         }else {
             return "{\"success\":\"false\"}";

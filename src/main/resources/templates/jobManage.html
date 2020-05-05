@@ -57,7 +57,7 @@
             success: function(data){
                 for(var i = 0; i < data.length;i++) {
                     var classes = data[i];
-                    $("#classesUl").append(" <li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
+                    $("#classesUl").append("<li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
                 }
             }
         });
@@ -123,14 +123,11 @@
             url: "/job/addOrUpdateJob" ,//url
             data: $('#jobForm').serialize(),
             success: function (data) {
-                if(data['success']==="true"){
-                    if(data['userType']==="js"){
-                        window.location.href="/getLoginIndex";
-                    }else{
-                        window.location.href="/getReIndex";
-                    }
+                if(data['success']==true){
+                    alert("职位发布成功！");
+                    location.reload();
                 }else{
-                    alert(data['msg']);
+                    alert("职位发布失败");
                 }
             },
             error : function() {
