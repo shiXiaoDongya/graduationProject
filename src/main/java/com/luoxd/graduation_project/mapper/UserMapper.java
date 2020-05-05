@@ -1,6 +1,8 @@
 package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobSeekerRequest;
+import com.luoxd.graduation_project.response.JobSeekerResponse;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -44,4 +46,8 @@ public interface UserMapper {
     Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId);
 
     Integer deleteFeedback(Integer feedbackId);
+
+    JobSeekerResponse getJsById(Integer jsId);
+
+    Integer updateJobSeeker(JobSeekerRequest jsRequest);
 }

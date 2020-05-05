@@ -1,17 +1,16 @@
-package com.luoxd.graduation_project.domain;
+package com.luoxd.graduation_project.response;
 
 import lombok.Data;
 
 @Data
-public class JobSeeker {
+public class JobSeekerResponse {
     private Integer jsId;
     private String jsUsername;
-    private String jsPassword;
     private String jsRealname;
-    private String jsIdCard;
+    private String jsHeadImg;
     private Integer jsAge;
     private String jsGender;
     private String jsPhone;
     private String jsEmail;
-    private String jsSq;
+    private String jsCollege;
 }

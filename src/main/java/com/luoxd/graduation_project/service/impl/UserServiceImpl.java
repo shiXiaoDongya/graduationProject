@@ -2,9 +2,11 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.UserMapper;
+import com.luoxd.graduation_project.request.JobSeekerRequest;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.response.JobResponse;
+import com.luoxd.graduation_project.response.JobSeekerResponse;
 import com.luoxd.graduation_project.service.UserService;
 import com.luoxd.graduation_project.utils.Condition2StrUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -145,5 +147,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public Integer deleteFeedback(Integer feedbackId) {
         return userMapper.deleteFeedback(feedbackId);
+    }
+
+    @Override
+    public JobSeekerResponse getJsById(Integer jsId) {
+        return userMapper.getJsById(jsId);
+    }
+
+    @Override
+    public Integer updateJobSeeker(JobSeekerRequest jsRequest) {
+        return userMapper.updateJobSeeker(jsRequest);
     }
 }

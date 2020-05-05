@@ -85,4 +85,19 @@
         delete from feedback
         where feedback_id = #{feedbackId}
     </delete>
+
+    <select id="getJsById" resultType="com.luoxd.graduation_project.response.JobSeekerResponse">
+        select js_id,js_realname,js_head_img,js_age,js_gender,js_phone,js_email
+        from job_seeker
+        where js_id = #{jsId}
+    </select>
+
+    <update id="updateJobSeeker" parameterType="com.luoxd.graduation_project.request.JobSeekerRequest">
+        update job_seeker
+        set js_realname=#{jsRealname},js_gender=#{jsGender},js_age=#{jsAge},js_phone=#{jsPhone},js_email=#{jsEmail}
+        <if test="newJsHeadImg != null and newJsHeadImg != ''">
+            ,js_head_img=#{newJsHeadImg}
+        </if>
+        where js_id = #{jsId}
+    </update>
 </mapper>

@@ -1,8 +1,10 @@
 package com.luoxd.graduation_project.service;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobSeekerRequest;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.response.JobResponse;
+import com.luoxd.graduation_project.response.JobSeekerResponse;
 
 import java.util.List;
 
@@ -36,4 +38,8 @@ public interface UserService {
     Integer replyFeedback(Integer adminId,String replyMsg, Integer feedbackId);
 
     Integer deleteFeedback(Integer feedbackId);
+
+    JobSeekerResponse getJsById(Integer jsId);
+
+    Integer updateJobSeeker(JobSeekerRequest jsRequest);
 }
