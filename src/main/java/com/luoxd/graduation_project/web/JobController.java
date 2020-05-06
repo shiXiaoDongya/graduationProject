@@ -30,7 +30,7 @@ import java.util.List;
 @RequestMapping(value = "/job")
 public class JobController {
 
-    private static final double PAGESIZE = 2.0;
+    private static final double PAGESIZE = 10;
     @Autowired
     private JobService jobService;
 

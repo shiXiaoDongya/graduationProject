@@ -24,6 +24,7 @@
             var url = "/turnJsJobCollection";
             $('#info').load(url);
         }
+
         function turnJobRecommend() {
             $.ajax({
                 type: "GET",
@@ -87,6 +88,7 @@
                 <li class="list-group-item" onclick="turnJsJobCollection()"><a href="#">收藏职位</a></li>
                 <li class="list-group-item" onclick="turnJsFeedback()"><a href="#">意见反馈</a></li>
                 <li class="list-group-item" onclick="turnJobRecommend()"><a href="">推荐职位</a></li>
+                <li class="list-group-item" ><a href="/job/chat">消息记录</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
             </ul>
         </div>

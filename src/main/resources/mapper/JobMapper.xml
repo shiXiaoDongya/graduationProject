@@ -122,7 +122,7 @@
         </if>
         order by post_date DESC
         <if test="start != null">
-            limit #{start},2
+            limit #{start},10
         </if>
     </select>
     <select id="queryClasses" resultType="com.luoxd.graduation_project.domain.Classes">

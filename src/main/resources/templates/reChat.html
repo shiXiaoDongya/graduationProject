@@ -39,7 +39,10 @@
                     var jsId = data[i]['jsId'];
                     var jobId = data[i]['jobId'];
                     var jsRealname = data[i]['jsRealname'];
-                    var jsCollege = data[i]['jsCollege'];
+                    var jsCollege = '';
+                    if(jsCollege) {
+                        jsCollege = data[i]['jsCollege'];
+                    }
                     var notRead;
                     if(data[i]['notRead']){
                         notRead = data[i]['notRead'];
@@ -48,31 +51,23 @@
                     }
                     if(tempJsId === jsId && tempJobId === jobId){
                         $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
-                            "                    <span id=\"reId\" >" + jsId + "</span>\n" +
-                            "                    <span id=\"jobId\" >" + jobId + "</span>\n" +
-                            "                    <span id=\"count\">0</span>\n" +
                             "                    <div style=\"height:100px;\">\n" +
                             "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
                             "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                             "                        </div>\n" +
                             "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                            "                            <p><span ></span>" + jsRealname + "</p>\n" +
-                            "                            <p><span >" + jsCollege + "</span></p>\n" +
+                            "                            <p><a onclick= \"showJs("+jsId+")\">" + jsRealname + "</a></p>\n" +
                             "                        </div>\n" +
                             "                    </div>\n" +
                             "                </li>")
                     }else {
                         $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
-                            "                    <span id=\"reId\" >" + jsId + "</span>\n" +
-                            "                    <span id=\"jobId\" >" + jobId + "</span>\n" +
-                            "                    <span id=\"count\">0</span>\n" +
                             "                    <div style=\"height:100px;\">\n" +
                             "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
                             "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                             "                        </div>\n" +
                             "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
-                            "                            <p><span ></span>" + jsRealname + "</p>\n" +
-                            "                            <p><span >" + jsCollege + "</span></p>\n" +
+                            "                            <p><a onclick=\"showJs("+jsId+")\">" + jsRealname + "</a></p>\n" +
                             "                        </div>\n" +
                             "                    </div>\n" +
                             "                </li>")
@@ -99,6 +94,8 @@
                 success: function(data) {
                     //var chatList = data['chatList'];
                     for(var i = 0; i < data.length; i++){
+                        document.getElementById("jobUrl").innerHTML = data[0]['jobName'];
+                        document.getElementById("jobUrl").setAttribute("href","/job/getJobDetail?jobId="+data[0]['jobId']);
                         $('#chatContent').append("<p class=\"chatTime\">"+data[i]['chatSendTime']+"</p>");
                         if(data[i]['isJsSend']===1){
                             $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+data[i]['chatContent']+"</span></p>");
@@ -181,17 +178,21 @@
                             <li><a href="single.html">single</a></li>
                         </ul>
                     </li>
-                    <li><a class="ticker-btn" href="../regist.html">注册</a></li>
-                    <li><a class="ticker-btn" href="../login.html">登录</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="register.html">注册</a></li>
+                    <li th:if="${session.userName == null}"><a class="ticker-btn" href="login.html">登录</a></li>
+                    <li style="border: 1px white solid"><a href="#" th:if="${session.userName != null}" th:text="${session.userName}"></a>
+                        <ul style="margin-top: 0px">
+                            <li><a th:href="@{/jsPersonCenter(type=${session.userType})}">个人中心</a> </li>
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="/logout">注销</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><!-- #nav-menu-container -->
         </div>
     </div>
 </header><!-- #header -->
 <div class="panel panel-default" style="height: 500px;margin-top: 80px;">
-    <div class="panel-heading">
-        <span th:text="${session.user}">测试panel</span>
-    </div>
     <div class="panel-body" style="margin:0 auto;width:1000px;" >
         <div class="panel panel-default" style="float:left;width: 30%;height:1000px; border:1px solid black;">
             <div class="panel-heading">
@@ -206,10 +207,7 @@
             </div>
             <div class="panel-default" style="display: none;" id="chatDiv">
                 <div class=" panel-heading">
-                    <span>HR姓名</span> 丨 <span>公司</span> 丨 <span>所属职位</span>
-                </div>
-                <div class=" panel-heading">
-                    <a href="">XXX职位</a>
+                    <a href="" id="jobUrl"></a>
                 </div>
                 <div class="panel-body" style="height: 900px">
                     <div style="height: 75%;border: 1px solid black;overflow: scroll" id="chatContent">

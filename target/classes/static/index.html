@@ -52,9 +52,9 @@
                                 var jobClasses = childClasses['jobClassesList'][l];
                                 // alert(jobClasses['jobClassesName']);
                                 if(jobClasses['isHot'] == 1){
-                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"&jobClassesName="+jobClasses['jobClassesName']+"\" class=\"aui-a-curr\">"+jobClasses['jobClassesName']+"</a>";
                                 }else{
-                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"\">"+jobClasses['jobClassesName']+"</a>";
+                                    html += "<a href=\"/job/search?jobClassesId="+jobClasses['jobClassesId']+"&jobClassesName="+jobClasses['jobClassesName']+"\">"+jobClasses['jobClassesName']+"</a>";
                                 }
                             }
                             html += "</dd></dl>";

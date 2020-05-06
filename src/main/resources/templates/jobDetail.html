@@ -19,9 +19,13 @@
     }
 </style>
 <script type="text/javascript">
-    function chat(jsId,jobId,reId){
+    function chat(jsId,jobId,reId,userType){
         if(jsId){
-            window.location.href="/job/chat?reId="+reId+"&jobId="+jobId;
+            if(userType == "js") {
+                window.location.href = "/job/chat?reId=" + reId + "&jobId=" + jobId;
+            }else{
+                alert("求职者才可进行沟通");
+            }
         }else{
             alert("请先进行登录");
         }
@@ -119,7 +123,7 @@
             <p style="font-size: 15px" ><span class="label label-info tags" th:each="companyTag:${job.companyTags}" th:text="${companyTag}"></span></p>
         </div>
         <div style="float: right;width: 30%;padding-top: 40px;">
-            <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${session.userId}]],[[${job.jobId}]],[[${job.recruiterId}]])">立即沟通</button>
+            <button class="btn btn-primary btn-lg col-md-12" type="button" th:onclick="chat([[${session.userId}]],[[${job.jobId}]],[[${job.recruiterId}]],[[${session.userType}]])">立即沟通</button>
         </div>
         </div>
     </div>
