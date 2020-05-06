@@ -52,4 +52,6 @@ public interface UserMapper {
     Integer updateJobSeeker(JobSeekerRequest jsRequest);
 
     String getJobTags(Integer jsId);
+
+    List<IndexPic> getIndexPic();
 }

@@ -105,4 +105,10 @@
     <select id="getJobTags" resultType="java.lang.String">
         select js_tag from job_seeker where js_id = #{jsId}
     </select>
+
+    <select id="getIndexPic" resultType="com.luoxd.graduation_project.domain.IndexPic">
+        select index_pic.index_pic_id,index_pic.pic,index_pic.job_id,job.job_name,index_pic.update_time,index_pic.update_user,admin.admin_username
+        from index_pic left join job on index_pic.job_id = job.job_id
+        left join admin on index_pic.update_user = admin.admin_id
+    </select>
 </mapper>

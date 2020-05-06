@@ -9,7 +9,7 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
-            var url = "/turnAdminJobManage";
+            var url = "/turnAdminIndexPicSet";
             $('#info').load(url);
         }
         function turnAdminFeedback() {
@@ -18,6 +18,10 @@
         }
         function turnAdminJobManage() {
             var url = "/turnAdminJobManage";
+            $('#info').load(url);
+        }
+        function turnAdminIndexPicSet() {
+            var url = "/turnAdminIndexPicSet";
             $('#info').load(url);
         }
     </script>
@@ -65,7 +69,7 @@
                 <li class="list-group-item" onclick="turnAdminJobManage()" ><a href="#">职位管理</a></li>
                 <li class="list-group-item" ><a href="#">招聘者注册审核</a></li>
                 <li class="list-group-item" onclick="turnAdminFeedback()"><a href="#">反馈留言</a></li>
-                <li class="list-group-item" ><a href="#">首页广告管理</a></li>
+                <li class="list-group-item" onclick="turnAdminIndexPicSet()"><a href="#">首页广告管理</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
             </ul>
         </div>

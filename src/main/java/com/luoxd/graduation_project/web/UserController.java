@@ -459,7 +459,7 @@ public class UserController {
         return "jsPersonCenter";
     }
 
-    @RequestMapping("/getJobTags")
+    @RequestMapping(value = "/getJobTags",method = RequestMethod.GET)
     @ResponseBody
     public String getJobTags(HttpServletRequest request){
         Integer jsId = (Integer)request.getSession().getAttribute("userId");
@@ -470,8 +470,21 @@ public class UserController {
         return "{\"success\":false}";
     }
 
-    @RequestMapping("/turnJobRecommend")
+    @RequestMapping(value = "/turnJobRecommend",method = RequestMethod.GET)
     public String turnJobRecommend(HttpServletRequest request){
         return "jobRecommend";
+    }
+
+    @RequestMapping(value = "/turnAdminIndexPicSet",method = RequestMethod.GET)
+    public String turnAdminIndexPicSet(HttpServletRequest request){
+        return "adminIndexPicSet";
+    }
+
+    @RequestMapping(value = "/getIndexPic",method = RequestMethod.GET)
+    @ResponseBody
+    public List<IndexPic> getIndexPic(HttpServletRequest request){
+        List<IndexPic> indexPicList = userService.getIndexPic();
+
+        return indexPicList;
     }
 }

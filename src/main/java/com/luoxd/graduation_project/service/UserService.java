@@ -44,4 +44,6 @@ public interface UserService {
     Integer updateJobSeeker(JobSeekerRequest jsRequest);
 
     String getJobTags(Integer jsId);
+
+    List<IndexPic> getIndexPic();
 }

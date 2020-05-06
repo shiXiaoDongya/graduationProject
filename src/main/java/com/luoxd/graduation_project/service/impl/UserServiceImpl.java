@@ -163,4 +163,9 @@ public class UserServiceImpl implements UserService {
     public String getJobTags(Integer jsId) {
         return userMapper.getJobTags(jsId);
     }
+
+    @Override
+    public List<IndexPic> getIndexPic() {
+        return userMapper.getIndexPic();
+    }
 }

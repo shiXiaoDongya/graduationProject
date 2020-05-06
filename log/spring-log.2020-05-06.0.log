@@ -204,3 +204,1809 @@
  3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
 4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
  5. 有国际化背景服务B类工作经验优先, expCondition=null, eduCondition=null, salary=25000, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, jobClassesId=2, tag=分布式技术,Spring,iBATIS,服务治理,精通Java, reId=6)
+10:12:41.634 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 764 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:12:41.639 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:12:41.769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:12:41.769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:12:44.008 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:12:44.022 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:12:44.023 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:12:44.023 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:12:44.156 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:12:44.156 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2387 ms
+10:12:45.070 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:12:45.144 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:12:45.790 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:12:45.830 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:12:45.852 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:12:45.855 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.688 seconds (JVM running for 9.352)
+10:19:54.688 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:19:54.689 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:19:54.713 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+10:20:04.785 [http-nio-8281-exec-1] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin
+10:20:04.813 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:20:04.818 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+10:20:05.084 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:20:05.869 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=4, eduCondition=5, salary=25000, reCompanyId=3, tag=Java多线程,消息中间件.分布式系统设计, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, eduCondition=5, salary=20000, reCompanyId=3, tag=iBATIAS,数据库调优,MQ,java框架,NoSQL, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, eduCondition=null, salary=25000, reCompanyId=3, tag=分布式技术,Spring,iBATIS,服务治理,精通Java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=5, eduCondition=5, salary=25000, reCompanyId=3, tag=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=5, eduCondition=5, salary=15000, reCompanyId=4, tag=Java,后端开发工程师,直播,K歌, recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanCondition=7, sizeCondition=5, companyTags=股票期权,餐补,零食下午茶,五险一金,定期体检), Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权), Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+10:20:05.877 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [JobResponse(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=Java多线程,消息中间件.分布式系统设计, tags=[Java多线程, 消息中间件.分布式系统设计], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=本科, salary=20000, reCompanyId=3, tagsStr=iBATIAS,数据库调优,MQ,java框架,NoSQL, tags=[iBATIAS, 数据库调优, MQ, java框架, NoSQL], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=不限, salary=25000, reCompanyId=3, tagsStr=分布式技术,Spring,iBATIS,服务治理,精通Java, tags=[分布式技术, Spring, iBATIS, 服务治理, 精通Java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, tags=[后端开发, 数据库, jvm原理, iBATIS, Java基础扎实], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=4, tagsStr=Java,后端开发工程师,直播,K歌, tags=[Java, 后端开发工程师, 直播, K歌], recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[股票期权, 餐补, 零食下午茶, 五险一金, 定期体检], jsId=null, isCollected=0), JobResponse(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=本科, salary=2800, reCompanyId=3, tagsStr=javascript,前端ui,php,web开发,java, tags=[javascript, 前端ui, php, web开发, java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=分布式技术,后端开发,多线程编程,java工程师, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=1, tagsStr=后端开发,微服务框架,web开发框架,Spring Cloud, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tagsStr=Java,Web, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0), JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tagsStr=PHP, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)]
+10:20:46.913 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=4, eduCondition=5, salary=25000, reCompanyId=3, tag=Java多线程,消息中间件.分布式系统设计, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, eduCondition=5, salary=20000, reCompanyId=3, tag=iBATIAS,数据库调优,MQ,java框架,NoSQL, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, eduCondition=null, salary=25000, reCompanyId=3, tag=分布式技术,Spring,iBATIS,服务治理,精通Java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=5, eduCondition=5, salary=25000, reCompanyId=3, tag=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=5, eduCondition=5, salary=15000, reCompanyId=4, tag=Java,后端开发工程师,直播,K歌, recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanCondition=7, sizeCondition=5, companyTags=股票期权,餐补,零食下午茶,五险一金,定期体检), Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权), Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+10:20:46.919 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - [JobResponse(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=Java多线程,消息中间件.分布式系统设计, tags=[Java多线程, 消息中间件.分布式系统设计], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=本科, salary=20000, reCompanyId=3, tagsStr=iBATIAS,数据库调优,MQ,java框架,NoSQL, tags=[iBATIAS, 数据库调优, MQ, java框架, NoSQL], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=不限, salary=25000, reCompanyId=3, tagsStr=分布式技术,Spring,iBATIS,服务治理,精通Java, tags=[分布式技术, Spring, iBATIS, 服务治理, 精通Java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, tags=[后端开发, 数据库, jvm原理, iBATIS, Java基础扎实], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=4, tagsStr=Java,后端开发工程师,直播,K歌, tags=[Java, 后端开发工程师, 直播, K歌], recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[股票期权, 餐补, 零食下午茶, 五险一金, 定期体检], jsId=null, isCollected=0), JobResponse(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=本科, salary=2800, reCompanyId=3, tagsStr=javascript,前端ui,php,web开发,java, tags=[javascript, 前端ui, php, web开发, java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=分布式技术,后端开发,多线程编程,java工程师, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=1, tagsStr=后端开发,微服务框架,web开发框架,Spring Cloud, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tagsStr=Java,Web, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0), JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tagsStr=PHP, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)]
+10:21:04.866 [http-nio-8281-exec-4] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=4, eduCondition=5, salary=25000, reCompanyId=3, tag=Java多线程,消息中间件.分布式系统设计, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, eduCondition=5, salary=20000, reCompanyId=3, tag=iBATIAS,数据库调优,MQ,java框架,NoSQL, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, eduCondition=null, salary=25000, reCompanyId=3, tag=分布式技术,Spring,iBATIS,服务治理,精通Java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=5, eduCondition=5, salary=25000, reCompanyId=3, tag=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=5, eduCondition=5, salary=15000, reCompanyId=4, tag=Java,后端开发工程师,直播,K歌, recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanCondition=7, sizeCondition=5, companyTags=股票期权,餐补,零食下午茶,五险一金,定期体检), Job(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=1, eduCondition=5, salary=2800, reCompanyId=3, tag=javascript,前端ui,php,web开发,java, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=4, eduCondition=5, salary=15000, reCompanyId=2, tag=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanCondition=7, sizeCondition=5, companyTags=交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助), Job(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=2, eduCondition=5, salary=4000, reCompanyId=3, tag=分布式技术,后端开发,多线程编程,java工程师, recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanCondition=8, sizeCondition=6, companyTags=五险一金,保险,定期体检,节日福利,年终奖,股票期权), Job(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=5, eduCondition=5, salary=15000, reCompanyId=1, tag=后端开发,微服务框架,web开发框架,Spring Cloud, recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanCondition=7, sizeCondition=5, companyTags=包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权), Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null), Job(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=1, eduCondition=1, salary=2000, reCompanyId=null, tag=PHP, recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+10:21:04.870 [http-nio-8281-exec-4] INFO  c.l.g.web.JobController - [JobResponse(jobId=11, jobName=Java, jobDetail=1. 能够独立的按产品需求进行技术方案设计和编码实现，确保安全、可扩展性、质量和性能。
+2. 在负责的业务上有独立的见解和思考，对业务产品具有独立沟通、完善业务需求，并识别方案风险的能力。
+3. 具有持续优化、追求卓越的激情和能力，能持续关注和学习相关领域的知识，并能使用到工作当中。
+4. 能够制定项目中细分的开发计划，控制整个开发的进度；在项目中，协调与其他技术部门在开发上的接口并确定方案。
+职位描述
+1. 计算机相关专业本科及以上学历，三年以上Java开发经验，有大公司背景优先。
+2. Java基础扎实，熟悉Java虚拟机原理、Java高级特性和类库、Java网络与服务器编程、Java多线程编程以及常见开源产品。
+3. 了解分布式系统原理：CAP、最终一致性、幂等操作等；大型网络应用架构：消息中间件、缓存、负载均衡、集群技术、数据同步；高可用、可容灾分布式系统设计能力。
+4. 具备模块或子系统的架构设计能力，掌握常见的架构设计方法和模式，理解大型网站所需要用到的架构和技术。
+5. 能独立解决问题，能够负责重要业务模块的需求分析及设计实现，且对线上部署环境比较熟悉，能够独立分析和快速排查线上故障。
+6. 要求有激情、踏实、有责任心，具有良好的团队合作精神和沟通能力。
+7. 能主动寻求挑战与采取行动达成目标，对技术能持续的投入热情。, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=Java多线程,消息中间件.分布式系统设计, tags=[Java多线程, 消息中间件.分布式系统设计], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州天河区广电平云广场, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=12, jobName=JAVA, jobDetail=本职位工作地点在杭州，可以电话面试
+1. 高级JAVA工程师要求3年以上JEE开发经验；
+2. 扎实的Java编程基础，熟悉各种设计模式
+3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架
+4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验
+5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力
+6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统
+7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;
+岗位职责：
+负责B类交易平台相关开发
+福利
+大平台，牛人多，入职就配15寸MacbookPro
+本职位工作地点在杭州，可以电话面试, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=本科, salary=20000, reCompanyId=3, tagsStr=iBATIAS,数据库调优,MQ,java框架,NoSQL, tags=[iBATIAS, 数据库调优, MQ, java框架, NoSQL], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=平云路163号, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=13, jobName=Java, jobDetail=工作地点：杭州
+职位描述：
+1.深入理解业务需求，进行相关系统的设计和开发；
+2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；
+3.持续优化系统性能，保障系统的高可用性。
+职位要求：
+1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； 
+2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；
+ 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； 
+4. 有丰富的全球化部署和分布式异构系统架构的实施经验；
+ 5. 有国际化背景服务B类工作经验优先, expCondition=null, expConditionStr=不限, eduCondition=null, eduConditionStr=不限, salary=25000, reCompanyId=3, tagsStr=分布式技术,Spring,iBATIS,服务治理,精通Java, tags=[分布式技术, Spring, iBATIS, 服务治理, 精通Java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-05-06, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=10, jobName=Java, jobDetail=招聘部门:
+新零售技术事业群 地方杭州，杭州，杭州
+1. 负责业务产品相关的架构设计与开发；
+2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；
+3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。
+职位要求：
+1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；
+2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；
+3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；
+4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；
+5.有做过大型项目的技术PLA/PM者优先。, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=25000, reCompanyId=3, tagsStr=后端开发,数据库,jvm原理,iBATIS,Java基础扎实, tags=[后端开发, 数据库, jvm原理, iBATIS, Java基础扎实], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州海珠区阿里巴巴(广州阿里中心)(建设中), postDate=2020-05-05, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=9, jobName=Java, jobDetail=繁星直播和酷狗k歌后端开发工程师, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=4, tagsStr=Java,后端开发工程师,直播,K歌, tags=[Java, 后端开发工程师, 直播, K歌], recruiterId=7, reRealname=谢先生, reCompanyPosition=副总裁, workCity=广州, workAddress=广州市天河区科韵路16号信息港B栋13楼, postDate=2020-05-01, jobClassesId=2, jobClassesName=Java, companyName=酷狗音乐, companyHeadImg=470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。, industry=互联网, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[股票期权, 餐补, 零食下午茶, 五险一金, 定期体检], jsId=null, isCollected=0), JobResponse(jobId=8, jobName=Web开发 实习工程师 , jobDetail=岗位内容：
+根据产品需求，完成前端UI和后端业务逻辑的设计和实现。
+
+岗位要求：
+1、基础素质：
+大学本科或以上学历，计算机相关专业；
+为人正直负责，具有良好的沟通能力和团队精神；
+有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。
+2、专业技能：
+掌握数据结构以及常用算法，熟悉Linux操作系统；
+熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；
+掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。
+3、时间要求：
+需要能进行连续6个月以上的实习。, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=本科, salary=2800, reCompanyId=3, tagsStr=javascript,前端ui,php,web开发,java, tags=[javascript, 前端ui, php, web开发, java], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州市 天河区 粤和楼, postDate=2020-04-18, jobClassesId=80, jobClassesName=web前端, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=5, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=1-3年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=2, tagsStr=微服务框架,web开发框架,Spring Cloud,熟悉Spirng, tags=[微服务框架, web开发框架, Spring Cloud, 熟悉Spirng], recruiterId=5, reRealname=王先生, reCompanyPosition=web后台开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=视睿科技, companyHeadImg=abc84928faa2a8042e0c2da644949261.jpg, companyDetail=广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。
+公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。
+希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。
+视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。
+希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。
+员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。
+如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。, industry=智能硬件, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[交通补助, 年终奖, 零食下午茶, 补充医疗保险, 通讯补助], jsId=null, isCollected=0), JobResponse(jobId=6, jobName=java实习生, jobDetail=【部门介绍】﻿
+我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。
+
+在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。
+
+我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿
+
+我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿
+
+【开放岗位】
+java工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿
+
+【工作地点】杭州or深圳
+
+【岗位要求】
+(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿
+(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿
+(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 
+P.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿
+
+【联系方式】﻿﻿
+投递简历请发送到 *****-inc.com
+微信: *****************﻿﻿
+电话:***********﻿﻿
+可直接内推!!!﻿﻿
+有任何问题可随时微信or电话骚扰哦~
+
+【写在最后】﻿﻿
+If not you, who!﻿﻿﻿
+If not now, when!﻿﻿, expCondition=null, expConditionStr=应届生, eduCondition=null, eduConditionStr=本科, salary=4000, reCompanyId=3, tagsStr=分布式技术,后端开发,多线程编程,java工程师, tags=[分布式技术, 后端开发, 多线程编程, java工程师], recruiterId=6, reRealname=罗先生, reCompanyPosition=开发工程师, workCity=广州, workAddress=广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司, postDate=2020-04-12, jobClassesId=2, jobClassesName=Java, companyName=阿里巴巴集团, companyHeadImg=cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=阿里巴巴集团的使命是让天下没有难做的生意。
+我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。
+
+我们的愿景
+我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。, industry=互联网, finanConditionStr=不需要融资, sizeConditionStr=10000人以上, companyTags=[五险一金, 保险, 定期体检, 节日福利, 年终奖, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=4, jobName=Java, jobDetail=工作职责：
+1.负责集团内部相关web系统的软件开发的工作；
+2.配合相关的需求分析师了解业务需求并设计技术解决方案；
+3.独立编写项目开发过程中的项目文档；
+4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；
+
+任职要求：
+1.计算机类、信息系统类相关专业；
+2.熟悉Java常见web开发框架，如Spring、Mybatis；
+3.熟悉常见数据Oracle、MySQL的开发；
+4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；
+
+其它福利待遇：
+1. 年底双薪，旅游补贴，提供有竞争力的季度奖；
+2. 免费提供五星级的一日三餐和公寓住宿；
+3. 免费班车接送；
+4. 公司有自己的幼儿园，解决员工子女上学问题；, expCondition=null, expConditionStr=3-5年, eduCondition=null, eduConditionStr=本科, salary=15000, reCompanyId=1, tagsStr=后端开发,微服务框架,web开发框架,Spring Cloud, tags=[后端开发, 微服务框架, web开发框架, Spring Cloud], recruiterId=4, reRealname=白先生, reCompanyPosition=web后端java开发工程师, workCity=广州, workAddress=广州黄埔区CVTE第一产业园, postDate=2020-04-11, jobClassesId=2, jobClassesName=Java, companyName=视源股份(CVTE), companyHeadImg=f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg, companyDetail=广州视源（简称CVTE）成立于2005年12月，A股上市公司。
+CVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。
+了解更多详情请至视源股份官网：www.cvte.com, industry=电子/半导体/集成电路, finanConditionStr=已上市, sizeConditionStr=1000-9999人, companyTags=[包吃, 交通补助, 节日福利, 年终奖, 零食下午茶, 股票期权], jsId=null, isCollected=0), JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tagsStr=Java,Web, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0), JobResponse(jobId=2, jobName=Web前端实习, jobDetail=需熟练HTML5、CSS, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=2000, reCompanyId=null, tagsStr=PHP, tags=[PHP], recruiterId=1, reRealname=一, reCompanyPosition=9, workCity=广州, workAddress=广州天河XX大厦, postDate=2020-04-07, jobClassesId=3, jobClassesName=C++, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)]
+10:35:33.270 [Thread-16] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:35:33.272 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:35:33.285 [Thread-16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:35:34.345 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 764 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:35:34.346 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:35:35.106 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:35:35.313 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:35:35.315 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:35:35.315 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:35:35.316 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:35:35.408 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:35:35.409 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1058 ms
+10:35:35.726 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:35:35.752 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:35:36.001 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:35:36.030 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:35:36.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:35:36.035 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.764 seconds (JVM running for 1379.503)
+10:35:36.038 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:40:56.645 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:40:56.650 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:40:56.776 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:40:56.777 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:40:58.360 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:40:58.375 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:40:58.376 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:40:58.376 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:40:58.515 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:40:58.515 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1738 ms
+10:40:59.165 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:40:59.242 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:40:59.581 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:40:59.622 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:40:59.646 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:40:59.649 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.38 seconds (JVM running for 6.728)
+10:43:50.969 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:43:50.970 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:43:50.989 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+10:43:52.475 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:43:52.483 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+10:43:52.818 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:44:04.529 [http-nio-8281-exec-4] INFO  c.l.g.web.UserController - ====username:罗先生,password:123456,id:admin
+10:44:08.950 [http-nio-8281-exec-5] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin
+10:49:32.671 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:49:32.672 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:49:32.682 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:49:34.153 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:49:34.154 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:49:34.734 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:49:34.817 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:49:34.818 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:49:34.818 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:49:34.819 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:49:34.891 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:49:34.891 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 732 ms
+10:49:35.215 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:49:35.247 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:49:35.769 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:49:35.794 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:49:35.798 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:49:35.799 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.709 seconds (JVM running for 522.867)
+10:49:35.802 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:53:14.532 [Thread-19] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:53:15.592 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:53:15.592 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:53:16.251 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:53:16.360 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:53:16.361 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:53:16.361 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:53:16.362 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:53:16.414 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:53:16.415 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 820 ms
+10:53:16.705 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:53:16.741 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:53:17.008 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:53:17.024 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:53:17.027 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:53:17.028 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.503 seconds (JVM running for 744.091)
+10:53:17.029 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:53:56.168 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:53:56.170 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:53:56.225 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 55 ms
+10:53:57.404 [Thread-24] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:53:58.705 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:53:58.705 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:53:59.209 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:53:59.286 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:53:59.286 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:53:59.287 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:53:59.287 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:53:59.324 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:53:59.324 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 615 ms
+10:53:59.523 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:53:59.546 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:53:59.808 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:53:59.834 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:53:59.841 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:53:59.842 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.21 seconds (JVM running for 786.904)
+10:53:59.844 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:54:11.920 [Thread-29] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:54:13.043 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:54:13.043 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:54:13.508 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:54:13.605 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:54:13.606 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:54:13.606 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:54:13.607 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:54:13.684 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:54:13.684 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 638 ms
+10:54:13.924 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:54:13.952 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:54:14.327 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:54:14.356 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:54:14.361 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:54:14.362 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.387 seconds (JVM running for 801.424)
+10:54:14.364 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:54:16.930 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:54:16.933 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:54:16.937 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+10:54:35.558 [Thread-34] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:54:36.759 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:54:36.759 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:54:37.212 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:54:37.284 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:54:37.284 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:54:37.285 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:54:37.285 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:54:37.319 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:54:37.319 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 556 ms
+10:54:37.504 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:54:37.528 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:54:37.784 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:54:37.812 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:54:37.818 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:54:37.819 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.117 seconds (JVM running for 824.88)
+10:54:37.821 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:55:51.776 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:55:51.778 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:55:51.789 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+10:55:52.248 [Thread-39] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:55:54.058 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:55:54.059 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:55:54.511 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:55:54.604 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:55:54.605 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:55:54.605 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:55:54.606 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:55:54.645 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:55:54.645 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 583 ms
+10:55:54.835 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:55:54.858 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:55:55.073 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:55:55.089 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:55:55.093 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:55:55.094 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.117 seconds (JVM running for 902.153)
+10:55:55.096 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:55:55.205 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:55:55.220 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:55:55.224 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+10:58:43.687 [Thread-44] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:58:45.107 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:58:45.107 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:58:45.559 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:58:45.638 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:58:45.639 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:58:45.639 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:58:45.640 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:58:45.685 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:58:45.685 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 575 ms
+10:58:45.869 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:58:45.889 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:58:46.128 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:58:46.159 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:58:46.165 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:58:46.166 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.128 seconds (JVM running for 1073.222)
+10:58:46.168 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:59:16.907 [http-nio-8281-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:59:16.909 [http-nio-8281-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:59:16.912 [http-nio-8281-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:59:18.358 [Thread-49] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:59:19.788 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:59:19.789 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:59:20.371 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:59:20.445 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:59:20.446 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:59:20.446 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:59:20.446 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:59:20.511 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:59:20.511 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 719 ms
+10:59:20.862 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:59:20.906 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:59:21.278 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:59:21.295 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:59:21.300 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:59:21.300 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.573 seconds (JVM running for 1108.355)
+10:59:21.302 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:59:52.414 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:59:52.420 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:59:52.425 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:59:53.855 [Thread-54] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:59:54.889 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+10:59:54.890 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+10:59:55.453 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+10:59:55.564 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+10:59:55.565 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+10:59:55.565 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:59:55.566 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+10:59:55.613 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:59:55.614 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 721 ms
+10:59:55.846 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:59:55.871 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+10:59:56.108 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:59:56.123 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+10:59:56.127 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+10:59:56.127 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.304 seconds (JVM running for 1143.182)
+10:59:56.128 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:00:09.452 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:00:09.454 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:00:09.480 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:00:10.977 [Thread-59] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:00:12.107 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:00:12.107 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:00:12.758 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:00:12.854 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:00:12.855 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:00:12.855 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:00:12.856 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:00:12.907 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:00:12.908 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 797 ms
+11:00:13.142 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:00:13.157 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:00:13.340 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:00:13.357 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:00:13.360 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:00:13.361 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.332 seconds (JVM running for 1160.415)
+11:00:13.362 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:00:49.165 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:00:49.172 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:00:49.177 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:00:50.147 [Thread-64] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:00:51.629 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:00:51.629 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:00:52.259 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:00:52.325 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:00:52.326 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:00:52.326 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:00:52.326 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:00:52.356 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:00:52.356 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 724 ms
+11:00:52.515 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:00:52.536 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:00:52.745 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:00:52.766 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:00:52.769 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:00:52.770 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.204 seconds (JVM running for 1199.823)
+11:00:52.771 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:01:18.114 [Thread-69] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:01:19.788 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:01:19.788 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:01:20.358 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:01:20.504 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:01:20.505 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:01:20.505 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:01:20.505 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:01:20.562 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:01:20.562 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 770 ms
+11:01:20.880 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:01:20.938 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:01:21.388 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:01:21.415 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:01:21.420 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:01:21.420 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.716 seconds (JVM running for 1228.473)
+11:01:21.422 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:01:47.040 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:01:47.052 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:01:47.061 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:01:47.562 [Thread-74] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:01:49.016 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:01:49.016 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:01:49.524 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:01:49.612 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:01:49.612 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:01:49.612 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:01:49.612 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:01:49.649 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:01:49.650 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 628 ms
+11:01:49.885 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:01:49.909 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:01:50.377 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:01:50.399 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:01:50.403 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:01:50.404 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.446 seconds (JVM running for 1257.456)
+11:01:50.405 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:01:58.769 [http-nio-8281-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:01:58.771 [http-nio-8281-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:01:58.775 [http-nio-8281-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11:01:59.189 [Thread-79] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:02:00.479 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:02:00.480 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:02:00.911 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:02:00.986 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:02:00.987 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:02:00.987 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:02:00.987 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:02:01.069 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:02:01.069 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 587 ms
+11:02:01.235 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:02:01.248 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:02:01.456 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:02:01.493 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:02:01.499 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:02:01.500 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.082 seconds (JVM running for 1268.551)
+11:02:01.502 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:02:13.383 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:02:13.387 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:02:13.392 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:02:13.830 [Thread-84] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:02:15.196 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:02:15.196 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:02:15.645 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:02:15.751 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:02:15.752 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:02:15.752 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:02:15.753 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:02:15.792 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:02:15.792 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 593 ms
+11:02:16.030 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:02:16.050 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:02:16.411 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:02:16.456 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:02:16.459 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:02:16.460 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.326 seconds (JVM running for 1283.512)
+11:02:16.468 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:02:16.891 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:02:16.899 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:02:16.903 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:02:47.862 [Thread-89] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:02:49.000 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:02:49.001 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:02:49.706 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:02:49.811 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:02:49.812 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:02:49.812 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:02:49.812 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:02:49.860 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:02:49.861 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 858 ms
+11:02:50.030 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:02:50.053 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:02:50.233 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:02:50.256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:02:50.259 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:02:50.260 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.322 seconds (JVM running for 1317.31)
+11:02:50.261 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:03:39.697 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:03:39.701 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:03:39.706 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:03:39.732 [Thread-94] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:03:41.718 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:03:41.719 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:03:42.179 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:03:42.243 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:03:42.243 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:03:42.244 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:03:42.244 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:03:42.274 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:03:42.274 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 553 ms
+11:03:42.513 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:03:42.536 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:03:42.768 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:03:42.793 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:03:42.801 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:03:42.801 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.149 seconds (JVM running for 1369.851)
+11:03:42.807 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:03:43.757 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:03:43.759 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:03:43.762 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11:15:52.225 [Thread-99] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:15:58.594 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 8512 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:15:58.594 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:16:02.601 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:16:02.942 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:16:02.943 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:16:02.945 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:16:02.946 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:16:03.080 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:16:03.081 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4484 ms
+11:16:03.433 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:16:03.464 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:16:03.949 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:16:03.972 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:16:03.978 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:16:03.978 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 6.457 seconds (JVM running for 2111.012)
+11:16:03.980 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:21:20.753 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:21:20.758 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:21:21.080 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:21:21.081 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:21:24.241 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:21:24.256 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:21:24.257 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:21:24.258 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:21:24.675 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:21:24.675 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3593 ms
+11:21:26.330 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:21:26.444 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:21:27.234 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:21:27.352 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:21:27.699 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:21:27.706 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 10.114 seconds (JVM running for 12.567)
+11:21:45.873 [http-nio-8281-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:21:45.874 [http-nio-8281-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:21:45.887 [http-nio-8281-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+11:22:00.195 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:22:00.689 [http-nio-8281-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:22:25.169 [http-nio-8281-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:23:15.645 [http-nio-8281-exec-3] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin
+11:23:53.065 [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:23:53.067 [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:23:53.480 [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:23:55.714 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:23:55.716 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:24:09.768 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:24:09.976 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:24:09.977 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:24:09.977 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:24:09.978 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:24:14.048 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:24:14.049 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 18323 ms
+11:24:14.467 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:24:14.481 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:24:14.658 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:24:14.677 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:24:14.681 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:24:14.682 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 19.379 seconds (JVM running for 179.54)
+11:24:14.683 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:24:52.466 [Thread-30] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:24:54.042 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:24:54.042 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:24:58.894 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:24:59.027 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:24:59.028 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:24:59.029 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:24:59.029 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:25:00.290 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:25:00.291 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6246 ms
+11:25:01.430 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:25:01.446 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:25:01.631 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:25:01.652 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:25:01.655 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:25:01.656 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 7.864 seconds (JVM running for 226.513)
+11:25:01.658 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:29:02.058 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:29:02.059 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:29:02.061 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:29:02.339 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+11:29:02.340 [http-nio-8281-exec-7] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:29:02.369 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+11:29:12.692 [Thread-35] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:29:12.697 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+11:29:12.704 [Thread-35] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+11:29:13.630 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:29:13.630 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:29:13.981 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:29:14.043 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:29:14.044 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:29:14.044 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:29:14.044 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:29:14.792 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:29:15.194 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1561 ms
+11:29:15.379 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:29:15.394 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:29:15.581 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:29:15.598 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:29:15.601 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:29:15.601 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 2.026 seconds (JVM running for 480.453)
+11:29:15.603 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:29:24.137 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:29:24.143 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:29:24.150 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+11:29:51.268 [Thread-40] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:29:52.143 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:29:52.143 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:29:52.482 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:29:52.804 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:29:52.805 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:29:52.805 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:29:52.805 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:29:52.951 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:29:52.951 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 805 ms
+11:29:53.081 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:29:53.094 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:29:53.258 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:29:53.270 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:29:53.273 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:29:53.274 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.184 seconds (JVM running for 518.124)
+11:29:53.275 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:30:05.454 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:30:05.469 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:30:05.479 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:30:06.289 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11:30:06.292 [http-nio-8281-exec-9] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:30:06.310 [http-nio-8281-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11:33:42.449 [Thread-45] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:33:42.450 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+11:33:42.456 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+11:33:44.042 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:33:44.042 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:33:49.704 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:33:49.814 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:33:49.815 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:33:49.816 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:33:49.816 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:33:49.897 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:33:49.899 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5853 ms
+11:33:50.333 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:33:50.355 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:33:50.553 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:33:50.567 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:33:50.570 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:33:50.571 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 6.968 seconds (JVM running for 755.416)
+11:33:50.572 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:43:15.766 [Thread-50] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:43:17.215 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:43:17.215 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:43:17.739 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:43:18.394 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:43:18.395 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:43:18.396 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:43:18.396 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:43:18.543 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:43:18.544 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1326 ms
+11:43:25.032 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobServiceImpl': Unsatisfied dependency expressed through field 'jobMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobMapper' defined in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\com\luoxd\graduation_project\mapper\JobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+11:43:25.036 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+11:43:25.064 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:43:25.172 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobServiceImpl': Unsatisfied dependency expressed through field 'jobMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobMapper' defined in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\com\luoxd\graduation_project\mapper\JobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.luoxd.graduation_project.GraduationProjectApplication.main(GraduationProjectApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jobMapper' defined in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\com\luoxd\graduation_project\mapper\JobMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1526)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 48 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:595)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b5dfb16.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b5dfb16$$FastClassBySpringCGLIB$$f0ce0a6b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b5dfb16.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 49 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 62 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:102)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	... 64 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.luoxd.graduation_project.domain.IndexPic'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.luoxd.graduation_project.domain.IndexPic
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 70 common frames omitted
+11:43:27.599 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 11548 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:43:27.601 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:43:29.095 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:43:29.186 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:43:29.188 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:43:29.188 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:43:29.188 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:43:29.231 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:43:29.233 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1628 ms
+11:43:29.448 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:43:29.473 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:43:29.723 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:43:29.752 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:43:29.757 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:43:29.758 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 2.322 seconds (JVM running for 1334.591)
+11:43:29.760 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:44:17.568 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10696 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:44:17.573 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:44:17.675 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:44:17.676 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:44:19.958 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:44:19.972 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:44:19.973 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:44:19.973 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:44:20.135 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:44:20.136 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2460 ms
+11:44:20.775 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:44:20.874 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:44:21.479 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:44:21.631 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:44:21.661 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:44:21.667 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 5.503 seconds (JVM running for 7.699)
+11:44:39.164 [http-nio-8281-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:44:39.165 [http-nio-8281-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:44:39.183 [http-nio-8281-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+11:44:55.343 [http-nio-8281-exec-7] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin
+11:44:55.371 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:44:55.374 [http-nio-8281-exec-7] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:44:55.556 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:44:57.191 [http-nio-8281-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from index_pic left join job on index_pic.job_id = job.job_id
+        left join ' at line 2
+### The error may exist in file [C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select index_pic.index_pic_id,index_pic.pic,index_pic.job_id,job.jobName,index_pic.update_time,index_pic.update_user,admin.admin_username;         from index_pic left join job on index_pic.job_id = job.job_id         left join admin on index_pic.update_user = admin.admin_id
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from index_pic left join job on index_pic.job_id = job.job_id
+        left join ' at line 2
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from index_pic left join job on index_pic.job_id = job.job_id
+        left join ' at line 2] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from index_pic left join job on index_pic.job_id = job.job_id
+        left join ' at line 2
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy73.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at com.sun.proxy.$Proxy77.getIndexPic(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy78.getIndexPic(Unknown Source)
+	at com.luoxd.graduation_project.service.impl.UserServiceImpl.getIndexPic(UserServiceImpl.java:169)
+	at com.luoxd.graduation_project.web.UserController.getIndexPic(UserController.java:486)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+11:46:41.303 [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:46:41.304 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:46:41.315 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:46:42.558 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10696 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:46:42.558 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:46:43.091 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:46:43.175 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:46:43.175 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:46:43.176 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:46:43.176 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:46:43.244 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:46:43.244 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 682 ms
+11:46:43.570 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:46:43.625 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:46:43.933 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:46:43.960 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:46:43.965 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:46:43.966 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.471 seconds (JVM running for 149.995)
+11:46:43.970 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:47:07.151 [Thread-19] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:47:08.591 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 10696 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:47:08.591 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:47:09.239 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:47:09.382 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:47:09.384 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:47:09.384 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:47:09.385 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:47:09.441 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:47:09.442 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 847 ms
+11:47:09.719 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:47:09.759 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:47:10.123 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:47:10.152 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:47:10.157 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:47:10.158 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.631 seconds (JVM running for 176.186)
+11:47:10.160 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:47:23.619 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 9936 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:47:23.623 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:47:23.700 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:47:23.700 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:47:25.334 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:47:25.348 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:47:25.349 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:47:25.350 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:47:25.921 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:47:25.922 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2222 ms
+11:47:26.507 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:47:26.576 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:47:26.862 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:47:26.901 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:47:26.928 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:47:26.930 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 4.31 seconds (JVM running for 6.551)
+11:47:47.447 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:47:47.447 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:47:47.457 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:47:56.228 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:47:56.230 [http-nio-8281-exec-7] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:48:01.618 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:48:06.739 [http-nio-8281-exec-2] INFO  c.l.g.web.UserController - ====username:admin,password:123456,id:admin
+11:50:01.678 [Thread-11] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:50:01.680 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:50:01.687 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:50:02.841 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 9936 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:50:02.842 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:50:03.821 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:50:03.906 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:50:03.907 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:50:03.907 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:50:03.908 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:50:03.953 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:50:03.955 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1109 ms
+11:50:04.176 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:50:04.197 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:50:04.397 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:50:04.416 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:50:04.419 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:50:04.420 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.663 seconds (JVM running for 164.037)
+11:50:04.423 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:50:53.609 [Thread-19] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:50:54.874 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Starting GraduationProjectApplication on Hasee-PC with PID 9936 (started by Administrator in C:\Users\Administrator\Desktop\作业\毕业设计\graduationProject2)
+11:50:54.875 [restartedMain] INFO  c.l.g.GraduationProjectApplication - No active profile set, falling back to default profiles: default
+11:50:55.431 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+11:50:55.538 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8281 (http)
+11:50:55.539 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8281"]
+11:50:55.540 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:50:55.540 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:50:55.598 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:50:55.599 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 721 ms
+11:50:55.860 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:50:55.892 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+11:50:56.160 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:50:56.185 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8281"]
+11:50:56.190 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8281 (http) with context path ''
+11:50:56.191 [restartedMain] INFO  c.l.g.GraduationProjectApplication - Started GraduationProjectApplication in 1.4 seconds (JVM running for 215.807)
+11:50:56.193 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:50:56.219 [http-nio-8281-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:50:56.220 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:50:56.223 [http-nio-8281-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11:50:56.516 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+11:50:56.517 [http-nio-8281-exec-7] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+11:50:56.560 [http-nio-8281-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+11:51:03.134 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - in========3
+11:51:04.104 [http-nio-8281-exec-9] INFO  c.l.g.service.impl.JobServiceImpl - ===jobList:[Job(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=1, eduCondition=1, salary=5000, reCompanyId=null, tag=Java,Web, recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanCondition=null, sizeCondition=null, companyTags=null)]
+11:51:04.228 [http-nio-8281-exec-9] INFO  c.l.g.web.JobController - ==========JobResponse(jobId=3, jobName=测试职位, jobDetail=测试职位描述, expCondition=null, expConditionStr=在校生, eduCondition=null, eduConditionStr=初中及以下, salary=5000, reCompanyId=null, tagsStr=Java,Web, tags=[Java, Web], recruiterId=2, reRealname=啦啦, reCompanyPosition=HR, workCity=广州, workAddress=天河区体育西路, postDate=2020-04-11, jobClassesId=4, jobClassesName=PHP, companyName=null, companyHeadImg=null, companyDetail=null, industry=null, finanConditionStr=null, sizeConditionStr=null, companyTags=null, jsId=null, isCollected=0)
