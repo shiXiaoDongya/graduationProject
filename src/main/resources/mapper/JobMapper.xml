@@ -90,22 +90,28 @@
                 </otherwise>
             </choose>
         </if>
+        <if test="finanCondition != null and finanCondition != ''">
+            and company.finan_condition = #{finanCondition}
+        </if>
+        <if test="sizeCondition != null and sizeCondition != ''">
+            and company.size_condition = #{sizeCondition}
+        </if>
         <if test="postDateCondition != null and postDateCondition != ''">
             <choose>
                 <when test="postDateCondition ==1 ">
                     and  job.post_date = curdate()
                 </when >
                 <when test="postDateCondition ==2 ">
-                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate(), INTERVAL 3 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="postDateCondition ==3 ">
-                    and job.post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt; DATE_SUB(curdate(), INTERVAL 7 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==4 ">
-                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate(), INTERVAL 15 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==5 ">
-                    and job.post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;=  DATE_SUB(curdate(), INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
                 </when >
                 <otherwise>
                 </otherwise>
@@ -175,6 +181,7 @@
         select count(*)
         from job left join recruiter on job.recruiter_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
+        left join job_classes on job.job_classes_id = job_classes.job_classes_id
         where 1 = 1
         <if test="keyword != null and keyword != ''">
             and job.job_name LIKE concat('%',#{keyword},'%')
@@ -218,22 +225,28 @@
                 </otherwise>
             </choose>
         </if>
+        <if test="finanCondition != null and finanCondition != ''">
+            and company.finan_condition = #{finanCondition}
+        </if>
+        <if test="sizeCondition != null and sizeCondition != ''">
+            and company.size_condition = #{sizeCondition}
+        </if>
         <if test="postDateCondition != null and postDateCondition != ''">
             <choose>
                 <when test="postDateCondition ==1 ">
                     and  job.post_date = curdate()
                 </when >
                 <when test="postDateCondition ==2 ">
-                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 3 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate(), INTERVAL 3 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="postDateCondition ==3 ">
-                    and job.post_date &gt; DATE_SUB(curdate, INTERVAL 7 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt; DATE_SUB(curdate(), INTERVAL 7 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==4 ">
-                    and job.post_date &gt;  DATE_SUB(curdate, INTERVAL 15 DAY) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;  DATE_SUB(curdate(), INTERVAL 15 DAY) and job.post_date &lt;= curdate()
                 </when >
                 <when test="salCondition ==5 ">
-                    and job.post_date &gt;=  DATE_SUB(curdate, INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
+                    and job.post_date &gt;=  DATE_SUB(curdate(), INTERVAL 1 MONTH ) and job.post_date &lt;= curdate()
                 </when >
                 <otherwise>
                 </otherwise>
@@ -327,4 +340,14 @@
         set job_classes_id = #{jobClassesId}
         where job_id = #{jobId}
     </update>
+
+    <select id="getHobJobList" resultType="com.luoxd.graduation_project.domain.Job">
+        select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_company_position,job.work_city,job.work_address,job.post_date,job.job_classes_id,job_classes.job_classes_name,
+        company.company_name,company.company_head_img,company.company_detail,company.industry,company.finan_condition,company.size_condition,company.company_tags
+        from job left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
+        left join job_classes on job.job_classes_id = job_classes.job_classes_id
+        where job.is_recommend = 1
+    </select>
 </mapper>

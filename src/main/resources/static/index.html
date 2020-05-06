@@ -81,6 +81,30 @@
                     });
                 }
             });
+
+
+            getHotJob();
+        }
+        function getHotJob() {
+            $("#hotJobDiv").html("");
+            $.ajax({
+                type: "GET",
+                url: "/job/getHotJob",
+                dataType: "json",
+                contentType: "application/json;charset=UTF-8",
+                success: function(data){
+                    for(var i = 0; i < data.length; i++){
+                        $("#hotJobDiv").append("<div class=\"jobDiv panel panel-default\">\n" +
+                            "                <img class=\"jobClassesImg\" src=\"../companyHeadImg/"+data[i]['companyHeadImg']+"\"/>\n" +
+                            "                <div style=\"float: left; margin:20px 0 0 20px; font-size: 18px\">\n" +
+                            "                    <div><a href=\"/job/getJobDetail?jobId="+data[i]['jobId']+"\" >"+data[i]['jobName']+"</a></div><br/>\n" +
+                            "                    <div>"+data[i]['workCity']+"丨"+data[i]['expConditionStr']+"丨"+data[i]['eduConditionStr']+"</div><br/>\n" +
+                            "                    <div style=\"font-size: 20px;\"><font color=\"red\">"+data[i]['salary']+"元/月</font> </div>\n" +
+                            "                </div>\n" +
+                            "            </div>");
+                    }
+                }
+            });
         }
     </script>
     <script type="text/javascript">
@@ -201,17 +225,7 @@
         </div>
         <div class="aui-container-bxo" style="margin-top:700px;height: 500px;">
             <div style="width:200px;margin:0 auto;font-size: 20px;">----热门职位----</div>
-            <div class="jobDiv">
-                <img class="jobClassesImg" />
-                <div style="float: left; margin:20px 0 0 20px; font-size: 18px">
-                    <div><a href="" >职位名字很长很长</a></div><br/>
-                    <div>地点丨经验丨学历</div><br/>
-                    <div style="font-size: 20px;"><font color="red">30-50K</font> </div>
-                </div>
-            </div>
-            <div class="jobDiv" >
-            </div>
-            <div class="jobDiv" ></div>
+            <div id="hotJobDiv"></div>
         </div>
     </div>
 </div>

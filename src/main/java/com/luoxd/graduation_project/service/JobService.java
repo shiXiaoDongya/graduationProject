@@ -42,4 +42,6 @@ public interface JobService {
     Integer cancelCollection(Integer jsId, Integer jobId);
 
     Integer changeJobClasses(Integer jobId, Integer jobClassesId);
+
+    List<JobResponse> getHobJobList();
 }

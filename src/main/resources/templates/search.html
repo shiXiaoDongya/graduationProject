@@ -275,6 +275,8 @@
         </div>
         <div style="margin: 0 auto;width: 1600px;text-align: center">
         <ul class="pagination pagination-lg" >
+            <li th:class="${searchRequest.indexPage==1}?'disabled' : ''"><a th:if="${searchRequest.indexPage==1}" href="#">首页</a><a th:if="${searchRequest.indexPage!=1}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=1)}">首页</a></li>
             <li th:class="${searchRequest.indexPage==1}?'disabled' : ''"><a th:if="${searchRequest.indexPage==1}" href="#">上一页</a><a th:if="${searchRequest.indexPage!=1}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage-1})}">上一页</a></li>
             <li th:if="${searchRequest.indexPage-3 >=1}" ><a th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
@@ -292,6 +294,8 @@
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+3})}" th:text="${searchRequest.indexPage +3}" >1</a></li>
             <li th:class="${searchRequest.indexPage==searchRequest.totalPage}?'disabled' : ''" ><a th:if="${searchRequest.indexPage==searchRequest.totalPage}" href="#">下一页</a><a th:if="${searchRequest.indexPage != searchRequest.totalPage}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
             finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.indexPage+1})}">下一页</a></li>
+            <li th:class="${searchRequest.indexPage==searchRequest.totalPage}?'disabled' : ''" ><a th:if="${searchRequest.indexPage==searchRequest.totalPage}" href="#">尾页</a><a th:if="${searchRequest.indexPage != searchRequest.totalPage}" th:href="@{/job/search(keyword=${searchRequest.keyword},jobClassesId=${searchRequest.jobClassesId},jobClassesName=${searchRequest.jobClassesName},expCondition=${searchRequest.expCondition},eduCondition=${searchRequest.eduCondition},salCondition=${searchRequest.salCondition},
+            finanCondition=${searchRequest.finanCondition},sizeCondition=${searchRequest.sizeCondition},postDateCondition=${searchRequest.postDateCondition},indexPage=${searchRequest.totalPage})}">尾页</a></li>
         </ul><br>
         </div>
         </div>

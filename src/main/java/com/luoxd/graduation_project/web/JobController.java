@@ -254,4 +254,11 @@ public class JobController {
             return "{\"success\":false}";
         }
     }
+
+    @RequestMapping(value = "/getHotJob",method = RequestMethod.GET)
+    @ResponseBody
+    private List<JobResponse> getHotJob(HttpServletRequest request){
+        List<JobResponse> hotJobList = jobService.getHobJobList();
+        return hotJobList;
+    }
 }

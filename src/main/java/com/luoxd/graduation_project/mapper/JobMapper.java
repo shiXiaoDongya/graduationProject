@@ -66,4 +66,6 @@ public interface JobMapper {
     Integer cancelCollection(Integer jsId, Integer jobId);
 
     Integer changeJobClasses(Integer jobId, Integer jobClassesId);
+
+    List<Job> getHobJobList();
 }
