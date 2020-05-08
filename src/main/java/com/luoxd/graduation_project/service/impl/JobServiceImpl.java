@@ -88,6 +88,7 @@ public class JobServiceImpl implements JobService {
                 jobResponse.setTags(tags);
                 jobResponse.setRecruiterId(tempJob.getRecruiterId());
                 jobResponse.setReRealname(tempJob.getReRealname());
+                jobResponse.setReHeadImg(tempJob.getReHeadImg());
                 jobResponse.setReCompanyPosition(tempJob.getReCompanyPosition());
                 jobResponse.setWorkCity(tempJob.getWorkCity());
                 jobResponse.setWorkAddress(tempJob.getWorkAddress());

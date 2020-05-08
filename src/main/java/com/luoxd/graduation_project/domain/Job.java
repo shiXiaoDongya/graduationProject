@@ -26,6 +26,8 @@ public class Job {
 
     private String reRealname;
 
+    private String reHeadImg;
+
     private String reCompanyPosition;
 
     private String workCity;

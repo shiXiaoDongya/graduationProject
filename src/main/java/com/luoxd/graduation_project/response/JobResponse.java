@@ -32,6 +32,8 @@ public class JobResponse {
 
     private String reRealname;
 
+    private String reHeadImg;
+
     private String reCompanyPosition;
 
     private String workCity;

@@ -26,6 +26,10 @@
                         var reId = data[i]['reId'];
                         var jobId = data[i]['jobId'];
                         var reRealname = data[i]['reRealname'];
+                        var reHeadImgUrl = '#';
+                        if(data[i]['reHeadImg']){
+                            reHeadImgUrl = "../reHeadImg/"+data[i]['reHeadImg']
+                        }
                         var notRead;
                         if (data[i]['notRead']) {
                             notRead = data[i]['notRead'];
@@ -43,7 +47,7 @@
                             $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
                                 "                    <div style=\"height:100px;\">\n" +
                                 "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                            <img src=\""+reHeadImgUrl+"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                                 "                        </div>\n" +
                                 "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
                                 "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
@@ -55,7 +59,7 @@
                             $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat(this," + reId + "," + jobId + ")\" >\n" +
                                 "                    <div style=\"height:100px;\">\n" +
                                 "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                            <img src=\""+reHeadImgUrl+"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                                 "                        </div>\n" +
                                 "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
                                 "                            <p><span>" + reRealname + "</span> <span class=\"badge\" >" + notRead + "</span></p>\n" +
@@ -185,6 +189,10 @@
                             var reId = data['reId'];
                             var jobId = data['jobId'];
                             var reRealname = data['reRealname'];
+                            var reHeadImgUrl = '#';
+                            if(data['reHeadImg']){
+                                reHeadImgUrl = "../reHeadImg/"+data['reHeadImg'];
+                            }
                             var companyName = data['reCompany'];
                             var reCompanyPosition = data['reCompanyPosition'];
                             var jobName = data['jobName'];
@@ -192,7 +200,7 @@
                             $("#newUserUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" id=\"" + reId + "-" + jobId + "-li\" onclick=\"showChat2(this,\'" + reId + "\',\'" + jobId + "\',\'" + reRealname + "\',\'" + companyName + "\',\'" + reCompanyPosition + "\',\'" + jobName + "\')\" >\n" +
                                 "                    <div style=\"height:100px;\">\n" +
                                 "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                                "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                                "                            <img src=\""+reHeadImgUrl+"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                                 "                        </div>\n" +
                                 "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
                                 "                            <p><span> " + reRealname + "</span> </p>\n" +

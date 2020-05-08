@@ -210,6 +210,7 @@ public class JobController {
     @RequestMapping(value = "/getNewUser",method = RequestMethod.GET)
     @ResponseBody
     public ChatResponse getNewUser(HttpServletRequest request,Integer reId, Integer jobId){
+        log.info("newUserParam:reId-"+reId+",jobId-"+jobId);
         ChatResponse newChat = jobService.getNewChat(reId,jobId);
         newChat.setJobId(jobId);
         log.info("=====newChat:"+newChat.toString());

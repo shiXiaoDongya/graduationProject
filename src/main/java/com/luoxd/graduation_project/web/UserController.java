@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.web;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
+import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
 import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.response.JobSeekerResponse;
@@ -335,6 +336,10 @@ public class UserController {
 
     @RequestMapping("/turnReInfo")
     public String turnReInfo(HttpServletRequest request) {
+        Integer reId = (Integer) request.getSession().getAttribute("userId");
+        Recruiter re = userService.getRecruiterById(reId);
+        log.info("===re:"+re.toString());
+        request.setAttribute("re",re);
         return "reInfo";
     }
 
@@ -486,5 +491,35 @@ public class UserController {
         List<IndexPic> indexPicList = userService.getIndexPic();
 
         return indexPicList;
+    }
+
+    @RequestMapping(value = "/changeReInfo",method = RequestMethod.POST)
+    public String changeReInfo(HttpServletRequest request, RecruiterRequest reRequest) throws IOException {
+        Integer reId = (Integer)request.getSession().getAttribute("userId");
+        reRequest.setReId(reId);
+        if(reRequest.getReHeadImg() != null) {
+            // 原始名称
+            String oldFileName = reRequest.getReHeadImg().getOriginalFilename(); // 获取上传文件的原名
+            // 存储图片的虚拟本地路径
+            String relativePath = System.getProperty("user.dir");
+            String saveFilePath = relativePath + "\\src\\main\\resources\\static\\reHeadImg";
+            // 上传图片
+            if (reRequest.getReHeadImg() != null && oldFileName != null && oldFileName.length() > 0) {
+                // 新的图片名称
+                String newFileName = UUID.randomUUID() + oldFileName.substring(oldFileName.lastIndexOf("."));
+                reRequest.setNewReHeadImg(newFileName);
+                System.out.println(saveFilePath + "\\" + newFileName);
+                // 新图片
+                File newFile = new File(saveFilePath + "\\" + newFileName);
+                // 将内存中的数据写入磁盘
+                reRequest.getReHeadImg().transferTo(newFile);
+                File file = new File(saveFilePath + "\\" + reRequest.getOldReHeadImg());
+                if (file.exists()) {
+                    file.delete();
+                }
+            }
+        }
+        Integer resultCode = userService.updateRecruiter(reRequest);
+        return "reIndex";
     }
 }

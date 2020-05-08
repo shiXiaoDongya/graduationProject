@@ -3,6 +3,7 @@ package com.luoxd.graduation_project.service.impl;
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.UserMapper;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
+import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.response.JobResponse;
@@ -167,5 +168,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<IndexPic> getIndexPic() {
         return userMapper.getIndexPic();
+    }
+
+    @Override
+    public Recruiter getRecruiterById(Integer reId) {
+        return userMapper.getRecruiterById(reId);
+    }
+
+    @Override
+    public Integer updateRecruiter(RecruiterRequest reRequest) {
+        return userMapper.updateRecruiter(reRequest);
     }
 }

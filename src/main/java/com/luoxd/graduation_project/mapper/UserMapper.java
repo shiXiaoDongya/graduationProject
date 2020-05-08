@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.mapper;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
+import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.response.JobSeekerResponse;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -54,4 +55,8 @@ public interface UserMapper {
     String getJobTags(Integer jsId);
 
     List<IndexPic> getIndexPic();
+
+    Recruiter getRecruiterById(Integer reId);
+
+    Integer updateRecruiter(RecruiterRequest reRequest);
 }

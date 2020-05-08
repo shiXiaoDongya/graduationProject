@@ -7,6 +7,7 @@ public class Recruiter {
     private Integer reId;
     private String reUsername;
     private String rePassword;
+    private String reHeadImg;
     private String reRealname;
     private String reIdCard;
     private String reGender;

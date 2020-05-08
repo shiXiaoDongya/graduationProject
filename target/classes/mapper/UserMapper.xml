@@ -111,4 +111,19 @@
         from index_pic left join job on index_pic.job_id = job.job_id
         left join admin on index_pic.update_user = admin.admin_id
     </select>
+
+    <select id="getRecruiterById" resultType="com.luoxd.graduation_project.domain.Recruiter">
+        select re_head_img,re_realname,re_gender,re_phone,re_email
+        from recruiter
+        where re_id = #{reId}
+    </select>
+
+    <update id="updateRecruiter" parameterType="com.luoxd.graduation_project.request.RecruiterRequest">
+        update recruiter
+        set re_realname = #{reRealname},re_gender = #{reGender},re_phone = #{rePhone},re_email = #{reEmail}
+        <if test="newReHeadImg != null and newReHeadImg != ''">
+            ,re_head_img=#{newReHeadImg}
+        </if>
+        where re_id = #{reId}
+    </update>
 </mapper>

@@ -96,7 +96,7 @@
                 <div class="aui-info">
                     <div>
                     </div>
-                    <img th:src="'../jsHeadImg/'+${js.jsHeadImg}" id="img-txz" style="width: 150px;height: 200px"/>
+                    <img th:src="${js.jsHeadImg == null}?'#':'../jsHeadImg/'+${js.jsHeadImg}" id="img-txz" style="width: 150px;height: 200px"/>
                     <input type="hidden" name="oldJsHeadImg" th:value="${js.jsHeadImg}">
                     <input type="file" accept="image/*" id="file-txz" name="jsHeadImg" onchange="upload('#file-txz', '#img-txz');" style="display: none" />
                 </div>

@@ -42,7 +42,7 @@
 
     <select id="queryJobList" resultType="com.luoxd.graduation_project.domain.Job" parameterType="com.luoxd.graduation_project.request.SearchRequest">
         select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
-        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_company_position,job.work_city,job.work_address,job.post_date,job.job_classes_id,job_classes.job_classes_name,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_head_img,recruiter.re_company_position,job.work_city,job.work_address,job.post_date,job.job_classes_id,job_classes.job_classes_name,
         company.company_name,company.company_head_img,company.company_detail,company.industry,company.finan_condition,company.size_condition,company.company_tags
         from job left join recruiter on job.recruiter_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
@@ -151,7 +151,7 @@
     </select>
 
     <select id="queryJsChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
-        select recruiter.re_id,recruiter.re_realname,company.company_name,recruiter.re_company_position,chat.job_id
+        select recruiter.re_id,recruiter.re_realname,recruiter.re_head_img,company.company_name,recruiter.re_company_position,chat.job_id
         from chat left join recruiter on chat.re_id = recruiter.re_id
         left join company on recruiter.re_company_id = company.company_id
         where chat.js_id = #{userId}
@@ -160,7 +160,7 @@
     </select>
 
     <select id="queryReChatUsers" resultType="com.luoxd.graduation_project.response.ChatResponse">
-        select job_seeker.js_id,job_seeker.js_realname,job_seeker.js_college,chat.job_id
+        select job_seeker.js_id,job_seeker.js_realname,job_seeker.js_head_img,job_seeker.js_college,chat.job_id
         from chat left join job_seeker on chat.js_id = job_seeker.js_id
         where chat.re_id = #{userId}
         group by chat.js_id,chat.job_id
@@ -312,12 +312,12 @@
     </insert>
 
     <select id="getNewChat" resultType="com.luoxd.graduation_project.response.ChatResponse">
-        select recruiter.re_id,recruiter.re_realname,company.company_name,
+        select recruiter.re_id,recruiter.re_realname,re_head_img,company.company_name,
         recruiter.re_company_position,job.job_name
         from  recruiter
         left join company on recruiter.re_company_id = company.company_id
         left join job on job.recruiter_id = recruiter.re_id
-        where recruiter.re_id = #{reId}
+        where recruiter.re_id = #{reId} and job.job_id = #{jobId}
     </select>
 
     <select id="getJobCollection" resultType="com.luoxd.graduation_project.domain.Job">

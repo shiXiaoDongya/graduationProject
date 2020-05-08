@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.service;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
+import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.response.ClassesResonse;
 import com.luoxd.graduation_project.response.JobResponse;
 import com.luoxd.graduation_project.response.JobSeekerResponse;
@@ -46,4 +47,8 @@ public interface UserService {
     String getJobTags(Integer jsId);
 
     List<IndexPic> getIndexPic();
+
+    Recruiter getRecruiterById(Integer reId);
+
+    Integer updateRecruiter(RecruiterRequest reRequest);
 }
