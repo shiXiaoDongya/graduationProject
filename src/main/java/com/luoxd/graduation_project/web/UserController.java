@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.web;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobConditionRequest;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
 import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.request.SearchRequest;
@@ -282,6 +283,10 @@ public class UserController {
 
     @RequestMapping("/jsPersonCenter")
     public String jsPersonCenter(HttpServletRequest request) {
+        Integer userId = (Integer)request.getSession().getAttribute("userId");
+        if(userId == null){
+            return "redirect:index.html";
+        }
         String type = request.getParameter("type");
         if (!StringUtils.isEmpty(type)) {
             switch (type) {
@@ -472,6 +477,15 @@ public class UserController {
         Integer resultCode = userService.updateJobSeeker(jsRequest);
         return "jsPersonCenter";
     }
+
+    @RequestMapping(value = "/changeJobCondition", method = RequestMethod.POST)
+    public String changeJobCondition(HttpServletRequest request, JobConditionRequest jobConditionRequest) throws IOException {
+        Integer jsId = (Integer)request.getSession().getAttribute("userId");
+        jobConditionRequest.setJsId(jsId);
+        Integer resultCode = userService.updateJobCondition(jobConditionRequest);
+        return "jsPersonCenter";
+    }
+
 
     @RequestMapping(value = "/getJobTags",method = RequestMethod.GET)
     @ResponseBody

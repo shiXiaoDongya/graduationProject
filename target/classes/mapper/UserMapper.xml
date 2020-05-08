@@ -88,16 +88,34 @@
     </delete>
 
     <select id="getJsById" resultType="com.luoxd.graduation_project.response.JobSeekerResponse">
-        select js_id,js_realname,js_head_img,js_age,js_gender,js_phone,js_email
+        select js_id,js_realname,js_head_img,js_age,js_gender,js_phone,js_email,js_exp,js_edu,js_sal,js_college,js_tag
         from job_seeker
         where js_id = #{jsId}
     </select>
 
     <update id="updateJobSeeker" parameterType="com.luoxd.graduation_project.request.JobSeekerRequest">
         update job_seeker
-        set js_realname=#{jsRealname},js_gender=#{jsGender},js_age=#{jsAge},js_phone=#{jsPhone},js_email=#{jsEmail}
+        set js_realname=#{jsRealname},js_age=#{jsAge},js_phone=#{jsPhone},js_email=#{jsEmail}
+        <if test="jsGender != null and jsGender != ''">
+            ,js_gender=#{jsGender}
+        </if>
         <if test="newJsHeadImg != null and newJsHeadImg != ''">
             ,js_head_img=#{newJsHeadImg}
+        </if>
+        <if test="jsExp != null and jsExp != ''">
+            js_exp = #{jsExp}
+        </if>
+        <if test="jsEdu != null and jsEdu != ''">
+            js_edu = #{jsEdu}
+        </if>
+        <if test="jsSal != null and jsSal != ''">
+            js_sal = #{jsSal}
+        </if>
+        <if test="jsCollege != null and jsCollege != ''">
+            js_college = #{jsCollege}
+        </if>
+        <if test="jsTag != null and jsTag != ''">
+            js_tag = #{jsTag}
         </if>
         where js_id = #{jsId}
     </update>
@@ -132,4 +150,10 @@
         from company
         where company_id = #{reCompanyId}
     </select>
+
+    <update id="updateJobCondition" parameterType="com.luoxd.graduation_project.request.JobConditionRequest">
+        update job_seeker
+        set js_exp=#{jsExp},js_edu=#{jsEdu},js_sal=#{jsSal},js_college=#{jsCollege},js_tag=#{jsTag}
+        where js_id = #{jsId}
+    </update>
 </mapper>

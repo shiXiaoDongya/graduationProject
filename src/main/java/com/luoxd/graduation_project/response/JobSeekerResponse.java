@@ -12,5 +12,9 @@ public class JobSeekerResponse {
     private String jsGender;
     private String jsPhone;
     private String jsEmail;
+    private Integer jsExp;
+    private Integer jsEdu;
+    private Integer jsSal;
     private String jsCollege;
+    private String jsTag;
 }

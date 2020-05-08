@@ -1,6 +1,7 @@
 package com.luoxd.graduation_project.service;
 
 import com.luoxd.graduation_project.domain.*;
+import com.luoxd.graduation_project.request.JobConditionRequest;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
 import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.response.ClassesResonse;
@@ -53,4 +54,6 @@ public interface UserService {
     Integer updateRecruiter(RecruiterRequest reRequest);
 
     Company getCompanyById(Integer reCompanyId);
+
+    Integer updateJobCondition(JobConditionRequest jobConditionRequest);
 }

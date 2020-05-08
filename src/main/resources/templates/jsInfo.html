@@ -35,6 +35,15 @@
                 $("#file-txz").click();
             },false)
         }
+        function updateJobCondition() {
+            var jobConditionDiv = document.getElementById("jobConditionDiv");
+            var classes = jobConditionDiv.getElementsByClassName("editable");
+            for(var i = 0; i < classes.length; i++){
+                classes[i].removeAttribute("disabled");
+            }
+            document.getElementById("editButton2").style.display="none";
+            document.getElementById("submitButton2").style.display="block";
+        }
     </script>
 </head>
 <style>
@@ -82,13 +91,6 @@
                 <div class="col-lg-3">
                     <input type="text" name="jsEmail" class="form-control editable" th:value="${js.jsEmail}" disabled/>
                 </div>
-                <label class="control-label col-md-2">经验</label>
-                <div class="col-md-3">
-                    <select name="edu" class="form-control editable" disabled>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
             </div>
         </div>
         <div style="float: right;width: 15%;">
@@ -110,38 +112,62 @@
 
         <hr class="divider" />
 
-        <form id="jobStatusDiv" class="clearfix" action="jsInfo.html">
+        <form id="jobConditionDiv" class="clearfix" action="/changeJobCondition" method="post">
             <div class="form-horizontal" style="float: left;width: 85%;">
-                <label class="glyphicon glyphicon-pushpin divLabel" >求职状态</label>
+                <label class="glyphicon glyphicon-pushpin divLabel" >求职信息</label>
                 <div class="form-group">
-                    <label class="control-label col-md-1">求职状态</label>
+                    <label class="control-label col-md-1">工作经验</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="随时到岗" disabled/>
-                    </div>
-                    <label class="control-label col-md-1">期望行业</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java" disabled/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-1">期望职位</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java开发" disabled/>
-                    </div>
-                    <label class="control-label col-md-1">期望城市</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="广州" disabled/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-1">期望薪水</label>
-                    <div class="col-md-3">
-                        <select name="edu" class="form-control editable" disabled>
+                        <select  name="jsExp" class="form-control editable"  disabled>
+                            <option value="">工作经验</option>
+                            <option th:selected="${js.jsExp==1}" value="1">在校生</option>
+                            <option th:selected="${js.jsExp==2}" value="2">应届生</option>
+                            <option th:selected="${js.jsExp==3}" value="3">1年以内</option>
+                            <option th:selected="${js.jsExp==4}" value="4">1-3年</option>
+                            <option th:selected="${js.jsExp==5}" value="5">3-5年</option>
+                            <option th:selected="${js.jsExp==6}" value="6">5-10年</option>
+                            <option th:selected="${js.jsExp==7}" value="7">10年以上</option>
+                        </select>
                         </select>
                     </div>
-                    <label class="control-label col-md-1">技能标签</label>
+                    <label class="control-label col-md-2">期望薪资</label>
                     <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java丨数据库丨后端" disabled/>
+                        <select name="jsSal" class="form-control editable"  disabled>
+                            <option value="">薪资要求</option>
+                            <option th:selected="${js.jsSal==1}" value="1">3K以下</option>
+                            <option th:selected="${js.jsSal==2}" value="2">3-5K</option>
+                            <option th:selected="${js.jsSal==3}" value="3">5-10K</option>
+                            <option th:selected="${js.jsSal==4}" value="4">10-15K</option>
+                            <option th:selected="${js.jsSal==5}" value="5">15-20K</option>
+                            <option th:selected="${js.jsSal==6}" value="6">20-30K</option>
+                            <option th:selected="${js.jsSal==7}" value="7">30-50K</option>
+                            <option th:selected="${js.jsSal==8}" value="8">50K以上</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-1">学历</label>
+                    <div class="col-md-3">
+                        <select name="jsEdu" class="form-control editable" disabled>
+                            <option value="">学历要求</option>
+                            <option th:selected="${js.jsEdu==1}" value="1">初中及以下</option>
+                            <option th:selected="${js.jsEdu==2}" value="2">中专/中技</option>
+                            <option th:selected="${js.jsEdu==3}" value="3">高中</option>
+                            <option th:selected="${js.jsEdu==4}" value="4">大专</option>
+                            <option th:selected="${js.jsEdu==5}" value="5">本科</option>
+                            <option th:selected="${js.jsEdu==6}" value="6">硕士</option>
+                            <option th:selected="${js.jsEdu==7}" value="7">博士</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-md-2">毕业学校</label>
+                    <div class="col-md-3">
+                        <input type="text" name="jsCollege" class="form-control editable" th:value="${js.jsCollege}" disabled/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-1">技能标签</label>
+                    <div class="col-md-6">
+                        <input type="text" name="jsTag" class="form-control editable" th:value="${js.jsTag}" placeholder="多个标签请用“,”隔开" disabled/>
                     </div>
                 </div>
             </div>
@@ -150,8 +176,8 @@
 
                 </div>
                 <div style="margin-top: 95px">
-                    <button type="button" id="editButton2" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updatePersonInfo()" >编辑</button>
-                    <button type="submit" id="submitButton2" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
+                    <button type="button" id="editButton2" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updateJobCondition()" >编辑</button>
+                    <button type="submit" id="submitButton2" style="width: 75px;height: 35px;display: none" class="btn btn-primary glyphicon glyphicon-save" >保存</button>
                 </div>
             </div>
         </form>

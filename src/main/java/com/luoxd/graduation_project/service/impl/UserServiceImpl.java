@@ -2,6 +2,7 @@ package com.luoxd.graduation_project.service.impl;
 
 import com.luoxd.graduation_project.domain.*;
 import com.luoxd.graduation_project.mapper.UserMapper;
+import com.luoxd.graduation_project.request.JobConditionRequest;
 import com.luoxd.graduation_project.request.JobSeekerRequest;
 import com.luoxd.graduation_project.request.RecruiterRequest;
 import com.luoxd.graduation_project.response.ChildClassesResponse;
@@ -184,4 +185,10 @@ public class UserServiceImpl implements UserService {
     public Company getCompanyById(Integer reCompanyId) {
         return userMapper.getCompanyById(reCompanyId);
     }
+
+    @Override
+    public Integer updateJobCondition(JobConditionRequest jobConditionRequest) {
+        return userMapper.updateJobCondition(jobConditionRequest);
+    }
+
 }
