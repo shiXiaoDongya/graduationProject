@@ -59,4 +59,6 @@ public interface UserMapper {
     Recruiter getRecruiterById(Integer reId);
 
     Integer updateRecruiter(RecruiterRequest reRequest);
+
+    Company getCompanyById(Integer reCompanyId);
 }

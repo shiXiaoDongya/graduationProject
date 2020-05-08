@@ -338,8 +338,17 @@ public class UserController {
     public String turnReInfo(HttpServletRequest request) {
         Integer reId = (Integer) request.getSession().getAttribute("userId");
         Recruiter re = userService.getRecruiterById(reId);
-        log.info("===re:"+re.toString());
+        log.info(re.toString());
         request.setAttribute("re",re);
+        if(re.getReCompanyId() == null){
+            Company company = new Company();
+            request.setAttribute("company",company);
+        }else{
+            Company company = userService.getCompanyById(re.getReCompanyId());
+            company.setCompanyPosition(re.getReCompanyPosition());
+            request.setAttribute("company",company);
+            log.info(company.toString());
+        }
         return "reInfo";
     }
 

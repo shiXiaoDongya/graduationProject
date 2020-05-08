@@ -17,5 +17,6 @@ public class Recruiter {
     private String reCompany;
     private String reCompanyPic;
     private String reCompanyPosition;
+    private Integer reCompanyId;
 
 }

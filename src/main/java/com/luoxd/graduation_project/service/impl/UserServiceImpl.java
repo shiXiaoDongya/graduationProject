@@ -179,4 +179,9 @@ public class UserServiceImpl implements UserService {
     public Integer updateRecruiter(RecruiterRequest reRequest) {
         return userMapper.updateRecruiter(reRequest);
     }
+
+    @Override
+    public Company getCompanyById(Integer reCompanyId) {
+        return userMapper.getCompanyById(reCompanyId);
+    }
 }

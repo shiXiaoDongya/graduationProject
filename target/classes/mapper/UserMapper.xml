@@ -113,7 +113,7 @@
     </select>
 
     <select id="getRecruiterById" resultType="com.luoxd.graduation_project.domain.Recruiter">
-        select re_head_img,re_realname,re_gender,re_phone,re_email
+        select re_head_img,re_realname,re_gender,re_phone,re_email,re_company_position,re_company_id
         from recruiter
         where re_id = #{reId}
     </select>
@@ -126,4 +126,10 @@
         </if>
         where re_id = #{reId}
     </update>
+
+    <select id="getCompanyById" resultType="com.luoxd.graduation_project.domain.Company">
+        select *
+        from company
+        where company_id = #{reCompanyId}
+    </select>
 </mapper>
