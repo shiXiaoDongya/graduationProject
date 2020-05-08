@@ -68,4 +68,6 @@ public interface JobMapper {
     Integer changeJobClasses(Integer jobId, Integer jobClassesId);
 
     List<Job> getHobJobList();
+
+    Integer deleteJob(Integer jobId);
 }

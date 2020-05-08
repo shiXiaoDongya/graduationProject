@@ -303,4 +303,9 @@ public class JobServiceImpl implements JobService {
             return null;
         }
     }
+
+    @Override
+    public Integer deleteJob(Integer jobId) {
+        return jobMapper.deleteJob(jobId);
+    }
 }

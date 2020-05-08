@@ -26,7 +26,7 @@
                         "                        <td>"+data[i]['postDate']+"</td>\n" +
                         "                        <td>"+data[i]['reRealname']+"</td>\n" +
                         "                        <td>"+data[i]['jobClassesName']+"</td>\n" +
-                        "                        <td><button type=\"button\" class=\"btn btn-primary\" onclick=\"adminChangeClasses("+data[i]['jobId']+",\'"+data[i]['jobClassesName']+"\')\">修改分类</button> <button type=\"button\" class=\"btn btn-danger\" onclick=\"deleteJob(jobId)\">删除</button></td>\n" +
+                        "                        <td><button type=\"button\" class=\"btn btn-primary\" onclick=\"adminChangeClasses("+data[i]['jobId']+",\'"+data[i]['jobClassesName']+"\')\">修改分类</button> <button type=\"button\" class=\"btn btn-danger\" onclick=\"confrimDelete("+data[i]['jobId']+")\">删除</button></td>\n" +
                         "                    </tr>")
                 }
             }
@@ -39,6 +39,7 @@
         $("#myModal").modal()
     }
     function showClasses() {
+        $("#classesUl").html("");
         $.ajax({
             type: "GET",
             url: "/job/getClasses2",
@@ -105,6 +106,8 @@
     function changeClasses(obj) {
         document.getElementById("jobClassesId").value = obj.value;
         document.getElementById("jobClassesName").value = obj.innerText;
+        clearLi();
+        clearLi2();
     }
     function ajaxSubmit() {
         var jobId = document.getElementById("jobId").value;
@@ -129,6 +132,31 @@
             $("#myModal").modal('hide');
         });
 
+    }
+    function confrimDelete(jobId) {
+        document.getElementById("deleteJobId").value=jobId
+        $("#myModal2").modal();
+    }
+    function deleteJob(){
+        var jobId = document.getElementById("deleteJobId").value;
+        $.ajax({
+            //几个参数需要注意一下
+            type: "GET",//方法类型
+            dataType: "json",//预期服务器返回的数据类型
+            url: "/job/deleteJob" ,//url
+            data: {"jobId":jobId},
+            success: function (data) {
+                if(data['success']==true){
+                    alert("职位删除成功！");
+                    location.reload();
+                }else{
+                    alert("职位删除失败");
+                }
+            },
+            error : function() {
+                alert("异常！");
+            }
+        });
     }
 </script>
 <style>
@@ -198,6 +226,24 @@
                     <button type="button" onclick="ajaxSubmit()" class="btn btn-primary">修改</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel2"></h4>
+            </div>
+            <div class="modal-body">
+                确认删除吗？
+            </div>
+            <div class="modal-footer form-group" >
+                <input type="hidden" id="deleteJobId">
+                <button type="button" onclick="deleteJob()" class="btn btn-primary">确认</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>

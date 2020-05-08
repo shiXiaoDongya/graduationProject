@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/home.css" th:href="@{/css/home.css}"/>
     <link rel="stylesheet" type="text/css" href="css/main.css" th:href="@{/css/main.css}" />
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
     <script type="text/javascript">
         window.onload = function () {
-            var url = "/turnAdminIndexPicSet";
-            $('#info').load(url);
+            turnAdminJobManage();
         }
         function turnAdminFeedback() {
             var url = "/turnAdminFeedback";

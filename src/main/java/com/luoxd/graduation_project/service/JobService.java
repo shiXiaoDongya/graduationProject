@@ -44,4 +44,6 @@ public interface JobService {
     Integer changeJobClasses(Integer jobId, Integer jobClassesId);
 
     List<JobResponse> getHobJobList();
+
+    Integer deleteJob(Integer jobId);
 }

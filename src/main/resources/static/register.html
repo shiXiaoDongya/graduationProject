@@ -70,14 +70,36 @@
         function judgeSubmit(){
             var companyPic = document.getElementById("companyPic").value;
             var checks = document.getElementsByClassName("check");
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var realname =  document.getElementById("realname").value;
+            var idCard =  document.getElementById("idCard").value;
+            var phone =  document.getElementById("phone").value;
+            var email =  document.getElementById("email").value;
+            var sq =  document.getElementById("sq").value;
+            var confirmSq =  document.getElementById("confirmSq").value;
             for(var i = 0; i < checks.length; i++){
                 if(checks[i].style.color === 'red'){
-                    alert("请修正报错信息")
+                    alert("请修正报错信息");
+                    return false;
+                }
+            }
+            if(document.getElementById("js").checked === true){
+                if(username==''||password==''||confirmPassword==''||realname==''||idCard==''||phone==''||email==''||sq==''||confirmSq==''){
+                    alert("请完善未填信息");
+                    return false;
+                }else{
+                    return true;
                 }
             }
             if(document.getElementById("re").checked === true){
                 if(!companyPic){
                     alert('公司执照不能为空');
+                    return false;
+                }
+                if(username==''||password==''||confirmPassword==''||realname==''||idCard==''||phone==''||email==''||sq==''||confirmSq==''){
+                    alert("请完善未填信息");
                     return false;
                 }else{
                     return true;
@@ -234,7 +256,7 @@
                     安全码
                 </label>
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                    <input class="form-control" name="sq" type="text" id="sq" >
+                    <input class="form-control" name="sq" type="password" id="sq" >
                 </div>
             </div>
             <div class="form-group" id="confirmSqDiv">
@@ -242,7 +264,7 @@
                     确认安全码
                 </label>
                 <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-                    <input class="form-control" name="confirmSq" type="text" id="confirmSq" onblur="sqCheck()">
+                    <input class="form-control" name="confirmSq" type="password" id="confirmSq" onblur="sqCheck()">
                 </div>
                 <label class=" control-label check" id="sqCheck">
                 </label>

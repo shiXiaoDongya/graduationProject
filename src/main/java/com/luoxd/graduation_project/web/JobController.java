@@ -262,4 +262,15 @@ public class JobController {
         List<JobResponse> hotJobList = jobService.getHobJobList();
         return hotJobList;
     }
+
+    @RequestMapping(value = "/deleteJob",method = RequestMethod.GET)
+    @ResponseBody
+    private String deleteJob(HttpServletRequest request,Integer jobId){
+        Integer resultCode = jobService.deleteJob(jobId);
+        if(resultCode > 0){
+            return "{\"success\":true}";
+        }else{
+            return "{\"success\":false}";
+        }
+    }
 }

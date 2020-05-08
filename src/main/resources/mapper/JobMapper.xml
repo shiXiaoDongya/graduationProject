@@ -350,4 +350,9 @@
         left join job_classes on job.job_classes_id = job_classes.job_classes_id
         where job.is_recommend = 1
     </select>
+
+    <delete id="deleteJob" >
+        delete from job
+        where job_id = #{jobId}
+    </delete>
 </mapper>

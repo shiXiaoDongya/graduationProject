@@ -10,7 +10,7 @@
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
 <script type="text/javascript">
-    var i = 1;
+    var i = true;
     window.onload = function () {
         getChatUsers();
     }
@@ -72,7 +72,7 @@
                 }
             })
         ).done(function () {
-            if(i ===  1){
+            if(i){
                 getNewUser();
             }else{
                 $("#newUserUl").html("");
@@ -216,12 +216,11 @@
             }
 
         }
-        i++
     }
     function showChat2(obj,reId,jobId,reRealname,companyName,reCompanyPosition,jobName) {
         var li = document.getElementsByClassName("list-group-item");
-        for(var i = 0; i < li.length; i++){
-            li[i].style.border="";
+        for (var i = 0; i < li.length; i++) {
+            li[i].style.border = "";
         }
         obj.style.border = "1px blue solid";
         document.getElementById("sendButton").dataset.reId = reId;
@@ -231,9 +230,10 @@
         document.getElementById("companyName").innerHTML = companyName;
         document.getElementById("reCompanyPosition").innerHTML = reCompanyPosition;
         document.getElementById("jobUrl").innerText = jobName;
-        document.getElementById("jobUrl").setAttribute("href","/job/getJobDetail?jobId="+jobId);
+        document.getElementById("jobUrl").setAttribute("href", "/job/getJobDetail?jobId=" + jobId);
         document.getElementById("noChatDiv").style.display = "none";
         document.getElementById("chatDiv").style.display = "block";
+        getChatUsers();
     }
 </script>
 <style>
@@ -424,6 +424,7 @@
 
 
     function send(obj) {
+        i=false;
         var toId = obj.dataset.reId;
         var jobId = obj.dataset.jobId;
         setMessageInnerHTML("js-"+document.getElementById('userId').innerHTML+"对re-"+toId+"说："+ $("#text").val());
