@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
@@ -36,7 +37,7 @@
     function adminChangeClasses(jobId,jobClassesName) {
         document.getElementById("jobId").value = jobId;
         document.getElementById("jobClassesName").value = jobClassesName;
-        $("#myModal").modal()
+        $("#myModal").modal();
     }
     function showClasses() {
         $("#classesUl").html("");
@@ -49,7 +50,7 @@
             success: function(data){
                 for(var i = 0; i < data.length;i++) {
                     var classes = data[i];
-                    $("#classesUl").append(" <li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
+                    $("#classesUl").append("<li onmouseover= \"showNext(this)\" onmouseout=\"clearLi()\" value="+classes['classesId']+"><a href=\"#\">"+classes['classesName']+"</a></li>");
                 }
             }
         });

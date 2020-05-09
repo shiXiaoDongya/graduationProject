@@ -39,6 +39,10 @@
                     var jsId = data[i]['jsId'];
                     var jobId = data[i]['jobId'];
                     var jsRealname = data[i]['jsRealname'];
+                    var jsHeadImgUrl = '#';
+                    if(data[i]['jsHeadImg']){
+                        jsHeadImgUrl = "../jsHeadImg/"+data[i]['jsHeadImg'];
+                    }
                     var jsCollege = '';
                     if(jsCollege) {
                         jsCollege = data[i]['jsCollege'];
@@ -53,7 +57,7 @@
                         $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px;border: 1px blue solid\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
                             "                    <div style=\"height:100px;\">\n" +
                             "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                            <img src=\""+jsHeadImgUrl+"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                             "                        </div>\n" +
                             "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
                             "                            <p><a onclick= \"showJs("+jsId+")\">" + jsRealname + "</a></p>\n" +
@@ -64,7 +68,7 @@
                         $("#usersUl").append("<li class=\"list-group-item\" style=\"cursor: pointer;margin-bottom: 2px\" onclick=\"showChat(this," + jsId + "," + jobId + ")\" >\n" +
                             "                    <div style=\"height:100px;\">\n" +
                             "                        <div  style=\"float:left;width: 40%; height: 90%; \">\n" +
-                            "                            <img src=\"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
+                            "                            <img src=\""+jsHeadImgUrl+"\" style=\"float:left;margin-right:20px;width:80px; height:80px; border-radius:100%; overflow:hidden;border: 1px black solid\"/>\n" +
                             "                        </div>\n" +
                             "                        <div style=\"float:right;width: 60%;height: 90%;padding-top: 15px\">\n" +
                             "                            <p><a onclick=\"showJs("+jsId+")\">" + jsRealname + "</a></p>\n" +

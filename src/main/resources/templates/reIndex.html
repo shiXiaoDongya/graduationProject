@@ -20,10 +20,6 @@
             var url = "/turnReInfo";
             $('#info').load(url);
         }
-        function turnJsRecommend() {
-            var url = "/turnJsRecommend";
-            $('#info').load(url);
-        }
         function turnReChat() {
             window.location.href="/job/chat";
         }
@@ -32,10 +28,33 @@
 <body>
 <header id="header" class="header-scrolled">
     <div class="container">
-        <div class="">
-            <div id="logo" class="left">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
                 <a href="/getLoginIndex" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
             </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="/getLoginIndex">首页</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Price</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="menu-has-children"><a href="">Pages</a>
+                        <ul>
+                            <li><a href="elements.html">elements</a></li>
+                            <li><a href="search.html">search</a></li>
+                            <li><a href="single.html">single</a></li>
+                        </ul>
+                    </li>
+                    <li style="border: 1px white solid"><a href="#" th:text="${session.userName}"></a>
+                        <ul style="margin-top: 0px">
+                            <li><a th:href="@{/jsPersonCenter(type=${session.userType})}">个人中心</a> </li>
+                            <li><a href="/logout">注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
         </div>
     </div>
 </header><!-- #header -->
@@ -49,7 +68,6 @@
                 <li class="list-group-item" onclick="turnReInfo()"><a href="#">个人信息</a></li>
                 <li class="list-group-item" onclick="turnJobManage()"><a href="#">职位管理</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
-                <li class="list-group-item" onclick="turnJsRecommend()"><a href="#">求职者推荐</a></li>
                 <li class="list-group-item" onclick="turnReChat()"><a href="#">消息记录</a></li>
             </ul>
         </div>

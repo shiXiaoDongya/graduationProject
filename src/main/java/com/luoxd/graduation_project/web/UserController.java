@@ -361,11 +361,6 @@ public class UserController {
     }
 
 
-    @RequestMapping("/turnJsRecommend")
-    public String turnJsRecommend(HttpServletRequest request) {
-        return "jsRecommend";
-    }
-
     @RequestMapping("/sendFeedback")
     @ResponseBody
     public String sendFeedback(HttpServletRequest request) {
