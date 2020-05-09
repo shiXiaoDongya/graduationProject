@@ -118,7 +118,7 @@
             //     return a.get('chatSendTime') > b.get('chatSendTime') ? 1 : -1;
             // });
             if(newMsg){
-                for(var tmp=0; tmp < newMsg.length;tmp++){
+                for(var tmp=0; tmp < newMsg.length ;tmp++){
                     if(newMsg[tmp]['jobId'] == jobId && newMsg[tmp]['reId'] == reId){
                         $('#chatContent').append("<p class=\"chatTime\">"+newMsg[tmp]['chatSendTime']+"</p>");
                         if(newMsg[tmp]['isJsSend']==1){
@@ -127,7 +127,8 @@
                             newMsg[tmp]['isRead'] = 1;
                             $('#chatContent').append("<p ><span style=\"background: #b8aaf3;color: black;\">"+newMsg[tmp]['chatContent']+"</span></p>");
                         }
-                        newMsg.splice(tmp,1);
+                        // newMsg.splice(tmp,1);
+                        delete newMsg[tmp];
                     }
                 }
             }
@@ -357,6 +358,7 @@
     }
     var webSocket;
     var newMsg = [];
+    var tempArr = [];
     if ("WebSocket" in window)
     {
         webSocket = new WebSocket("ws://localhost:8281/websocket/"+document.getElementById('userType').innerHTML+"/"+document.getElementById('userId').innerHTML);
@@ -404,6 +406,7 @@
             // chat.set("isJsSend",0);
             // chat.set("isRead",0);
             newMsg.push(chat);
+
         };
 
         //连接关闭的回调事件
@@ -450,12 +453,15 @@
         // chat.set("chatSendTime",message['time']);
         // chat.set("isJsSend",1);
         // chat.set("isRead",0);
-        newMsg.push(chat);
-        saveChatContent(chat);
-        $("#chatContent").append("<p class=\"chatTime\">"+message['time']+"</p>");
-        $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">"+message['msg']+"</span></p>");
-        webSocket.send(JSON.stringify(message));
-        $("#text").val("");
+        // newMsg.push(chat);
+        $.when(
+            saveChatContent(chat)
+        ).done(function () {
+            $("#chatContent").append("<p class=\"chatTime\">" + message['time'] + "</p>");
+            $("#chatContent").append("<p class=\"mySend\"><span style=\"background: #4cd3e3;color: black\">" + message['msg'] + "</span></p>");
+            webSocket.send(JSON.stringify(message));
+            $("#text").val("");
+        });
 
     }
     window.onbeforeunload = function () {

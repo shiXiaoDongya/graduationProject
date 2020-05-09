@@ -34,19 +34,23 @@
         document.getElementById("tag").value=tagsStr;
         $("#myModal").modal();
     }
-    function showModal2(){
-        document.getElementById("jobId").value="";
-        document.getElementById("jobName").value="";
-        document.getElementById("jobDetail").value="";
-        $("#expCondition").val("");
-        $("#eduCondition").val("");
-        document.getElementById("salary").value="";
-        document.getElementById("workCity").value="";
-        document.getElementById("workAddress").value="";
-        document.getElementById("jobClassesId").value = "";
-        document.getElementById("jobClassesName").value="";
-        document.getElementById("tag").value="";
-        $("#myModal").modal();
+    function showModal2(companyId){
+        if(companyId){
+            document.getElementById("jobId").value="";
+            document.getElementById("jobName").value="";
+            document.getElementById("jobDetail").value="";
+            $("#expCondition").val("");
+            $("#eduCondition").val("");
+            document.getElementById("salary").value="";
+            document.getElementById("workCity").value="";
+            document.getElementById("workAddress").value="";
+            document.getElementById("jobClassesId").value = "";
+            document.getElementById("jobClassesName").value="";
+            document.getElementById("tag").value="";
+            $("#myModal").modal();
+        }else{
+            alert("请先填写公司信息");
+        }
     }
     function showClasses() {
         $("#classesUl").html("");
@@ -170,7 +174,7 @@
     <div class="panel panel-heading clearfix" style="font-size: 20px;font-weight: 700">
         我发布的职位
         <div style="float: right;margin-right: 20px;" >
-        <button class="btn btn-primary" type="button" onclick="showModal2()">发布职位</button>
+        <button class="btn btn-primary" type="button" th:onclick="showModal2([[${companyId}]])">发布职位</button>
         </div>
     </div>
     <div class="panel panel-body">

@@ -98,6 +98,13 @@
                     alert('公司执照不能为空');
                     return false;
                 }
+                var img_id=companyPic; //根据id得到值
+                var index= img_id.indexOf("."); //（考虑严谨用lastIndexOf(".")得到）得到"."在第几位
+                img_id=img_id.substring(index); //截断"."之前的，得到后缀
+                if(img_id!=".bmp"&&img_id!=".png"&&img_id!=".gif"&&img_id!=".jpg"&&img_id!=".jpeg"){  //根据后缀，判断是否符合图片格式
+                    alert("不是指定图片格式,重新选择");
+                    return false;
+                }
                 if(username==''||password==''||confirmPassword==''||realname==''||idCard==''||phone==''||email==''||sq==''||confirmSq==''){
                     alert("请完善未填信息");
                     return false;

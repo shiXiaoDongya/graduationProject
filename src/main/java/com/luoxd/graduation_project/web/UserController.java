@@ -331,8 +331,10 @@ public class UserController {
     public String turnJobManage(HttpServletRequest request) {
         Integer userId = (Integer) request.getSession().getAttribute("userId");
         List<JobResponse> jobList = userService.queryJobListByReId(userId);
+        Recruiter recruiter = userService.getRecruiterById(userId);
         //log.info(jobList.toString());
         request.setAttribute("jobList", jobList);
+        request.setAttribute("companyId",recruiter.getReCompanyId());
         return "jobManage";
     }
 

@@ -61,11 +61,11 @@
                         feedbackReplytime = '';
                     }
                     $("#feedbackBody").append("<tr >\n" +
-                        "                        <td >" + feedbackContent + "</td>\n" +
-                        "                        <td >" + feedbackSendTime + "</td>\n" +
-                        "                        <td >" + state + "</td>\n" +
-                        "                        <td >" + feedbackReply + "</td>\n" +
-                        "                        <td >" + feedbackReplytime + "</td>\n" +
+                        "                        <td title=\""+feedbackContent+"\">" + feedbackContent + "</td>\n" +
+                        "                        <td title=\""+feedbackSendTime+"\">" + feedbackSendTime + "</td>\n" +
+                        "                        <td title=\""+state+"\">" + state + "</td>\n" +
+                        "                        <td title=\""+feedbackReply+"\">" + feedbackReply + "</td>\n" +
+                        "                        <td title=\""+feedbackReplytime+"\">" + feedbackReplytime + "</td>\n" +
                         "                        <td><button class=\"btn btn-danger\" onclick=\"deleteFeedback(" + feedbackId + ")\">删除</button> </td>\n" +
                         "                    </tr>");
                 }
@@ -129,14 +129,6 @@
                     </tr>
                 </thead>
                 <tbody id="feedbackBody">
-                    <tr th:each="feedback:${feedbackList}">
-                        <td th:text="${feedback.feedbackContent}">反馈测试1</td>
-                        <td th:text="${feedback.feedbackSendTime}">2020-04-19 20:56:03</td>
-                        <td th:text="${feedback.adminId == null?'待回复':'已回复'}">已回复</td>
-                        <td th:text="${feedback.feedbackReply}">回复测试1</td>
-                        <td th:text="${feedback.feedbackReplytime}" >2020-04-19 21:06:03</td>
-                        <td><button class="btn btn-danger" th:onclick="deleteFeedback([[${feedback.feedbackId}]])">删除</button> </td>
-                    </tr>
 <!--                    <tr>-->
 <!--                        <td>反馈测试2</td>-->
 <!--                        <td>2020-04-19 20:58:44</td>-->
