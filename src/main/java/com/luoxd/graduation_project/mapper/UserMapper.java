@@ -64,4 +64,8 @@ public interface UserMapper {
     Company getCompanyById(Integer reCompanyId);
 
     Integer updateJobCondition(JobConditionRequest jobConditionRequest);
+
+    String getPasswordById(Integer jsId);
+
+    Integer changePassword(Integer jsId, String newPassword);
 }

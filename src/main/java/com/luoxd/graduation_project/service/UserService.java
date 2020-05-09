@@ -57,4 +57,7 @@ public interface UserService {
 
     Integer updateJobCondition(JobConditionRequest jobConditionRequest);
 
+    String getPasswordById(Integer jsId);
+
+    Integer changePassword(Integer jsId, String newPassword);
 }

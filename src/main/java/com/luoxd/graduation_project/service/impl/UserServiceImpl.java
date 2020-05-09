@@ -191,4 +191,14 @@ public class UserServiceImpl implements UserService {
         return userMapper.updateJobCondition(jobConditionRequest);
     }
 
+    @Override
+    public String getPasswordById(Integer jsId) {
+        return userMapper.getPasswordById(jsId);
+    }
+
+    @Override
+    public Integer changePassword(Integer jsId, String newPassword) {
+        return userMapper.changePassword(jsId,newPassword);
+    }
+
 }

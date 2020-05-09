@@ -549,4 +549,26 @@ public class UserController {
         Integer resultCode = userService.updateRecruiter(reRequest);
         return "reIndex";
     }
+
+    @RequestMapping(value = "/turnChangePassword",method = RequestMethod.GET)
+    private String turnChangePassword(HttpServletRequest request){
+        return "changePassword";
+    }
+
+    @RequestMapping(value = "/changePassword",method = RequestMethod.POST)
+    @ResponseBody
+    public String changePassword(HttpServletRequest request,String oldPassword,String newPassword,Integer jsId){
+        String password = userService.getPasswordById(jsId);
+        log.info("oldPassword:"+oldPassword+",newPassword:"+newPassword+",jsId:"+jsId+",password"+password);
+        if(password.equals(oldPassword)){
+            Integer resultCode =  userService.changePassword(jsId,newPassword);
+            if(resultCode > 0){
+                return "{\"check\":true,\"success\":true}";
+            }else{
+                return "{\"check\":true,\"success\":false}";
+            }
+        }else{
+            return "{\"check\":false}";
+        }
+    }
 }

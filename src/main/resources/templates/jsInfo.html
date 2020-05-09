@@ -44,6 +44,24 @@
             document.getElementById("editButton2").style.display="none";
             document.getElementById("submitButton2").style.display="block";
         }
+        function updateSelf() {
+            var selfDiv = document.getElementById("selfDiv");
+            var classes = selfDiv.getElementsByClassName("editable");
+            for(var i = 0; i < classes.length; i++){
+                classes[i].removeAttribute("disabled");
+            }
+            document.getElementById("editButton3").style.display="none";
+            document.getElementById("submitButton3").style.display="block";
+        }
+        function updateExp() {
+            var ExpDiv = document.getElementById("ExpDiv");
+            var classes = ExpDiv.getElementsByClassName("editable");
+            for(var i = 0; i < classes.length; i++){
+                classes[i].removeAttribute("disabled");
+            }
+            document.getElementById("editButton4").style.display="none";
+            document.getElementById("submitButton4").style.display="block";
+        }
     </script>
 </head>
 <style>
@@ -184,11 +202,11 @@
 
         <hr class="divider" />
 
-        <form id="selfDiv" class="clearfix" action="jsInfo.html">
+        <form id="selfDiv" class="clearfix" action="/jsPersonCenter?type=js">
             <div class="form-horizontal" style="float: left;width: 85%;">
                 <label class="glyphicon glyphicon-pushpin divLabel" >自我介绍</label>
                 <div class="form-group">
-                    <textarea class="form-control" style="margin-left: 20px;width: 879px; height: 205px;resize: none" disabled></textarea>
+                    <textarea class="form-control editable" style="margin-left: 20px;width: 879px; height: 205px;resize: none" disabled></textarea>
                 </div>
             </div>
             <div style="float: right;width: 15%;">
@@ -196,49 +214,51 @@
 
                 </div>
                 <div style="margin-top: 170px">
-                    <button type="button" id="editButton3" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updatePersonInfo()" >编辑</button>
-                    <button type="submit" id="submitButton3" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
+                    <button type="button" id="editButton3" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updateSelf()" >编辑</button>
+                    <button type="submit" id="submitButton3" style="width: 75px;height: 35px;display: none" class="btn btn-primary glyphicon glyphicon-save" >保存</button>
                 </div>
             </div>
         </form>
 
         <hr class="divider" />
 
-        <form id="eduDiv" class="clearfix" action="jsInfo.html">
+        <form id="ExpDiv" class="clearfix" action="#">
             <div class="form-horizontal" style="float: left;width: 85%;">
-                <label class="glyphicon glyphicon-pushpin divLabel" >最高教育经历</label>
+                <label class="glyphicon glyphicon-pushpin divLabel" >工作经验</label>
                 <div class="form-group">
-                    <label class="control-label col-md-1">学历</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="随时到岗" disabled/>
-                    </div>
-                    <label class="control-label col-md-1">毕业院校</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java" disabled/>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-1">就读年份</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="Java开发" disabled/>
-                    </div>
-                    <label class="control-label col-md-1">就读专业</label>
-                    <div class="col-md-3">
-                        <input type="text" name="realname" class="form-control editable" value="广州" disabled/>
-                    </div>
+                    <textarea class="form-control editable" style="margin-left: 20px;width: 879px; height: 205px;resize: none" disabled></textarea>
                 </div>
             </div>
             <div style="float: right;width: 15%;">
                 <div style="padding-top: 20px;padding-bottom: 20px;">
 
                 </div>
-                <div style="margin-top: 95px">
-                    <button type="button" id="editButton4" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updatePersonInfo()" >编辑</button>
-                    <button type="submit" id="submitButton4" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
+                <div style="margin-top: 170px">
+                    <button type="button" id="editButton4" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updateExp()" >编辑</button>
+                    <button type="button" id="submitButton4" style="width: 75px;height: 35px;display: none" class="btn btn-primary glyphicon glyphicon-save" >保存</button>
                 </div>
             </div>
         </form>
+
         <hr class="divider" />
+
+        <form id="honorDiv" class="clearfix" action="#">
+            <div class="form-horizontal" style="float: left;width: 85%;">
+                <label class="glyphicon glyphicon-pushpin divLabel" >获奖经历</label>
+                <div class="form-group">
+                    <textarea class="form-control editable" style="margin-left: 20px;width: 879px; height: 205px;resize: none" disabled></textarea>
+                </div>
+            </div>
+            <div style="float: right;width: 15%;">
+                <div style="padding-top: 20px;padding-bottom: 20px;">
+
+                </div>
+                <div style="margin-top: 170px">
+                    <button type="button" id="editButton5" class="btn btn-primary glyphicon glyphicon-pencil" style="width: 75px;height: 35px;" onclick="updatePersonInfo()" >编辑</button>
+                    <button type="submit" id="submitButton5" style="width: 75px;height: 35px;display: none" class="btn-primary glyphicon glyphicon-save" >保存</button>
+                </div>
+            </div>
+        </form>
 </div>
 </body>
 </html>

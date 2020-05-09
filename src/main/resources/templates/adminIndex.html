@@ -24,6 +24,10 @@
             var url = "/turnAdminIndexPicSet";
             $('#info').load(url);
         }
+        function turnChangePassword() {
+            var url = "/turnAdminIndexPicSet";
+            $('#info').load(url);
+        }
     </script>
 </head>
 <body>
@@ -31,7 +35,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-                <a href="/getLoginIndex" style="font-weight: 600;color: #00b38a;font-size: 30px">XXX招聘</a>
+                <a href="/getLoginIndex" style="font-weight: 600;color: #00b38a;font-size: 30px">职聊招聘</a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
@@ -69,7 +73,7 @@
                 <li class="list-group-item" onclick="turnAdminJobManage()" ><a href="#">职位管理</a></li>
                 <li class="list-group-item" onclick="turnAdminFeedback()"><a href="#">反馈留言</a></li>
                 <li class="list-group-item" onclick="turnAdminIndexPicSet()"><a href="#">首页广告管理</a></li>
-                <li class="list-group-item"><a href="#">修改密码</a></li>
+                <li class="list-group-item"  onclick="turnChangePassword()"><a href="#">修改密码</a></li>
             </ul>
         </div>
         <div style="float: right;width: 76%;overflow: scroll" id="info" ></div>
