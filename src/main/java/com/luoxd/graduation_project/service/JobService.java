@@ -46,4 +46,6 @@ public interface JobService {
     List<JobResponse> getHobJobList();
 
     Integer deleteJob(Integer jobId);
+
+    List<JobResponse> getJobRecommend(String tag);
 }

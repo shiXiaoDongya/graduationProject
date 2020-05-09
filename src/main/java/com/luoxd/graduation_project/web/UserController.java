@@ -33,10 +33,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Slf4j
 @Controller
@@ -493,13 +490,23 @@ public class UserController {
         Integer jsId = (Integer)request.getSession().getAttribute("userId");
         String jobTags = userService.getJobTags(jsId);
         if(!(StringUtils.isEmpty(jobTags))){
-            return "{\"success\":true}";
+            return "{\"success\":true,\"tags\":\""+jobTags+"\"}";
         }
         return "{\"success\":false}";
     }
 
     @RequestMapping(value = "/turnJobRecommend",method = RequestMethod.GET)
-    public String turnJobRecommend(HttpServletRequest request){
+    public String turnJobRecommend(HttpServletRequest request,String tags){
+        String[] tagList = tags.split(",");
+        List<JobRecommend> jobRecommendList = new ArrayList<>();
+        for(String tag : tagList){
+            JobRecommend tempJobRecommend = new JobRecommend();
+            tempJobRecommend.setTag(tag);
+            List<JobResponse> jobResponseList = jobService.getJobRecommend(tag);
+            tempJobRecommend.setJobResponseList(jobResponseList);
+            jobRecommendList.add(tempJobRecommend);
+        }
+        request.setAttribute("jobRecommendList",jobRecommendList);
         return "jobRecommend";
     }
 

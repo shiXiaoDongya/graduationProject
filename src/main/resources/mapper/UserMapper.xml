@@ -102,21 +102,6 @@
         <if test="newJsHeadImg != null and newJsHeadImg != ''">
             ,js_head_img=#{newJsHeadImg}
         </if>
-        <if test="jsExp != null and jsExp != ''">
-            js_exp = #{jsExp}
-        </if>
-        <if test="jsEdu != null and jsEdu != ''">
-            js_edu = #{jsEdu}
-        </if>
-        <if test="jsSal != null and jsSal != ''">
-            js_sal = #{jsSal}
-        </if>
-        <if test="jsCollege != null and jsCollege != ''">
-            js_college = #{jsCollege}
-        </if>
-        <if test="jsTag != null and jsTag != ''">
-            js_tag = #{jsTag}
-        </if>
         where js_id = #{jsId}
     </update>
 

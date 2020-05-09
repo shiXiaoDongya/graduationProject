@@ -56,4 +56,5 @@ public interface UserService {
     Company getCompanyById(Integer reCompanyId);
 
     Integer updateJobCondition(JobConditionRequest jobConditionRequest);
+
 }

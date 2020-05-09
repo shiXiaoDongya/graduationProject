@@ -113,7 +113,7 @@
 
         <form id="companyDiv" class="clearfix" action="jsInfo.html">
             <div class="form-horizontal" style="float: left;width: 85%;">
-                <input type="text" name="companyId" th:value="${company.companyId}">
+                <input type="hidden" name="companyId" th:value="${company.companyId}">
                 <label class="glyphicon glyphicon-pushpin divLabel" >公司信息</label>
                 <div class="form-group">
                     <label class="control-label col-md-1">公司名称</label>

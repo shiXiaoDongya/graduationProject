@@ -70,4 +70,6 @@ public interface JobMapper {
     List<Job> getHobJobList();
 
     Integer deleteJob(Integer jobId);
+
+    List<Job> getJobRecommend(String tag);
 }

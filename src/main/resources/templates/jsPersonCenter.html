@@ -9,8 +9,7 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
-            var url = "/toJsInfo";
-            $('#info').load(url);
+            turnJsInfo();
         }
         function turnJsInfo() {
             var url = "/toJsInfo";
@@ -33,7 +32,7 @@
                 contentType: "application/json;charset=UTF-8",
                 success: function (data) {
                     if(data['success'] == true){
-                        var url = "/turnJobRecommend";
+                        var url = "/turnJobRecommend?tags="+data['tags'];
                         $('#info').load(url);
                     }else{
                         alert("请先完善个人信息及简历模块信息");
@@ -87,7 +86,7 @@
                 <li class="list-group-item" onclick="turnJsInfo()"><a href="#">个人信息及简历</a></li>
                 <li class="list-group-item" onclick="turnJsJobCollection()"><a href="#">收藏职位</a></li>
                 <li class="list-group-item" onclick="turnJsFeedback()"><a href="#">意见反馈</a></li>
-                <li class="list-group-item" onclick="turnJobRecommend()"><a href="">推荐职位</a></li>
+                <li class="list-group-item" onclick="turnJobRecommend()"><a href="#">推荐职位</a></li>
                 <li class="list-group-item" ><a href="/job/chat">消息记录</a></li>
                 <li class="list-group-item"><a href="#">修改密码</a></li>
             </ul>

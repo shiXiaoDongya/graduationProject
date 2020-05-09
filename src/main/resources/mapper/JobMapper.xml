@@ -355,4 +355,15 @@
         delete from job
         where job_id = #{jobId}
     </delete>
+
+    <select id="getJobRecommend" parameterType="java.lang.String" resultType="com.luoxd.graduation_project.domain.Job">
+        select job.job_id, job.job_name,job.job_detail,job.exp_condition,job.edu_condition,job.salary,recruiter.re_company_id,
+        job.tag,job.recruiter_id,recruiter.re_realname,recruiter.re_head_img,recruiter.re_company_position,job.work_city,job.work_address,job.post_date,job.job_classes_id,job_classes.job_classes_name,
+        company.company_name,company.company_head_img,company.company_detail,company.industry,company.finan_condition,company.size_condition,company.company_tags
+        from job left join recruiter on job.recruiter_id = recruiter.re_id
+        left join company on recruiter.re_company_id = company.company_id
+        left join job_classes on job.job_classes_id = job_classes.job_classes_id
+        where job.tag like CONCAT('%',#{tag},'%')
+        order by job.post_date DESC
+    </select>
 </mapper>

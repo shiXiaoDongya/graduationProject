@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,9 +7,44 @@
     <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
+<style>
+    .tags{
+        margin-right: 10px;
+    }
+</style>
 <body>
-<div class="panel panel-default">
-    职位推荐页面
+<div class="panel-default">
+    <div class="panel-body" style="height: 1500px;">
+        <div id="jobCollectionDiv" th:each="jobRecommend:${jobRecommendList}">
+            <p style="text-align: center;font-size: 20px;font-weight: 600"><label  class="page-header" th:text="${'关键词=='+jobRecommend.tag+'==的匹配职位'}">关键词=Java=的匹配职位</label></p>
+            <div  class="panel panel-default jobList" th:each="job:${jobRecommend.jobResponseList}">
+                <div style="float: left;width: 50%;padding-top: 35px;padding-left: 35px">
+                    <p><a style="font-size: 20px;" th:href="@{/job/getJobDetail(jobId=${job.jobId})}" th:text="${job.jobName}"></a><span ><a style="font-size: 20px;" href="#" th:if="${job.workCity != null}" th:text="'['+${job.workCity}+']'">[广州]</a></span></p>
+                    <br/>
+                    <p style="font-size: 16px;"><span style="color: orange;font-weight: 700" th:text="${job.salary}+'元/月'"></span> 丨 <span th:text="${job.expConditionStr}"></span> 丨 <span th:text="${job.eduConditionStr}"></span> 丨 <span><a href="#" th:text="${job.reRealname}"> X先生</a></span> 丨 <span th:text="${job.reCompanyPosition}">招聘者</span></p>
+                    <br/>
+                    <p>
+                        <span class="label label-info tags" th:each="tag:${job.tags}" th:text="${tag}"></span>
+                    </p>
+                </div>
+                <div style="float: right;width: 50%;padding-top: 35px;padding-left: 35px;">
+                    <div style="float: left;width: 75%;overflow: hidden" >
+                        <p><a style="font-size: 20px;" href="#" th:text="${job.companyName}"></a></p>
+                        <br/>
+                        <p style="font-size: 16px;"><span th:text="${job.industry}">所属行业</span> 丨 <span th:text="${job.finanConditionStr}">融资阶段</span> 丨 <span th:text="${job.sizeConditionStr}">公司规模</span></p>
+                        <br/>
+                        <p style="white-space:nowrap;overflow: hidden"><span class="label label-info tags" th:each="companyTag:${job.companyTags}" th:text="${companyTag}"></span></p>
+                    </div>
+                    <div style="float: right;width: 25%;">
+                        <img th:if="${job.companyHeadImg != null}" th:src="'../companyHeadImg/'+${job.companyHeadImg}" style="width:100px;height:100px;border: 1px solid black" />
+                        <img th:if="${job.companyHeadImg == null}" src="#" style="width:100px;height:100px;border: 1px solid black" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
 </body>
 </html>
