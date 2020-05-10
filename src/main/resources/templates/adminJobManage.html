@@ -21,12 +21,12 @@
             success: function(data) {
                 for(var i = 0; i < data.length; i++){
                     $("#jobList").append("<tr>\n" +
-                        "                        <td><a href=\"/job/getJobDetail?jobId="+data[i]['jobId']+"\">"+data[i]['jobName']+"</a></td>\n" +
-                        "                        <td>"+data[i]['jobDetail']+"</td>\n" +
-                        "                        <td>"+data[i]['tagsStr']+"</td>\n" +
-                        "                        <td>"+data[i]['postDate']+"</td>\n" +
-                        "                        <td>"+data[i]['reRealname']+"</td>\n" +
-                        "                        <td>"+data[i]['jobClassesName']+"</td>\n" +
+                        "                        <td title=\""+data[i]['jobName']+"\"><a href=\"/job/getJobDetail?jobId="+data[i]['jobId']+"\">"+data[i]['jobName']+"</a></td>\n" +
+                        "                        <td title=\""+data[i]['jobDetail']+"\">"+data[i]['jobDetail']+"</td>\n" +
+                        "                        <td title=\""+data[i]['tagsStr']+"\">"+data[i]['tagsStr']+"</td>\n" +
+                        "                        <td title=\""+data[i]['postDate']+"\">"+data[i]['postDate']+"</td>\n" +
+                        "                        <td title=\""+data[i]['reRealname']+"\">"+data[i]['reRealname']+"</td>\n" +
+                        "                        <td title=\""+data[i]['jobClassesName']+"\">"+data[i]['jobClassesName']+"</td>\n" +
                         "                        <td><button type=\"button\" class=\"btn btn-primary\" onclick=\"adminChangeClasses("+data[i]['jobId']+",\'"+data[i]['jobClassesName']+"\')\">修改分类</button> <button type=\"button\" class=\"btn btn-danger\" onclick=\"confrimDelete("+data[i]['jobId']+")\">删除</button></td>\n" +
                         "                    </tr>")
                 }

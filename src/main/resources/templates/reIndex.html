@@ -23,6 +23,10 @@
         function turnReChat() {
             window.location.href="/job/chat";
         }
+        function turnChangePassword() {
+            var url = "/turnChangePassword";
+            $('#info').load(url);
+        }
     </script>
 </head>
 <body>
@@ -67,7 +71,7 @@
             <ul class="list-group" >
                 <li class="list-group-item" onclick="turnReInfo()"><a href="#">个人信息</a></li>
                 <li class="list-group-item" onclick="turnJobManage()"><a href="#">职位管理</a></li>
-                <li class="list-group-item"><a href="#">修改密码</a></li>
+                <li class="list-group-item" onclick="turnChangePassword()"><a href="#">修改密码</a></li>
                 <li class="list-group-item" onclick="turnReChat()"><a href="#">消息记录</a></li>
             </ul>
         </div>
