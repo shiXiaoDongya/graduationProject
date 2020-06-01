@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2020-04-04 10:35:31
+-- 生成日期： 2020-06-01 15:55:15
 -- 服务器版本： 5.7.24
 -- PHP 版本： 7.1.23
 
@@ -21,6 +21,50 @@ SET time_zone = "+00:00";
 --
 -- 数据库： `graduation_project`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin`
+--
+
+CREATE TABLE `admin` (
+  `admin_id` int(11) NOT NULL,
+  `admin_username` varchar(50) NOT NULL,
+  `admin_password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `admin_username`, `admin_password`) VALUES
+(1, 'admin', '123456');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `chat`
+--
+
+CREATE TABLE `chat` (
+  `chat_id` int(11) NOT NULL,
+  `js_id` int(11) NOT NULL,
+  `re_id` int(11) NOT NULL,
+  `job_id` int(11) NOT NULL,
+  `chat_content` text,
+  `chat_send_time` datetime NOT NULL,
+  `is_js_send` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0:js方为接收者;1:js方为发送者',
+  `is_read` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0为未读，1为已读'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `chat`
+--
+
+INSERT INTO `chat` (`chat_id`, `js_id`, `re_id`, `job_id`, `chat_content`, `chat_send_time`, `is_js_send`, `is_read`) VALUES
+(1, 23, 6, 12, '123456', '2020-05-10 11:36:31', 1, 1),
+(2, 23, 6, 12, 'sahdjkah', '2020-05-10 11:36:53', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -195,13 +239,97 @@ INSERT INTO `classes` (`classes_id`, `classes_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `company`
+--
+
+CREATE TABLE `company` (
+  `company_id` int(11) NOT NULL,
+  `company_name` varchar(50) NOT NULL,
+  `company_head_img` varchar(255) DEFAULT NULL,
+  `company_detail` text,
+  `industry` varchar(50) NOT NULL,
+  `finan_condition` tinyint(4) NOT NULL,
+  `size_condition` tinyint(4) NOT NULL,
+  `company_tags` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `company`
+--
+
+INSERT INTO `company` (`company_id`, `company_name`, `company_head_img`, `company_detail`, `industry`, `finan_condition`, `size_condition`, `company_tags`) VALUES
+(1, '视源股份(CVTE)', 'f5e9b22249ccbf8c2d105ed25cfd295abe1bd4a3bd2a63f070bdbdada9aad826.jpg', '广州视源（简称CVTE）成立于2005年12月，A股上市公司。\r\nCVTE的产品技术广泛应用在生活、教育、企业、医疗等多个领域：每年全球在售电视机约有三分之一在使用CVTE提供的核心部件，中国学校每七间教室至少一间在用希沃（seewo）上课，企业会议室在用MAXHUB开会，医院病房在用希科（XICOO）的医疗产品……从创立至今，CVTE始终致力于提升电子产品的互动体验，为用户提供更加丰富、高效的沟通方式。\r\n了解更多详情请至视源股份官网：www.cvte.com', '电子/半导体/集成电路', 7, 5, '包吃,交通补助,节日福利,年终奖,零食下午茶,股票期权'),
+(2, '视睿科技', 'abc84928faa2a8042e0c2da644949261.jpg', '广州视睿电子科技有限公司成立于 2008 年，隶属于全球知名的以显控技术为核心的智能交互解决方案提供商视源股份 CVTE（股票代码 002841），总部位于广州科学城，营销服务遍及全球。视源股份目前总人数超过4700人，约60%为技术人员，员工平均年龄约为29岁。公司把人才作为企业发展的动力源泉，非常重视人才的选、育、用、留。视源股份设立了完备的培养机制以帮助每位新成员快速成长，包括基础素质培训、专业技能培训、岗位培训和管理素质培训等，帮助企业员工全方位提升综合素质。\r\n公司十分重视对核心技术的保护，截至2019年7月31日，公司已拥有授权专利超过3500件，拥有计算机软件著作权、作品著作权超过1000项。视源股份已成为首批国家制造业双创试点企业、国家高新技术企业、国家知识产权示范企业；并入选2019年《财富》中国500强、2018年中国制造业500强、2018年中国电子信息行业百强、2018中国企业创新能力100强等，同时也是海关AEO高级认证企业。\r\n希沃是一个朝气蓬勃而不失严谨沉稳的年轻团队。 我们同时具备理想主义和实干主义的特质，怀着共同的梦想和信念，富有激情，勇于创新，孜孜不倦地追求完美。这也是希沃品牌持续发展的重要动力。\r\n视睿科技认为企业作为社会的细胞组织有义务为社会的进步与发展做出相应的贡献。我们致力于以实际行动履行企业公民的责任，持续为此类活动贡献自身的力量，实现对社会的回馈，并持之以恒地追求人类社会与文化的长期进步与共同繁荣。\r\n希望工程 我们通过长期支持教育事业来传播社会责任的火种与希望。视睿科技认为教育事业事关人类未来，并通过支持教育基础设施建设，为偏远地区创造信息化的学习环境，缩小教育装备差距，助力教育信息化事业与教育公平。\r\n员工关爱 视睿科技认为企业组织最直接的社会责任是通过自身持续发展壮大，为社区贡献更多稳定的就业机会，改善员工及其家人生活，全面提升其工作技能、文化知识和综合素养。 视睿科技倡导“家文化”，让所有员工共享企业成长与发展的成果。每年春暖花开之际公司为新人举行盛大的集体婚礼，并组织邀请员工及其父母参与公司集体健康体检和旅游。\r\n如亲情般的纽带联接着所有视睿人共同朝着同一个目标前进——因为我们的存在，让更多人生活幸福，事业有成。', '智能硬件', 7, 5, '交通补助,年终奖,零食下午茶,补充医疗保险,通讯补助'),
+(3, '阿里巴巴集团', 'cff98890aeac18b0f4dee3577d92d543be1bd4a3bd2a63f070bdbdada9aad826.jpg', '阿里巴巴集团的使命是让天下没有难做的生意。\r\n我们旨在赋能企业改变营销、销售和经营的方式。我们为商家、品牌及其他企业提供基本的互联网基础设施以及营销平台，让其可借助互联网的力量与用户和客户互动。我们的业务包括核心电商、云计算、数字媒体和娱乐以及创新项目和其他业务。我们并通过子公司菜鸟网络及所投资的关联公司口碑，参与物流和本地服务行业，同时与蚂蚁金融服务集团有战略合作，该金融服务集团主要通过中国领先的第三方网上支付平台支付宝运营。\r\n\r\n我们的愿景\r\n我们旨在构建未来的商务生态系统。我们的愿景是让客户相会、工作和生活在阿里巴巴，并持续发展最少102年。', '互联网', 8, 6, '五险一金,保险,定期体检,节日福利,年终奖,股票期权'),
+(4, '酷狗音乐', '470bca846d998daa7dd9427b9a393683be1bd4a3bd2a63f070bdbdada9aad826.jpg', '酷狗音乐成立于2004年，是中国极具技术创新基因的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于为互联网用户和数字音乐产业发展提供完善的解决方案。', '互联网', 7, 5, '股票期权,餐补,零食下午茶,五险一金,定期体检'),
+(5, '远信控股有限公司', 'c7de0cb6d1b20b8a8088461a061af90438349fe5f8a8f03f3e53cfa1818e8459_s.jpg', '远信集团成立于2005年3月，坐落于广州地标性建筑-保利·天幕广场，集研发、生产、销售、服务于一体的综合性科技型美业集团，致力于打造美业生态链，集团官网：http://www.lansee.net，集团业务包含以下三大模块：\r\n\r\n一、远想（医美模块）\r\n1）伊肤泉——引领医美未来，成为行业翘楚，官网：http://www.evech.com\r\n2）瑞恩诗——北欧女神针，活肌聚能素\r\n3）仙诺德——童颜水凝针，初老回颜术\r\n4）柚伊俏——为广大爱美女生提供轻奢、潮流的医疗美容定制服务\r\n5）翊品——开启中国医美，线性微整新纪元\r\n6）妈妈的爱EPT ——源于自体，追求自然、安全\r\n\r\n二、柚子舍（零售电商模块）\r\n1）柚子舍——打造高品质的柚子个人护理，成为一种健康时尚生活方式，天猫店链接：http://youzishe.tmall.com\r\n2）无敏氏——成为敏感肌护理NO.1，淘宝店链接：https://shop542692300.taobao.com\r\n3）高小湿——致力成为简单高浓的国货典范，淘宝店链接：：https://shop434383976.taobao.com\r\n4）伊肤泉TP ——线上“医美级”护肤品领导者，天猫店：https://evecharm.tmall.com，淘宝店链接：https://shop130448421.taobao.com\r\n\r\n三、俏猫（美业O2O模块）\r\n1）俏猫APP ——改变人们获得美容服务的模式，成为上门美业O2O的领导者\r\n2）美星社——中国轻医美第一微创业服务平台，微信公众号“美星社”\r\n3）中国化妆师联合会(CMA) ——大中华地区首个以化妆师为行业主体的化妆行业组织', '医疗/护理/卫生', 8, 4, '零食下午茶,五险一金,节日福利,定期体检,交通补助'),
+(6, '腾讯互娱', '1361c7e773d91b4c5f26ba77191240b72bb49293506fad83456d2dd00e946cfe.png', '腾讯互动娱乐，全球领先的综合互动娱乐服务品牌，旗下涵盖腾讯游戏、腾讯文学、腾讯动漫等多个互动娱乐业务平台，致力为用户提供包括网络游戏、文学、动漫、戏剧、影视等在内的多元化、高品质综合互动娱乐体验。立足“泛娱乐”战略，腾讯互动娱乐持续基于互联网与移动互联网的多领域共生，打造明星IP（知识产权，Intellectual Property）的粉丝经济，全面拥抱互动娱乐新时代，让想象绽放！！', '游戏', 8, 6, '五险一金,补充医疗保险,定期体检,全勤奖,年终奖,股票期权,带薪年假,员工旅游'),
+(7, '三盟科技', '08405ab72ce30b0b622cbacd142402a698a9df6c0aff0d9528ba0f075bb9ee35.jpg', '公司简介\r\n三盟科技股份有限公司(简称三盟科技) 总部位于广州，注册资本7199.216万，是一家专注教育，专注大数据、人工智能、人脸识别、物联网等新一代信息技术自主研发与应用创新的教育高科技企业。\r\n在技术创新方面，三盟科技一直秉持着“专注教育，专注新一代信息技术应用创新品牌包括物联网技术系列产品、大数据技术系列产品、人脸识别技术系列产品、人工智能技术系列产品、云计算技术系列产品、AIoBE基础教育系列产品、智能硬件AIoH系列产产品系列。', '计算机软件', 7, 4, '五险一金,补充医疗保险,定期体检,带薪年假,员工旅游,节日福利,零食下午茶');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `feedback_id` int(11) NOT NULL,
+  `js_id` int(11) NOT NULL,
+  `feedback_content` text NOT NULL,
+  `feedback_send_time` datetime NOT NULL,
+  `admin_id` int(11) DEFAULT NULL,
+  `feedback_reply` text,
+  `feedback_replytime` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `feedback`
+--
+
+INSERT INTO `feedback` (`feedback_id`, `js_id`, `feedback_content`, `feedback_send_time`, `admin_id`, `feedback_reply`, `feedback_replytime`) VALUES
+(1, 1, '1231456', '2020-04-28 17:06:58', 1, '回复测试', '2020-04-29 22:56:28'),
+(2, 1, '66666', '2020-04-28 17:10:07', 1, '回复22222', '2020-04-29 23:04:31'),
+(3, 1, '123156', '2020-04-28 17:20:16', 1, '3333', '2020-04-29 23:08:02'),
+(6, 1, '留言测试下', '2020-05-06 20:52:42', 1, '666', '2020-05-09 14:44:38'),
+(7, 22, '4564879', '2020-05-09 21:05:20', 1, '666', '2020-05-10 08:50:47'),
+(8, 22, '6565', '2020-05-09 21:05:25', NULL, NULL, NULL),
+(9, 1, '664564', '2020-05-10 08:55:29', NULL, NULL, NULL),
+(10, 23, '反馈留言', '2020-05-10 11:35:58', NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `index_pic`
+--
+
+CREATE TABLE `index_pic` (
+  `index_pic_id` int(11) NOT NULL,
+  `pic` varchar(255) NOT NULL,
+  `job_id` int(11) NOT NULL,
+  `update_time` datetime NOT NULL,
+  `update_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `index_pic`
+--
+
+INSERT INTO `index_pic` (`index_pic_id`, `pic`, `job_id`, `update_time`, `update_user`) VALUES
+(1, 'pic1.jpg', 3, '2020-04-22 00:00:00', 1),
+(2, 'pic2.jpg', 5, '2020-04-22 00:00:00', 1),
+(3, 'pic3.jpg', 6, '2020-04-23 00:00:00', 1),
+(4, 'pic4.jpg', 6, '2020-04-24 00:00:00', 1);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `job`
 --
 
 CREATE TABLE `job` (
   `job_id` int(11) NOT NULL,
   `job_name` varchar(50) NOT NULL,
-  `job_detail` varchar(255) NOT NULL,
+  `job_detail` text NOT NULL,
   `exp_condition` tinyint(4) DEFAULT NULL COMMENT '1:在校生;2:应届生;3:一年以内;4:1-3年;5:3-5年;6:5-10年;7:10年以上',
   `edu_condition` tinyint(4) DEFAULT NULL COMMENT '	1:初中及以下;2:中专/中技;3:高中;4:大专;5:本科;6:硕士;7:博士',
   `salary` int(11) DEFAULT NULL COMMENT '0为面议',
@@ -210,15 +338,27 @@ CREATE TABLE `job` (
   `work_city` varchar(50) DEFAULT NULL,
   `work_address` varchar(255) NOT NULL,
   `post_date` date DEFAULT NULL,
-  `job_classes_id` int(11) NOT NULL
+  `job_classes_id` int(11) NOT NULL,
+  `is_recommend` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `job`
 --
 
-INSERT INTO `job` (`job_id`, `job_name`, `job_detail`, `exp_condition`, `edu_condition`, `salary`, `tag`, `recruiter_id`, `work_city`, `work_address`, `post_date`, `job_classes_id`) VALUES
-(1, 'Java实习生', '需熟练Java、MySQL', NULL, NULL, 2000, NULL, 1, NULL, '广州', NULL, 2);
+INSERT INTO `job` (`job_id`, `job_name`, `job_detail`, `exp_condition`, `edu_condition`, `salary`, `tag`, `recruiter_id`, `work_city`, `work_address`, `post_date`, `job_classes_id`, `is_recommend`) VALUES
+(3, '测试职位', '测试职位描述', 1, 1, 5000, 'Java,Web', 2, '广州', '天河区体育西路', '2020-04-11', 4, 0),
+(4, 'Java', '工作职责：\r\n1.负责集团内部相关web系统的软件开发的工作；\r\n2.配合相关的需求分析师了解业务需求并设计技术解决方案；\r\n3.独立编写项目开发过程中的项目文档；\r\n4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；\r\n\r\n任职要求：\r\n1.计算机类、信息系统类相关专业；\r\n2.熟悉Java常见web开发框架，如Spring、Mybatis；\r\n3.熟悉常见数据Oracle、MySQL的开发；\r\n4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；\r\n\r\n其它福利待遇：\r\n1. 年底双薪，旅游补贴，提供有竞争力的季度奖；\r\n2. 免费提供五星级的一日三餐和公寓住宿；\r\n3. 免费班车接送；\r\n4. 公司有自己的幼儿园，解决员工子女上学问题；', 5, 5, 15000, '后端开发,微服务框架,web开发框架,Spring Cloud', 4, '广州', '广州黄埔区CVTE第一产业园', '2020-04-11', 2, 1),
+(5, 'Java', '工作职责：\r\n1.负责集团内部相关web系统的软件开发的工作；\r\n2.配合相关的需求分析师了解业务需求并设计技术解决方案；\r\n3.独立编写项目开发过程中的项目文档；\r\n4. 开发和维护系统平台与框架，发现和解决存在的技术问题，保证系统的性能和稳定性；\r\n\r\n任职要求：\r\n1.计算机类、信息系统类相关专业；\r\n2.熟悉Java常见web开发框架，如Spring、Mybatis；\r\n3.熟悉常见数据Oracle、MySQL的开发；\r\n4.熟悉Spring Boot,Spring Cloud等微服务框架的开发；\r\n\r\n其它福利待遇：\r\n1. 年底双薪，旅游补贴，提供有竞争力的季度奖；\r\n2. 免费提供五星级的一日三餐和公寓住宿；\r\n3. 免费班车接送；\r\n4. 公司有自己的幼儿园，解决员工子女上学问题；', 4, 5, 15000, '微服务框架,web开发框架,Spring Cloud,熟悉Spirng', 5, '广州', '广州黄埔区CVTE第一产业园', '2020-04-12', 2, 0),
+(6, 'java实习生', '【部门介绍】﻿\r\n我们是阿里国际化中台事业部,全球化是阿里巴巴经济体的核心战略之一,也是阿里商业操作系统的重要组成部分。\r\n\r\n在阿里有很多的国际化战场,包括东南亚电商Lazada,以及全球卖的速卖通AliExpress,同时还有Daraz等众多电商市场。未来通过中台的能力建设,帮助业务和业务之间更好的互通,实现技术研发的网络与规模效应,收敛国际化业务核心系统链路,确保核心链路的稳定,性能和体验,通过中台更快,更好的支持国际新业务接入以及国内业务出海。\r\n\r\n我们的业务遍布全球各个角落,我们的系统涉及到电商的所有核心链路:交易,商品,商家,还有国际的支付,国际的物流,我们的团队有各个办公地点,各个国家的小伙伴,我们的市场和业务之间通过中台的力量也会产生更多的化学反应。﻿﻿﻿\r\n\r\n我们的远方是星辰大海,但是我们遇到的挑战也非常巨大,相比较国内成熟的电商环境,友善的政策支持和完善的基础设施,国际化中各个国家的政策,国际化的物流,国际化的支付,海量的用户,全球的时区,语言的障碍,都会对我们的产品和技术产生重大的挑战。 我们需要优秀的你一起加入,共建阿里的国际化中台!﻿﻿\r\n\r\n【开放岗位】\r\njava工程师、测试工程师、前端工程师、IOS/Android工程师﻿﻿\r\n\r\n【工作地点】杭州or深圳\r\n\r\n【岗位要求】\r\n(1)本次招聘面向2020年11月——2021年10月毕业的同学,校招or实习都可以哦~﻿﻿\r\n(2)有强的动手能力和学习能力,熟悉至少一门计算机语言,如JAVA、Python、C++等,熟悉unix或者linux操作系统。 ﻿﻿\r\n(3)具备扎实的计算机专业背景,熟悉数据结构与算法,网络编程,多线程编程,数据库应用开发等。 \r\nP.S. 没有工作经验和项目经验的同学们也不要担心哦,校招看重的是你的学习能力和未来的潜力!﻿﻿\r\n\r\n【联系方式】﻿﻿\r\n投递简历请发送到 *****-inc.com\r\n微信: *****************﻿﻿\r\n电话:***********﻿﻿\r\n可直接内推!!!﻿﻿\r\n有任何问题可随时微信or电话骚扰哦~\r\n\r\n【写在最后】﻿﻿\r\nIf not you, who!﻿﻿﻿\r\nIf not now, when!﻿﻿', 2, 5, 4000, '分布式技术,后端开发,多线程编程,java工程师', 6, '广州', '广州越秀区阿里巴巴(中国)网络技术有限公司广州分公司', '2020-04-12', 2, 1),
+(8, 'Web开发 实习工程师 ', '岗位内容：\r\n根据产品需求，完成前端UI和后端业务逻辑的设计和实现。\r\n\r\n岗位要求：\r\n1、基础素质：\r\n大学本科或以上学历，计算机相关专业；\r\n为人正直负责，具有良好的沟通能力和团队精神；\r\n有强烈的学习意愿、较强的自学能力和逻辑分析能力，能够独立分析并解决问题，能承受较大的压力。\r\n2、专业技能：\r\n掌握数据结构以及常用算法，熟悉Linux操作系统；\r\n熟悉前端研发相关语言或技术，如JavaScript、框架Angular/Vue等；\r\n掌握后端研发相关语言或技术，如PHP/Java/Python/Go等。\r\n3、时间要求：\r\n需要能进行连续6个月以上的实习。', 1, 5, 2800, 'javascript,前端ui,php,web开发,java', 6, '广州', '广州市 天河区 粤和楼', '2020-04-18', 80, 1),
+(9, 'Java', '繁星直播和酷狗k歌后端开发工程师', 5, 5, 15000, 'Java,后端开发工程师,直播,K歌', 7, '广州', '广州市天河区科韵路16号信息港B栋13楼', '2020-05-01', 2, 0),
+(10, 'Java', '招聘部门:\r\n新零售技术事业群 地方杭州，杭州，杭州\r\n1. 负责业务产品相关的架构设计与开发；\r\n2. 从用户和技术出发，实现面向未来的系统规划、设计和落地；\r\n3. 技术预研和技术难点攻关，保障系统可用性、稳定性、和可扩展性。\r\n职位要求：\r\n1. Java基础扎实，理解io、多线程、集合等基础框架，对JVM原理有一定的了解；\r\n2. 对于你用过的开源框架，能了解到它的原理和机制；对Spring、ibatis开源框架熟悉；\r\n3. 掌握多线程及高性能的设计与编码及性能调优；有高并发应用开发经验；\r\n4. 对技术有浓厚兴趣，学习能力强，适应能力好，抗压能力强；\r\n5.有做过大型项目的技术PLA/PM者优先。', 5, 5, 25000, '后端开发,数据库,jvm原理,iBATIS,Java基础扎实', 6, '广州', '广州海珠区阿里巴巴(广州阿里中心)(建设中)', '2020-05-05', 2, 0),
+(12, 'JAVA', '本职位工作地点在杭州，可以电话面试\r\n1. 高级JAVA工程师要求3年以上JEE开发经验；\r\n2. 扎实的Java编程基础，熟悉各种设计模式\r\n3. 熟练掌握Spring/Struts/Ibatis或其他主流JAVA框架\r\n4. 熟悉MySQL数据库中的一种或多种，有数据库调优经验\r\n5. 熟悉整个软件过程，能够沟通需求、控制项目进度，有良好的文档能力\r\n6. 架构师要求有良好的组件级建模能力，熟悉NoSQL、MQ、Cache、TCP/IP原理，能够设计复杂业务、高并发、大数据量的系统\r\n7.如果以上均不符合，也没关系，只要你确认自己是个技术人才，对技术有足够的热情，希望找到一个能发挥你能力的地方，也欢迎投递简历;\r\n岗位职责：\r\n负责B类交易平台相关开发\r\n福利\r\n大平台，牛人多，入职就配15寸MacbookPro\r\n本职位工作地点在杭州，可以电话面试', NULL, 5, 20000, 'iBATIAS,数据库调优,MQ,java框架,NoSQL', 6, '广州', '平云路163号', '2020-05-06', 2, 0),
+(13, 'Java', '工作地点：杭州\r\n职位描述：\r\n1.深入理解业务需求，进行相关系统的设计和开发；\r\n2.持续优化系统架构和系统的可扩展性，参与系统的长期设计规划；\r\n3.持续优化系统性能，保障系统的高可用性。\r\n职位要求：\r\n1. 主导过大规模系统的架构设计，精通服务化、服务治理、领域建模，对系统和业务抽象有非常丰富经验； \r\n2. 有较强的业务理解能力，能够结合数据，快速识别和分析业务问题，并给出合理的解决方案，有金融和SAAS成功经验的优先；\r\n 3. 精通Java SE和Java EE技术，对各种开源的框架如Spring、ibatis等有深入的了解，掌握核心结构、运行机制； \r\n4. 有丰富的全球化部署和分布式异构系统架构的实施经验；\r\n 5. 有国际化背景服务B类工作经验优先', NULL, NULL, 25000, '分布式技术,Spring,iBATIS,服务治理,精通Java', 6, '广州', '广州市 越秀区 阿里巴巴(中国)网络技术有限公司广州分公司', '2020-05-06', 2, 0),
+(14, 'PHP实习生', '岗位要求\r\n1.熟悉php，熟悉某一框架，laravel优先，一年以上有实际PHP开发项目经验者优先;\r\n2.熟悉html、css、js，可独立写一些简单前端;\r\n3.熟练应用MySql，熟悉HTTP协议、熟悉GIT\\SVN，熟悉接口开发者优先；\r\n4.加分项：熟悉linux系统、数据结构、算法，熟悉B2B业务优先；\r\n5.具有数据库设计和优化能力，至少了解一种常用nosql系统（redis、mongodb等）\r\n希望你\r\n1、有较强的自我驱动能力，学习、执行能力强，对自己有高技术要求；\r\n2、具有较好的沟通交流能力，能够迅速融入团队，具有良好的时间和流程意识；\r\n3、本科及以上学历，大三&研二学生优先，985.211优先\r\n4、每周工作4-5天，实习时间不少于6个月，必须计算机相关专业；\r\n5、实习期满可转为正式员工，五险一金齐全,带薪年假', 1, 5, 2500, 'JavaScript,CSS,Laravel,NoSQL,熟悉PHP', 8, '广州', '广州海珠区保利·天幕广场', '2020-05-01', 4, 1),
+(15, 'PHP', '本科以上学历，计算机软件或相关专业；\r\n3年及以上PHP后端开发工作经验；\r\n熟悉jQuery、BootStrap等前端框架，能完成Web前端相关的开发；\r\n熟悉Linux、Unix等操作系统，能熟练进行各种Shell命令和编程；\r\n熟悉MySQL、Redis等数据库，能够按需求完成高性能数据库设计；\r\n熟悉swoole有高并发量活动开发经验；\r\n良好的沟通能力，能主动分析和解决问题，喜欢钻研新技术，有责任心，正直进取\r\n有游戏运营开发经验者优先考虑；\r\n岗位职责：\r\n负责英雄联盟官网系统的前后端程序的开发和维护；\r\n负责英雄联盟Web营销活动系统的开发和维护；\r\n负责其他周边系统的开发和维护。', 5, 5, 20000, 'Golang,Swoole,Shell命令,熟悉jQuery,数据库设计', 9, '上海 徐汇区', '上海徐汇区上海腾讯大厦', '2020-05-01', 4, 1),
+(16, '算法工程师', '岗位职责：\r\n1、负责GPU上图像和视频处理算法的开发；\r\n2、目标检测、定位、跟踪与识别等计算机视觉算法的设计与开发；\r\n3、使用GPU编程工具对算法进行加速；\r\n4、根据公司流程撰写设计文档。\r\n任职要求：\r\n1、本科及以上学历，计算机、数学等相关专业，3年及以上图像处理工作经验；\r\n2、精通C/C++等编程语言，熟悉Linux程序开发，有多线程、多进程编程经验；\r\n3、熟悉常用特征提取方法：Haar、Gabor、LBP、SIFT、HOG等；\r\n4、有人脸识别、物体检测/识别等相关项目经验者优先；\r\n5、熟悉OpenCV、CUDA、OpenCL等图像处理软件包者优先；\r\n6、熟悉深度学习理论框架，精通Tensorflow、Caffe等其中一种深度学习开源框架。', 5, 5, 25000, '语音识别,人脸识别,视频算法,CUDA,目标检测', 11, '广州', '广州海珠区琶洲蟠龙新街3号11栋31层', '2020-05-03', 20, 1);
 
 -- --------------------------------------------------------
 
@@ -1113,6 +1253,27 @@ INSERT INTO `job_classes` (`job_classes_id`, `job_classes_name`, `job_classes_ur
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `job_collection`
+--
+
+CREATE TABLE `job_collection` (
+  `job_collection_id` int(11) NOT NULL,
+  `js_id` int(11) NOT NULL,
+  `job_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `job_collection`
+--
+
+INSERT INTO `job_collection` (`job_collection_id`, `js_id`, `job_id`) VALUES
+(2, 19, 12),
+(3, 19, 14),
+(4, 1, 8);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `job_seeker`
 --
 
@@ -1123,6 +1284,7 @@ CREATE TABLE `job_seeker` (
   `js_head_img` varchar(255) DEFAULT NULL,
   `js_realname` varchar(50) NOT NULL,
   `js_id_card` varchar(20) NOT NULL,
+  `js_age` tinyint(4) DEFAULT NULL,
   `js_gender` char(2) NOT NULL,
   `js_phone` varchar(20) NOT NULL,
   `js_email` varchar(50) NOT NULL,
@@ -1132,18 +1294,23 @@ CREATE TABLE `job_seeker` (
   `js_exp` tinyint(4) DEFAULT NULL COMMENT '1:在校生;2:应届生;3:一年以内;4:1-3年;5:3-5年;6:5-10年;7:10年以上',
   `js_sal` tinyint(4) DEFAULT NULL COMMENT '1:3K以下;2:3-5K;3:5-10K;4:10-15K;5:15-20K;6:20-30K;7:30-50K;8:50K以上',
   `js_tag` varchar(255) DEFAULT NULL,
-  `js_resume_url` varchar(255) DEFAULT NULL,
-  `js_job_collection` varchar(255) DEFAULT NULL,
-  `js_job_chatted` varchar(255) DEFAULT NULL
+  `js_resume_url` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `job_seeker`
 --
 
-INSERT INTO `job_seeker` (`js_id`, `js_username`, `js_password`, `js_head_img`, `js_realname`, `js_id_card`, `js_gender`, `js_phone`, `js_email`, `js_sq`, `js_college`, `js_edu`, `js_exp`, `js_sal`, `js_tag`, `js_resume_url`, `js_job_collection`, `js_job_chatted`) VALUES
-(1, '123456', '123456', NULL, '88', '65464', '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 'luoxd', '456', NULL, '88', '65464', '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `job_seeker` (`js_id`, `js_username`, `js_password`, `js_head_img`, `js_realname`, `js_id_card`, `js_age`, `js_gender`, `js_phone`, `js_email`, `js_sq`, `js_college`, `js_edu`, `js_exp`, `js_sal`, `js_tag`, `js_resume_url`) VALUES
+(1, '123456', '123456', '11d25284-be11-4d47-9a46-cf555e20c091.jpg', '真实姓名', '65464', 24, '男', '13428012237', '2207715152@qq.com', '6', 'XX大学', 5, 2, 4, 'Java,Spring', NULL),
+(3, 'luoxd', '123456', NULL, '啦啦', '65464', NULL, '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'test', '123456', NULL, '啦啦22', '65464', NULL, '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'test2', '123456', NULL, '88', '65464', NULL, '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 'test3', '123456', NULL, '88', '65464', NULL, '男', '13428012237', '2207715152@qq.com', '6', NULL, NULL, NULL, NULL, NULL, NULL),
+(18, '测试', '123456', '4d2bff43-761f-4e85-9d2e-f8d1647410af.jpg', '啦啦啦', '123456', NULL, '男', '13428012237', '2207715152@qq.com', '123456', NULL, NULL, NULL, NULL, NULL, NULL),
+(19, '测试2', '123456', '1a454452-c935-485f-a155-49b7cdacd097.jpg', '罗晓东', '123456', 25, '男', '13428012237', '2207715152@qq.com', '123456', 'XX大学', 5, 2, 3, 'Java,Spring,分布式', NULL),
+(22, 'test4', '123456', 'e26dbadc-1f0f-49bc-a415-c157f198fd90.jpg', '啦啦啦', '123456', 24, '男', '13428012237', '2207715152@qq.com', '123456', '', NULL, NULL, NULL, 'Java,Spring,分布式', NULL),
+(23, '测试5645', '123456', 'b2fac537-da31-40f2-bd01-30c830aa893e.jpg', '罗晓东', '123456', 24, '男', '13428012237', '2207715152@qq.com', '123456', '', NULL, NULL, 2, '', NULL);
 
 -- --------------------------------------------------------
 
@@ -1154,7 +1321,7 @@ INSERT INTO `job_seeker` (`js_id`, `js_username`, `js_password`, `js_head_img`, 
 CREATE TABLE `recruiter` (
   `re_id` int(11) NOT NULL,
   `re_username` varchar(50) NOT NULL,
-  `re_password` int(11) NOT NULL,
+  `re_password` varchar(50) NOT NULL,
   `re_head_img` varchar(255) DEFAULT NULL,
   `re_realname` varchar(50) NOT NULL,
   `re_id_card` varchar(20) NOT NULL,
@@ -1164,19 +1331,42 @@ CREATE TABLE `recruiter` (
   `re_sq` varchar(20) NOT NULL,
   `re_company` varchar(100) NOT NULL,
   `re_company_position` varchar(50) NOT NULL,
-  `re_company_pic` varchar(255) NOT NULL
+  `re_company_pic` varchar(255) NOT NULL,
+  `re_company_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `recruiter`
 --
 
-INSERT INTO `recruiter` (`re_id`, `re_username`, `re_password`, `re_head_img`, `re_realname`, `re_id_card`, `re_gender`, `re_phone`, `re_email`, `re_sq`, `re_company`, `re_company_position`, `re_company_pic`) VALUES
-(1, 'luoxd', 123456, NULL, '一', '45632135156', '男', '13428012237', '2207715152@qq.com', '', '8', '9', '63c062e0-5d08-4d5c-aad0-0050ea5609d0.jpg');
+INSERT INTO `recruiter` (`re_id`, `re_username`, `re_password`, `re_head_img`, `re_realname`, `re_id_card`, `re_gender`, `re_phone`, `re_email`, `re_sq`, `re_company`, `re_company_position`, `re_company_pic`, `re_company_id`) VALUES
+(1, 'luoxd', '123456', NULL, '一', '45632135156', '男', '13428012237', '2207715152@qq.com', '', '8', '9', '63c062e0-5d08-4d5c-aad0-0050ea5609d0.jpg', NULL),
+(2, 'recruiter', '123456', NULL, '啦啦', '65464', '男', '13428012237', '2207715152@qq.com', '6', '有限公司', 'HR', '2876d4e8-478a-4fe0-bb32-e7143c32e0fa.jpg', NULL),
+(3, '123456', '123456', NULL, '啦啦2', '65464', '男', '13428012237', '2207715152@qq.com', '6', '有限公司', 'HR', 'f3600f0b-1190-4913-93bb-293805559cd8.jpg', NULL),
+(4, '白先生', '123456', NULL, '白先生', '123456', '男', '123456', '123456@qq.com', '123456', '视源股份(CVTE)', 'web后端java开发工程师', '', 1),
+(5, '王先生', '123456', NULL, '王先生', '123456', '男', '123456', '123456@qq.com', '123456', '视睿科技', 'web后台开发工程师', '', 2),
+(6, '罗先生', '123456', '043e1d18-4343-4ba0-9f61-58fd0d01697e.jpg', '罗先生5465', '123456', '男', '123456564564', '123456@qq.com', '123456', '', '开发工程师', '', 3),
+(7, '谢先生', '123456', NULL, '谢先生', '123456', '男', '123456', '123456@qq.com', '123456', '酷狗音乐', '副总裁', '', 4),
+(8, '高女士', '123456', NULL, '高女士', '123456', '女', '123456', '123456@qq.com', '123456', '远信控股有限公司', 'HR', '', 5),
+(9, 're1', '123456', NULL, '王先生', '123456', '男', '123456', '123456@qq.com', '123456', '腾讯互娱', '高级开发工程师', '', 6),
+(10, 'test', '123456', NULL, '啦啦啦', '123456', '男', '13428012237', '2207715152@qq.com', '123456', '啦啦', 'HR', '83e9038f-d279-4417-9bd5-5af815a70b8d.jpg', NULL),
+(11, 're2', '123456', NULL, ' 李女士', '123456', '女', '123456', '123456@qq.com', '123456', '三盟科技', 'HR', '', 7);
 
 --
 -- 转储表的索引
 --
+
+--
+-- 表的索引 `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`admin_id`);
+
+--
+-- 表的索引 `chat`
+--
+ALTER TABLE `chat`
+  ADD PRIMARY KEY (`chat_id`);
 
 --
 -- 表的索引 `child_classes`
@@ -1191,6 +1381,24 @@ ALTER TABLE `classes`
   ADD PRIMARY KEY (`classes_id`);
 
 --
+-- 表的索引 `company`
+--
+ALTER TABLE `company`
+  ADD PRIMARY KEY (`company_id`);
+
+--
+-- 表的索引 `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`feedback_id`);
+
+--
+-- 表的索引 `index_pic`
+--
+ALTER TABLE `index_pic`
+  ADD PRIMARY KEY (`index_pic_id`);
+
+--
 -- 表的索引 `job`
 --
 ALTER TABLE `job`
@@ -1201,6 +1409,12 @@ ALTER TABLE `job`
 --
 ALTER TABLE `job_classes`
   ADD PRIMARY KEY (`job_classes_id`);
+
+--
+-- 表的索引 `job_collection`
+--
+ALTER TABLE `job_collection`
+  ADD PRIMARY KEY (`job_collection_id`);
 
 --
 -- 表的索引 `job_seeker`
@@ -1219,6 +1433,18 @@ ALTER TABLE `recruiter`
 --
 
 --
+-- 使用表AUTO_INCREMENT `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- 使用表AUTO_INCREMENT `chat`
+--
+ALTER TABLE `chat`
+  MODIFY `chat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- 使用表AUTO_INCREMENT `child_classes`
 --
 ALTER TABLE `child_classes`
@@ -1231,10 +1457,28 @@ ALTER TABLE `classes`
   MODIFY `classes_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
+-- 使用表AUTO_INCREMENT `company`
+--
+ALTER TABLE `company`
+  MODIFY `company_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- 使用表AUTO_INCREMENT `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `feedback_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- 使用表AUTO_INCREMENT `index_pic`
+--
+ALTER TABLE `index_pic`
+  MODIFY `index_pic_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- 使用表AUTO_INCREMENT `job`
 --
 ALTER TABLE `job`
-  MODIFY `job_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `job_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- 使用表AUTO_INCREMENT `job_classes`
@@ -1243,16 +1487,22 @@ ALTER TABLE `job_classes`
   MODIFY `job_classes_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=870;
 
 --
+-- 使用表AUTO_INCREMENT `job_collection`
+--
+ALTER TABLE `job_collection`
+  MODIFY `job_collection_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- 使用表AUTO_INCREMENT `job_seeker`
 --
 ALTER TABLE `job_seeker`
-  MODIFY `js_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `js_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- 使用表AUTO_INCREMENT `recruiter`
 --
 ALTER TABLE `recruiter`
-  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `re_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
